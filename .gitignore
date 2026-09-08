@@ -1,0 +1,107 @@
+# ================================
+# Environment & Secrets
+# ================================
+.env
+.env.*
+!.env.example
+
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+*.egg-info/
+dist/
+build/
+
+# ================================
+# Jupyter Notebook
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# Machine Learning
+# ================================
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.keras
+*.onnx
+
+# Model outputs / experiments
+ml/models/*
+!ml/models/.gitkeep
+
+research/results/*
+!research/results/.gitkeep
+
+# ================================
+# Node.js / Next.js
+# ================================
+node_modules/
+.next/
+out/
+.turbo/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ================================
+# Build / Cache
+# ================================
+.cache/
+.parcel-cache/
+.vercel/
+
+# ================================
+# Operating System
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# IDE / Editors
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ================================
+# Logs
+# ================================
+*.log
+
+# ================================
+# Temporary files
+# ================================
+*.tmp
+*.temp
+
+# ================================
+# Data files
+# ================================
+# Keep repository structure, but don't
+# accidentally upload large raw datasets.
+data/raw/*
+!data/raw/.gitkeep
+
+data/interim/*
+!data/interim/.gitkeep
