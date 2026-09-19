@@ -1,0 +1,8 @@
+metric,value
+malaria_records,16488
+unique_state_district_pairs,1092
+exact_matches,737
+fuzzy_matches,45
+special_entries,67
+unmatched_pairs,243
+state_conflicts,500

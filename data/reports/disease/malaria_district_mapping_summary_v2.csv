@@ -1,0 +1,9 @@
+metric,value
+malaria_records,16488
+unique_malaria_districts,1092
+exact_global_matches,737
+fuzzy_global_matches,45
+special_entries,67
+ambiguous_names,12
+unmatched,231
+source_state_conflicts,502

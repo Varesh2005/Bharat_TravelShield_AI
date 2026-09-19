@@ -1,0 +1,641 @@
+census_state_code,census_district_code,censuscode_2011,district_name,district_name_shapefile,state_name,population_2011,households_2011,latitude,longitude,coordinate_method,coordinate_source
+28,532,532,Adilabad,Adilabad,Andhra Pradesh,2741239,649849,19.298920005651425,79.08081668638252,district_representative_point,Census 2011 district shapefile
+9,146,146,Agra,Agra,Uttar Pradesh,4418797,710566,27.074560891859292,77.89157835465284,district_representative_point,Census 2011 district shapefile
+24,474,474,Ahmadabad,Ahmadabad,Gujarat,7214225,1510134,22.74294175801122,72.29638338462547,district_representative_point,Census 2011 district shapefile
+27,522,522,Ahmadnagar,Ahmadnagar,Maharashtra,4543159,930024,19.15693604073669,74.8552404876176,district_representative_point,Census 2011 district shapefile
+15,283,283,Aizawl,Aizawl,Mizoram,400309,82524,23.8438633218578,92.91097644708086,district_representative_point,Census 2011 district shapefile
+8,119,119,Ajmer,Ajmer,Rajasthan,2583052,494832,26.32642751092646,74.71542023338819,district_representative_point,Census 2011 district shapefile
+27,501,501,Akola,Akola,Maharashtra,1813906,395690,20.76176927755035,77.19123501945583,district_representative_point,Census 2011 district shapefile
+32,598,598,Alappuzha,Alappuzha,Kerala,2127789,535958,9.490716298065,76.41464278781268,district_representative_point,Census 2011 district shapefile
+9,143,143,Aligarh,Aligarh,Uttar Pradesh,3673889,611371,27.872911385915074,78.13922831882181,district_representative_point,Census 2011 district shapefile
+23,465,465,Alirajpur,Alirajpur,Madhya Pradesh,728999,123800,22.28636950865082,74.35613683406372,district_representative_point,Census 2011 district shapefile
+9,175,175,Allahabad,Allahabad,Uttar Pradesh,5954391,976733,25.278050162706307,81.90352756740259,district_representative_point,Census 2011 district shapefile
+5,64,64,Almora,Almora,Uttarakhand,622506,140577,29.703731108894335,79.42696182126699,district_representative_point,Census 2011 district shapefile
+8,104,104,Alwar,Alwar,Rajasthan,3674179,639720,27.63807448170379,76.61628742906808,district_representative_point,Census 2011 district shapefile
+6,70,70,Ambala,Ambala,Haryana,1128350,224334,30.34714378751297,76.95924470707942,district_representative_point,Census 2011 district shapefile
+9,178,178,Ambedkar Nagar,Ambedkar Nagar,Uttar Pradesh,2397888,368728,26.40599188897604,82.56865190433155,district_representative_point,Census 2011 district shapefile
+27,503,503,Amravati,Amravati,Maharashtra,2888445,647451,21.15417927829523,77.64307750060529,district_representative_point,Census 2011 district shapefile
+24,480,480,Amreli,Amreli,Gujarat,1514190,294837,21.421608838908526,71.27913161163444,district_representative_point,Census 2011 district shapefile
+3,49,49,Amritsar,Amritsar,Punjab,2490656,488898,31.767958468893255,74.83372807534892,district_representative_point,Census 2011 district shapefile
+24,482,482,Anand,Anand,Gujarat,2092745,427605,22.468644660443367,72.73464709273384,district_representative_point,Census 2011 district shapefile
+28,553,553,Anantapur,Anantapur,Andhra Pradesh,4081148,968160,14.45698851952979,77.50944784307293,district_representative_point,Census 2011 district shapefile
+1,14,14,Anantnag,Anantnag,Jammu & Kashmir,1078692,153640,33.78341899549548,75.2913210001733,district_representative_point,Census 2011 district shapefile
+12,260,260,Anjaw,Anjaw,Arunanchal Pradesh,21167,4612,28.037332387391587,96.84616525564077,district_representative_point,Census 2011 district shapefile
+21,384,384,Anugul,Anugul,Odisha,1273821,297050,21.104141984776355,84.95810849729665,district_representative_point,Census 2011 district shapefile
+23,461,461,Anuppur,Anuppur,Madhya Pradesh,749237,170715,23.033836328194816,81.75339193065793,district_representative_point,Census 2011 district shapefile
+10,209,209,Araria,Araria,Bihar,2811569,568142,26.265187513961344,87.36299295440219,district_representative_point,Census 2011 district shapefile
+33,616,616,Ariyalur,Ariyalur,Tamil Nadu,754894,197090,11.150386702565411,79.26156603377888,district_representative_point,Census 2011 district shapefile
+23,459,459,Ashoknagar,Ashoknagar,Madhya Pradesh,845071,172680,24.62004300528433,77.87635408045409,district_representative_point,Census 2011 district shapefile
+9,162,162,Auraiya,Auraiya,Uttar Pradesh,1379545,248197,26.65614937440618,79.51565727871224,district_representative_point,Census 2011 district shapefile
+10,235,235,Aurangabad,Aurangabad,Bihar,2540073,391898,24.806854532771112,84.41479438185715,district_representative_point,Census 2011 district shapefile
+27,515,515,Aurangabad,Aurangabad,Maharashtra,3701282,751915,20.02493199242806,75.15614356387636,district_representative_point,Census 2011 district shapefile
+9,191,191,Azamgarh,Azamgarh,Uttar Pradesh,4613913,665232,26.043249383347174,83.02068870564615,district_representative_point,Census 2011 district shapefile
+1,2,2,Badgam,Badgam,Jammu & Kashmir,753745,103363,33.865562333031676,74.64895964906115,district_representative_point,Census 2011 district shapefile
+29,556,556,Bagalkot,Bagalkot,Karnataka,1889752,361149,16.289653980301726,75.58047410145613,district_representative_point,Census 2011 district shapefile
+5,63,63,Bageshwar,Bageshwar,Uttarakhand,259898,58046,29.999460104665644,79.81679316973702,district_representative_point,Census 2011 district shapefile
+9,139,139,Baghpat,Baghpat,Uttar Pradesh,1303048,209916,29.0396304317624,77.31468770095223,district_representative_point,Census 2011 district shapefile
+9,180,180,Bahraich,Bahraich,Uttar Pradesh,3487731,603754,27.730290620750587,81.47683742907874,district_representative_point,Census 2011 district shapefile
+18,324,324,Baksa,Baksa,Assam,950075,191701,26.64772221771338,91.45653127507518,district_representative_point,Census 2011 district shapefile
+23,457,457,Balaghat,Balaghat,Madhya Pradesh,1701698,391836,21.858344000857098,80.32445482403531,district_representative_point,Census 2011 district shapefile
+21,393,393,Balangir,Balangir,Odisha,1648997,414749,20.60826784887265,83.169126562645,district_representative_point,Census 2011 district shapefile
+21,377,377,Baleshwar,Baleshwar,Odisha,2320529,533001,21.51860072473312,86.89378118957148,district_representative_point,Census 2011 district shapefile
+9,193,193,Ballia,Ballia,Uttar Pradesh,3239774,480268,25.87349349495539,84.12913194973527,district_representative_point,Census 2011 district shapefile
+9,182,182,Balrampur,Balrampur,Uttar Pradesh,2148665,323881,27.44737828467615,82.40371527342515,district_representative_point,Census 2011 district shapefile
+24,469,469,Banas Kantha,Banas Kantha,Gujarat,3120506,560411,24.26994421149287,72.17097773063279,district_representative_point,Census 2011 district shapefile
+9,170,170,Banda,Banda,Uttar Pradesh,1799410,319963,25.4447423394195,80.56212681510661,district_representative_point,Census 2011 district shapefile
+1,9,9,Bandipore,Bandipore,Jammu & Kashmir,392232,58392,34.595078754805726,74.73265344701949,district_representative_point,Census 2011 district shapefile
+29,583,583,Bangalore Rural,Bangalore Rural,Karnataka,990923,229279,13.1809216324482,77.33959745308506,district_representative_point,Census 2011 district shapefile
+29,572,572,Bangalore,Bangalore,Karnataka,9621551,2393845,12.943591455447502,77.55306792001653,district_representative_point,Census 2011 district shapefile
+10,225,225,Banka,Banka,Bihar,2034763,381601,24.831440518424905,86.81810273071801,district_representative_point,Census 2011 district shapefile
+19,339,339,Bankura,Bankura,West Bengal,3596674,766902,23.13349234514214,87.20649380823357,district_representative_point,Census 2011 district shapefile
+8,125,125,Banswara,Banswara,Rajasthan,1797485,367797,23.491248745123016,74.3532275794014,district_representative_point,Census 2011 district shapefile
+9,176,176,Bara Banki,Bara Banki,Uttar Pradesh,3260699,579058,26.941327070832543,81.38446535376507,district_representative_point,Census 2011 district shapefile
+21,370,370,Bargarh,Bargarh,Odisha,1481255,370308,21.234820003515196,83.56890027233538,district_representative_point,Census 2011 district shapefile
+1,8,8,Baramula,Baramula,Jammu & Kashmir,1008039,152635,34.12547523122902,74.53149264185086,district_representative_point,Census 2011 district shapefile
+8,128,128,Baran,Baran,Rajasthan,1222755,241428,24.918340807960558,76.69216741036927,district_representative_point,Census 2011 district shapefile
+19,335,335,Barddhaman,Barddhaman,West Bengal,7717563,1730927,23.40808257243552,87.89987069247404,district_representative_point,Census 2011 district shapefile
+9,150,150,Bareilly,Bareilly,Uttar Pradesh,4448359,756784,28.45375726088519,79.3898407449781,district_representative_point,Census 2011 district shapefile
+8,115,115,Barmer,Barmer,Rajasthan,2603751,451629,25.579905203281275,71.61867459717497,district_representative_point,Census 2011 district shapefile
+3,54,54,Barnala,Barnala,Punjab,595527,115798,30.387694286215897,75.4886075733563,district_representative_point,Census 2011 district shapefile
+18,303,303,Barpeta,Barpeta,Assam,1693622,337929,26.377602712828764,91.05437484422231,district_representative_point,Census 2011 district shapefile
+23,441,441,Barwani,Barwani,Madhya Pradesh,1385881,243277,21.752059242597703,74.894030727036,district_representative_point,Census 2011 district shapefile
+22,414,414,Bastar,Bastar,Chhattisgarh,1413199,311538,19.44551038246464,81.79192811131404,district_representative_point,Census 2011 district shapefile
+9,185,185,Basti,Basti,Uttar Pradesh,2464464,382212,26.832044350668827,82.55055577760943,district_representative_point,Census 2011 district shapefile
+3,46,46,Bathinda,Bathinda,Punjab,1388525,273902,30.177424393944108,75.04886688768138,district_representative_point,Census 2011 district shapefile
+21,391,391,Baudh,Bauda,Odisha,441162,106961,20.643719629339863,84.00204695729227,district_representative_point,Census 2011 district shapefile
+10,222,222,Begusarai,Begusarai,Bihar,2970541,589667,25.512445197658298,86.0900815054295,district_representative_point,Census 2011 district shapefile
+29,555,555,Belgaum,Belgaum,Karnataka,4779661,983854,16.163303022767483,74.88938778421912,district_representative_point,Census 2011 district shapefile
+29,565,565,Bellary,Bellary,Karnataka,2452595,489118,15.197823895458509,76.70988428058831,district_representative_point,Census 2011 district shapefile
+23,447,447,Betul,Betul,Madhya Pradesh,1575362,329832,21.87991900384311,77.87552077469388,district_representative_point,Census 2011 district shapefile
+21,378,378,Bhadrak,Bhadrak,Odisha,1506337,306333,20.985994708960522,86.5980810767829,district_representative_point,Census 2011 district shapefile
+10,224,224,Bhagalpur,Bhagalpur,Bihar,3037766,564711,25.28177028224492,87.13536741329855,district_representative_point,Census 2011 district shapefile
+27,506,506,Bhandara,Bhandara,Maharashtra,1200334,278076,21.121110475988107,79.79372239777635,district_representative_point,Census 2011 district shapefile
+8,105,105,Bharatpur,Bharatpur,Rajasthan,2548462,425414,27.263162941476985,77.3714012320167,district_representative_point,Census 2011 district shapefile
+24,488,488,Bharuch,Bharuch,Gujarat,1551019,333483,21.833613634394062,72.88294921605024,district_representative_point,Census 2011 district shapefile
+24,481,481,Bhavnagar,Bhavnagar,Gujarat,2880365,538605,21.674726485879134,71.93543586915825,district_representative_point,Census 2011 district shapefile
+8,122,122,Bhilwara,Bhilwara,Rajasthan,2408523,498125,25.48838017788566,74.70237019182763,district_representative_point,Census 2011 district shapefile
+23,420,420,Bhind,Bhind,Madhya Pradesh,1703005,299233,26.349760156413573,78.68685742450144,district_representative_point,Census 2011 district shapefile
+6,81,81,Bhiwani,Bhiwani,Haryana,1634445,311380,28.731310900116384,75.9680827053128,district_representative_point,Census 2011 district shapefile
+10,231,231,Bhojpur,Bhojpur,Bihar,2728407,416090,25.452613642992763,84.56465983903651,district_representative_point,Census 2011 district shapefile
+23,444,444,Bhopal,Bhopal,Madhya Pradesh,2371061,501805,23.493101856436986,77.39676167316611,district_representative_point,Census 2011 district shapefile
+27,523,523,Bid,Bid,Maharashtra,2585049,535835,18.94734430911532,75.67090176323806,district_representative_point,Census 2011 district shapefile
+29,558,558,Bidar,Bidar,Karnataka,1703300,319937,18.0191392897869,77.25614390783848,district_representative_point,Census 2011 district shapefile
+22,417,417,Bijapur,Bijapur,Chhattisgarh,255230,54757,18.771280652872825,80.74167338361207,district_representative_point,Census 2011 district shapefile
+29,557,557,Bijapur,Bijapur,Karnataka,2177331,408806,16.815679516945124,75.88233434119917,district_representative_point,Census 2011 district shapefile
+9,134,134,Bijnor,Bijnor,Uttar Pradesh,3682713,633197,29.409404533936595,78.48301619990858,district_representative_point,Census 2011 district shapefile
+8,101,101,Bikaner,Bikaner,Rajasthan,2363937,384944,28.118966081021675,73.11310758742951,district_representative_point,Census 2011 district shapefile
+22,406,406,Bilaspur,Bilaspur,Chhattisgarh,2663629,600822,22.41333586602859,81.83751296850096,district_representative_point,Census 2011 district shapefile
+2,30,30,Bilaspur,Bilaspur,Himachal Pradesh,381956,80485,31.404625608667327,76.64011783007614,district_representative_point,Census 2011 district shapefile
+19,334,334,Birbhum,Birbhum,West Bengal,3502404,817899,24.062448590765825,87.69794411448711,district_representative_point,Census 2011 district shapefile
+14,275,275,Bishnupur,Bishnupur,Manipur,237399,46580,24.512291520874335,93.80484992290579,district_representative_point,Census 2011 district shapefile
+20,355,355,Bokaro,Bokaro,Jharkhand,2062330,394918,23.694351471070917,85.99736319207747,district_representative_point,Census 2011 district shapefile
+18,319,319,Bongaigaon,Bongaigaon,Assam,738804,150018,26.35819102630739,90.62965164676066,district_representative_point,Census 2011 district shapefile
+9,149,149,Budaun,Budaun,Uttar Pradesh,3681896,615776,28.06715765604536,79.04623998656817,district_representative_point,Census 2011 district shapefile
+9,142,142,Bulandshahr,Bulandshahr,Uttar Pradesh,3499171,587529,28.390699838883776,77.98819473810627,district_representative_point,Census 2011 district shapefile
+27,500,500,Buldana,Buldana,Maharashtra,2586258,561504,20.56305173674891,76.41063666060352,district_representative_point,Census 2011 district shapefile
+8,121,121,Bundi,Bundi,Rajasthan,1110906,220768,25.440448413323047,75.75016171258834,district_representative_point,Census 2011 district shapefile
+23,467,467,Burhanpur,Burhanpur,Madhya Pradesh,757847,146341,21.334673429754915,76.37249413400457,district_representative_point,Census 2011 district shapefile
+10,232,232,Buxar,Buxar,Bihar,1706352,261660,25.50694083924633,84.10871510712553,district_representative_point,Census 2011 district shapefile
+18,316,316,Cachar,Cachar,Assam,1736617,379955,24.755519640487037,92.88223490852208,district_representative_point,Census 2011 district shapefile
+7,95,95,Central,Central,NCT of Delhi,582320,119639,28.6417618747246,77.22056717122379,district_representative_point,Census 2011 district shapefile
+2,23,23,Chamba,Chamba,Himachal Pradesh,519080,102460,32.69525848950357,76.17201045524084,district_representative_point,Census 2011 district shapefile
+5,57,57,Chamoli,Chamoli,Uttarakhand,391605,88964,30.500751458529635,79.61939959961722,district_representative_point,Census 2011 district shapefile
+5,65,65,Champawat,Champawat,Uttarakhand,259648,53953,29.287627828719092,80.06273652841585,district_representative_point,Census 2011 district shapefile
+15,284,284,Champhai,Champhai,Mizoram,125745,25520,23.545040158141063,93.24038170357818,district_representative_point,Census 2011 district shapefile
+29,578,578,Chamarajanagar,Chamrajnagar,Karnataka,1020791,244874,11.947521317665414,77.10167859489152,district_representative_point,Census 2011 district shapefile
+9,196,196,Chandauli,Chandauli,Uttar Pradesh,1952756,296804,25.123261805523835,83.24789898736358,district_representative_point,Census 2011 district shapefile
+14,280,280,Chandel,Chandel,Manipur,144182,28801,24.236517600099194,94.09215085296759,district_representative_point,Census 2011 district shapefile
+4,55,55,Chandigarh,Chandigarh,Chandigarh,1055450,241173,30.730184003362076,76.78051175491176,district_representative_point,Census 2011 district shapefile
+27,509,509,Chandrapur,Chandrapur,Maharashtra,2204307,536686,20.09837238193841,79.5050541668692,district_representative_point,Census 2011 district shapefile
+12,253,253,Changlang,Changlang,Arunanchal Pradesh,148226,29521,27.268534806946796,96.06218312637782,district_representative_point,Census 2011 district shapefile
+20,347,347,Chatra,Chatra,Jharkhand,1042886,182271,24.10375673388836,84.87250146211525,district_representative_point,Census 2011 district shapefile
+33,603,603,Chennai,Chennai,Tamil Nadu,4646732,1154982,13.066124327240331,80.25040930538992,district_representative_point,Census 2011 district shapefile
+23,425,425,Chhatarpur,Chhatarpur,Madhya Pradesh,1762375,356297,24.764108438253803,79.68167088416686,district_representative_point,Census 2011 district shapefile
+23,455,455,Chhindwara,Chhindwara,Madhya Pradesh,2090922,443361,22.138795687048034,78.81277180431151,district_representative_point,Census 2011 district shapefile
+29,582,582,Chikkaballapura,Chikkaballapura,Karnataka,1255104,284698,13.588922657891462,77.78175694204899,district_representative_point,Census 2011 district shapefile
+29,570,570,Chikmagalur,Chikmagalur,Karnataka,1137961,276085,13.405599891209146,75.64002331813991,district_representative_point,Census 2011 district shapefile
+18,320,320,Chirang,Chirang,Assam,482162,97395,26.648083110050447,90.64239190867332,district_representative_point,Census 2011 district shapefile
+29,566,566,Chitradurga,Chitradurga,Karnataka,1659456,357003,14.304268568695319,76.5327802212621,district_representative_point,Census 2011 district shapefile
+9,171,171,Chitrakoot,Chitrakoot,Uttar Pradesh,991730,168232,25.21364585579306,81.15810524956069,district_representative_point,Census 2011 district shapefile
+8,126,126,Chittaurgarh,Chittaurgarh,Rajasthan,1544338,329119,24.72115633933874,74.47751481921006,district_representative_point,Census 2011 district shapefile
+28,554,554,Chittoor,Chittoor,Andhra Pradesh,4174064,1039953,13.307441118203194,78.98230736449932,district_representative_point,Census 2011 district shapefile
+14,274,274,Churachandpur,Churachandpur,Manipur,274143,49089,24.2744441201254,93.44181105515732,district_representative_point,Census 2011 district shapefile
+8,102,102,Churu,Churu,Rajasthan,2039547,348984,28.203907327391867,74.69278526851946,district_representative_point,Census 2011 district shapefile
+33,632,632,Coimbatore,Coimbatore,Tamil Nadu,3458045,958035,10.811452764332113,77.07841207355699,district_representative_point,Census 2011 district shapefile
+33,617,617,Cuddalore,Cuddalore,Tamil Nadu,2605914,635578,11.518611347457899,79.34104019091161,district_representative_point,Census 2011 district shapefile
+28,551,551,Y.S.R.,Y.s.r.,Andhra Pradesh,2882469,706204,14.482519906988669,78.65674243753654,district_representative_point,Census 2011 district shapefile
+21,381,381,Cuttack,Cuttack,Odisha,2624470,579170,20.369415819944244,85.46821522885617,district_representative_point,Census 2011 district shapefile
+26,496,496,Dadra & Nagar Haveli,Dadra & Nagar Haveli,Dadara & Nagar Havelli,343709,76458,20.20650782025067,73.00811326270737,district_representative_point,Census 2011 district shapefile
+22,416,416,Dakshin Bastar Dantewada,Dakshin Bastar Dantewada,Chhattisgarh,533638,120850,18.5632717733747,81.55276394415594,district_representative_point,Census 2011 district shapefile
+19,331,331,Dakshin Dinajpur,Dakshin Dinajpur,West Bengal,1676276,396406,25.382495555464395,88.545327415544,district_representative_point,Census 2011 district shapefile
+29,575,575,Dakshina Kannada,Dakshina Kannada,Karnataka,2089649,439733,12.822259755855516,75.22560111246341,district_representative_point,Census 2011 district shapefile
+25,495,495,Daman,Daman,Daman & Diu,191173,50376,20.422153788181063,72.84016815626686,district_representative_point,Census 2011 district shapefile
+23,428,428,Damoh,Damoh,Madhya Pradesh,1264219,297608,23.796166798800527,79.54318393505028,district_representative_point,Census 2011 district shapefile
+10,215,215,Darbhanga,Darbhanga,Bihar,3937385,803012,26.156213935441077,86.03356759340372,district_representative_point,Census 2011 district shapefile
+19,327,327,Darjiling,Darjiling,West Bengal,1846823,391234,26.83249952189064,88.30980082456945,district_representative_point,Census 2011 district shapefile
+18,325,325,Darrang,Darrang,Assam,928500,187783,26.438250961951915,92.00812713048782,district_representative_point,Census 2011 district shapefile
+23,422,422,Datia,Datia,Madhya Pradesh,786754,160215,25.91801677443889,78.5674349493778,district_representative_point,Census 2011 district shapefile
+29,567,567,Davanagere,Davanagere,Karnataka,1945497,410176,14.367957450118883,75.88788460770004,district_representative_point,Census 2011 district shapefile
+21,373,373,Debagarh,Debagarh,Odisha,312520,75452,21.435346081880773,84.7456876528874,district_representative_point,Census 2011 district shapefile
+5,60,60,Dehradun,Dehradun,Uttarakhand,1696694,347001,30.459433416433647,77.92979029871128,district_representative_point,Census 2011 district shapefile
+20,350,350,Deoghar,Deoghar,Jharkhand,1492073,264347,24.332220621098845,86.71466120716642,district_representative_point,Census 2011 district shapefile
+9,190,190,Deoria,Deoria,Uttar Pradesh,3100946,468346,26.424352428661894,83.76455089652796,district_representative_point,Census 2011 district shapefile
+23,437,437,Dewas,Dewas,Madhya Pradesh,1563715,308871,22.807194113832566,76.28621055132115,district_representative_point,Census 2011 district shapefile
+16,291,291,Dhalai,Dhalai,Tripura,378230,84509,23.827503388951047,91.96925795660485,district_representative_point,Census 2011 district shapefile
+22,412,412,Dhamtari,Dhamtari,Chhattisgarh,799781,170951,20.537326146243824,81.71683012536829,district_representative_point,Census 2011 district shapefile
+20,354,354,Dhanbad,Dhanbad,Jharkhand,2684487,507064,23.8377423855274,86.46854257605102,district_representative_point,Census 2011 district shapefile
+23,438,438,Dhar,Dhar,Madhya Pradesh,2185793,425914,22.577516651048008,75.22557271218258,district_representative_point,Census 2011 district shapefile
+33,630,630,Dharmapuri,Dharmapuri,Tamil Nadu,1506843,375873,12.14298372940009,78.12649633378797,district_representative_point,Census 2011 district shapefile
+29,562,562,Dharwad,Dharwad,Karnataka,1847023,382700,15.369335951337463,75.13538371046678,district_representative_point,Census 2011 district shapefile
+8,106,106,Dhaulpur,Dhaulpur,Rajasthan,1206516,203754,26.654195114659164,77.63582093925916,district_representative_point,Census 2011 district shapefile
+18,308,308,Dhemaji,Dhemaji,Assam,686133,129869,27.546165325512625,94.55728348895155,district_representative_point,Census 2011 district shapefile
+21,383,383,Dhenkanal,Dhenkanal,Odisha,1192811,279364,20.83475770579288,85.60419553126144,district_representative_point,Census 2011 district shapefile
+18,301,301,Dhubri,Dhubri,Assam,1949258,414674,25.931917841636903,89.98934267608128,district_representative_point,Census 2011 district shapefile
+27,498,498,Dhule,Dhule,Maharashtra,2050862,408874,21.13148217044146,74.47873851728234,district_representative_point,Census 2011 district shapefile
+12,257,257,Dibang Valley,Dibang Valley,Arunanchal Pradesh,8004,1952,28.96817262203671,95.72266253588518,district_representative_point,Census 2011 district shapefile
+18,310,310,Dibrugarh,Dibrugarh,Assam,1326335,276867,27.402680202997075,94.99761769598567,district_representative_point,Census 2011 district shapefile
+33,612,612,Dindigul,Dindigul,Tamil Nadu,2159775,560773,10.42583613519033,77.81640243902243,district_representative_point,Census 2011 district shapefile
+23,453,453,Dindori,Dindori,Madhya Pradesh,704524,169630,22.905935272087838,80.90509639707558,district_representative_point,Census 2011 district shapefile
+25,494,494,Diu,Diu,Daman & Diu,52074,10580,20.719448089065153,70.93083380881248,district_representative_point,Census 2011 district shapefile
+1,16,16,Doda,Doda,Jammu & Kashmir,409936,79636,33.124609747340784,75.55291054015635,district_representative_point,Census 2011 district shapefile
+24,485,485,Dohad,Dohad,Gujarat,2127086,334272,22.917826391470363,74.13667395828742,district_representative_point,Census 2011 district shapefile
+20,362,362,Dumka,Dumka,Jharkhand,1321442,275019,24.312072536177986,87.31150711779433,district_representative_point,Census 2011 district shapefile
+8,124,124,Dungarpur,Dungarpur,Rajasthan,1388552,282029,23.677622646320586,73.81874773344566,district_representative_point,Census 2011 district shapefile
+22,409,409,Durg,Durg,Chhattisgarh,3343872,701707,21.201069004806406,81.40199312153206,district_representative_point,Census 2011 district shapefile
+13,265,265,Dimapur,Dimapur,Nagaland,378811,78605,25.804421309670925,93.80985998665054,district_representative_point,Census 2011 district shapefile
+7,93,93,East,East,NCT of Delhi,1709346,358937,28.624979425992592,77.30002187217728,district_representative_point,Census 2011 district shapefile
+11,244,244,East District,East,Sikkim,283583,61567,27.279761037173568,88.67833631828468,district_representative_point,Census 2011 district shapefile
+17,294,294,East Garo Hills,East Garo Hills,Meghalaya,317917,58328,25.712979305734212,90.69747511167759,district_representative_point,Census 2011 district shapefile
+28,545,545,East Godavari,East Godavari,Andhra Pradesh,5154296,1428528,17.162059368234516,82.05657922860013,district_representative_point,Census 2011 district shapefile
+12,247,247,East Kameng,East Kameng,Arunanchal Pradesh,78690,14508,27.444853546206804,93.06611291353299,district_representative_point,Census 2011 district shapefile
+17,298,298,East Khasi Hills,East Khasi Hills,Meghalaya,825922,164046,25.386165065851586,91.82698788521304,district_representative_point,Census 2011 district shapefile
+23,466,466,Khandwa (East Nimar),East Nimar,Madhya Pradesh,1310061,266655,21.977709580829746,76.65511576804334,district_representative_point,Census 2011 district shapefile
+12,251,251,East Siang,East Siang,Arunanchal Pradesh,99214,19107,28.15531939582887,95.40060673372662,district_representative_point,Census 2011 district shapefile
+32,595,595,Ernakulam,Ernakulam,Kerala,3282388,814011,10.04471139324949,76.49757526724669,district_representative_point,Census 2011 district shapefile
+33,610,610,Erode,Erode,Tamil Nadu,2251744,658071,11.488673201814507,77.35306787801485,district_representative_point,Census 2011 district shapefile
+9,201,201,Etah,Etah,Uttar Pradesh,1774480,290683,27.546435634985457,78.77236056761492,district_representative_point,Census 2011 district shapefile
+9,161,161,Etawah,Etawah,Uttar Pradesh,1581810,277527,26.713940733674896,79.08577273403746,district_representative_point,Census 2011 district shapefile
+9,177,177,Faizabad,Faizabad,Uttar Pradesh,2470996,423375,26.663014754822655,81.97470758563477,district_representative_point,Census 2011 district shapefile
+6,88,88,Faridabad,Faridabad,Haryana,1809733,358919,28.330349511874765,77.3125260184392,district_representative_point,Census 2011 district shapefile
+3,45,45,Faridkot,Faridkot,Punjab,617508,120893,30.598205812896374,74.79702075841416,district_representative_point,Census 2011 district shapefile
+9,159,159,Farrukhabad,Farrukhabad,Uttar Pradesh,1885204,314144,27.436924898698802,79.49775619141343,district_representative_point,Census 2011 district shapefile
+6,78,78,Fatehabad,Fatehabad,Haryana,942011,180637,29.534719145446704,75.57484120771727,district_representative_point,Census 2011 district shapefile
+3,40,40,Fatehgarh Sahib,Fatehgarh Sahib,Punjab,600163,118100,30.643913140691893,76.34106753770155,district_representative_point,Census 2011 district shapefile
+9,172,172,Fatehpur,Fatehpur,Uttar Pradesh,2632733,472238,25.833249791223412,80.91458186826674,district_representative_point,Census 2011 district shapefile
+9,147,147,Firozabad,Firozabad,Uttar Pradesh,2498156,414266,27.194578381192667,78.48684902103207,district_representative_point,Census 2011 district shapefile
+3,43,43,Firozpur,Firozpur,Punjab,2029074,385994,30.5539557690515,74.24085142195862,district_representative_point,Census 2011 district shapefile
+29,561,561,Gadag,Gadag,Karnataka,1064570,219096,15.416126310467876,75.68206132693084,district_representative_point,Census 2011 district shapefile
+21,389,389,Gajapati,Gajapati,Odisha,577817,128523,19.193402219661543,84.18065883002622,district_representative_point,Census 2011 district shapefile
+1,11,11,Ganderbal,Ganderbal,Jammu & Kashmir,297446,45361,34.321232720850865,75.11471537361965,district_representative_point,Census 2011 district shapefile
+24,473,473,Gandhinagar,Gandhinagar,Gujarat,1391753,289990,23.27990145057424,72.6681495271115,district_representative_point,Census 2011 district shapefile
+8,99,99,Ganganagar,Ganganagar,Rajasthan,1969168,387511,29.453483246039628,73.56347753440274,district_representative_point,Census 2011 district shapefile
+21,388,388,Ganjam,Ganjam,Odisha,3529031,758267,19.63113357698691,84.70958939684293,district_representative_point,Census 2011 district shapefile
+27,508,508,Gadchiroli,Garhchiroli,Maharashtra,1072942,250435,19.753283576098,80.16984696888264,district_representative_point,Census 2011 district shapefile
+20,346,346,Garhwa,Garhwa,Jharkhand,1322784,254697,24.04801513877727,83.65594102560917,district_representative_point,Census 2011 district shapefile
+5,61,61,Garhwal,Garhwal,Uttarakhand,687271,161778,29.882350110644445,78.68295038237176,district_representative_point,Census 2011 district shapefile
+9,141,141,Gautam Buddha Nagar,Gautam Buddha Nagar,Uttar Pradesh,1648115,327090,28.382137368875576,77.58387131310607,district_representative_point,Census 2011 district shapefile
+10,236,236,Gaya,Gaya,Bihar,4391418,688425,24.678832099585893,85.009042343095,district_representative_point,Census 2011 district shapefile
+9,140,140,Ghaziabad,Ghaziabad,Uttar Pradesh,4681645,850676,28.73540428091164,77.70319772783535,district_representative_point,Census 2011 district shapefile
+9,195,195,Ghazipur,Ghazipur,Uttar Pradesh,3620268,546664,25.60121809848249,83.51010159838773,district_representative_point,Census 2011 district shapefile
+20,349,349,Giridih,Giridih,Jharkhand,2445474,396521,24.33459276455616,86.16477749016468,district_representative_point,Census 2011 district shapefile
+18,302,302,Goalpara,Goalpara,Assam,1008183,198454,26.062752192155358,90.57993686997452,district_representative_point,Census 2011 district shapefile
+20,351,351,Godda,Godda,Jharkhand,1313551,253648,24.86621142916772,87.30662610773732,district_representative_point,Census 2011 district shapefile
+18,313,313,Golaghat,Golaghat,Assam,1066888,227197,26.32681754213857,94.00622198097793,district_representative_point,Census 2011 district shapefile
+9,183,183,Gonda,Gonda,Uttar Pradesh,3433919,541247,27.110841386163806,81.92726866575966,district_representative_point,Census 2011 district shapefile
+27,507,507,Gondiya,Gondiya,Maharashtra,1322507,292369,21.144273113959358,80.26952509798986,district_representative_point,Census 2011 district shapefile
+10,217,217,Gopalganj,Gopalganj,Bihar,2562012,413044,26.423651321333633,84.37305828828974,district_representative_point,Census 2011 district shapefile
+9,188,188,Gorakhpur,Gorakhpur,Uttar Pradesh,4440895,692960,26.676397519613698,83.3690905412584,district_representative_point,Census 2011 district shapefile
+29,579,579,Gulbarga,Gulbarga,Karnataka,2566326,471601,17.238217149005944,76.76971663275125,district_representative_point,Census 2011 district shapefile
+20,366,366,Gumla,Gumla,Jharkhand,1025213,188988,23.158563430734837,84.46453182820733,district_representative_point,Census 2011 district shapefile
+23,458,458,Guna,Guna,Madhya Pradesh,1241519,244401,24.498584756459515,77.25930850378303,district_representative_point,Census 2011 district shapefile
+28,548,548,Guntur,Guntur,Andhra Pradesh,4887813,1296609,16.28679727271451,80.18361384418623,district_representative_point,Census 2011 district shapefile
+3,35,35,Gurdaspur,Gurdaspur,Punjab,2298323,443666,32.08612189519144,75.40096217012436,district_representative_point,Census 2011 district shapefile
+6,86,86,Gurgaon,Gurgaon,Haryana,1514432,326428,28.368636998304794,76.94237038360454,district_representative_point,Census 2011 district shapefile
+23,421,421,Gwalior,Gwalior,Madhya Pradesh,2032036,383845,26.021506428314616,78.15212071525522,district_representative_point,Census 2011 district shapefile
+18,318,318,Hailakandi,Hailakandi,Assam,659296,143350,24.506350709800078,92.63171415303631,district_representative_point,Census 2011 district shapefile
+2,28,28,Hamirpur,Hamirpur,Himachal Pradesh,454768,105519,31.654803300215313,76.53953734561992,district_representative_point,Census 2011 district shapefile
+9,168,168,Hamirpur,Hamirpur,Uttar Pradesh,1104285,204863,25.781805303631593,79.83330616647535,district_representative_point,Census 2011 district shapefile
+8,100,100,Hanumangarh,Hanumangarh,Rajasthan,1774692,336192,29.36672564692465,74.27252266124765,district_representative_point,Census 2011 district shapefile
+19,341,341,Haora,Haora,West Bengal,4850029,1061336,22.499492924654017,88.03561374002868,district_representative_point,Census 2011 district shapefile
+23,448,448,Harda,Harda,Madhya Pradesh,570465,113379,22.24469779269452,77.1023389234837,district_representative_point,Census 2011 district shapefile
+9,155,155,Hardoi,Hardoi,Uttar Pradesh,4092845,730442,27.33760274031758,80.10007772927837,district_representative_point,Census 2011 district shapefile
+5,68,68,Hardwar,Hardwar,Uttarakhand,1890422,338104,29.89216610551025,78.00122398304629,district_representative_point,Census 2011 district shapefile
+29,574,574,Hassan,Hassan,Karnataka,1776421,433453,13.029345316342534,76.17354835276458,district_representative_point,Census 2011 district shapefile
+9,144,144,Mahamaya Nagar,Mahamaya Nagar,Uttar Pradesh,1564708,260860,27.54678226966665,78.08423789119468,district_representative_point,Census 2011 district shapefile
+29,564,564,Haveri,Haveri,Karnataka,1597668,330414,14.716570935936396,75.38918415943124,district_representative_point,Census 2011 district shapefile
+20,360,360,Hazaribagh,Hazaribagh,Jharkhand,1734495,304749,24.0145094471519,85.56028445873702,district_representative_point,Census 2011 district shapefile
+27,512,512,Hingoli,Hingoli,Maharashtra,1177345,228868,19.54142551798409,77.21867771747807,district_representative_point,Census 2011 district shapefile
+6,80,80,Hisar,Hisar,Haryana,1743931,335608,29.239950855221117,75.81367489720327,district_representative_point,Census 2011 district shapefile
+23,449,449,Hoshangabad,Hoshangabad,Madhya Pradesh,1241350,257199,22.60145707474506,77.92627589138692,district_representative_point,Census 2011 district shapefile
+3,38,38,Hoshiarpur,Hoshiarpur,Punjab,1586625,336994,31.6059736419434,75.86035055901988,district_representative_point,Census 2011 district shapefile
+19,338,338,Hugli,Hugli,West Bengal,5519145,1287423,22.913204019865443,88.01658812176873,district_representative_point,Census 2011 district shapefile
+28,536,536,Hyderabad,Hyderabad,Andhra Pradesh,3943323,849051,17.38931282146857,78.45656472067034,district_representative_point,Census 2011 district shapefile
+32,596,596,Idukki,Idukki,Kerala,1108974,279812,9.813511659158095,77.00182843205722,district_representative_point,Census 2011 district shapefile
+14,278,278,Imphal East,Imphal East,Manipur,456113,92124,24.812162202673544,93.93918756798274,district_representative_point,Census 2011 district shapefile
+14,277,277,Imphal West,Imphal West,Manipur,517992,111156,24.703783311826374,93.13851249317224,district_representative_point,Census 2011 district shapefile
+23,439,439,Indore,Indore,Madhya Pradesh,3276697,649540,22.711412590844223,75.80593603383812,district_representative_point,Census 2011 district shapefile
+23,451,451,Jabalpur,Jabalpur,Madhya Pradesh,2463289,539060,23.219896649805577,79.98112367479847,district_representative_point,Census 2011 district shapefile
+21,380,380,Jagatsinghapur,Jagatsinghapur,Odisha,1136971,261307,20.186586021274284,86.35001228174599,district_representative_point,Census 2011 district shapefile
+17,299,299,Jaintia Hills,Jaintia Hills,Meghalaya,395124,66028,25.39011920077484,92.40334427076718,district_representative_point,Census 2011 district shapefile
+8,110,110,Jaipur,Jaipur,Rajasthan,6626178,1177096,27.151405520642573,75.7540095634242,district_representative_point,Census 2011 district shapefile
+8,114,114,Jaisalmer,Jaisalmer,Rajasthan,669919,117171,27.029950993702855,70.78629676805814,district_representative_point,Census 2011 district shapefile
+21,382,382,Jajapur,Jajapur,Odisha,1827192,407851,20.872739258216566,86.1214463833723,district_representative_point,Census 2011 district shapefile
+3,37,37,Jalandhar,Jalandhar,Punjab,2193590,461635,31.293170089723965,75.56872207339953,district_representative_point,Census 2011 district shapefile
+9,165,165,Jalaun,Jalaun,Uttar Pradesh,1689974,288338,26.106283565970998,79.38623672086264,district_representative_point,Census 2011 district shapefile
+27,499,499,Jalgaon,Jalgaon,Maharashtra,4229917,903643,20.841847420469136,75.52866576447977,district_representative_point,Census 2011 district shapefile
+27,514,514,Jalna,Jalna,Maharashtra,1959046,391701,19.963265123399307,75.82790978865282,district_representative_point,Census 2011 district shapefile
+8,116,116,Jalor,Jalor,Rajasthan,1828730,326134,25.209510128327324,72.31507065586254,district_representative_point,Census 2011 district shapefile
+19,328,328,Jalpaiguri,Jalpaiguri,West Bengal,3872846,868326,26.62844919503883,89.14119926452983,district_representative_point,Census 2011 district shapefile
+1,21,21,Jammu,Jammu,Jammu & Kashmir,1529958,314199,32.750981501461666,74.90479526025402,district_representative_point,Census 2011 district shapefile
+24,477,477,Jamnagar,Jamnagar,Gujarat,2160119,430941,22.330596925555017,70.06269590457099,district_representative_point,Census 2011 district shapefile
+20,363,363,Jamtara,Jamtara,Jharkhand,791042,155275,23.982028358816905,86.93219854223685,district_representative_point,Census 2011 district shapefile
+10,238,238,Jamui,Jamui,Bihar,1760405,307082,24.757426889149045,86.30374067600778,district_representative_point,Census 2011 district shapefile
+22,405,405,Janjgir - Champa,Janjgir-champa,Chhattisgarh,1619707,364532,21.968701985127286,82.66605778859774,district_representative_point,Census 2011 district shapefile
+22,402,402,Jashpur,Jashpur,Chhattisgarh,851669,192570,22.770083672857467,83.97470143200876,district_representative_point,Census 2011 district shapefile
+9,194,194,Jaunpur,Jaunpur,Uttar Pradesh,4494204,663513,25.794406076309805,82.48867982933757,district_representative_point,Census 2011 district shapefile
+23,464,464,Jhabua,Jhabua,Madhya Pradesh,1025048,194157,22.88392044041609,74.72745747940513,district_representative_point,Census 2011 district shapefile
+6,83,83,Jhajjar,Jhajjar,Haryana,958405,185334,28.61467311923294,76.66848007313754,district_representative_point,Census 2011 district shapefile
+8,129,129,Jhalawar,Jhalawar,Rajasthan,1411129,283295,24.313969954861847,76.52877794998665,district_representative_point,Census 2011 district shapefile
+9,166,166,Jhansi,Jhansi,Uttar Pradesh,1998603,367779,25.528610022828715,78.65033898699221,district_representative_point,Census 2011 district shapefile
+21,371,371,Jharsuguda,Jharsuguda,Odisha,579505,136061,21.801134002056617,84.01764766066894,district_representative_point,Census 2011 district shapefile
+8,103,103,Jhunjhunun,Jhunjhunun,Rajasthan,2137045,384197,28.080052610248828,75.53672112781575,district_representative_point,Census 2011 district shapefile
+8,113,113,Jodhpur,Jodhpur,Rajasthan,3687165,649013,26.737318691628943,72.8725920634802,district_representative_point,Census 2011 district shapefile
+18,312,312,Jorhat,Jorhat,Assam,1092256,236262,26.764957472715956,94.26247554831471,district_representative_point,Census 2011 district shapefile
+24,479,479,Junagadh,Junagadh,Gujarat,2743082,527326,21.202779770263884,70.41316598976277,district_representative_point,Census 2011 district shapefile
+9,137,137,Jyotiba Phule Nagar,Jyotiba Phule Nagar,Uttar Pradesh,1840221,314401,28.74379081398503,78.27973228647593,district_representative_point,Census 2011 district shapefile
+24,468,468,Kachchh,Kachchh,Gujarat,2092371,445672,23.70708465901218,69.80496866771101,district_representative_point,Census 2011 district shapefile
+10,233,233,Kaimur (Bhabua),Kaimur (bhabua),Bihar,1626384,250884,24.975213105826924,83.57853063179934,district_representative_point,Census 2011 district shapefile
+6,73,73,Kaithal,Kaithal,Haryana,1074304,204274,29.856744240579594,76.46695503406116,district_representative_point,Census 2011 district shapefile
+21,395,395,Kalahandi,Kalahandi,Odisha,1576869,401251,19.816896030481125,83.04218645897546,district_representative_point,Census 2011 district shapefile
+18,321,321,Kamrup,Kamrup,Assam,1517542,311114,26.14560980637168,91.2256762497847,district_representative_point,Census 2011 district shapefile
+18,322,322,Kamrup Metropolitan,Kamrup Metropolitan,Assam,1253938,293112,26.053748721698113,92.00763080744042,district_representative_point,Census 2011 district shapefile
+33,604,604,Kancheepuram,Kancheepuram,Tamil Nadu,3998252,1006245,12.68637319928402,79.9776211191893,district_representative_point,Census 2011 district shapefile
+21,390,390,Kandhamal,Kandhamal,Odisha,733110,172022,20.135249044390278,84.07955996906307,district_representative_point,Census 2011 district shapefile
+2,24,24,Kangra,Kangra,Himachal Pradesh,1510075,338887,32.0780718724186,76.27011260625892,district_representative_point,Census 2011 district shapefile
+22,413,413,Uttar Bastar Kanker,Uttar Bastar Kanker,Chhattisgarh,748941,160937,20.117526024904848,80.97943367583991,district_representative_point,Census 2011 district shapefile
+9,160,160,Kannauj,Kannauj,Uttar Pradesh,1656616,280928,26.99375920776646,79.69375218514162,district_representative_point,Census 2011 district shapefile
+33,629,629,Kanniyakumari,Kanniyakumari,Tamil Nadu,1870374,483539,8.32891437333565,77.35528593090729,district_representative_point,Census 2011 district shapefile
+32,589,589,Kannur,Kannur,Kerala,2523003,554298,11.986962383713923,75.56282357134069,district_representative_point,Census 2011 district shapefile
+9,163,163,Kanpur Dehat,Kanpur Dehat,Uttar Pradesh,1796184,329817,26.471309063814196,79.86636339752627,district_representative_point,Census 2011 district shapefile
+9,164,164,Kanpur Nagar,Kanpur Nagar,Uttar Pradesh,4581268,863338,26.43969077961026,80.27020711609411,district_representative_point,Census 2011 district shapefile
+9,202,202,Kanshiram Nagar,Kansiram Nagar,Uttar Pradesh,1436719,237903,27.796578216988745,78.82121343133015,district_representative_point,Census 2011 district shapefile
+3,36,36,Kapurthala,Kapurthala,Punjab,815168,167989,31.38447644950147,75.3437339566785,district_representative_point,Census 2011 district shapefile
+18,314,314,Karbi Anglong,Karbi Anglong,Assam,956313,177646,25.851852097545674,92.59295602517167,district_representative_point,Census 2011 district shapefile
+1,4,4,Kargil,Kargil,Jammu & Kashmir,140802,18338,33.882982343789436,76.44696732158094,district_representative_point,Census 2011 district shapefile
+18,317,317,Karimganj,Karimganj,Assam,1228686,247714,24.584849209766162,92.37110377495608,district_representative_point,Census 2011 district shapefile
+28,534,534,Karimnagar,Karimnagar,Andhra Pradesh,3776269,976022,18.53056102409102,79.39247751237764,district_representative_point,Census 2011 district shapefile
+6,74,74,Karnal,Karnal,Haryana,1505324,292084,29.694953708089002,76.9245604709052,district_representative_point,Census 2011 district shapefile
+33,613,613,Karur,Karur,Tamil Nadu,1064493,287095,10.819740899958322,78.38403844383578,district_representative_point,Census 2011 district shapefile
+32,588,588,Kasaragod,Kasaragod,Kerala,1307375,273410,12.427393687467013,75.19226224538019,district_representative_point,Census 2011 district shapefile
+1,7,7,Kathua,Kathua,Jammu & Kashmir,616435,119583,32.568492410465645,75.6000252226458,district_representative_point,Census 2011 district shapefile
+10,212,212,Katihar,Katihar,Bihar,3071029,619076,25.542889739200888,87.64436250831173,district_representative_point,Census 2011 district shapefile
+23,450,450,Katni,Katni,Madhya Pradesh,1292042,289551,23.721206554528443,80.25302820311734,district_representative_point,Census 2011 district shapefile
+9,174,174,Kaushambi,Kaushambi,Uttar Pradesh,1599596,277851,25.53915992938726,81.45761198263389,district_representative_point,Census 2011 district shapefile
+21,379,379,Kendrapara,Kendrapara,Odisha,1440361,321934,20.551262081640477,86.54083272743458,district_representative_point,Census 2011 district shapefile
+21,375,375,Kendujhar,Kendujhar,Odisha,1801733,405272,21.587961165907103,85.6711332398886,district_representative_point,Census 2011 district shapefile
+10,223,223,Khagaria,Khagaria,Bihar,1666886,328823,25.49128644283647,86.70221498291636,district_representative_point,Census 2011 district shapefile
+28,541,541,Khammam,Khammam,Andhra Pradesh,2797370,754034,17.70196913045854,80.81262777557129,district_representative_point,Census 2011 district shapefile
+24,483,483,Kheda,Kheda,Gujarat,2299885,466856,22.89324427644124,73.03977695581185,district_representative_point,Census 2011 district shapefile
+9,153,153,Kheri,Kheri,Uttar Pradesh,4021243,745077,28.182419089292424,80.71695394963399,district_representative_point,Census 2011 district shapefile
+21,386,386,Khordha,Khordha,Odisha,2251673,494212,20.052288891031864,85.50436065004111,district_representative_point,Census 2011 district shapefile
+20,365,365,Khunti,Khunti,Jharkhand,531885,103700,22.923794686224994,85.30540660430123,district_representative_point,Census 2011 district shapefile
+2,34,34,Kinnaur,Kinnaur,Himachal Pradesh,84121,19976,31.59423902701942,78.33282219792866,district_representative_point,Census 2011 district shapefile
+13,269,269,Kiphire,Kiphire,Nagaland,74004,14771,25.8110178985729,94.84913716508102,district_representative_point,Census 2011 district shapefile
+10,210,210,Kishanganj,Kishanganj,Bihar,1690400,338445,26.24477422942407,87.90650722198707,district_representative_point,Census 2011 district shapefile
+1,18,18,Kishtwar,Kishtwar,Jammu & Kashmir,230696,45209,33.6154257592741,75.89976531380108,district_representative_point,Census 2011 district shapefile
+19,329,329,Koch Bihar,Koch Bihar,West Bengal,2819086,665720,26.255982973356407,89.42403132431016,district_representative_point,Census 2011 district shapefile
+29,576,576,Kodagu,Kodagu,Karnataka,554519,142716,12.38268611995137,75.66189233330351,district_representative_point,Census 2011 district shapefile
+20,348,348,Kodarma,Kodarma,Jharkhand,716259,116155,24.457731448889284,85.49906668902221,district_representative_point,Census 2011 district shapefile
+13,270,270,Kohima,Kohima,Nagaland,267988,54391,25.771751661466233,94.1244680264879,district_representative_point,Census 2011 district shapefile
+18,300,300,Kokrajhar,Kokrajhar,Assam,887142,181081,26.515202225415646,90.12364132708656,district_representative_point,Census 2011 district shapefile
+29,581,581,Kolar,Kolar,Karnataka,1536401,333348,13.180462025372282,78.2685816654035,district_representative_point,Census 2011 district shapefile
+15,282,282,Kolasib,Kolasib,Mizoram,83955,17270,24.236273331286128,92.71310710423866,district_representative_point,Census 2011 district shapefile
+27,530,530,Kolhapur,Kolhapur,Maharashtra,3876001,840240,16.46099639396442,74.08879291380458,district_representative_point,Census 2011 district shapefile
+19,342,342,Kolkata,Kolkata,West Bengal,4496694,1024928,22.56950496351609,88.37412996968519,district_representative_point,Census 2011 district shapefile
+32,600,600,Kollam,Kollam,Kerala,2635375,669375,8.968047962037936,76.85851248975999,district_representative_point,Census 2011 district shapefile
+29,560,560,Koppal,Koppal,Karnataka,1389920,264595,15.576125973824723,76.31220856616402,district_representative_point,Census 2011 district shapefile
+21,398,398,Koraput,Koraput,Odisha,1379647,337677,18.738051574275772,82.6568258981719,district_representative_point,Census 2011 district shapefile
+22,404,404,Korba,Korba,Chhattisgarh,1206640,280073,22.51609620701489,82.63613811521898,district_representative_point,Census 2011 district shapefile
+22,400,400,Koriya,Koriya,Chhattisgarh,658917,153274,23.42793387924803,82.31884711322681,district_representative_point,Census 2011 district shapefile
+8,127,127,Kota,Kota,Rajasthan,1951014,396501,25.192731618175358,76.0143624269052,district_representative_point,Census 2011 district shapefile
+32,597,597,Kottayam,Kottayam,Kerala,1974551,487296,9.629635286192595,76.64857940417663,district_representative_point,Census 2011 district shapefile
+32,591,591,Kozhikode,Kozhikode,Kerala,3086293,697710,11.464190443021447,75.88005799139725,district_representative_point,Census 2011 district shapefile
+28,547,547,Krishna,Krishna,Andhra Pradesh,4517398,1243293,16.4282665012392,81.06260897419548,district_representative_point,Census 2011 district shapefile
+33,631,631,Krishnagiri,Krishnagiri,Tamil Nadu,1879809,448053,12.514775911927249,78.0056453630921,district_representative_point,Census 2011 district shapefile
+1,15,15,Kulgam,Kulgam,Jammu & Kashmir,424483,73728,33.63932666405363,74.64477373087155,district_representative_point,Census 2011 district shapefile
+2,26,26,Kullu,Kullu,Himachal Pradesh,437903,94807,31.880594080768617,77.4536136312559,district_representative_point,Census 2011 district shapefile
+1,1,1,Kupwara,Kupwara,Jammu & Kashmir,870354,113929,34.5775790190758,74.2890328628661,district_representative_point,Census 2011 district shapefile
+28,552,552,Kurnool,Kurnool,Andhra Pradesh,4053463,887652,15.554882484360451,77.90436642642996,district_representative_point,Census 2011 district shapefile
+6,72,72,Kurukshetra,Kurukshetra,Haryana,964655,188143,30.052570768333425,76.76116139660766,district_representative_point,Census 2011 district shapefile
+12,256,256,Kurung Kumey,Kurung Kumey,Arunanchal Pradesh,92076,15037,27.991384036069,93.34244991211258,district_representative_point,Census 2011 district shapefile
+9,189,189,Kushinagar,Kushinagar,Uttar Pradesh,3564544,561062,26.91835632148618,83.83367677154602,district_representative_point,Census 2011 district shapefile
+2,25,25,Lahul & Spiti,Lahul & Spiti,Himachal Pradesh,31564,6674,32.50053069235945,77.5836534280292,district_representative_point,Census 2011 district shapefile
+18,307,307,Lakhimpur,Lakhimpur,Assam,1042137,204307,27.172198023206995,94.19983181723148,district_representative_point,Census 2011 district shapefile
+10,227,227,Lakhisarai,Lakhisarai,Bihar,1000912,163355,25.153260289903734,86.1783907540778,district_representative_point,Census 2011 district shapefile
+9,167,167,Lalitpur,Lalitpur,Uttar Pradesh,1221592,222094,24.69782498327219,78.51819988419636,district_representative_point,Census 2011 district shapefile
+20,359,359,Latehar,Latehar,Jharkhand,726978,133381,23.685112472064674,84.49789230621502,district_representative_point,Census 2011 district shapefile
+27,524,524,Latur,Latur,Maharashtra,2454196,481572,18.352266556951193,76.75648854871734,district_representative_point,Census 2011 district shapefile
+15,287,287,Lawngtlai,Lawangtlai,Mizoram,117894,22984,22.369468244270912,92.73515342228899,district_representative_point,Census 2011 district shapefile
+1,3,3,Leh(Ladakh),Leh (ladakh),Jammu & Kashmir,133487,21909,34.166222663685716,78.07686805051574,district_representative_point,Census 2011 district shapefile
+20,356,356,Lohardaga,Lohardaga,Jharkhand,461790,88638,23.479906240148257,84.7026625600989,district_representative_point,Census 2011 district shapefile
+12,259,259,Lohit,Lohit,Arunanchal Pradesh,145726,30005,27.959900899302525,96.18799094478638,district_representative_point,Census 2011 district shapefile
+13,268,268,Longleng,Longleng,Nagaland,50484,11985,26.585574152942073,94.81155813874575,district_representative_point,Census 2011 district shapefile
+12,258,258,Lower Dibang Valley,Lower Dibang Valley,Arunanchal Pradesh,54080,11600,28.33923111180803,95.83026022616838,district_representative_point,Census 2011 district shapefile
+12,255,255,Lower Subansiri,Lower Subansiri,Arunanchal Pradesh,83030,15249,27.644684333340845,93.95910463298867,district_representative_point,Census 2011 district shapefile
+9,157,157,Lucknow,Lucknow,Uttar Pradesh,4589838,860703,26.8313319058595,80.91733391352189,district_representative_point,Census 2011 district shapefile
+3,41,41,Ludhiana,Ludhiana,Punjab,3498739,716826,30.787688862202984,75.82469117436906,district_representative_point,Census 2011 district shapefile
+15,286,286,Lunglei,Lunglei,Mizoram,161428,33058,22.951725345731646,92.76221653543489,district_representative_point,Census 2011 district shapefile
+10,213,213,Madhepura,Madhepura,Bihar,2001762,401289,25.782757951894702,86.93719967784097,district_representative_point,Census 2011 district shapefile
+10,207,207,Madhubani,Madhubani,Bihar,4487379,898515,26.35614780920305,86.22500124661148,district_representative_point,Census 2011 district shapefile
+33,623,623,Madurai,Madurai,Tamil Nadu,3038252,794887,9.935883382265228,78.01117666463833,district_representative_point,Census 2011 district shapefile
+9,187,187,Mahrajganj,Maharajganj,Uttar Pradesh,2684703,426565,27.178817526764732,83.49097997510633,district_representative_point,Census 2011 district shapefile
+22,411,411,Mahasamund,Mahasamund,Chhattisgarh,1032754,248561,21.18541252597343,82.61607386551043,district_representative_point,Census 2011 district shapefile
+28,538,538,Mahbubnagar,Mahbubnagar,Andhra Pradesh,4053028,869451,16.53450805788684,78.02633081441223,district_representative_point,Census 2011 district shapefile
+34,636,636,Mahe,Mahe,Puducherry,41816,7420,11.701924923146976,75.5376726580796,district_representative_point,Census 2011 district shapefile
+6,84,84,Mahendragarh,Mahendragarh,Haryana,922088,171712,28.13590369838667,76.17076395359649,district_representative_point,Census 2011 district shapefile
+24,471,471,Mahesana,Mahesana,Gujarat,2035064,424479,23.56652055675066,72.30356521790321,district_representative_point,Census 2011 district shapefile
+9,169,169,Mahoba,Mahoba,Uttar Pradesh,875958,158435,25.359882013931255,79.70535131074351,district_representative_point,Census 2011 district shapefile
+9,148,148,Mainpuri,Mainpuri,Uttar Pradesh,1868529,313690,27.200478659164943,79.07664668498109,district_representative_point,Census 2011 district shapefile
+32,592,592,Malappuram,Malappuram,Kerala,4112920,793999,11.105325992196097,76.11484023888221,district_representative_point,Census 2011 district shapefile
+19,332,332,Maldah,Maldah,West Bengal,3988845,846991,25.097733870298327,88.11555105392782,district_representative_point,Census 2011 district shapefile
+21,399,399,Malkangiri,Malkangiri,Odisha,613192,137599,18.276690221509874,81.958910990174,district_representative_point,Census 2011 district shapefile
+15,281,281,Mamit,Mamit,Mizoram,86364,17731,23.756606259788065,92.45167704461423,district_representative_point,Census 2011 district shapefile
+2,27,27,Mandi,Mandi,Himachal Pradesh,999777,219145,31.642000736158998,77.0102486395231,district_representative_point,Census 2011 district shapefile
+23,454,454,Mandla,Mandla,Madhya Pradesh,1054905,250146,22.68531260449974,80.58210787972561,district_representative_point,Census 2011 district shapefile
+23,433,433,Mandsaur,Mandsaur,Madhya Pradesh,1340411,286808,24.259541876349978,75.37097572691816,district_representative_point,Census 2011 district shapefile
+29,573,573,Mandya,Mandya,Karnataka,1805769,428625,12.635536400420703,76.72992285608306,district_representative_point,Census 2011 district shapefile
+3,47,47,Mansa,Mansa,Punjab,769751,149630,29.876057976210834,75.48874358495023,district_representative_point,Census 2011 district shapefile
+18,304,304,Morigaon,Marigaon,Assam,957423,184602,26.286787715365556,92.2915457946979,district_representative_point,Census 2011 district shapefile
+9,145,145,Mathura,Mathura,Uttar Pradesh,2547184,423125,27.59979407547271,77.59106401060103,district_representative_point,Census 2011 district shapefile
+9,192,192,Mau,Mau,Uttar Pradesh,2205968,324424,26.039909410354294,83.50777783801051,district_representative_point,Census 2011 district shapefile
+21,376,376,Mayurbhanj,Mayurbhanj,Odisha,2519738,586253,21.914305976062906,86.39833515135058,district_representative_point,Census 2011 district shapefile
+28,535,535,Medak,Medak,Andhra Pradesh,3033288,668626,17.85932595899793,78.22147265426705,district_representative_point,Census 2011 district shapefile
+9,138,138,Meerut,Meerut,Uttar Pradesh,3443689,579110,28.994516884355185,77.78020786117048,district_representative_point,Census 2011 district shapefile
+6,87,87,Mewat,Mewat,Haryana,1089263,160280,27.99289994314885,77.00275707639756,district_representative_point,Census 2011 district shapefile
+9,199,199,Mirzapur,Mirzapur,Uttar Pradesh,2496970,394925,24.93442169215667,82.64706841949976,district_representative_point,Census 2011 district shapefile
+3,42,42,Moga,Moga,Punjab,995746,193256,30.79738667327755,75.1620899566315,district_representative_point,Census 2011 district shapefile
+13,262,262,Mokokchung,Mokokchung,Nagaland,194622,42690,26.477414765639413,94.51038541309597,district_representative_point,Census 2011 district shapefile
+13,261,261,Mon,Mon,Nagaland,250260,41978,26.737794547106052,95.02062182385757,district_representative_point,Census 2011 district shapefile
+9,135,135,Moradabad,Moradabad,Uttar Pradesh,4772006,796170,28.805498327296938,78.77761629679124,district_representative_point,Census 2011 district shapefile
+23,419,419,Morena,Morena,Madhya Pradesh,1965970,362646,26.386005174174528,77.85952991368703,district_representative_point,Census 2011 district shapefile
+3,44,44,Muktsar,Muktsar,Punjab,901896,174360,30.283478179488537,74.52589237225443,district_representative_point,Census 2011 district shapefile
+27,519,519,Mumbai,Mumbai,Maharashtra,3085411,674339,18.949996386233288,72.86511951453059,district_representative_point,Census 2011 district shapefile
+27,518,518,Mumbai Suburban,Mumbai Suburban,Maharashtra,9356962,2105604,19.124036019665493,72.90043303438506,district_representative_point,Census 2011 district shapefile
+10,226,226,Munger,Munger,Bihar,1367765,263171,25.222187065994675,86.51793494209403,district_representative_point,Census 2011 district shapefile
+19,333,333,Murshidabad,Murshidabad,West Bengal,7103807,1570759,24.287587173613726,88.37513518332955,district_representative_point,Census 2011 district shapefile
+9,133,133,Muzaffarnagar,Muzaffarnagar,Uttar Pradesh,4143512,676642,29.44351084907839,77.58954086675303,district_representative_point,Census 2011 district shapefile
+10,216,216,Muzaffarpur,Muzaffarpur,Bihar,4801062,945703,26.148150357718414,85.33395740498625,district_representative_point,Census 2011 district shapefile
+29,577,577,Mysore,Mysore,Karnataka,3001127,700968,12.196476276062725,76.61206062095025,district_representative_point,Census 2011 district shapefile
+21,397,397,Nabarangapur,Nabarangapur,Odisha,1220946,273423,19.62605354622163,82.29424866340335,district_representative_point,Census 2011 district shapefile
+19,336,336,Nadia,Nadia,West Bengal,5167600,1232282,23.48754397918492,88.56320019464316,district_representative_point,Census 2011 district shapefile
+18,305,305,Nagaon,Nagaon,Assam,2823768,559340,26.205393306981932,92.61105584951272,district_representative_point,Census 2011 district shapefile
+8,112,112,Nagaur,Nagaur,Rajasthan,3307743,578809,27.060260184468348,74.20587261825567,district_representative_point,Census 2011 district shapefile
+27,505,505,Nagpur,Nagpur,Maharashtra,4653570,1041544,21.149349331211482,79.01814778168442,district_representative_point,Census 2011 district shapefile
+5,66,66,Nainital,Nainital,Uttarakhand,954605,191383,29.293867314541863,79.4160700028495,district_representative_point,Census 2011 district shapefile
+10,229,229,Nalanda,Nalanda,Bihar,2877653,477529,25.21457119540937,85.45329580155065,district_representative_point,Census 2011 district shapefile
+18,323,323,Nalbari,Nalbari,Assam,771639,155248,26.359282342046097,91.40155335987816,district_representative_point,Census 2011 district shapefile
+28,539,539,Nalgonda,Nalgonda,Andhra Pradesh,3488809,875939,17.091396745989005,79.41555129187364,district_representative_point,Census 2011 district shapefile
+33,609,609,Namakkal,Namakkal,Tamil Nadu,1726601,475511,11.302395814155112,78.11969603422347,district_representative_point,Census 2011 district shapefile
+27,511,511,Nanded,Nanded,Maharashtra,3361292,665434,19.09634638840166,77.48432926477889,district_representative_point,Census 2011 district shapefile
+27,497,497,Nandurbar,Nandurbar,Maharashtra,1648295,323521,21.512896411174026,74.54391555019973,district_representative_point,Census 2011 district shapefile
+22,415,415,Narayanpur,Narayanpur,Chhattisgarh,139820,27982,19.660065083973304,81.07947344554881,district_representative_point,Census 2011 district shapefile
+24,487,487,Narmada,Narmada,Gujarat,590297,122174,21.737089930345242,73.62631192791218,district_representative_point,Census 2011 district shapefile
+23,452,452,Narsimhapur,Narsimhapur,Madhya Pradesh,1091854,250286,22.934791604258002,79.08568471436973,district_representative_point,Census 2011 district shapefile
+27,516,516,Nashik,Nashik,Maharashtra,6107187,1222887,20.225704002547875,74.10044106039499,district_representative_point,Census 2011 district shapefile
+24,490,490,Navsari,Navsari,Gujarat,1329672,295131,20.827784987069954,73.03194919220202,district_representative_point,Census 2011 district shapefile
+10,237,237,Nawada,Nawada,Bihar,2219146,338247,24.817989410586705,85.52408518858672,district_representative_point,Census 2011 district shapefile
+21,385,385,Nayagarh,Nayagarh,Odisha,962789,228315,20.238888865510972,85.0525163136068,district_representative_point,Census 2011 district shapefile
+23,432,432,Neemuch,Neemuch,Madhya Pradesh,826067,179746,24.64646223086717,75.18729269828916,district_representative_point,Census 2011 district shapefile
+28,550,550,Sri Potti Sriramulu Nellore,Sri Potti Sriramulu Nellore,Andhra Pradesh,2963557,776854,14.292617232452162,79.78248571994804,district_representative_point,Census 2011 district shapefile
+7,94,94,New Delhi,New Delhi,NCT of Delhi,142004,33208,28.61128926797265,77.22112098295239,district_representative_point,Census 2011 district shapefile
+28,533,533,Nizamabad,Nizamabad,Andhra Pradesh,2551335,593234,18.54018049146658,78.11836768441283,district_representative_point,Census 2011 district shapefile
+7,91,91,North,North,NCT of Delhi,887978,180044,28.718551714221803,77.22493951013067,district_representative_point,Census 2011 district shapefile
+11,241,241,North District,North,Sikkim,43709,8873,27.755073276743815,88.52373977634791,district_representative_point,Census 2011 district shapefile
+19,337,337,North Twenty Four Parganas,North 24 Parganas,West Bengal,10009781,2348683,22.806298086422508,88.66042492681638,district_representative_point,Census 2011 district shapefile
+18,315,315,Dima Hasao,Dima Hasao,Assam,214102,42252,25.393371758619175,93.08365733310026,district_representative_point,Census 2011 district shapefile
+7,92,92,North East,North East,NCT of Delhi,2241624,406125,28.721439002826187,77.26912154123588,district_representative_point,Census 2011 district shapefile
+30,585,585,North Goa,North Goa,Goa,818008,191766,15.533774237608448,74.01877772019584,district_representative_point,Census 2011 district shapefile
+16,292,292,North Tripura,North Tripura,Tripura,693947,152355,24.090443567918634,92.19976889107112,district_representative_point,Census 2011 district shapefile
+7,90,90,North West,North West,NCT of Delhi,3656539,736253,28.778024620411987,77.07713341133122,district_representative_point,Census 2011 district shapefile
+21,394,394,Nuapada,Nuapada,Odisha,610382,152210,20.53814041327566,82.53022012534925,district_representative_point,Census 2011 district shapefile
+27,525,525,Osmanabad,Osmanabad,Maharashtra,1657576,351281,18.169653307117613,76.11922163112983,district_representative_point,Census 2011 district shapefile
+20,353,353,Pakur,Pakur,Jharkhand,900422,182317,24.53309861366329,87.59718672390638,district_representative_point,Census 2011 district shapefile
+32,593,593,Palakkad,Palakkad,Kerala,2809934,637220,10.78821306818785,76.47467254951232,district_representative_point,Census 2011 district shapefile
+20,358,358,Palamu,Palamu,Jharkhand,1939869,358754,24.214251163504432,84.17590554820379,district_representative_point,Census 2011 district shapefile
+8,118,118,Pali,Pali,Rajasthan,2037573,418157,25.608973773428993,73.41436304298173,district_representative_point,Census 2011 district shapefile
+6,89,89,Palwal,Palwal,Haryana,1042708,171157,28.060135719905034,77.29633591576518,district_representative_point,Census 2011 district shapefile
+24,484,484,Panch Mahals,Panch Mahals,Gujarat,2390776,446611,22.87002462865818,73.6279930591896,district_representative_point,Census 2011 district shapefile
+6,69,69,Panchkula,Panchkula,Haryana,561293,117107,30.699993198949876,76.99169808846099,district_representative_point,Census 2011 district shapefile
+6,75,75,Panipat,Panipat,Haryana,1205437,235640,29.328494433099642,76.9018424133635,district_representative_point,Census 2011 district shapefile
+23,426,426,Panna,Panna,Madhya Pradesh,1016520,228709,24.448292399725155,80.14764435196477,district_representative_point,Census 2011 district shapefile
+12,248,248,Papum Pare,Papum Pare,Arunanchal Pradesh,176573,35730,27.303806518309276,93.63551522033083,district_representative_point,Census 2011 district shapefile
+27,513,513,Parbhani,Parbhani,Maharashtra,1836086,361130,19.307343334538857,76.553316378026,district_representative_point,Census 2011 district shapefile
+10,203,203,Pashchim Champaran,Pashchim Champaran,Bihar,3935042,710461,27.051982060223565,84.33381319065373,district_representative_point,Census 2011 district shapefile
+19,344,344,Paschim Medinipur,Pashchim Medinipur,West Bengal,5913457,1301610,22.354181641721013,87.24299708433999,district_representative_point,Census 2011 district shapefile
+20,368,368,Pashchimi Singhbhum,Pashchimi Singhbhum,Jharkhand,1502338,302046,22.428159338408708,85.5323463487351,district_representative_point,Census 2011 district shapefile
+24,470,470,Patan,Patan,Gujarat,1343734,267633,23.769328140577382,71.67815329581461,district_representative_point,Census 2011 district shapefile
+32,599,599,Pathanamthitta,Pathanamthitta,Kerala,1197412,322684,9.280959379971609,76.9752027012895,district_representative_point,Census 2011 district shapefile
+3,48,48,Patiala,Patiala,Punjab,1895686,372293,30.234439177006298,76.33568834948034,district_representative_point,Census 2011 district shapefile
+10,230,230,Patna,Patna,Bihar,5838465,975578,25.46663671633673,85.1931215033144,district_representative_point,Census 2011 district shapefile
+33,615,615,Perambalur,Perambalur,Tamil Nadu,565223,149243,11.285873827423643,78.93232562198759,district_representative_point,Census 2011 district shapefile
+13,271,271,Peren,Peren,Nagaland,95219,18475,25.447939950867674,93.61878786934479,district_representative_point,Census 2011 district shapefile
+13,266,266,Phek,Phek,Nagaland,163418,36639,25.686631911902563,94.3944428333617,district_representative_point,Census 2011 district shapefile
+9,151,151,Pilibhit,Pilibhit,Uttar Pradesh,2031007,362573,28.50080931514068,80.0902969504879,district_representative_point,Census 2011 district shapefile
+5,62,62,Pithoragarh,Pithoragarh,Uttarakhand,483439,114730,30.12447175753322,80.47918929128394,district_representative_point,Census 2011 district shapefile
+24,478,478,Porbandar,Porbandar,Gujarat,585449,124556,21.602216721568894,69.8531090899508,district_representative_point,Census 2011 district shapefile
+28,549,549,Prakasam,Prakasam,Andhra Pradesh,3397448,860463,15.635520724750304,79.51129157426956,district_representative_point,Census 2011 district shapefile
+8,131,131,Pratapgarh,Pratapgarh,Rajasthan,867848,178726,24.01683142198012,74.65742617606733,district_representative_point,Census 2011 district shapefile
+9,173,173,Pratapgarh,Pratapgarh,Uttar Pradesh,3209141,533546,25.873748899400525,81.8334456836566,district_representative_point,Census 2011 district shapefile
+33,621,621,Pudukkottai,Pudukkottai,Tamil Nadu,1618345,387679,10.289661159602264,78.81913125132509,district_representative_point,Census 2011 district shapefile
+1,12,12,Pulwama,Pulwama,Jammu & Kashmir,560440,86241,33.935008615197404,75.05762315717001,district_representative_point,Census 2011 district shapefile
+1,5,5,Punch,Punch,Jammu & Kashmir,476835,90261,33.69950849021868,74.1813596077474,district_representative_point,Census 2011 district shapefile
+27,521,521,Pune,Pune,Maharashtra,9429408,2151503,18.642540522215054,73.92146100319253,district_representative_point,Census 2011 district shapefile
+10,204,204,Purba Champaran,Purba Champaran,Bihar,5099371,981516,26.639774780240618,84.90254561182108,district_representative_point,Census 2011 district shapefile
+19,345,345,Purba Medinipur,Purba Medinipur,West Bengal,5095875,1114170,22.058472000183208,87.74863262063042,district_representative_point,Census 2011 district shapefile
+20,357,357,Purbi Singhbhum,Purbi Singhbhum,Jharkhand,2293919,476931,22.61576421773734,86.38657290899596,district_representative_point,Census 2011 district shapefile
+21,387,387,Puri,Puri,Odisha,1698730,367269,19.830801390190043,85.65627798436923,district_representative_point,Census 2011 district shapefile
+10,211,211,Purnia,Purnia,Bihar,3264619,647777,25.778619754308068,87.41351071948793,district_representative_point,Census 2011 district shapefile
+19,340,340,Puruliya,Puruliya,West Bengal,2930115,567824,23.202095234554953,86.30092763822213,district_representative_point,Census 2011 district shapefile
+9,158,158,Rae Bareli,Rae Bareli,Uttar Pradesh,3405559,619707,26.2073652192192,81.22061558231417,district_representative_point,Census 2011 district shapefile
+29,559,559,Raichur,Raichur,Karnataka,1928812,363853,16.05353000518766,76.90300114096844,district_representative_point,Census 2011 district shapefile
+22,403,403,Raigarh,Raigarh,Chhattisgarh,1493984,367962,22.066124724309258,83.30930503954272,district_representative_point,Census 2011 district shapefile
+27,520,520,Raigarh,Raigarh,Maharashtra,2634200,611790,18.49292855140757,73.14132669415874,district_representative_point,Census 2011 district shapefile
+22,410,410,Raipur,Raipur,Chhattisgarh,4063872,871225,20.828950359963166,82.12689561570974,district_representative_point,Census 2011 district shapefile
+23,446,446,Raisen,Raisen,Madhya Pradesh,1331597,278895,23.267835320513235,78.177085367179,district_representative_point,Census 2011 district shapefile
+1,6,6,Rajouri,Rajouri,Jammu & Kashmir,642415,130401,33.32047039540282,74.40097044383208,district_representative_point,Census 2011 district shapefile
+23,442,442,Rajgarh,Rajgarh,Madhya Pradesh,1545814,345297,23.868069318443915,76.77555253200526,district_representative_point,Census 2011 district shapefile
+24,476,476,Rajkot,Rajkot,Gujarat,3804558,786586,22.347004461061367,70.76919662942626,district_representative_point,Census 2011 district shapefile
+22,408,408,Rajnandgaon,Rajnandgaon,Chhattisgarh,1537133,318488,20.971743251756358,80.69723449370603,district_representative_point,Census 2011 district shapefile
+8,123,123,Rajsamand,Rajsamand,Rajasthan,1156597,243078,25.299236752763488,73.82820424586025,district_representative_point,Census 2011 district shapefile
+29,584,584,Ramanagara,Ramanagara,Karnataka,1082636,260533,12.720415464096524,77.31948450611834,district_representative_point,Census 2011 district shapefile
+33,626,626,Ramanathapuram,Ramanathapuram,Tamil Nadu,1353445,323905,9.519686749522318,78.52016193815177,district_representative_point,Census 2011 district shapefile
+1,17,17,Ramban,Ramban,Jammu & Kashmir,283713,55490,33.33269082297872,75.20476778059091,district_representative_point,Census 2011 district shapefile
+20,361,361,Ramgarh,Ramgarh,Jharkhand,949443,179375,23.678085666803284,85.51832429543104,district_representative_point,Census 2011 district shapefile
+9,136,136,Rampur,Rampur,Uttar Pradesh,2335819,393736,28.776373148702067,79.17397049670456,district_representative_point,Census 2011 district shapefile
+20,364,364,Ranchi,Ranchi,Jharkhand,2914253,569444,23.300193077228197,85.3886126759827,district_representative_point,Census 2011 district shapefile
+28,537,537,Rangareddy,Rangareddy,Andhra Pradesh,5296741,1235341,17.283304668465853,78.10831519683184,district_representative_point,Census 2011 district shapefile
+23,434,434,Ratlam,Ratlam,Madhya Pradesh,1455069,296683,23.501865364600718,74.95629801442351,district_representative_point,Census 2011 district shapefile
+27,528,528,Ratnagiri,Ratnagiri,Maharashtra,1615069,397115,17.281690770501612,73.44559195760348,district_representative_point,Census 2011 district shapefile
+21,396,396,Rayagada,Rayagada,Odisha,967911,226144,19.440918783204758,83.58804835284653,district_representative_point,Census 2011 district shapefile
+1,20,20,Reasi,Reasi,Jammu & Kashmir,314667,56689,33.19498698740068,74.77430059274559,district_representative_point,Census 2011 district shapefile
+23,430,430,Rewa,Rewa,Madhya Pradesh,2365106,526065,24.756325786407196,81.65502923724495,district_representative_point,Census 2011 district shapefile
+6,85,85,Rewari,Rewari,Haryana,900332,178043,28.21598936166655,76.58394595668028,district_representative_point,Census 2011 district shapefile
+17,297,297,Ribhoi,Ri Bhoi,Meghalaya,258840,46872,25.87834862181108,91.86299227303778,district_representative_point,Census 2011 district shapefile
+6,82,82,Rohtak,Rohtak,Haryana,1061204,206988,28.892606543778825,76.5757690854224,district_representative_point,Census 2011 district shapefile
+10,234,234,Rohtas,Rohtas,Bihar,2959918,460345,24.938690554459004,84.02214777369993,district_representative_point,Census 2011 district shapefile
+5,58,58,Rudraprayag,Rudraprayag,Uttarakhand,242285,53542,30.512359029720425,79.04737693277082,district_representative_point,Census 2011 district shapefile
+3,51,51,Rupnagar,Rupnagar,Punjab,684627,135635,31.086768895831852,76.528606634678,district_representative_point,Census 2011 district shapefile
+24,472,472,Sabar Kantha,Sabar Kantha,Gujarat,2428589,481414,23.77619697496302,73.08373271440905,district_representative_point,Census 2011 district shapefile
+23,427,427,Sagar,Sagar,Madhya Pradesh,2378458,517850,23.809309026773594,78.7586743722145,district_representative_point,Census 2011 district shapefile
+9,132,132,Saharanpur,Saharanpur,Uttar Pradesh,3466382,597656,29.984535941858628,77.50547685145577,district_representative_point,Census 2011 district shapefile
+10,214,214,Saharsa,Saharsa,Bihar,1900661,368979,25.838005039915345,86.61287504143394,district_representative_point,Census 2011 district shapefile
+20,352,352,Sahibganj,Sahibganj,Jharkhand,1150567,227023,25.03448819312149,87.6924653677143,district_representative_point,Census 2011 district shapefile
+3,52,52,Sahibzada Ajit Singh Nagar,Sahibzada Ajit Singh Nagar,Punjab,994628,205411,30.646607337839534,76.75115240652916,district_representative_point,Census 2011 district shapefile
+15,288,288,Saiha,Saiha,Mizoram,56574,11144,22.374907541667234,93.07586743960016,district_representative_point,Census 2011 district shapefile
+33,608,608,Salem,Salem,Tamil Nadu,3482056,915967,11.644593485674378,78.21081616280313,district_representative_point,Census 2011 district shapefile
+10,221,221,Samastipur,Samastipur,Bihar,4261566,835493,25.776531183775923,86.00790869558294,district_representative_point,Census 2011 district shapefile
+1,22,22,Samba,Samba,Jammu & Kashmir,318898,65385,32.58903515363391,75.13964641004412,district_representative_point,Census 2011 district shapefile
+21,372,372,Sambalpur,Sambalpur,Odisha,1041099,249597,21.552429889054793,84.15904316463683,district_representative_point,Census 2011 district shapefile
+27,531,531,Sangli,Sangli,Maharashtra,2822143,598386,17.17172706819967,74.59237297969759,district_representative_point,Census 2011 district shapefile
+3,53,53,Sangrur,Sangrur,Punjab,1655169,318870,30.207698450045477,75.82031268453377,district_representative_point,Census 2011 district shapefile
+9,186,186,Sant Kabir Nagar,Sant Kabir Nagar,Uttar Pradesh,1715183,256645,26.756849601184832,83.04405115316092,district_representative_point,Census 2011 district shapefile
+9,198,198,Sant Ravidas Nagar (Bhadohi),Sant Ravi Das Nagar(bhadohi),Uttar Pradesh,1578213,222403,25.35808763074902,82.50269596481591,district_representative_point,Census 2011 district shapefile
+20,369,369,Saraikela-Kharsawan,Saraikela-kharsawan,Jharkhand,1065056,221232,22.81923127654415,85.91893319970944,district_representative_point,Census 2011 district shapefile
+10,219,219,Saran,Saran (chhapra),Bihar,3951862,631097,25.923424850043435,84.77379120150275,district_representative_point,Census 2011 district shapefile
+27,527,527,Satara,Satara,Maharashtra,3003741,653735,17.638560759134204,74.30011996585051,district_representative_point,Census 2011 district shapefile
+23,429,429,Satna,Satna,Madhya Pradesh,2228935,478741,24.579758886042065,80.81202600139079,district_representative_point,Census 2011 district shapefile
+23,445,445,Sehore,Sehore,Madhya Pradesh,1311332,257311,23.122833426420648,77.0866508572286,district_representative_point,Census 2011 district shapefile
+14,272,272,Senapati,Senapati,Manipur,479148,83411,25.103136366843728,93.96492562282579,district_representative_point,Census 2011 district shapefile
+23,456,456,Seoni,Seoni,Madhya Pradesh,1379131,314767,22.27156845049645,79.72012054340703,district_representative_point,Census 2011 district shapefile
+15,285,285,Serchhip,Serchhip,Mizoram,64937,12622,23.265669918540766,92.8528552277321,district_representative_point,Census 2011 district shapefile
+23,460,460,Shahdol,Shahdol,Madhya Pradesh,1066063,251452,23.653253908188606,81.43123452687759,district_representative_point,Census 2011 district shapefile
+3,39,39,Shahid Bhagat Singh Nagar,Shahid Bhagat Singh Nagar,Punjab,612310,129500,31.127390196493664,76.16233249830063,district_representative_point,Census 2011 district shapefile
+9,152,152,Shahjahanpur,Shahjahanpur,Uttar Pradesh,3006538,527501,27.96489098320115,79.78709858716769,district_representative_point,Census 2011 district shapefile
+23,436,436,Shajapur,Shajapur,Madhya Pradesh,1512681,300025,23.717508930198147,76.13083409573474,district_representative_point,Census 2011 district shapefile
+10,228,228,Sheikhpura,Sheikhpura,Bihar,636342,100701,25.12500657207388,85.81389786142708,district_representative_point,Census 2011 district shapefile
+10,205,205,Sheohar,Sheohar,Bihar,656246,150144,26.52150197373446,85.30547136817326,district_representative_point,Census 2011 district shapefile
+23,418,418,Sheopur,Sheopur,Madhya Pradesh,687861,146043,25.746713033053737,76.9261004197358,district_representative_point,Census 2011 district shapefile
+2,33,33,Shimla,Shimla,Himachal Pradesh,814010,184362,31.239912141757713,77.71693474178426,district_representative_point,Census 2011 district shapefile
+29,568,568,Shimoga,Shimoga,Karnataka,1752753,406816,14.054585840091178,75.23806597197422,district_representative_point,Census 2011 district shapefile
+23,423,423,Shivpuri,Shivpuri,Madhya Pradesh,1726050,359969,25.376424482473737,77.82812949023608,district_representative_point,Census 2011 district shapefile
+9,181,181,Shrawasti,Shrawasti,Uttar Pradesh,1117361,188289,27.607153729917393,81.86206907737524,district_representative_point,Census 2011 district shapefile
+1,13,13,Shupiyan,Shupiyan,Jammu & Kashmir,266215,44411,33.722500461303056,74.79818063847691,district_representative_point,Census 2011 district shapefile
+18,311,311,Sivasagar,Sivasagar,Assam,1151050,248367,26.993922132732862,94.80716377965443,district_representative_point,Census 2011 district shapefile
+9,184,184,Siddharthnagar,Siddharth Nagar,Uttar Pradesh,2559297,379351,27.261399068717733,82.86966612167626,district_representative_point,Census 2011 district shapefile
+23,462,462,Sidhi,Sidhi,Madhya Pradesh,1127033,238448,24.21219992648404,81.70038628831787,district_representative_point,Census 2011 district shapefile
+8,111,111,Sikar,Sikar,Rajasthan,2677333,444816,27.66193238740185,75.02998049566887,district_representative_point,Census 2011 district shapefile
+20,367,367,Simdega,Simdega,Jharkhand,599578,118288,22.586921776093806,84.54992014951837,district_representative_point,Census 2011 district shapefile
+27,529,529,Sindhudurg,Sindhudurg,Maharashtra,849651,209839,16.134074024837435,73.66240281498912,district_representative_point,Census 2011 district shapefile
+23,463,463,Singrauli,Singrauli,Madhya Pradesh,1178273,243925,24.243927884098277,82.38202681213161,district_representative_point,Census 2011 district shapefile
+2,32,32,Sirmaur,Sirmaur,Himachal Pradesh,529855,98208,30.701239492431792,77.44689244751132,district_representative_point,Census 2011 district shapefile
+8,117,117,Sirohi,Sirohi,Rajasthan,1036346,201785,24.800136444964235,72.82814729483943,district_representative_point,Census 2011 district shapefile
+6,79,79,Sirsa,Sirsa,Haryana,1295189,246571,29.608963764312623,74.90390267365466,district_representative_point,Census 2011 district shapefile
+10,206,206,Sitamarhi,Sitamarhi,Bihar,3423574,736322,26.572246722990492,85.58554953111899,district_representative_point,Census 2011 district shapefile
+9,154,154,Sitapur,Sitapur,Uttar Pradesh,4483992,801764,27.502871441336175,80.83480691998119,district_representative_point,Census 2011 district shapefile
+33,622,622,Sivaganga,Sivaganga,Tamil Nadu,1339101,338938,9.963391566467369,78.72186316257805,district_representative_point,Census 2011 district shapefile
+10,218,218,Siwan,Siwan,Bihar,3330464,535661,26.130312495135506,84.3916438285946,district_representative_point,Census 2011 district shapefile
+2,31,31,Solan,Solan,Himachal Pradesh,580320,122425,31.05698539804574,76.85165680210406,district_representative_point,Census 2011 district shapefile
+27,526,526,Solapur,Solapur,Maharashtra,4317756,873167,17.83424458597979,75.29654723058997,district_representative_point,Census 2011 district shapefile
+21,392,392,Subarnapur,Subarnapur,Odisha,610183,151136,20.853325495200384,83.85143470525054,district_representative_point,Census 2011 district shapefile
+9,200,200,Sonbhadra,Sonbhadra,Uttar Pradesh,1862559,333174,24.38874957264524,83.08023902266297,district_representative_point,Census 2011 district shapefile
+6,76,76,Sonipat,Sonipat,Haryana,1450001,277726,29.049369349669057,76.93430628557095,district_representative_point,Census 2011 district shapefile
+18,306,306,Sonitpur,Sonitpur,Assam,1924110,392919,26.765404373474254,93.00138216077112,district_representative_point,Census 2011 district shapefile
+7,98,98,South,South,NCT of Delhi,2731929,574133,28.504520024024956,77.252167275483,district_representative_point,Census 2011 district shapefile
+11,243,243,South District,South,Sikkim,146850,30543,27.303904028817048,88.38276134143463,district_representative_point,Census 2011 district shapefile
+19,343,343,South Twenty Four Parganas,South 24 Parganas,West Bengal,8161961,1781221,22.1777790005334,88.38815296138196,district_representative_point,Census 2011 district shapefile
+17,295,295,South Garo Hills,South Garo Hills,Meghalaya,142334,24527,25.34565581449897,90.56656039024675,district_representative_point,Census 2011 district shapefile
+30,586,586,South Goa,South Goa,Goa,640537,151845,15.19620041390004,74.12209145791931,district_representative_point,Census 2011 district shapefile
+16,290,290,South Tripura,South Tripura,Tripura,876001,208127,23.353011839917762,91.610518469321,district_representative_point,Census 2011 district shapefile
+7,97,97,South West,South West,NCT of Delhi,2292958,494439,28.57607832973218,77.02808094857286,district_representative_point,Census 2011 district shapefile
+28,542,542,Srikakulam,Srikakulam,Andhra Pradesh,2703114,681330,18.62325902425728,83.97164116272552,district_representative_point,Census 2011 district shapefile
+1,10,10,Srinagar,Srinagar,Jammu & Kashmir,1236829,191678,34.15832820211857,74.93774204887121,district_representative_point,Census 2011 district shapefile
+9,179,179,Sultanpur,Sultanpur,Uttar Pradesh,3797117,623523,26.314916092467683,81.99119399434457,district_representative_point,Census 2011 district shapefile
+21,374,374,Sundargarh,Sundargarh,Odisha,2093437,479109,22.060440269286055,83.93367809500161,district_representative_point,Census 2011 district shapefile
+10,208,208,Supaul,Supaul,Bihar,2229076,443073,26.280495863354048,86.78308318838536,district_representative_point,Census 2011 district shapefile
+24,492,492,Surat,Surat,Gujarat,6081322,1333200,21.19027900724732,72.95148526315575,district_representative_point,Census 2011 district shapefile
+24,475,475,Surendranagar,Surendranagar,Gujarat,1756268,343213,22.82442559580179,71.48951361206588,district_representative_point,Census 2011 district shapefile
+22,401,401,Surguja,Surguja,Chhattisgarh,2359886,526049,23.366704327147325,83.34016942861518,district_representative_point,Census 2011 district shapefile
+14,273,273,Tamenglong,Tamenglong,Manipur,140651,25039,24.976484098031687,93.52711770187454,district_representative_point,Census 2011 district shapefile
+3,50,50,Tarn Taran,Tarn Taran,Punjab,1119627,203421,31.325435041497922,74.84309528163357,district_representative_point,Census 2011 district shapefile
+12,245,245,Tawang,Tawang,Arunanchal Pradesh,49977,10062,27.659343509916567,91.94462755870543,district_representative_point,Census 2011 district shapefile
+5,59,59,Tehri Garhwal,Tehri Garhwal,Uttarakhand,618931,132714,30.46609775821644,78.48927856462655,district_representative_point,Census 2011 district shapefile
+27,517,517,Thane,Thane,Maharashtra,11060148,2529165,19.606066895250283,73.15223709950433,district_representative_point,Census 2011 district shapefile
+33,620,620,Thanjavur,Thanjavur,Tamil Nadu,2405890,605363,10.660908603287451,79.19259968323942,district_representative_point,Census 2011 district shapefile
+24,489,489,The Dangs,The Dangs,Gujarat,228291,44699,20.785435720400244,73.7101194474545,district_representative_point,Census 2011 district shapefile
+33,611,611,The Nilgiris,The Nilgiris,Tamil Nadu,735394,197653,11.446761517856205,76.69780404515764,district_representative_point,Census 2011 district shapefile
+33,624,624,Theni,Theni,Tamil Nadu,1245899,338112,9.867993503800935,77.42469435817122,district_representative_point,Census 2011 district shapefile
+33,602,602,Thiruvallur,Thiruvallur,Tamil Nadu,3728104,946949,13.253864600738694,80.05375470952676,district_representative_point,Census 2011 district shapefile
+32,601,601,Thiruvananthapuram,Thiruvananthapuram,Kerala,3301427,837877,8.576930708890538,77.05267700532384,district_representative_point,Census 2011 district shapefile
+33,619,619,Thiruvarur,Thiruvarur,Tamil Nadu,1264277,327219,10.643919870811505,79.50714295616538,district_representative_point,Census 2011 district shapefile
+33,627,627,Thoothukkudi,Thoothukkudi,Tamil Nadu,1750176,462010,8.84528107925609,77.99485639254257,district_representative_point,Census 2011 district shapefile
+14,276,276,Thoubal,Thoubal,Manipur,422168,85965,24.478004144093312,93.92432082527195,district_representative_point,Census 2011 district shapefile
+32,594,594,Thrissur,Thrissur,Kerala,3121200,759210,10.478353930818912,76.27307207688571,district_representative_point,Census 2011 district shapefile
+23,424,424,Tikamgarh,Tikamgarh,Madhya Pradesh,1445166,296116,24.998068860795268,78.98873433660366,district_representative_point,Census 2011 district shapefile
+18,309,309,Tinsukia,Tinsukia,Assam,1327929,268598,27.597873064459943,95.5703423393783,district_representative_point,Census 2011 district shapefile
+12,254,254,Tirap,Tirap,Arunanchal Pradesh,111975,20611,26.958024768029297,95.44780629263659,district_representative_point,Census 2011 district shapefile
+33,614,614,Tiruchirappalli,Tiruchirappalli,Tamil Nadu,2722290,698404,10.8492909008238,78.72490689574735,district_representative_point,Census 2011 district shapefile
+33,628,628,Tirunelveli,Tirunelveli,Tamil Nadu,3077233,815528,8.780817944278375,77.53259289763395,district_representative_point,Census 2011 district shapefile
+33,633,633,Tiruppur,Tiruppur,Tamil Nadu,2479052,712210,10.789931635115023,77.53556051263718,district_representative_point,Census 2011 district shapefile
+33,606,606,Tiruvannamalai,Tiruvannamalai,Tamil Nadu,2464875,588836,12.425071885357719,79.00149050846292,district_representative_point,Census 2011 district shapefile
+8,120,120,Tonk,Tonk,Rajasthan,1421326,266870,26.12022483136394,75.66522329344818,district_representative_point,Census 2011 district shapefile
+13,267,267,Tuensang,Tuensang,Nagaland,196596,36742,26.17853826502824,94.91189166374403,district_representative_point,Census 2011 district shapefile
+29,571,571,Tumkur,Tumkur,Karnataka,2678980,640081,13.41892189472956,76.88210216244352,district_representative_point,Census 2011 district shapefile
+8,130,130,Udaipur,Udaipur,Rajasthan,3068420,623531,24.462300402834515,73.65490924937461,district_representative_point,Census 2011 district shapefile
+18,326,326,Udalguri,Udalguri,Assam,831668,168717,26.7090997360394,92.0523417608229,district_representative_point,Census 2011 district shapefile
+1,19,19,Udhampur,Udhampur,Jammu & Kashmir,554985,99240,32.89495190060314,75.33495677738188,district_representative_point,Census 2011 district shapefile
+5,67,67,Udham Singh Nagar,Udham Singh Nagar,Uttarakhand,1648902,308581,29.044513307245584,79.43667719230987,district_representative_point,Census 2011 district shapefile
+29,569,569,Udupi,Udupi,Karnataka,1177361,253078,13.482844446285123,74.8950030137976,district_representative_point,Census 2011 district shapefile
+23,435,435,Ujjain,Ujjain,Madhya Pradesh,1986864,391438,23.29381270746805,75.62965850449206,district_representative_point,Census 2011 district shapefile
+14,279,279,Ukhrul,Ukhrul,Manipur,183998,35694,25.088250293082965,94.4345983735115,district_representative_point,Census 2011 district shapefile
+23,431,431,Umaria,Umaria,Madhya Pradesh,644758,145024,23.64450283102816,80.94129516216034,district_representative_point,Census 2011 district shapefile
+2,29,29,Una,Una,Himachal Pradesh,521173,110332,31.58506662386808,76.23626961017192,district_representative_point,Census 2011 district shapefile
+9,156,156,Unnao,Unnao,Uttar Pradesh,3108367,588533,26.572966713283133,80.61588466232192,district_representative_point,Census 2011 district shapefile
+12,252,252,Upper Siang,Upper Siang,Arunanchal Pradesh,35320,7324,28.747087809539735,95.02841970752442,district_representative_point,Census 2011 district shapefile
+12,249,249,Upper Subansiri,Upper Subansiri,Arunanchal Pradesh,83448,15869,28.232257775865577,94.1077925629531,district_representative_point,Census 2011 district shapefile
+19,330,330,Uttar Dinajpur,Uttar Dinajpur,West Bengal,3007134,605674,25.87022591454162,87.96743925343881,district_representative_point,Census 2011 district shapefile
+29,563,563,Uttara Kannada,Uttara Kannada,Karnataka,1437169,324530,14.72477025553203,74.64368043456892,district_representative_point,Census 2011 district shapefile
+5,56,56,Uttarkashi,Uttarkashi,Uttarakhand,330086,67602,30.96787511454042,78.63394275476941,district_representative_point,Census 2011 district shapefile
+24,486,486,Vadodara,Vadodara,Gujarat,4165626,877106,22.314563909305058,73.35609198667521,district_representative_point,Census 2011 district shapefile
+10,220,220,Vaishali,Vaishali,Bihar,3495021,626087,25.74636393233625,85.3990356372178,district_representative_point,Census 2011 district shapefile
+24,491,491,Valsad,Valsad,Gujarat,1705678,364403,20.43150276838573,73.14462254953503,district_representative_point,Census 2011 district shapefile
+9,197,197,Varanasi,Varanasi,Uttar Pradesh,3676841,560162,25.372781200894718,82.94484048364134,district_representative_point,Census 2011 district shapefile
+33,605,605,Vellore,Vellore,Tamil Nadu,3936331,929281,12.733032585253557,78.81318613980008,district_representative_point,Census 2011 district shapefile
+23,443,443,Vidisha,Vidisha,Madhya Pradesh,1458875,299676,23.846775037005447,77.8364495072463,district_representative_point,Census 2011 district shapefile
+33,607,607,Viluppuram,Viluppuram,Tamil Nadu,3458873,800368,11.975816686488535,79.17168449153377,district_representative_point,Census 2011 district shapefile
+33,625,625,Virudhunagar,Virudunagar,Tamil Nadu,1942288,537748,9.491843499237984,77.86576378439298,district_representative_point,Census 2011 district shapefile
+28,544,544,Visakhapatnam,Visakhapatnam,Andhra Pradesh,4290589,1097042,17.896856064160595,82.56573334582953,district_representative_point,Census 2011 district shapefile
+28,543,543,Vizianagaram,Vizianagaram,Andhra Pradesh,2344474,587149,18.494589204581104,83.31185339594552,district_representative_point,Census 2011 district shapefile
+28,540,540,Warangal,Warangal,Andhra Pradesh,3512576,886279,17.964989092033267,79.59454073371029,district_representative_point,Census 2011 district shapefile
+27,504,504,Wardha,Wardha,Maharashtra,1300774,309846,20.824829863913347,78.61572885111107,district_representative_point,Census 2011 district shapefile
+27,502,502,Washim,Washim,Maharashtra,1197160,259464,20.302833890607282,77.24386707822921,district_representative_point,Census 2011 district shapefile
+32,590,590,Wayanad,Wayanad,Kerala,817420,190894,11.712978601730406,76.12660126626167,district_representative_point,Census 2011 district shapefile
+7,96,96,West,West,NCT of Delhi,2543243,533221,28.65487417320788,77.0842626176514,district_representative_point,Census 2011 district shapefile
+11,242,242,West District,West,Sikkim,136435,28023,27.36418623164802,88.18875400005382,district_representative_point,Census 2011 district shapefile
+17,293,293,West Garo Hills,West Garo Hills,Meghalaya,643291,123352,25.579193744368006,90.19292431163174,district_representative_point,Census 2011 district shapefile
+28,546,546,West Godavari,West Godavari,Andhra Pradesh,3936966,1091525,16.901957072415172,81.35204003251269,district_representative_point,Census 2011 district shapefile
+12,246,246,West Kameng,West Kameng,Arunanchal Pradesh,83947,18159,27.33399853913827,92.43738928509853,district_representative_point,Census 2011 district shapefile
+17,296,296,West Khasi Hills,West Khasi Hills,Meghalaya,383461,64906,25.512339299710135,91.17047705324472,district_representative_point,Census 2011 district shapefile
+23,440,440,Khargone (West Nimar),West Nimar,Madhya Pradesh,1873046,367988,21.960813403006966,75.75450049448278,district_representative_point,Census 2011 district shapefile
+12,250,250,West Siang,West Siang,Arunanchal Pradesh,112274,21231,28.297418775605706,94.64976670069186,district_representative_point,Census 2011 district shapefile
+16,289,289,West Tripura,West Tripura,Tripura,1725739,410565,23.75328186043714,91.40005466286289,district_representative_point,Census 2011 district shapefile
+13,264,264,Wokha,Wokha,Nagaland,166343,31891,26.240154671577237,94.19311726922939,district_representative_point,Census 2011 district shapefile
+29,580,580,Yadgir,Yadgir,Karnataka,1174271,202063,16.57364249462396,76.92585379749096,district_representative_point,Census 2011 district shapefile
+27,510,510,Yavatmal,Yavatmal,Maharashtra,2772348,646886,20.063972143539704,78.35542109746797,district_representative_point,Census 2011 district shapefile
+13,263,263,Zunheboto,Zunheboto,Nagaland,140757,27835,26.02306465221237,94.5187673385704,district_representative_point,Census 2011 district shapefile
+22,407,407,Kabeerdham,Kabeerdham,Chhattisgarh,822526,178446,22.11344116022551,81.2447599215086,district_representative_point,Census 2011 district shapefile
+6,71,71,Yamunanagar,Yamunanagar,Haryana,1214205,235423,30.214566773006197,77.32538859971804,district_representative_point,Census 2011 district shapefile
+6,77,77,Jind,Jind,Haryana,1334152,249736,29.451072042108567,76.23531587323102,district_representative_point,Census 2011 district shapefile
+8,109,109,Dausa,Dausa,Rajasthan,1634409,292502,26.807578589471003,76.42895503097907,district_representative_point,Census 2011 district shapefile
+8,107,107,Karauli,Karauli,Rajasthan,1458248,262503,26.51692199606856,77.06045425916815,district_representative_point,Census 2011 district shapefile
+8,108,108,Sawai Madhopur,Sawai Madhopur,Rajasthan,1335551,254716,26.228294690139638,76.30654660790407,district_representative_point,Census 2011 district shapefile
+10,240,240,Arwal,Arwal,Bihar,700843,118222,25.180419288319335,84.67337326734786,district_representative_point,Census 2011 district shapefile
+10,239,239,Jehanabad,Jehanabad,Bihar,1125313,181740,25.155278306356287,85.02812999783013,district_representative_point,Census 2011 district shapefile
+33,618,618,Nagapattinam,Nagappattinam,Tamil Nadu,1616450,413837,11.191781625546568,79.69706053537615,district_representative_point,Census 2011 district shapefile
+34,637,637,Karaikal,Karaikal,Puducherry,200222,49705,10.91510889804907,79.79832556731571,district_representative_point,Census 2011 district shapefile
+34,635,635,Puducherry,Puducherry,Puducherry,950289,231513,11.933059530904927,79.79807057674755,district_representative_point,Census 2011 district shapefile
+34,634,634,Yanam,Yanam,Puducherry,55626,13812,16.732200161055264,82.2069069132452,district_representative_point,Census 2011 district shapefile
+24,493,493,Tapi,Tapi,Gujarat,807022,177091,21.188538490733233,73.55636945422557,district_representative_point,Census 2011 district shapefile
+35,638,638,Nicobars,Nicobar,Andaman & Nicobar Island,36842,9288,7.0004019853314965,93.81029171757143,district_representative_point,Census 2011 district shapefile
+35,640,640,South Andaman,South Andaman,Andaman & Nicobar Island,238142,59064,10.704347405528889,92.48893576802851,district_representative_point,Census 2011 district shapefile
+35,639,639,North & Middle Andaman,North & Middle Andaman,Andaman & Nicobar Island,105597,26199,12.611584970604252,92.83153129263499,district_representative_point,Census 2011 district shapefile
+31,587,587,Lakshadweep,Lakshadweep,Lakshadweep,64473,11574,11.277189468377046,74.04345883422269,district_representative_point,Census 2011 district shapefile

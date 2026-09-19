@@ -1,0 +1,6 @@
+metric,value
+records_extracted,16728
+missing_year_rows,53
+unique_states,39
+unique_districts,817
+exact_duplicate_source_rows,0

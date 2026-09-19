@@ -1,0 +1,21 @@
+======================================================================
+DENGUE STATE-YEAR DATASET REPORT
+======================================================================
+
+Rows              : 214
+Unique states     : 36
+Year range        : 2021-2026
+
+Rows by year:
+year
+2021    36
+2022    36
+2023    36
+2024    36
+2025    35
+2026    35
+
+Coverage:
+data_coverage
+FULL_YEAR                         179
+PROVISIONAL_THROUGH_2026_02_28     35

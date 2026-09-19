@@ -1,0 +1,14 @@
+FLOOD LGD → CENSUS MAPPING REPORT
+============================================================
+
+Flood rows: 6,876
+Master rows: 640
+Unique LGD codes observed: 683
+Exact mappings: 480
+Unmatched LGD codes: 183
+Ambiguous LGD codes: 20
+Unsafe alignment rows: 60
+
+STATUS
+------------------------------------------------------------
+Manual/fuzzy mapping is NOT permitted.

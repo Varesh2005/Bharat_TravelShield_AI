@@ -1,0 +1,1093 @@
+﻿source_state,source_district,normalized_district,match_type,similarity,canonical_state,canonical_district,census_state_code,census_district_code
+Maharashtra,Chandrapur,CHANDRAPUR,EXACT_GLOBAL,100.0,Maharashtra,Chandrapur,27.0,509.0
+Maharashtra,Dhule,DHULE,EXACT_GLOBAL,100.0,Maharashtra,Dhule,27.0,498.0
+Maharashtra,Gadchiroli,GADCHIROLI,EXACT_GLOBAL,100.0,Maharashtra,Gadchiroli,27.0,508.0
+Maharashtra,Gondia,GONDIA,FUZZY_GLOBAL,92.31,Maharashtra,Gondiya,27.0,507.0
+Maharashtra,Hingoli,HINGOLI,EXACT_GLOBAL,100.0,Maharashtra,Hingoli,27.0,512.0
+Maharashtra,Jalgaon,JALGAON,EXACT_GLOBAL,100.0,Maharashtra,Jalgaon,27.0,499.0
+Maharashtra,Jalna,JALNA,EXACT_GLOBAL,100.0,Maharashtra,Jalna,27.0,514.0
+Maharashtra,Kolhapur,KOLHAPUR,EXACT_GLOBAL,100.0,Maharashtra,Kolhapur,27.0,530.0
+Maharashtra,Latur,LATUR,EXACT_GLOBAL,100.0,Maharashtra,Latur,27.0,524.0
+Maharashtra,Mumbai,MUMBAI,EXACT_GLOBAL,100.0,Maharashtra,Mumbai,27.0,519.0
+Maharashtra,Nagpur,NAGPUR,EXACT_GLOBAL,100.0,Maharashtra,Nagpur,27.0,505.0
+Maharashtra,Nagpur MC#,NAGPUR MC,SPECIAL_ENTRY,,,,,
+Maharashtra,Nanded,NANDED,EXACT_GLOBAL,100.0,Maharashtra,Nanded,27.0,511.0
+Maharashtra,Nandurbar,NANDURBAR,EXACT_GLOBAL,100.0,Maharashtra,Nandurbar,27.0,497.0
+Maharashtra,Nashik,NASHIK,EXACT_GLOBAL,100.0,Maharashtra,Nashik,27.0,516.0
+Maharashtra,Osmanabad,OSMANABAD,EXACT_GLOBAL,100.0,Maharashtra,Osmanabad,27.0,525.0
+Maharashtra,Parbhani,PARBHANI,EXACT_GLOBAL,100.0,Maharashtra,Parbhani,27.0,513.0
+Maharashtra,Pune,PUNE,EXACT_GLOBAL,100.0,Maharashtra,Pune,27.0,521.0
+Maharashtra,Pune MC#,PUNE MC,SPECIAL_ENTRY,,,,,
+Maharashtra,Raigad,RAIGAD,LOW_CONFIDENCE,76.92,,,,
+Maharashtra,Ratnagiri,RATNAGIRI,EXACT_GLOBAL,100.0,Maharashtra,Ratnagiri,27.0,528.0
+Maharashtra,Sangli,SANGLI,EXACT_GLOBAL,100.0,Maharashtra,Sangli,27.0,531.0
+Manipur,Bishnupur,BISHNUPUR,EXACT_GLOBAL,100.0,Manipur,Bishnupur,14.0,275.0
+Manipur,Chandel,CHANDEL,EXACT_GLOBAL,100.0,Manipur,Chandel,14.0,280.0
+Manipur,Churachandpur,CHURACHANDPUR,EXACT_GLOBAL,100.0,Manipur,Churachandpur,14.0,274.0
+Manipur,Imphal,IMPHAL,LOW_CONFIDENCE,70.59,,,,
+Manipur,Satara,SATARA,EXACT_GLOBAL,100.0,Maharashtra,Satara,27.0,527.0
+Manipur,Senapati,SENAPATI,EXACT_GLOBAL,100.0,Manipur,Senapati,14.0,272.0
+Manipur,Sindhudurg,SINDHUDURG,EXACT_GLOBAL,100.0,Maharashtra,Sindhudurg,27.0,529.0
+Manipur,Solapur,SOLAPUR,EXACT_GLOBAL,100.0,Maharashtra,Solapur,27.0,526.0
+Manipur,Tamenglong,TAMENGLONG,EXACT_GLOBAL,100.0,Manipur,Tamenglong,14.0,273.0
+Manipur,Thane,THANE,EXACT_GLOBAL,100.0,Maharashtra,Thane,27.0,517.0
+Manipur,Thoubal,THOUBAL,EXACT_GLOBAL,100.0,Manipur,Thoubal,14.0,276.0
+Manipur,Wardha,WARDHA,EXACT_GLOBAL,100.0,Maharashtra,Wardha,27.0,504.0
+Manipur,Washim,WASHIM,EXACT_GLOBAL,100.0,Maharashtra,Washim,27.0,502.0
+Manipur,Yavatmal,YAVATMAL,EXACT_GLOBAL,100.0,Maharashtra,Yavatmal,27.0,510.0
+Meghalaya,Garo Hills,GARO HILLS,LOW_CONFIDENCE,80.0,,,,
+Meghalaya,Khasi Hills,KHASI HILLS,LOW_CONFIDENCE,81.48,,,,
+Meghalaya,Ukhrul,UKHRUL,EXACT_GLOBAL,100.0,Manipur,Ukhrul,14.0,279.0
+Meghalaya,West Jaintia Hills,WEST JAINTIA HILLS,LOW_CONFIDENCE,83.87,,,,
+Mizoram,Aizawl,AIZAWL,EXACT_GLOBAL,100.0,Mizoram,Aizawl,15.0,283.0
+Mizoram,Aizawl West#,AIZAWL WEST,SPECIAL_ENTRY,,,,,
+Mizoram,Chhimtuipui#,CHHIMTUIPUI,SPECIAL_ENTRY,,,,,
+Mizoram,Lunglei,LUNGLEI,EXACT_GLOBAL,100.0,Mizoram,Lunglei,15.0,286.0
+Mizoram,Mon,MON,EXACT_GLOBAL,100.0,Nagaland,Mon,13.0,261.0
+Nagaland,Dimapur,DIMAPUR,EXACT_GLOBAL,100.0,Nagaland,Dimapur,13.0,265.0
+Nagaland,Kohima,KOHIMA,EXACT_GLOBAL,100.0,Nagaland,Kohima,13.0,270.0
+Nagaland,Mokokchung,MOKOKCHUNG,EXACT_GLOBAL,100.0,Nagaland,Mokokchung,13.0,262.0
+Nagaland,Phek,PHEK,EXACT_GLOBAL,100.0,Nagaland,Phek,13.0,266.0
+Nagaland,Tuensang,TUENSANG,EXACT_GLOBAL,100.0,Nagaland,Tuensang,13.0,267.0
+Nagaland,UVBDS Dimapur#,UVBDS DIMAPUR,SPECIAL_ENTRY,,,,,
+Nagaland,Wokha,WOKHA,EXACT_GLOBAL,100.0,Nagaland,Wokha,13.0,264.0
+Nagaland,Zunheboto,ZUNHEBOTO,EXACT_GLOBAL,100.0,Nagaland,Zunheboto,13.0,263.0
+Odisha,Anugul,ANUGUL,EXACT_GLOBAL,100.0,Odisha,Anugul,21.0,384.0
+Odisha,Balangir,BALANGIR,EXACT_GLOBAL,100.0,Odisha,Balangir,21.0,393.0
+Odisha,Baleshwar,BALESHWAR,EXACT_GLOBAL,100.0,Odisha,Baleshwar,21.0,377.0
+Odisha,Bargarh,BARGARH,EXACT_GLOBAL,100.0,Odisha,Bargarh,21.0,370.0
+Odisha,Bhadrak,BHADRAK,EXACT_GLOBAL,100.0,Odisha,Bhadrak,21.0,378.0
+Odisha,Boudh,BOUDH,LOW_CONFIDENCE,80.0,,,,
+Odisha,Cuttack,CUTTACK,EXACT_GLOBAL,100.0,Odisha,Cuttack,21.0,381.0
+Odisha,Deogarh,DEOGARH,LOW_CONFIDENCE,85.71,,,,
+Odisha,Dhenkanal,DHENKANAL,EXACT_GLOBAL,100.0,Odisha,Dhenkanal,21.0,383.0
+Odisha,Gajapati,GAJAPATI,EXACT_GLOBAL,100.0,Odisha,Gajapati,21.0,389.0
+Odisha,Ganjam,GANJAM,EXACT_GLOBAL,100.0,Odisha,Ganjam,21.0,388.0
+Odisha,Jagatsinghapur,JAGATSINGHAPUR,EXACT_GLOBAL,100.0,Odisha,Jagatsinghapur,21.0,380.0
+Odisha,Jajapur,JAJAPUR,EXACT_GLOBAL,100.0,Odisha,Jajapur,21.0,382.0
+Odisha,Jharsuguda,JHARSUGUDA,EXACT_GLOBAL,100.0,Odisha,Jharsuguda,21.0,371.0
+Odisha,Kalahandi,KALAHANDI,EXACT_GLOBAL,100.0,Odisha,Kalahandi,21.0,395.0
+Odisha,Kandhamal,KANDHAMAL,EXACT_GLOBAL,100.0,Odisha,Kandhamal,21.0,390.0
+Odisha,Kendrapara,KENDRAPARA,EXACT_GLOBAL,100.0,Odisha,Kendrapara,21.0,379.0
+Odisha,Kendujhar,KENDUJHAR,EXACT_GLOBAL,100.0,Odisha,Kendujhar,21.0,375.0
+Odisha,Khordha,KHORDHA,EXACT_GLOBAL,100.0,Odisha,Khordha,21.0,386.0
+Odisha,Koraput,KORAPUT,EXACT_GLOBAL,100.0,Odisha,Koraput,21.0,398.0
+Odisha,Malkangiri,MALKANGIRI,EXACT_GLOBAL,100.0,Odisha,Malkangiri,21.0,399.0
+Odisha,Mayurbhanj,MAYURBHANJ,EXACT_GLOBAL,100.0,Odisha,Mayurbhanj,21.0,376.0
+Odisha,Nabarangpur,NABARANGPUR,FUZZY_GLOBAL,95.65,Odisha,Nabarangapur,21.0,397.0
+Odisha,Nayagarh,NAYAGARH,EXACT_GLOBAL,100.0,Odisha,Nayagarh,21.0,385.0
+Puducherry,Amritsar,AMRITSAR,EXACT_GLOBAL,100.0,Punjab,Amritsar,3.0,49.0
+Puducherry,Bathinda,BATHINDA,EXACT_GLOBAL,100.0,Punjab,Bathinda,3.0,46.0
+Puducherry,Faridkot,FARIDKOT,EXACT_GLOBAL,100.0,Punjab,Faridkot,3.0,45.0
+Puducherry,Karaikal,KARAIKAL,EXACT_GLOBAL,100.0,Puducherry,Karaikal,34.0,637.0
+Puducherry,Mahe,MAHE,EXACT_GLOBAL,100.0,Puducherry,Mahe,34.0,636.0
+Puducherry,Nuapada,NUAPADA,EXACT_GLOBAL,100.0,Odisha,Nuapada,21.0,394.0
+Puducherry,Pondicherry,PONDICHERRY,LOW_CONFIDENCE,76.19,,,,
+Puducherry,Puri,PURI,EXACT_GLOBAL,100.0,Odisha,Puri,21.0,387.0
+Puducherry,Rayagada,RAYAGADA,EXACT_GLOBAL,100.0,Odisha,Rayagada,21.0,396.0
+Puducherry,Sambalpur,SAMBALPUR,EXACT_GLOBAL,100.0,Odisha,Sambalpur,21.0,372.0
+Puducherry,Sonepur,SONEPUR,LOW_CONFIDENCE,80.0,,,,
+Puducherry,Sundargarh,SUNDARGARH,EXACT_GLOBAL,100.0,Odisha,Sundargarh,21.0,374.0
+Puducherry,Yanam,YANAM,EXACT_GLOBAL,100.0,Puducherry,Yanam,34.0,634.0
+Punjab,Fatehgarh Sahib,FATEHGARH SAHIB,EXACT_GLOBAL,100.0,Punjab,Fatehgarh Sahib,3.0,40.0
+Punjab,Ferozepur,FEROZEPUR,LOW_CONFIDENCE,82.35,,,,
+Punjab,Gurdaspur,GURDASPUR,EXACT_GLOBAL,100.0,Punjab,Gurdaspur,3.0,35.0
+Punjab,Hoshiarpur,HOSHIARPUR,EXACT_GLOBAL,100.0,Punjab,Hoshiarpur,3.0,38.0
+Punjab,Jalandhar,JALANDHAR,EXACT_GLOBAL,100.0,Punjab,Jalandhar,3.0,37.0
+Punjab,Kapurthala,KAPURTHALA,EXACT_GLOBAL,100.0,Punjab,Kapurthala,3.0,36.0
+Punjab,Ludhiana,LUDHIANA,EXACT_GLOBAL,100.0,Punjab,Ludhiana,3.0,41.0
+Punjab,Mansa,MANSA,EXACT_GLOBAL,100.0,Punjab,Mansa,3.0,47.0
+Punjab,Moga,MOGA,EXACT_GLOBAL,100.0,Punjab,Moga,3.0,42.0
+Punjab,Patiala,PATIALA,EXACT_GLOBAL,100.0,Punjab,Patiala,3.0,48.0
+Punjab,Rupnagar,RUPNAGAR,EXACT_GLOBAL,100.0,Punjab,Rupnagar,3.0,51.0
+Punjab,S.A.S Nagar,S A S NAGAR,LOW_CONFIDENCE,70.0,,,,
+Rajasthan,Ajmer,AJMER,EXACT_GLOBAL,100.0,Rajasthan,Ajmer,8.0,119.0
+Rajasthan,Alwar,ALWAR,EXACT_GLOBAL,100.0,Rajasthan,Alwar,8.0,104.0
+Rajasthan,Banswara,BANSWARA,EXACT_GLOBAL,100.0,Rajasthan,Banswara,8.0,125.0
+Rajasthan,Baran,BARAN,EXACT_GLOBAL,100.0,Rajasthan,Baran,8.0,128.0
+Rajasthan,Barmer,BARMER,EXACT_GLOBAL,100.0,Rajasthan,Barmer,8.0,115.0
+Rajasthan,Bharatpur,BHARATPUR,EXACT_GLOBAL,100.0,Rajasthan,Bharatpur,8.0,105.0
+Rajasthan,Bhilwara,BHILWARA,EXACT_GLOBAL,100.0,Rajasthan,Bhilwara,8.0,122.0
+Rajasthan,Bikaner,BIKANER,EXACT_GLOBAL,100.0,Rajasthan,Bikaner,8.0,101.0
+Rajasthan,Bundi,BUNDI,EXACT_GLOBAL,100.0,Rajasthan,Bundi,8.0,121.0
+Rajasthan,Chittorgarh,CHITTORGARH,LOW_CONFIDENCE,86.96,,,,
+Rajasthan,Churu,CHURU,EXACT_GLOBAL,100.0,Rajasthan,Churu,8.0,102.0
+Rajasthan,Dausa,DAUSA,EXACT_GLOBAL,100.0,Rajasthan,Dausa,8.0,109.0
+Rajasthan,Dholpur,DHOLPUR,LOW_CONFIDENCE,80.0,,,,
+Rajasthan,Dungarpur,DUNGARPUR,EXACT_GLOBAL,100.0,Rajasthan,Dungarpur,8.0,124.0
+Rajasthan,Ganganagar,GANGANAGAR,EXACT_GLOBAL,100.0,Rajasthan,Ganganagar,8.0,99.0
+Rajasthan,Hanumangarh,HANUMANGARH,EXACT_GLOBAL,100.0,Rajasthan,Hanumangarh,8.0,100.0
+Rajasthan,Jaipur,JAIPUR,EXACT_GLOBAL,100.0,Rajasthan,Jaipur,8.0,110.0
+Rajasthan,Jaisalmer,JAISALMER,EXACT_GLOBAL,100.0,Rajasthan,Jaisalmer,8.0,114.0
+Rajasthan,Jalore,JALORE,FUZZY_GLOBAL,90.91,Rajasthan,Jalor,8.0,116.0
+Rajasthan,Jhalawar,JHALAWAR,EXACT_GLOBAL,100.0,Rajasthan,Jhalawar,8.0,129.0
+Rajasthan,Jhunjhunu,JHUNJHUNU,FUZZY_GLOBAL,94.74,Rajasthan,Jhunjhunun,8.0,103.0
+Rajasthan,Jodhpur,JODHPUR,EXACT_GLOBAL,100.0,Rajasthan,Jodhpur,8.0,113.0
+Rajasthan,Karauli,KARAULI,EXACT_GLOBAL,100.0,Rajasthan,Karauli,8.0,107.0
+Rajasthan,Kota,KOTA,EXACT_GLOBAL,100.0,Rajasthan,Kota,8.0,127.0
+Rajasthan,Nagaur,NAGAUR,EXACT_GLOBAL,100.0,Rajasthan,Nagaur,8.0,112.0
+Rajasthan,Sangrur,SANGRUR,EXACT_GLOBAL,100.0,Punjab,Sangrur,3.0,53.0
+Rajasthan,Sri Muktsar Sahib,SRI MUKTSAR SAHIB,LOW_CONFIDENCE,58.33,,,,
+Sikkim,Aranthangi#,ARANTHANGI,SPECIAL_ENTRY,,,,,
+Sikkim,Chengalpattu,CHENGALPATTU,LOW_CONFIDENCE,60.0,,,,
+Sikkim,Chennai,CHENNAI,EXACT_GLOBAL,100.0,Tamil Nadu,Chennai,33.0,603.0
+Sikkim,Cheyyar#,CHEYYAR,SPECIAL_ENTRY,,,,,
+Sikkim,Coimbatore,COIMBATORE,EXACT_GLOBAL,100.0,Tamil Nadu,Coimbatore,33.0,632.0
+Sikkim,Cuddalore,CUDDALORE,EXACT_GLOBAL,100.0,Tamil Nadu,Cuddalore,33.0,617.0
+Sikkim,Dharapuram#,DHARAPURAM,SPECIAL_ENTRY,,,,,
+Sikkim,Gangtok,GANGTOK,LOW_CONFIDENCE,54.55,,,,
+Sikkim,Gyalshing,GYALSHING,LOW_CONFIDENCE,60.0,,,,
+Sikkim,Mangan,MANGAN,LOW_CONFIDENCE,72.73,,,,
+Sikkim,Namchi,NAMCHI,LOW_CONFIDENCE,66.67,,,,
+Sikkim,Pali,PALI,EXACT_GLOBAL,100.0,Rajasthan,Pali,8.0,118.0
+Sikkim,Rajsamand,RAJSAMAND,EXACT_GLOBAL,100.0,Rajasthan,Rajsamand,8.0,123.0
+Sikkim,Sawai Madhopur,SAWAI MADHOPUR,EXACT_GLOBAL,100.0,Rajasthan,Sawai Madhopur,8.0,108.0
+Sikkim,Sikar,SIKAR,EXACT_GLOBAL,100.0,Rajasthan,Sikar,8.0,111.0
+Sikkim,Sirohi,SIROHI,EXACT_GLOBAL,100.0,Rajasthan,Sirohi,8.0,117.0
+Sikkim,Tonk,TONK,EXACT_GLOBAL,100.0,Rajasthan,Tonk,8.0,120.0
+Sikkim,Udaipur,UDAIPUR,EXACT_GLOBAL,100.0,Rajasthan,Udaipur,8.0,130.0
+Tamil Nadu,Dharmapuri,DHARMAPURI,EXACT_GLOBAL,100.0,Tamil Nadu,Dharmapuri,33.0,630.0
+Tamil Nadu,Dindigul,DINDIGUL,EXACT_GLOBAL,100.0,Tamil Nadu,Dindigul,33.0,612.0
+Tamil Nadu,Erode,ERODE,EXACT_GLOBAL,100.0,Tamil Nadu,Erode,33.0,610.0
+Tamil Nadu,Kallakurichi,KALLAKURICHI,LOW_CONFIDENCE,57.14,,,,
+Tamil Nadu,Kanchipuram,KANCHIPURAM,LOW_CONFIDENCE,86.96,,,,
+Tamil Nadu,Kanniyakumari,KANNIYAKUMARI,EXACT_GLOBAL,100.0,Tamil Nadu,Kanniyakumari,33.0,629.0
+Tamil Nadu,Karur,KARUR,EXACT_GLOBAL,100.0,Tamil Nadu,Karur,33.0,613.0
+Tamil Nadu,Kovilpatti#,KOVILPATTI,SPECIAL_ENTRY,,,,,
+Tamil Nadu,Krishnagiri,KRISHNAGIRI,EXACT_GLOBAL,100.0,Tamil Nadu,Krishnagiri,33.0,631.0
+Tamil Nadu,Madurai,MADURAI,EXACT_GLOBAL,100.0,Tamil Nadu,Madurai,33.0,623.0
+Tamil Nadu,Nagapattinam,NAGAPATTINAM,EXACT_GLOBAL,100.0,Tamil Nadu,Nagapattinam,33.0,618.0
+Tamil Nadu,Namakkal,NAMAKKAL,EXACT_GLOBAL,100.0,Tamil Nadu,Namakkal,33.0,609.0
+Tamil Nadu,Palani#,PALANI,SPECIAL_ENTRY,,,,,
+Tamil Nadu,Paramakudi#,PARAMAKUDI,SPECIAL_ENTRY,,,,,
+Tamil Nadu,Perambalur,PERAMBALUR,EXACT_GLOBAL,100.0,Tamil Nadu,Perambalur,33.0,615.0
+Tamil Nadu,Poonamallee#,POONAMALLEE,SPECIAL_ENTRY,,,,,
+Tamil Nadu,Pudukkottai,PUDUKKOTTAI,EXACT_GLOBAL,100.0,Tamil Nadu,Pudukkottai,33.0,621.0
+Tamil Nadu,Ramanathapuram,RAMANATHAPURAM,EXACT_GLOBAL,100.0,Tamil Nadu,Ramanathapuram,33.0,626.0
+Tamil Nadu,Salem,SALEM,EXACT_GLOBAL,100.0,Tamil Nadu,Salem,33.0,608.0
+Tamil Nadu,Sivaganga,SIVAGANGA,EXACT_GLOBAL,100.0,Tamil Nadu,Sivaganga,33.0,622.0
+Tamil Nadu,Sivakasi#,SIVAKASI,SPECIAL_ENTRY,,,,,
+Tamil Nadu,Tenkasi,TENKASI,LOW_CONFIDENCE,66.67,,,,
+Tamil Nadu,Thanjavur,THANJAVUR,EXACT_GLOBAL,100.0,Tamil Nadu,Thanjavur,33.0,620.0
+Tamil Nadu,The Nilgiris,THE NILGIRIS,EXACT_GLOBAL,100.0,Tamil Nadu,The Nilgiris,33.0,611.0
+Tamil Nadu,Theni,THENI,EXACT_GLOBAL,100.0,Tamil Nadu,Theni,33.0,624.0
+Tamil Nadu,Thiruvallur,THIRUVALLUR,EXACT_GLOBAL,100.0,Tamil Nadu,Thiruvallur,33.0,602.0
+Tripura,Agra,AGRA,EXACT_GLOBAL,100.0,Uttar Pradesh,Agra,9.0,146.0
+Tripura,Aligarh,ALIGARH,EXACT_GLOBAL,100.0,Uttar Pradesh,Aligarh,9.0,143.0
+Tripura,Ambedkar Nagar,AMBEDKAR NAGAR,EXACT_GLOBAL,100.0,Uttar Pradesh,Ambedkar Nagar,9.0,178.0
+Tripura,Amroha,AMROHA,LOW_CONFIDENCE,72.73,,,,
+Tripura,Auraiya,AURAIYA,EXACT_GLOBAL,100.0,Uttar Pradesh,Auraiya,9.0,162.0
+Tripura,Ayodhya,AYODHYA,EXACT_GLOBAL,100.0,Uttar Pradesh,Faizabad,9.0,177.0
+Tripura,Azamgarh,AZAMGARH,EXACT_GLOBAL,100.0,Uttar Pradesh,Azamgarh,9.0,191.0
+Tripura,Baghpat,BAGHPAT,EXACT_GLOBAL,100.0,Uttar Pradesh,Baghpat,9.0,139.0
+Tripura,Bahraich,BAHRAICH,EXACT_GLOBAL,100.0,Uttar Pradesh,Bahraich,9.0,180.0
+Tripura,Ballia,BALLIA,EXACT_GLOBAL,100.0,Uttar Pradesh,Ballia,9.0,193.0
+Tripura,Balrampur,BALRAMPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Balrampur,9.0,182.0
+Tripura,Dhalai,DHALAI,EXACT_GLOBAL,100.0,Tripura,Dhalai,16.0,291.0
+Tripura,North Tripura,NORTH TRIPURA,EXACT_GLOBAL,100.0,Tripura,North Tripura,16.0,292.0
+Tripura,South Tripura,SOUTH TRIPURA,EXACT_GLOBAL,100.0,Tripura,South Tripura,16.0,290.0
+Tripura,Thiruvarur,THIRUVARUR,EXACT_GLOBAL,100.0,Tamil Nadu,Thiruvarur,33.0,619.0
+Tripura,Tiruchirappalli,TIRUCHIRAPPALLI,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruchirappalli,33.0,614.0
+Tripura,Tirunelveli,TIRUNELVELI,EXACT_GLOBAL,100.0,Tamil Nadu,Tirunelveli,33.0,628.0
+Tripura,Tirupathur,TIRUPATHUR,LOW_CONFIDENCE,77.78,,,,
+Tripura,Tiruppur,TIRUPPUR,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruppur,33.0,633.0
+Tripura,Tiruvannamalai,TIRUVANNAMALAI,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruvannamalai,33.0,606.0
+Tripura,Tuticorin,TUTICORIN,LOW_CONFIDENCE,50.0,,,,
+Tripura,Vellore,VELLORE,EXACT_GLOBAL,100.0,Tamil Nadu,Vellore,33.0,605.0
+Tripura,Villupuram,VILLUPURAM,FUZZY_GLOBAL,90.0,Tamil Nadu,Viluppuram,33.0,607.0
+Tripura,Virudhunagar,VIRUDHUNAGAR,EXACT_GLOBAL,100.0,Tamil Nadu,Virudhunagar,33.0,625.0
+Tripura,West Tripura,WEST TRIPURA,EXACT_GLOBAL,100.0,Tripura,West Tripura,16.0,289.0
+Uttar Pradesh,Banda,BANDA,EXACT_GLOBAL,100.0,Uttar Pradesh,Banda,9.0,170.0
+Uttar Pradesh,Barabanki,BARA BANKI,FUZZY_GLOBAL,94.74,Uttar Pradesh,Bara Banki,9.0,176.0
+Uttar Pradesh,Bareilly,BAREILLY,EXACT_GLOBAL,100.0,Uttar Pradesh,Bareilly,9.0,150.0
+Uttar Pradesh,Basti,BASTI,EXACT_GLOBAL,100.0,Uttar Pradesh,Basti,9.0,185.0
+Uttar Pradesh,Bhadohi,BHADOHI,LOW_CONFIDENCE,76.92,,,,
+Uttar Pradesh,Bijnor,BIJNOR,EXACT_GLOBAL,100.0,Uttar Pradesh,Bijnor,9.0,134.0
+Uttar Pradesh,Budaun,BUDAUN,EXACT_GLOBAL,100.0,Uttar Pradesh,Budaun,9.0,149.0
+Uttar Pradesh,Bulandshahr,BULANDSHAHR,EXACT_GLOBAL,100.0,Uttar Pradesh,Bulandshahr,9.0,142.0
+Uttar Pradesh,Chandauli,CHANDAULI,EXACT_GLOBAL,100.0,Uttar Pradesh,Chandauli,9.0,196.0
+Uttar Pradesh,Chitrakoot,CHITRAKOOT,EXACT_GLOBAL,100.0,Uttar Pradesh,Chitrakoot,9.0,171.0
+Uttar Pradesh,Deoria,DEORIA,EXACT_GLOBAL,100.0,Uttar Pradesh,Deoria,9.0,190.0
+Uttar Pradesh,Etah,ETAH,EXACT_GLOBAL,100.0,Uttar Pradesh,Etah,9.0,201.0
+Uttar Pradesh,Etawah,ETAWAH,EXACT_GLOBAL,100.0,Uttar Pradesh,Etawah,9.0,161.0
+Uttar Pradesh,Farrukhabad,FARRUKHABAD,EXACT_GLOBAL,100.0,Uttar Pradesh,Farrukhabad,9.0,159.0
+Uttar Pradesh,Fatehpur,FATEHPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Fatehpur,9.0,172.0
+Uttar Pradesh,Firozabad,FIROZABAD,EXACT_GLOBAL,100.0,Uttar Pradesh,Firozabad,9.0,147.0
+Uttar Pradesh,Gautam Buddha Nagar,GAUTAM BUDDHA NAGAR,EXACT_GLOBAL,100.0,Uttar Pradesh,Gautam Buddha Nagar,9.0,141.0
+Uttar Pradesh,Ghaziabad,GHAZIABAD,EXACT_GLOBAL,100.0,Uttar Pradesh,Ghaziabad,9.0,140.0
+Uttar Pradesh,Ghazipur,GHAZIPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Ghazipur,9.0,195.0
+Uttar Pradesh,Gonda,GONDA,EXACT_GLOBAL,100.0,Uttar Pradesh,Gonda,9.0,183.0
+Uttar Pradesh,Gorakhpur,GORAKHPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Gorakhpur,9.0,188.0
+Uttar Pradesh,Hamirpur,HAMIRPUR,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+Uttar Pradesh,Hardoi,HARDOI,EXACT_GLOBAL,100.0,Uttar Pradesh,Hardoi,9.0,155.0
+Uttar Pradesh,Hathras,HATHRAS,LOW_CONFIDENCE,76.92,,,,
+Uttar Pradesh,Jalaun,JALAUN,EXACT_GLOBAL,100.0,Uttar Pradesh,Jalaun,9.0,165.0
+Uttar Pradesh,Jaunpur,JAUNPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Jaunpur,9.0,194.0
+Uttar Pradesh,Jhansi,JHANSI,EXACT_GLOBAL,100.0,Uttar Pradesh,Jhansi,9.0,166.0
+Uttar Pradesh,Kannauj,KANNAUJ,EXACT_GLOBAL,100.0,Uttar Pradesh,Kannauj,9.0,160.0
+Uttar Pradesh,Kanpur Dehat,KANPUR DEHAT,EXACT_GLOBAL,100.0,Uttar Pradesh,Kanpur Dehat,9.0,163.0
+Uttar Pradesh,Kanpur Nagar,KANPUR NAGAR,EXACT_GLOBAL,100.0,Uttar Pradesh,Kanpur Nagar,9.0,164.0
+Uttar Pradesh,Kaushambi,KAUSHAMBI,EXACT_GLOBAL,100.0,Uttar Pradesh,Kaushambi,9.0,174.0
+Uttar Pradesh,Kheri,KHERI,EXACT_GLOBAL,100.0,Uttar Pradesh,Kheri,9.0,153.0
+Uttar Pradesh,Kushi Nagar,KUSHI NAGAR,FUZZY_GLOBAL,95.24,Uttar Pradesh,Kushinagar,9.0,189.0
+Uttar Pradesh,Lalitpur,LALITPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Lalitpur,9.0,167.0
+Uttar Pradesh,Lucknow,LUCKNOW,EXACT_GLOBAL,100.0,Uttar Pradesh,Lucknow,9.0,157.0
+Uttar Pradesh,Maharajganj,MAHARAJGANJ,FUZZY_GLOBAL,95.24,Uttar Pradesh,Mahrajganj,9.0,187.0
+Uttar Pradesh,Mahoba,MAHOBA,EXACT_GLOBAL,100.0,Uttar Pradesh,Mahoba,9.0,169.0
+Uttar Pradesh,Mainpuri,MAINPURI,EXACT_GLOBAL,100.0,Uttar Pradesh,Mainpuri,9.0,148.0
+Uttar Pradesh,Mathura,MATHURA,EXACT_GLOBAL,100.0,Uttar Pradesh,Mathura,9.0,145.0
+Uttar Pradesh,Mau,MAU,EXACT_GLOBAL,100.0,Uttar Pradesh,Mau,9.0,192.0
+Uttar Pradesh,Meerut,MEERUT,EXACT_GLOBAL,100.0,Uttar Pradesh,Meerut,9.0,138.0
+Uttar Pradesh,Mirzapur,MIRZAPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Mirzapur,9.0,199.0
+Uttar Pradesh,Moradabad,MORADABAD,EXACT_GLOBAL,100.0,Uttar Pradesh,Moradabad,9.0,135.0
+Uttar Pradesh,Muzaffarnagar,MUZAFFARNAGAR,EXACT_GLOBAL,100.0,Uttar Pradesh,Muzaffarnagar,9.0,133.0
+Uttar Pradesh,Pilibhit,PILIBHIT,EXACT_GLOBAL,100.0,Uttar Pradesh,Pilibhit,9.0,151.0
+Uttar Pradesh,Pratapgarh,PRATAPGARH,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+Uttarakhand,24 Paraganas North,NORTH TWENTY FOUR PARGANAS,EXACT_GLOBAL,100.0,West Bengal,North Twenty Four Parganas,19.0,337.0
+Uttarakhand,24 Paraganas South,SOUTH TWENTY FOUR PARGANAS,EXACT_GLOBAL,100.0,West Bengal,South Twenty Four Parganas,19.0,343.0
+Uttarakhand,Almora,ALMORA,EXACT_GLOBAL,100.0,Uttarakhand,Almora,5.0,64.0
+Uttarakhand,Arambagh#,ARAMBAGH,SPECIAL_ENTRY,,,,,
+Uttarakhand,Bageshwar,BAGESHWAR,EXACT_GLOBAL,100.0,Uttarakhand,Bageshwar,5.0,63.0
+Uttarakhand,Bankura,BANKURA,EXACT_GLOBAL,100.0,West Bengal,Bankura,19.0,339.0
+Uttarakhand,Bardhaman,BARDHAMAN,FUZZY_GLOBAL,94.74,West Bengal,Barddhaman,19.0,335.0
+Uttarakhand,Barrackpore#,BARRACKPORE,SPECIAL_ENTRY,,,,,
+Uttarakhand,Chamoli,CHAMOLI,EXACT_GLOBAL,100.0,Uttarakhand,Chamoli,5.0,57.0
+Uttarakhand,Champawat,CHAMPAWAT,EXACT_GLOBAL,100.0,Uttarakhand,Champawat,5.0,65.0
+Uttarakhand,Dehradun,DEHRADUN,EXACT_GLOBAL,100.0,Uttarakhand,Dehradun,5.0,60.0
+Uttarakhand,Haridwar,HARIDWAR,FUZZY_GLOBAL,93.33,Uttarakhand,Hardwar,5.0,68.0
+Uttarakhand,Nainital,NAINITAL,EXACT_GLOBAL,100.0,Uttarakhand,Nainital,5.0,66.0
+Uttarakhand,Pauri Garhwal,PAURI GARHWAL,LOW_CONFIDENCE,76.92,,,,
+Uttarakhand,Pithoragarh,PITHORAGARH,EXACT_GLOBAL,100.0,Uttarakhand,Pithoragarh,5.0,62.0
+Uttarakhand,Prayagraj,PRAYAGRAJ,EXACT_GLOBAL,100.0,Uttar Pradesh,Allahabad,9.0,175.0
+Uttarakhand,Rae Bareli,RAE BARELI,EXACT_GLOBAL,100.0,Uttar Pradesh,Rae Bareli,9.0,158.0
+Uttarakhand,Rampur,RAMPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Rampur,9.0,136.0
+Uttarakhand,Rudra Prayag,RUDRA PRAYAG,FUZZY_GLOBAL,95.65,Uttarakhand,Rudraprayag,5.0,58.0
+Uttarakhand,Saharanpur,SAHARANPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Saharanpur,9.0,132.0
+Uttarakhand,Sant Kabeer Nagar,SANT KABEER NAGAR,FUZZY_GLOBAL,90.91,Uttar Pradesh,Sant Kabir Nagar,9.0,186.0
+Uttarakhand,Shahjahanpur,SHAHJAHANPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Shahjahanpur,9.0,152.0
+Uttarakhand,Shravasti,SHRAVASTI,LOW_CONFIDENCE,88.89,,,,
+Uttarakhand,Siddharth Nagar,SIDDHARTH NAGAR,FUZZY_GLOBAL,96.55,Uttar Pradesh,Siddharthnagar,9.0,184.0
+Uttarakhand,Sitapur,SITAPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Sitapur,9.0,154.0
+Uttarakhand,Sonbhadra,SONBHADRA,EXACT_GLOBAL,100.0,Uttar Pradesh,Sonbhadra,9.0,200.0
+Uttarakhand,Sultanpur,SULTANPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Sultanpur,9.0,179.0
+Uttarakhand,Tehri Garhwal,TEHRI GARHWAL,EXACT_GLOBAL,100.0,Uttarakhand,Tehri Garhwal,5.0,59.0
+Uttarakhand,Udam Singh Nagar,UDAM SINGH NAGAR,FUZZY_GLOBAL,96.97,Uttarakhand,Udham Singh Nagar,5.0,67.0
+Uttarakhand,Unnao,UNNAO,EXACT_GLOBAL,100.0,Uttar Pradesh,Unnao,9.0,156.0
+Uttarakhand,Uttar Kashi,UTTAR KASHI,FUZZY_GLOBAL,95.24,Uttarakhand,Uttarkashi,5.0,56.0
+Uttarakhand,Varanasi,VARANASI,EXACT_GLOBAL,100.0,Uttar Pradesh,Varanasi,9.0,197.0
+West Bengal,A.M.U. Almatti#,A M U ALMATTI,SPECIAL_ENTRY,,,,,
+West Bengal,A.M.U. B. Gudi#,A M U B GUDI,SPECIAL_ENTRY,,,,,
+West Bengal,A.M.U. Kembhavi#,A M U KEMBHAVI,SPECIAL_ENTRY,,,,,
+West Bengal,Adilabad,ADILABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Adilabad,28.0,532.0
+West Bengal,Ahmadabad,AHMADABAD,EXACT_GLOBAL,100.0,Gujarat,Ahmadabad,24.0,474.0
+West Bengal,Ahmadabad MC#,AHMADABAD MC,SPECIAL_ENTRY,,,,,
+West Bengal,Alappuzha,ALAPPUZHA,EXACT_GLOBAL,100.0,Kerala,Alappuzha,32.0,598.0
+West Bengal,Ambala,AMBALA,EXACT_GLOBAL,100.0,Haryana,Ambala,6.0,70.0
+West Bengal,Amreli,AMRELI,EXACT_GLOBAL,100.0,Gujarat,Amreli,24.0,480.0
+West Bengal,Anand,ANAND,EXACT_GLOBAL,100.0,Gujarat,Anand,24.0,482.0
+West Bengal,Anantapur,ANANTAPUR,EXACT_GLOBAL,100.0,Andhra Pradesh,Anantapur,28.0,553.0
+West Bengal,Andaman,ANDAMAN,LOW_CONFIDENCE,83.33,,,,
+West Bengal,Araria,ARARIA,EXACT_GLOBAL,100.0,Bihar,Araria,10.0,209.0
+West Bengal,Aurangabad,AURANGABAD,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,Bagalkote,BAGALKOTE,FUZZY_GLOBAL,94.12,Karnataka,Bagalkot,29.0,556.0
+West Bengal,Balaghat,BALAGHAT,EXACT_GLOBAL,100.0,Madhya Pradesh,Balaghat,23.0,457.0
+West Bengal,Ballari,BALLARI,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Banas kantha,BANAS KANTHA,EXACT_GLOBAL,100.0,Gujarat,Banas Kantha,24.0,469.0
+West Bengal,Banka,BANKA,EXACT_GLOBAL,100.0,Bihar,Banka,10.0,225.0
+West Bengal,Baramulla,BARAMULLA,FUZZY_GLOBAL,94.12,Jammu & Kashmir,Baramula,1.0,8.0
+West Bengal,Barpeta,BARPETA,EXACT_GLOBAL,100.0,Assam,Barpeta,18.0,303.0
+West Bengal,Barwani,BARWANI,EXACT_GLOBAL,100.0,Madhya Pradesh,Barwani,23.0,441.0
+West Bengal,Basirhat HD#,BASIRHAT HD,SPECIAL_ENTRY,,,,,
+West Bengal,Bastar,BASTAR,EXACT_GLOBAL,100.0,Chhattisgarh,Bastar,22.0,414.0
+West Bengal,Begusarai,BEGUSARAI,EXACT_GLOBAL,100.0,Bihar,Begusarai,10.0,222.0
+West Bengal,Belagavi,BELAGAVI,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Bengaluru Rural,BENGALURU RURAL,EXACT_GLOBAL,100.0,Karnataka,Bangalore Rural,29.0,583.0
+West Bengal,Bengaluru Urban,BENGALURU URBAN,LOW_CONFIDENCE,86.67,,,,
+West Bengal,Betul,BETUL,EXACT_GLOBAL,100.0,Madhya Pradesh,Betul,23.0,447.0
+West Bengal,Bhagalpur,BHAGALPUR,EXACT_GLOBAL,100.0,Bihar,Bhagalpur,10.0,224.0
+West Bengal,Bharuch,BHARUCH,EXACT_GLOBAL,100.0,Gujarat,Bharuch,24.0,488.0
+West Bengal,Bhavnagar,BHAVNAGAR,EXACT_GLOBAL,100.0,Gujarat,Bhavnagar,24.0,481.0
+West Bengal,Bhind,BHIND,EXACT_GLOBAL,100.0,Madhya Pradesh,Bhind,23.0,420.0
+West Bengal,Bhiwani,BHIWANI,EXACT_GLOBAL,100.0,Haryana,Bhiwani,6.0,81.0
+West Bengal,Bhojpur,BHOJPUR,EXACT_GLOBAL,100.0,Bihar,Bhojpur,10.0,231.0
+West Bengal,Bhopal,BHOPAL,EXACT_GLOBAL,100.0,Madhya Pradesh,Bhopal,23.0,444.0
+West Bengal,Bidar,BIDAR,EXACT_GLOBAL,100.0,Karnataka,Bidar,29.0,558.0
+West Bengal,Bilaspur,BILASPUR,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,Birbhum,BIRBHUM,EXACT_GLOBAL,100.0,West Bengal,Birbhum,19.0,334.0
+West Bengal,Bokaro,BOKARO,EXACT_GLOBAL,100.0,Jharkhand,Bokaro,20.0,355.0
+West Bengal,Bongaigaon,BONGAIGAON,EXACT_GLOBAL,100.0,Assam,Bongaigaon,18.0,319.0
+West Bengal,Buxar,BUXAR,EXACT_GLOBAL,100.0,Bihar,Buxar,10.0,232.0
+West Bengal,Cachar,CACHAR,EXACT_GLOBAL,100.0,Assam,Cachar,18.0,316.0
+West Bengal,Chamarajanagara,CHAMARAJANAGARA,FUZZY_GLOBAL,96.55,Karnataka,Chamarajanagar,29.0,578.0
+West Bengal,Chamba,CHAMBA,EXACT_GLOBAL,100.0,Himachal Pradesh,Chamba,2.0,23.0
+West Bengal,Chandan nagar#,CHANDAN NAGAR,SPECIAL_ENTRY,,,,,
+West Bengal,Chandigarh,CHANDIGARH,EXACT_GLOBAL,100.0,Chandigarh,Chandigarh,4.0,55.0
+West Bengal,Changlang,CHANGLANG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Changlang,12.0,253.0
+West Bengal,Chatra,CHATRA,EXACT_GLOBAL,100.0,Jharkhand,Chatra,20.0,347.0
+West Bengal,Chhatarpur,CHHATARPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Chhatarpur,23.0,425.0
+West Bengal,Chhindwara,CHHINDWARA,EXACT_GLOBAL,100.0,Madhya Pradesh,Chhindwara,23.0,455.0
+West Bengal,Chikkamagaluru,CHIKKAMAGALURU,LOW_CONFIDENCE,88.0,,,,
+West Bengal,Chitradurga,CHITRADURGA,EXACT_GLOBAL,100.0,Karnataka,Chitradurga,29.0,566.0
+West Bengal,Chittoor,CHITTOOR,EXACT_GLOBAL,100.0,Andhra Pradesh,Chittoor,28.0,554.0
+West Bengal,Contai#,CONTAI,SPECIAL_ENTRY,,,,,
+West Bengal,Coochbehar,COOCH BEHAR,LOW_CONFIDENCE,76.19,,,,
+West Bengal,Dakshina Kannada,DAKSHINA KANNADA,EXACT_GLOBAL,100.0,Karnataka,Dakshina Kannada,29.0,575.0
+West Bengal,Daman,DAMAN,EXACT_GLOBAL,100.0,Daman & Diu,Daman,25.0,495.0
+West Bengal,Damoh,DAMOH,EXACT_GLOBAL,100.0,Madhya Pradesh,Damoh,23.0,428.0
+West Bengal,Dang,DANG,LOW_CONFIDENCE,72.73,,,,
+West Bengal,Dantewada,DANTEWADA,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Darbhanga,DARBHANGA,EXACT_GLOBAL,100.0,Bihar,Darbhanga,10.0,215.0
+West Bengal,Darjeeling,DARJEELING,LOW_CONFIDENCE,84.21,,,,
+West Bengal,Darrang,DARRANG,EXACT_GLOBAL,100.0,Assam,Darrang,18.0,325.0
+West Bengal,Datia,DATIA,EXACT_GLOBAL,100.0,Madhya Pradesh,Datia,23.0,422.0
+West Bengal,Davangere,DAVANGERE,FUZZY_GLOBAL,94.74,Karnataka,Davanagere,29.0,567.0
+West Bengal,Deoghar,DEOGHAR,EXACT_GLOBAL,100.0,Jharkhand,Deoghar,20.0,350.0
+West Bengal,Dewas,DEWAS,EXACT_GLOBAL,100.0,Madhya Pradesh,Dewas,23.0,437.0
+West Bengal,Dhamtari,DHAMTARI,EXACT_GLOBAL,100.0,Chhattisgarh,Dhamtari,22.0,412.0
+West Bengal,Dhanbad,DHANBAD,EXACT_GLOBAL,100.0,Jharkhand,Dhanbad,20.0,354.0
+West Bengal,Dhar,DHAR,EXACT_GLOBAL,100.0,Madhya Pradesh,Dhar,23.0,438.0
+West Bengal,Dharwad,DHARWAD,EXACT_GLOBAL,100.0,Karnataka,Dharwad,29.0,562.0
+West Bengal,Dhemaji,DHEMAJI,EXACT_GLOBAL,100.0,Assam,Dhemaji,18.0,308.0
+West Bengal,Dhubri,DHUBRI,EXACT_GLOBAL,100.0,Assam,Dhubri,18.0,301.0
+West Bengal,Diamond Harbour HD#,DIAMOND HARBOUR HD,SPECIAL_ENTRY,,,,,
+West Bengal,Dibang Valley,DIBANG VALLEY,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Dibang Valley,12.0,257.0
+West Bengal,Dibrugarh,DIBRUGARH,EXACT_GLOBAL,100.0,Assam,Dibrugarh,18.0,310.0
+West Bengal,Dima Hasao,DIMA HASAO,EXACT_GLOBAL,100.0,Assam,Dima Hasao,18.0,315.0
+West Bengal,Dinajpur Dakshin,DINAJPUR DAKSHIN,LOW_CONFIDENCE,53.33,,,,
+West Bengal,Dinajpur Uttar,DINAJPUR UTTAR,LOW_CONFIDENCE,57.14,,,,
+West Bengal,Dindori,DINDORI,EXACT_GLOBAL,100.0,Madhya Pradesh,Dindori,23.0,453.0
+West Bengal,Diu,DIU,EXACT_GLOBAL,100.0,Daman & Diu,Diu,25.0,494.0
+West Bengal,Doda,DODA,EXACT_GLOBAL,100.0,Jammu & Kashmir,Doda,1.0,16.0
+West Bengal,Dohad,DOHAD,EXACT_GLOBAL,100.0,Gujarat,Dohad,24.0,485.0
+West Bengal,Dumka,DUMKA,EXACT_GLOBAL,100.0,Jharkhand,Dumka,20.0,362.0
+West Bengal,Durg,DURG,EXACT_GLOBAL,100.0,Chhattisgarh,Durg,22.0,409.0
+West Bengal,East Godavari,EAST GODAVARI,EXACT_GLOBAL,100.0,Andhra Pradesh,East Godavari,28.0,545.0
+West Bengal,East Kameng,EAST KAMENG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,East Kameng,12.0,247.0
+West Bengal,East Nimar,EAST NIMAR,LOW_CONFIDENCE,71.43,,,,
+West Bengal,East Siang,EAST SIANG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,East Siang,12.0,251.0
+West Bengal,East Singhbum,EAST SINGHBUM,LOW_CONFIDENCE,78.26,,,,
+West Bengal,Ernakulam,ERNAKULAM,EXACT_GLOBAL,100.0,Kerala,Ernakulam,32.0,595.0
+West Bengal,Faridabad,FARIDABAD,EXACT_GLOBAL,100.0,Haryana,Faridabad,6.0,88.0
+West Bengal,Fatehabad,FATEHABAD,EXACT_GLOBAL,100.0,Haryana,Fatehabad,6.0,78.0
+West Bengal,Gadag,GADAG,EXACT_GLOBAL,100.0,Karnataka,Gadag,29.0,561.0
+West Bengal,Gandhinagar,GANDHINAGAR,EXACT_GLOBAL,100.0,Gujarat,Gandhinagar,24.0,473.0
+West Bengal,Garhwa,GARHWA,EXACT_GLOBAL,100.0,Jharkhand,Garhwa,20.0,346.0
+West Bengal,Gaya,GAYA,EXACT_GLOBAL,100.0,Bihar,Gaya,10.0,236.0
+West Bengal,Ghatal#,GHATAL,SPECIAL_ENTRY,,,,,
+West Bengal,Giridih,GIRIDIH,EXACT_GLOBAL,100.0,Jharkhand,Giridih,20.0,349.0
+West Bengal,Goa,GOA,LOW_CONFIDENCE,75.0,,,,
+West Bengal,Goalpara,GOALPARA,EXACT_GLOBAL,100.0,Assam,Goalpara,18.0,302.0
+West Bengal,Godda,GODDA,EXACT_GLOBAL,100.0,Jharkhand,Godda,20.0,351.0
+West Bengal,Golaghat,GOLAGHAT,EXACT_GLOBAL,100.0,Assam,Golaghat,18.0,313.0
+West Bengal,Gopalganj,GOPALGANJ,EXACT_GLOBAL,100.0,Bihar,Gopalganj,10.0,217.0
+West Bengal,Gumla,GUMLA,EXACT_GLOBAL,100.0,Jharkhand,Gumla,20.0,366.0
+West Bengal,Guna,GUNA,EXACT_GLOBAL,100.0,Madhya Pradesh,Guna,23.0,458.0
+West Bengal,Guntur,GUNTUR,EXACT_GLOBAL,100.0,Andhra Pradesh,Guntur,28.0,548.0
+West Bengal,Gurugram,GURUGRAM,EXACT_GLOBAL,100.0,Haryana,Gurgaon,6.0,86.0
+West Bengal,Gwalior,GWALIOR,EXACT_GLOBAL,100.0,Madhya Pradesh,Gwalior,23.0,421.0
+West Bengal,Hailakandi,HAILAKANDI,EXACT_GLOBAL,100.0,Assam,Hailakandi,18.0,318.0
+West Bengal,Hamirpur,HAMIRPUR,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,Harda,HARDA,EXACT_GLOBAL,100.0,Madhya Pradesh,Harda,23.0,448.0
+West Bengal,Hassan,HASSAN,EXACT_GLOBAL,100.0,Karnataka,Hassan,29.0,574.0
+West Bengal,Haveli,HAVELI,LOW_CONFIDENCE,83.33,,,,
+West Bengal,Haveri,HAVERI,EXACT_GLOBAL,100.0,Karnataka,Haveri,29.0,564.0
+West Bengal,Hazaribagh,HAZARIBAGH,EXACT_GLOBAL,100.0,Jharkhand,Hazaribagh,20.0,360.0
+West Bengal,Hisar,HISAR,EXACT_GLOBAL,100.0,Haryana,Hisar,6.0,80.0
+West Bengal,Hooghly,HOOGHLY,LOW_CONFIDENCE,50.0,,,,
+West Bengal,Howrah,HOWRAH,LOW_CONFIDENCE,72.73,,,,
+West Bengal,Hyderabad,HYDERABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Hyderabad,28.0,536.0
+West Bengal,Idukki,IDUKKI,EXACT_GLOBAL,100.0,Kerala,Idukki,32.0,596.0
+West Bengal,Indore,INDORE,EXACT_GLOBAL,100.0,Madhya Pradesh,Indore,23.0,439.0
+West Bengal,Jabalpur,JABALPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Jabalpur,23.0,451.0
+West Bengal,Jalpaiguri,JALPAIGURI,EXACT_GLOBAL,100.0,West Bengal,Jalpaiguri,19.0,328.0
+West Bengal,Jammu,JAMMU,EXACT_GLOBAL,100.0,Jammu & Kashmir,Jammu,1.0,21.0
+West Bengal,Jamnagar,JAMNAGAR,EXACT_GLOBAL,100.0,Gujarat,Jamnagar,24.0,477.0
+West Bengal,Jamui,JAMUI,EXACT_GLOBAL,100.0,Bihar,Jamui,10.0,238.0
+West Bengal,Jangipur (N)#,JANGIPUR N,SPECIAL_ENTRY,,,,,
+West Bengal,Janjgir-Champa,JANJGIR CHAMPA,EXACT_GLOBAL,100.0,Chhattisgarh,Janjgir - Champa,22.0,405.0
+West Bengal,Jashpur,JASHPUR,EXACT_GLOBAL,100.0,Chhattisgarh,Jashpur,22.0,402.0
+West Bengal,Jehanabad,JEHANABAD,EXACT_GLOBAL,100.0,Bihar,Jehanabad,10.0,239.0
+West Bengal,Jhabua,JHABUA,EXACT_GLOBAL,100.0,Madhya Pradesh,Jhabua,23.0,464.0
+West Bengal,Jhajjar,JHAJJAR,EXACT_GLOBAL,100.0,Haryana,Jhajjar,6.0,83.0
+West Bengal,Jind,JIND,EXACT_GLOBAL,100.0,Haryana,Jind,6.0,77.0
+West Bengal,Jorhat,JORHAT,EXACT_GLOBAL,100.0,Assam,Jorhat,18.0,312.0
+West Bengal,Junagadh,JUNAGADH,EXACT_GLOBAL,100.0,Gujarat,Junagadh,24.0,479.0
+West Bengal,KMUHO#,KMUHO,SPECIAL_ENTRY,,,,,
+West Bengal,Kabirdham,KABIRDHAM,LOW_CONFIDENCE,84.21,,,,
+West Bengal,Kachchh,KACHCHH,EXACT_GLOBAL,100.0,Gujarat,Kachchh,24.0,468.0
+West Bengal,Kaimur (Bhabua),KAIMUR BHABUA,EXACT_GLOBAL,100.0,Bihar,Kaimur (Bhabua),10.0,233.0
+West Bengal,Kaithal,KAITHAL,EXACT_GLOBAL,100.0,Haryana,Kaithal,6.0,73.0
+West Bengal,Kalaburagi,KALABURAGI,LOW_CONFIDENCE,63.16,,,,
+West Bengal,Kalna#,KALNA,SPECIAL_ENTRY,,,,,
+West Bengal,Kamrup,KAMRUP,EXACT_GLOBAL,100.0,Assam,Kamrup,18.0,321.0
+West Bengal,Kandi#,KANDI,SPECIAL_ENTRY,,,,,
+West Bengal,Kangra,KANGRA,EXACT_GLOBAL,100.0,Himachal Pradesh,Kangra,2.0,24.0
+West Bengal,Kanker,KANKER,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Kannur,KANNUR,EXACT_GLOBAL,100.0,Kerala,Kannur,32.0,589.0
+West Bengal,Karbi Anglong,KARBI ANGLONG,EXACT_GLOBAL,100.0,Assam,Karbi Anglong,18.0,314.0
+West Bengal,Kargil,KARGIL,EXACT_GLOBAL,100.0,Jammu & Kashmir,Kargil,1.0,4.0
+West Bengal,Karimganj,KARIMGANJ,EXACT_GLOBAL,100.0,Assam,Karimganj,18.0,317.0
+West Bengal,Karimnagar,KARIMNAGAR,EXACT_GLOBAL,100.0,Andhra Pradesh,Karimnagar,28.0,534.0
+West Bengal,Karnal,KARNAL,EXACT_GLOBAL,100.0,Haryana,Karnal,6.0,74.0
+West Bengal,Kasaragod,KASARAGOD,EXACT_GLOBAL,100.0,Kerala,Kasaragod,32.0,588.0
+West Bengal,Kathua,KATHUA,EXACT_GLOBAL,100.0,Jammu & Kashmir,Kathua,1.0,7.0
+West Bengal,Katihar,KATIHAR,EXACT_GLOBAL,100.0,Bihar,Katihar,10.0,212.0
+West Bengal,Katni,KATNI,EXACT_GLOBAL,100.0,Madhya Pradesh,Katni,23.0,450.0
+West Bengal,Katwa#,KATWA,SPECIAL_ENTRY,,,,,
+West Bengal,Khagaria,KHAGARIA,EXACT_GLOBAL,100.0,Bihar,Khagaria,10.0,223.0
+West Bengal,Khammam,KHAMMAM,EXACT_GLOBAL,100.0,Andhra Pradesh,Khammam,28.0,541.0
+West Bengal,Khargone,KHARGONE,LOW_CONFIDENCE,61.54,,,,
+West Bengal,Kheda,KHEDA,EXACT_GLOBAL,100.0,Gujarat,Kheda,24.0,483.0
+West Bengal,Kishanganj,KISHANGANJ,EXACT_GLOBAL,100.0,Bihar,Kishanganj,10.0,210.0
+West Bengal,Kodagu,KODAGU,EXACT_GLOBAL,100.0,Karnataka,Kodagu,29.0,576.0
+West Bengal,Koderma,KODERMA,LOW_CONFIDENCE,85.71,,,,
+West Bengal,Kokrajhar,KOKRAJHAR,EXACT_GLOBAL,100.0,Assam,Kokrajhar,18.0,300.0
+West Bengal,Kolar,KOLAR,EXACT_GLOBAL,100.0,Karnataka,Kolar,29.0,581.0
+West Bengal,Kolkata,KOLKATA,EXACT_GLOBAL,100.0,West Bengal,Kolkata,19.0,342.0
+West Bengal,Kollam,KOLLAM,EXACT_GLOBAL,100.0,Kerala,Kollam,32.0,600.0
+West Bengal,Koppal,KOPPAL,EXACT_GLOBAL,100.0,Karnataka,Koppal,29.0,560.0
+West Bengal,Korba,KORBA,EXACT_GLOBAL,100.0,Chhattisgarh,Korba,22.0,404.0
+West Bengal,Korea,KOREA,LOW_CONFIDENCE,80.0,,,,
+West Bengal,Kottayam,KOTTAYAM,EXACT_GLOBAL,100.0,Kerala,Kottayam,32.0,597.0
+West Bengal,Kozhikode,KOZHIKODE,EXACT_GLOBAL,100.0,Kerala,Kozhikode,32.0,591.0
+West Bengal,Krishna,KRISHNA,EXACT_GLOBAL,100.0,Andhra Pradesh,Krishna,28.0,547.0
+West Bengal,Kullu,KULLU,EXACT_GLOBAL,100.0,Himachal Pradesh,Kullu,2.0,26.0
+West Bengal,Kurnool,KURNOOL,EXACT_GLOBAL,100.0,Andhra Pradesh,Kurnool,28.0,552.0
+West Bengal,Kurukshetra,KURUKSHETRA,EXACT_GLOBAL,100.0,Haryana,Kurukshetra,6.0,72.0
+West Bengal,Lakhimpur,LAKHIMPUR,EXACT_GLOBAL,100.0,Assam,Lakhimpur,18.0,307.0
+West Bengal,Lakhisarai,LAKHISARAI,EXACT_GLOBAL,100.0,Bihar,Lakhisarai,10.0,227.0
+West Bengal,Lakshadweep District,LAKSHADWEEP DISTRICT,LOW_CONFIDENCE,70.97,,,,
+West Bengal,Leh Ladakh,LEH LADAKH,EXACT_GLOBAL,100.0,Jammu & Kashmir,Leh(Ladakh),1.0,3.0
+West Bengal,Lohardaga,LOHARDAGA,EXACT_GLOBAL,100.0,Jharkhand,Lohardaga,20.0,356.0
+West Bengal,Lohit,LOHIT,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Lohit,12.0,259.0
+West Bengal,Lower Subansiri,LOWER SUBANSIRI,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Lower Subansiri,12.0,255.0
+West Bengal,Madhepura,MADHEPURA,EXACT_GLOBAL,100.0,Bihar,Madhepura,10.0,213.0
+West Bengal,Madhubani,MADHUBANI,EXACT_GLOBAL,100.0,Bihar,Madhubani,10.0,207.0
+West Bengal,Mahabubnagar,MAHABUBNAGAR,FUZZY_GLOBAL,95.65,Andhra Pradesh,Mahbubnagar,28.0,538.0
+West Bengal,Mahasamund,MAHASAMUND,EXACT_GLOBAL,100.0,Chhattisgarh,Mahasamund,22.0,411.0
+West Bengal,Mahendragarh,MAHENDRAGARH,EXACT_GLOBAL,100.0,Haryana,Mahendragarh,6.0,84.0
+West Bengal,Mahesana,MAHESANA,EXACT_GLOBAL,100.0,Gujarat,Mahesana,24.0,471.0
+West Bengal,Malappuram,MALAPPURAM,EXACT_GLOBAL,100.0,Kerala,Malappuram,32.0,592.0
+West Bengal,Maldah,MALDAH,EXACT_GLOBAL,100.0,West Bengal,Maldah,19.0,332.0
+West Bengal,Mandi,MANDI,EXACT_GLOBAL,100.0,Himachal Pradesh,Mandi,2.0,27.0
+West Bengal,Mandla,MANDLA,EXACT_GLOBAL,100.0,Madhya Pradesh,Mandla,23.0,454.0
+West Bengal,Mandsaur,MANDSAUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Mandsaur,23.0,433.0
+West Bengal,Mandya,MANDYA,EXACT_GLOBAL,100.0,Karnataka,Mandya,29.0,573.0
+West Bengal,Marigaon,MARIGAON,LOW_CONFIDENCE,87.5,,,,
+West Bengal,Medak,MEDAK,EXACT_GLOBAL,100.0,Andhra Pradesh,Medak,28.0,535.0
+West Bengal,Midnapur,MIDNAPUR,LOW_CONFIDENCE,75.0,,,,
+West Bengal,Morena,MORENA,EXACT_GLOBAL,100.0,Madhya Pradesh,Morena,23.0,419.0
+West Bengal,Munger,MUNGER,EXACT_GLOBAL,100.0,Bihar,Munger,10.0,226.0
+West Bengal,Murshidabad,MURSHIDABAD,EXACT_GLOBAL,100.0,West Bengal,Murshidabad,19.0,333.0
+West Bengal,Muzaffarpur,MUZAFFARPUR,EXACT_GLOBAL,100.0,Bihar,Muzaffarpur,10.0,216.0
+West Bengal,Mysuru,MYSURU,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Nadia,NADIA,EXACT_GLOBAL,100.0,West Bengal,Nadia,19.0,336.0
+West Bengal,Nagaon,NAGAON,EXACT_GLOBAL,100.0,Assam,Nagaon,18.0,305.0
+West Bengal,Nalanda,NALANDA,EXACT_GLOBAL,100.0,Bihar,Nalanda,10.0,229.0
+West Bengal,Nalbari,NALBARI,EXACT_GLOBAL,100.0,Assam,Nalbari,18.0,323.0
+West Bengal,Nalgonda,NALGONDA,EXACT_GLOBAL,100.0,Andhra Pradesh,Nalgonda,28.0,539.0
+West Bengal,Narmada,NARMADA,EXACT_GLOBAL,100.0,Gujarat,Narmada,24.0,487.0
+West Bengal,Narmadapuram,NARMADAPURAM,LOW_CONFIDENCE,73.68,,,,
+West Bengal,Narsinghpur,NARSINGHPUR,LOW_CONFIDENCE,81.82,,,,
+West Bengal,Navsari,NAVSARI,EXACT_GLOBAL,100.0,Gujarat,Navsari,24.0,490.0
+West Bengal,Nawada,NAWADA,EXACT_GLOBAL,100.0,Bihar,Nawada,10.0,237.0
+West Bengal,Neemuch,NEEMUCH,EXACT_GLOBAL,100.0,Madhya Pradesh,Neemuch,23.0,432.0
+West Bengal,New Delhi,NEW DELHI,EXACT_GLOBAL,100.0,NCT of Delhi,New Delhi,7.0,94.0
+West Bengal,Nicobars,NICOBARS,EXACT_GLOBAL,100.0,Andaman & Nicobar Island,Nicobars,35.0,638.0
+West Bengal,Nizamabad,NIZAMABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Nizamabad,28.0,533.0
+West Bengal,Pakur,PAKUR,EXACT_GLOBAL,100.0,Jharkhand,Pakur,20.0,353.0
+West Bengal,Palakkad,PALAKKAD,EXACT_GLOBAL,100.0,Kerala,Palakkad,32.0,593.0
+West Bengal,Palamu,PALAMU,EXACT_GLOBAL,100.0,Jharkhand,Palamu,20.0,358.0
+West Bengal,Panch Mahals,PANCH MAHALS,EXACT_GLOBAL,100.0,Gujarat,Panch Mahals,24.0,484.0
+West Bengal,Panchkula,PANCHKULA,EXACT_GLOBAL,100.0,Haryana,Panchkula,6.0,69.0
+West Bengal,Panipat,PANIPAT,EXACT_GLOBAL,100.0,Haryana,Panipat,6.0,75.0
+West Bengal,Panna,PANNA,EXACT_GLOBAL,100.0,Madhya Pradesh,Panna,23.0,426.0
+West Bengal,Papum Pare,PAPUM PARE,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Papum Pare,12.0,248.0
+West Bengal,Pashchim Champaran,PASHCHIM CHAMPARAN,EXACT_GLOBAL,100.0,Bihar,Pashchim Champaran,10.0,203.0
+West Bengal,Patan,PATAN,EXACT_GLOBAL,100.0,Gujarat,Patan,24.0,470.0
+West Bengal,Pathanamthitta,PATHANAMTHITTA,EXACT_GLOBAL,100.0,Kerala,Pathanamthitta,32.0,599.0
+West Bengal,Patna,PATNA,EXACT_GLOBAL,100.0,Bihar,Patna,10.0,230.0
+West Bengal,Poonch,POONCH,LOW_CONFIDENCE,72.73,,,,
+West Bengal,Porbandar,PORBANDAR,EXACT_GLOBAL,100.0,Gujarat,Porbandar,24.0,478.0
+West Bengal,Prakasam,PRAKASAM,EXACT_GLOBAL,100.0,Andhra Pradesh,Prakasam,28.0,549.0
+West Bengal,Purbi Champaran,PURBI CHAMPARAN,FUZZY_GLOBAL,93.33,Bihar,Purba Champaran,10.0,204.0
+West Bengal,Purnia,PURNIA,EXACT_GLOBAL,100.0,Bihar,Purnia,10.0,211.0
+West Bengal,Purulia,PURULIA,FUZZY_GLOBAL,93.33,West Bengal,Puruliya,19.0,340.0
+West Bengal,Raichur,RAICHUR,EXACT_GLOBAL,100.0,Karnataka,Raichur,29.0,559.0
+West Bengal,Raigarh,RAIGARH,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,Raipur,RAIPUR,EXACT_GLOBAL,100.0,Chhattisgarh,Raipur,22.0,410.0
+West Bengal,Raisen,RAISEN,EXACT_GLOBAL,100.0,Madhya Pradesh,Raisen,23.0,446.0
+West Bengal,Rajgarh,RAJGARH,EXACT_GLOBAL,100.0,Madhya Pradesh,Rajgarh,23.0,442.0
+West Bengal,Rajkot,RAJKOT,EXACT_GLOBAL,100.0,Gujarat,Rajkot,24.0,476.0
+West Bengal,RajnandGaon,RAJNANDGAON,EXACT_GLOBAL,100.0,Chhattisgarh,Rajnandgaon,22.0,408.0
+West Bengal,Rajouri,RAJOURI,EXACT_GLOBAL,100.0,Jammu & Kashmir,Rajouri,1.0,6.0
+West Bengal,Ranchi,RANCHI,EXACT_GLOBAL,100.0,Jharkhand,Ranchi,20.0,364.0
+West Bengal,Ranga Reddy,RANGA REDDY,FUZZY_GLOBAL,95.24,Andhra Pradesh,Rangareddy,28.0,537.0
+West Bengal,Ratlam,RATLAM,EXACT_GLOBAL,100.0,Madhya Pradesh,Ratlam,23.0,434.0
+West Bengal,Rewa,REWA,EXACT_GLOBAL,100.0,Madhya Pradesh,Rewa,23.0,430.0
+West Bengal,Rewari,REWARI,EXACT_GLOBAL,100.0,Haryana,Rewari,6.0,85.0
+West Bengal,Rohtak,ROHTAK,EXACT_GLOBAL,100.0,Haryana,Rohtak,6.0,82.0
+West Bengal,Rohtas,ROHTAS,EXACT_GLOBAL,100.0,Bihar,Rohtas,10.0,234.0
+West Bengal,SPSR Nellore,SPSR NELLORE,LOW_CONFIDENCE,63.16,,,,
+West Bengal,Sabar kantha,SABAR KANTHA,EXACT_GLOBAL,100.0,Gujarat,Sabar Kantha,24.0,472.0
+West Bengal,Sagar,SAGAR,EXACT_GLOBAL,100.0,Madhya Pradesh,Sagar,23.0,427.0
+West Bengal,Saharsa,SAHARSA,EXACT_GLOBAL,100.0,Bihar,Saharsa,10.0,214.0
+West Bengal,Sahebganj,SAHEBGANJ,LOW_CONFIDENCE,88.89,,,,
+West Bengal,Samastipur,SAMASTIPUR,EXACT_GLOBAL,100.0,Bihar,Samastipur,10.0,221.0
+West Bengal,Saran,SARAN,EXACT_GLOBAL,100.0,Bihar,Saran,10.0,219.0
+West Bengal,Satna,SATNA,EXACT_GLOBAL,100.0,Madhya Pradesh,Satna,23.0,429.0
+West Bengal,Serampore#,SERAMPORE,SPECIAL_ENTRY,,,,,
+West Bengal,Sheikhpura,SHEIKHPURA,EXACT_GLOBAL,100.0,Bihar,Sheikhpura,10.0,228.0
+West Bengal,Sheohar,SHEOHAR,EXACT_GLOBAL,100.0,Bihar,Sheohar,10.0,205.0
+West Bengal,Shimla,SHIMLA,EXACT_GLOBAL,100.0,Himachal Pradesh,Shimla,2.0,33.0
+West Bengal,Shivamogga,SHIVAMOGGA,LOW_CONFIDENCE,82.35,,,,
+West Bengal,Sirmaur,SIRMAUR,EXACT_GLOBAL,100.0,Himachal Pradesh,Sirmaur,2.0,32.0
+West Bengal,Sirsa,SIRSA,EXACT_GLOBAL,100.0,Haryana,Sirsa,6.0,79.0
+West Bengal,Sitamarhi,SITAMARHI,EXACT_GLOBAL,100.0,Bihar,Sitamarhi,10.0,206.0
+West Bengal,Sivasagar,SIVASAGAR,EXACT_GLOBAL,100.0,Assam,Sivasagar,18.0,311.0
+West Bengal,Siwan,SIWAN,EXACT_GLOBAL,100.0,Bihar,Siwan,10.0,218.0
+West Bengal,Solan,SOLAN,EXACT_GLOBAL,100.0,Himachal Pradesh,Solan,2.0,31.0
+West Bengal,Sonipat,SONIPAT,EXACT_GLOBAL,100.0,Haryana,Sonipat,6.0,76.0
+West Bengal,Sonitpur,SONITPUR,EXACT_GLOBAL,100.0,Assam,Sonitpur,18.0,306.0
+West Bengal,Srikakulam,SRIKAKULAM,EXACT_GLOBAL,100.0,Andhra Pradesh,Srikakulam,28.0,542.0
+West Bengal,Supaul,SUPAUL,EXACT_GLOBAL,100.0,Bihar,Supaul,10.0,208.0
+West Bengal,Surat,SURAT,EXACT_GLOBAL,100.0,Gujarat,Surat,24.0,492.0
+West Bengal,Surendranagar,SURENDRANAGAR,EXACT_GLOBAL,100.0,Gujarat,Surendranagar,24.0,475.0
+West Bengal,Surguja,SURGUJA,EXACT_GLOBAL,100.0,Chhattisgarh,Surguja,22.0,401.0
+West Bengal,Tamluk#,TAMLUK,SPECIAL_ENTRY,,,,,
+West Bengal,Thiruvananthapuram,THIRUVANANTHAPURAM,EXACT_GLOBAL,100.0,Kerala,Thiruvananthapuram,32.0,601.0
+West Bengal,Thrissur,THRISSUR,EXACT_GLOBAL,100.0,Kerala,Thrissur,32.0,594.0
+West Bengal,Tinsukia,TINSUKIA,EXACT_GLOBAL,100.0,Assam,Tinsukia,18.0,309.0
+West Bengal,Tirap,TIRAP,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Tirap,12.0,254.0
+West Bengal,Tumakuru,TUMAKURU,LOW_CONFIDENCE,85.71,,,,
+West Bengal,U.K.P.N. PURA#,U K P N PURA,SPECIAL_ENTRY,,,,,
+West Bengal,Udhampur,UDHAMPUR,EXACT_GLOBAL,100.0,Jammu & Kashmir,Udhampur,1.0,19.0
+West Bengal,Udupi,UDUPI,EXACT_GLOBAL,100.0,Karnataka,Udupi,29.0,569.0
+West Bengal,Uluberia#,ULUBERIA,SPECIAL_ENTRY,,,,,
+West Bengal,Una,UNA,EXACT_GLOBAL,100.0,Himachal Pradesh,Una,2.0,29.0
+West Bengal,Upper Siang,UPPER SIANG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Upper Siang,12.0,252.0
+West Bengal,Upper Subansiri,UPPER SUBANSIRI,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Upper Subansiri,12.0,249.0
+West Bengal,Uttara Kannada,UTTARA KANNADA,EXACT_GLOBAL,100.0,Karnataka,Uttara Kannada,29.0,563.0
+West Bengal,Vadodara,VADODARA,EXACT_GLOBAL,100.0,Gujarat,Vadodara,24.0,486.0
+West Bengal,Vaishali,VAISHALI,EXACT_GLOBAL,100.0,Bihar,Vaishali,10.0,220.0
+West Bengal,Valsad,VALSAD,EXACT_GLOBAL,100.0,Gujarat,Valsad,24.0,491.0
+West Bengal,Vijayapura,VIJAYAPURA,LOW_CONFIDENCE,70.59,,,,
+West Bengal,Visakhapatanam,VISAKHAPATANAM,FUZZY_GLOBAL,96.3,Andhra Pradesh,Visakhapatnam,28.0,544.0
+West Bengal,Vishnupur#,VISHNUPUR,SPECIAL_ENTRY,,,,,
+West Bengal,Vizianagaram,VIZIANAGARAM,EXACT_GLOBAL,100.0,Andhra Pradesh,Vizianagaram,28.0,543.0
+West Bengal,Warangal,WARANGAL,EXACT_GLOBAL,100.0,Andhra Pradesh,Warangal,28.0,540.0
+West Bengal,Wayanad,WAYANAD,EXACT_GLOBAL,100.0,Kerala,Wayanad,32.0,590.0
+West Bengal,West Godavari,WEST GODAVARI,EXACT_GLOBAL,100.0,Andhra Pradesh,West Godavari,28.0,546.0
+West Bengal,West Kameng,WEST KAMENG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,West Kameng,12.0,246.0
+West Bengal,West Siang,WEST SIANG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,West Siang,12.0,250.0
+West Bengal,West Singhbhum,WEST SINGHBHUM,LOW_CONFIDENCE,75.0,,,,
+West Bengal,Y.S.R.,Y S R,EXACT_GLOBAL,100.0,Andhra Pradesh,Y.S.R.,28.0,551.0
+West Bengal,Yamunanagar,YAMUNANAGAR,EXACT_GLOBAL,100.0,Haryana,Yamunanagar,6.0,71.0
+Madhya Pradesh,Sehore,SEHORE,EXACT_GLOBAL,100.0,Madhya Pradesh,Sehore,23.0,445.0
+Madhya Pradesh,Seoni,SEONI,EXACT_GLOBAL,100.0,Madhya Pradesh,Seoni,23.0,456.0
+Madhya Pradesh,Shahdol,SHAHDOL,EXACT_GLOBAL,100.0,Madhya Pradesh,Shahdol,23.0,460.0
+Maharashtra,Ahmednagar,AHMEDNAGAR,EXACT_GLOBAL,100.0,Maharashtra,Ahmadnagar,27.0,522.0
+Maharashtra,Akola,AKOLA,EXACT_GLOBAL,100.0,Maharashtra,Akola,27.0,501.0
+Maharashtra,Amravati,AMRAVATI,EXACT_GLOBAL,100.0,Maharashtra,Amravati,27.0,503.0
+Maharashtra,Aurangabad,AURANGABAD,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+Maharashtra,Beed,BEED,LOW_CONFIDENCE,57.14,,,,
+Maharashtra,Bhandara,BHANDARA,EXACT_GLOBAL,100.0,Maharashtra,Bhandara,27.0,506.0
+Maharashtra,Buldhana,BULDHANA,FUZZY_GLOBAL,93.33,Maharashtra,Buldana,27.0,500.0
+Maharashtra,Satara,SATARA,EXACT_GLOBAL,100.0,Maharashtra,Satara,27.0,527.0
+Maharashtra,Shajapur,SHAJAPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Shajapur,23.0,436.0
+Maharashtra,Sheopur,SHEOPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Sheopur,23.0,418.0
+Maharashtra,Shivpuri,SHIVPURI,EXACT_GLOBAL,100.0,Madhya Pradesh,Shivpuri,23.0,423.0
+Maharashtra,Sidhi,SIDHI,EXACT_GLOBAL,100.0,Madhya Pradesh,Sidhi,23.0,462.0
+Maharashtra,Sindhudurg,SINDHUDURG,EXACT_GLOBAL,100.0,Maharashtra,Sindhudurg,27.0,529.0
+Maharashtra,Solapur,SOLAPUR,EXACT_GLOBAL,100.0,Maharashtra,Solapur,27.0,526.0
+Maharashtra,Thane,THANE,EXACT_GLOBAL,100.0,Maharashtra,Thane,27.0,517.0
+Maharashtra,Tikamgarh,TIKAMGARH,EXACT_GLOBAL,100.0,Madhya Pradesh,Tikamgarh,23.0,424.0
+Maharashtra,Ujjain,UJJAIN,EXACT_GLOBAL,100.0,Madhya Pradesh,Ujjain,23.0,435.0
+Maharashtra,Umaria,UMARIA,EXACT_GLOBAL,100.0,Madhya Pradesh,Umaria,23.0,431.0
+Maharashtra,Vidisha,VIDISHA,EXACT_GLOBAL,100.0,Madhya Pradesh,Vidisha,23.0,443.0
+Maharashtra,Wardha,WARDHA,EXACT_GLOBAL,100.0,Maharashtra,Wardha,27.0,504.0
+Maharashtra,Washim,WASHIM,EXACT_GLOBAL,100.0,Maharashtra,Washim,27.0,502.0
+Manipur,Jiribam,JIRIBAM,LOW_CONFIDENCE,57.14,,,,
+Manipur,Kangpokpi,KANGPOKPI,LOW_CONFIDENCE,57.14,,,,
+Meghalaya,Aizawl,AIZAWL,EXACT_GLOBAL,100.0,Mizoram,Aizawl,15.0,283.0
+Meghalaya,Thoubal,THOUBAL,EXACT_GLOBAL,100.0,Manipur,Thoubal,14.0,276.0
+Mizoram,Mass#,MASS,SPECIAL_ENTRY,,,,,
+Nagaland,Anugul,ANUGUL,EXACT_GLOBAL,100.0,Odisha,Anugul,21.0,384.0
+Nagaland,Balangir,BALANGIR,EXACT_GLOBAL,100.0,Odisha,Balangir,21.0,393.0
+Nagaland,Baleshwar,BALESHWAR,EXACT_GLOBAL,100.0,Odisha,Baleshwar,21.0,377.0
+Nagaland,Bargarh,BARGARH,EXACT_GLOBAL,100.0,Odisha,Bargarh,21.0,370.0
+Nagaland,Bhadrak,BHADRAK,EXACT_GLOBAL,100.0,Odisha,Bhadrak,21.0,378.0
+Punjab,Ajmer,AJMER,EXACT_GLOBAL,100.0,Rajasthan,Ajmer,8.0,119.0
+Punjab,Alwar,ALWAR,EXACT_GLOBAL,100.0,Rajasthan,Alwar,8.0,104.0
+Punjab,Banswara,BANSWARA,EXACT_GLOBAL,100.0,Rajasthan,Banswara,8.0,125.0
+Punjab,Baran,BARAN,EXACT_GLOBAL,100.0,Rajasthan,Baran,8.0,128.0
+Punjab,Sangrur,SANGRUR,EXACT_GLOBAL,100.0,Punjab,Sangrur,3.0,53.0
+Punjab,Sri Muktsar Sahib,SRI MUKTSAR SAHIB,LOW_CONFIDENCE,58.33,,,,
+Sikkim,Dharmapuri,DHARMAPURI,EXACT_GLOBAL,100.0,Tamil Nadu,Dharmapuri,33.0,630.0
+Sikkim,Dindigul,DINDIGUL,EXACT_GLOBAL,100.0,Tamil Nadu,Dindigul,33.0,612.0
+Sikkim,Erode,ERODE,EXACT_GLOBAL,100.0,Tamil Nadu,Erode,33.0,610.0
+Sikkim,Karauli,KARAULI,EXACT_GLOBAL,100.0,Rajasthan,Karauli,8.0,107.0
+Sikkim,Kota,KOTA,EXACT_GLOBAL,100.0,Rajasthan,Kota,8.0,127.0
+Sikkim,Nagaur,NAGAUR,EXACT_GLOBAL,100.0,Rajasthan,Nagaur,8.0,112.0
+Tamil Nadu,Thiruvarur,THIRUVARUR,EXACT_GLOBAL,100.0,Tamil Nadu,Thiruvarur,33.0,619.0
+Tamil Nadu,Tiruchirappalli,TIRUCHIRAPPALLI,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruchirappalli,33.0,614.0
+Tripura,Banda,BANDA,EXACT_GLOBAL,100.0,Uttar Pradesh,Banda,9.0,170.0
+Tripura,Barabanki,BARA BANKI,FUZZY_GLOBAL,94.74,Uttar Pradesh,Bara Banki,9.0,176.0
+Tripura,Bareilly,BAREILLY,EXACT_GLOBAL,100.0,Uttar Pradesh,Bareilly,9.0,150.0
+Tripura,Basti,BASTI,EXACT_GLOBAL,100.0,Uttar Pradesh,Basti,9.0,185.0
+Tripura,Bhadohi,BHADOHI,LOW_CONFIDENCE,76.92,,,,
+Tripura,Bijnor,BIJNOR,EXACT_GLOBAL,100.0,Uttar Pradesh,Bijnor,9.0,134.0
+Uttarakhand,Mau,MAU,EXACT_GLOBAL,100.0,Uttar Pradesh,Mau,9.0,192.0
+Uttarakhand,Meerut,MEERUT,EXACT_GLOBAL,100.0,Uttar Pradesh,Meerut,9.0,138.0
+Uttarakhand,Mirzapur,MIRZAPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Mirzapur,9.0,199.0
+Uttarakhand,Moradabad,MORADABAD,EXACT_GLOBAL,100.0,Uttar Pradesh,Moradabad,9.0,135.0
+Uttarakhand,Muzaffarnagar,MUZAFFARNAGAR,EXACT_GLOBAL,100.0,Uttar Pradesh,Muzaffarnagar,9.0,133.0
+Uttarakhand,Pilibhit,PILIBHIT,EXACT_GLOBAL,100.0,Uttar Pradesh,Pilibhit,9.0,151.0
+Uttarakhand,Pratapgarh,PRATAPGARH,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,Arambagh#,ARAMBAGH,SPECIAL_ENTRY,,,,,
+West Bengal,Bankura,BANKURA,EXACT_GLOBAL,100.0,West Bengal,Bankura,19.0,339.0
+West Bengal,Bardhaman,BARDHAMAN,FUZZY_GLOBAL,94.74,West Bengal,Barddhaman,19.0,335.0
+West Bengal,Barrackpore#,BARRACKPORE,SPECIAL_ENTRY,,,,,
+West Bengal,Jamtara,JAMTARA,EXACT_GLOBAL,100.0,Jharkhand,Jamtara,20.0,363.0
+West Bengal,Latehar,LATEHAR,EXACT_GLOBAL,100.0,Jharkhand,Latehar,20.0,359.0
+West Bengal,Saraikela Kharsawan,SARAIKELA KHARSAWAN,EXACT_GLOBAL,100.0,Jharkhand,Saraikela-Kharsawan,20.0,369.0
+West Bengal,Simdega,SIMDEGA,EXACT_GLOBAL,100.0,Jharkhand,Simdega,20.0,367.0
+West Bengal,UMCP Jammu#,UMCP JAMMU,SPECIAL_ENTRY,,,,,
+Madhya Pradesh,Ahmednagar,AHMEDNAGAR,EXACT_GLOBAL,100.0,Maharashtra,Ahmadnagar,27.0,522.0
+Madhya Pradesh,Akola,AKOLA,EXACT_GLOBAL,100.0,Maharashtra,Akola,27.0,501.0
+Madhya Pradesh,Amravati,AMRAVATI,EXACT_GLOBAL,100.0,Maharashtra,Amravati,27.0,503.0
+Madhya Pradesh,Aurangabad,AURANGABAD,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+Madhya Pradesh,Datia,DATIA,EXACT_GLOBAL,100.0,Madhya Pradesh,Datia,23.0,422.0
+Madhya Pradesh,Dewas,DEWAS,EXACT_GLOBAL,100.0,Madhya Pradesh,Dewas,23.0,437.0
+Madhya Pradesh,Dhar,DHAR,EXACT_GLOBAL,100.0,Madhya Pradesh,Dhar,23.0,438.0
+Madhya Pradesh,Dindori,DINDORI,EXACT_GLOBAL,100.0,Madhya Pradesh,Dindori,23.0,453.0
+Madhya Pradesh,East Nimar,EAST NIMAR,LOW_CONFIDENCE,71.43,,,,
+Madhya Pradesh,Guna,GUNA,EXACT_GLOBAL,100.0,Madhya Pradesh,Guna,23.0,458.0
+Madhya Pradesh,Gwalior,GWALIOR,EXACT_GLOBAL,100.0,Madhya Pradesh,Gwalior,23.0,421.0
+Madhya Pradesh,Harda,HARDA,EXACT_GLOBAL,100.0,Madhya Pradesh,Harda,23.0,448.0
+Madhya Pradesh,Indore,INDORE,EXACT_GLOBAL,100.0,Madhya Pradesh,Indore,23.0,439.0
+Madhya Pradesh,Jabalpur,JABALPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Jabalpur,23.0,451.0
+Madhya Pradesh,Jhabua,JHABUA,EXACT_GLOBAL,100.0,Madhya Pradesh,Jhabua,23.0,464.0
+Madhya Pradesh,Katni,KATNI,EXACT_GLOBAL,100.0,Madhya Pradesh,Katni,23.0,450.0
+Madhya Pradesh,Khargone,KHARGONE,LOW_CONFIDENCE,61.54,,,,
+Madhya Pradesh,Mandla,MANDLA,EXACT_GLOBAL,100.0,Madhya Pradesh,Mandla,23.0,454.0
+Madhya Pradesh,Mandsaur,MANDSAUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Mandsaur,23.0,433.0
+Madhya Pradesh,Morena,MORENA,EXACT_GLOBAL,100.0,Madhya Pradesh,Morena,23.0,419.0
+Madhya Pradesh,Narmadapuram,NARMADAPURAM,LOW_CONFIDENCE,73.68,,,,
+Madhya Pradesh,Narsinghpur,NARSINGHPUR,LOW_CONFIDENCE,81.82,,,,
+Madhya Pradesh,Neemuch,NEEMUCH,EXACT_GLOBAL,100.0,Madhya Pradesh,Neemuch,23.0,432.0
+Madhya Pradesh,Panna,PANNA,EXACT_GLOBAL,100.0,Madhya Pradesh,Panna,23.0,426.0
+Madhya Pradesh,Raisen,RAISEN,EXACT_GLOBAL,100.0,Madhya Pradesh,Raisen,23.0,446.0
+Madhya Pradesh,Rajgarh,RAJGARH,EXACT_GLOBAL,100.0,Madhya Pradesh,Rajgarh,23.0,442.0
+Madhya Pradesh,Ratlam,RATLAM,EXACT_GLOBAL,100.0,Madhya Pradesh,Ratlam,23.0,434.0
+Madhya Pradesh,Rewa,REWA,EXACT_GLOBAL,100.0,Madhya Pradesh,Rewa,23.0,430.0
+Madhya Pradesh,Sagar,SAGAR,EXACT_GLOBAL,100.0,Madhya Pradesh,Sagar,23.0,427.0
+Madhya Pradesh,Satna,SATNA,EXACT_GLOBAL,100.0,Madhya Pradesh,Satna,23.0,429.0
+Madhya Pradesh,Shajapur,SHAJAPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Shajapur,23.0,436.0
+Madhya Pradesh,Sheopur,SHEOPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Sheopur,23.0,418.0
+Madhya Pradesh,Shivpuri,SHIVPURI,EXACT_GLOBAL,100.0,Madhya Pradesh,Shivpuri,23.0,423.0
+Madhya Pradesh,Sidhi,SIDHI,EXACT_GLOBAL,100.0,Madhya Pradesh,Sidhi,23.0,462.0
+Madhya Pradesh,Tikamgarh,TIKAMGARH,EXACT_GLOBAL,100.0,Madhya Pradesh,Tikamgarh,23.0,424.0
+Madhya Pradesh,Ujjain,UJJAIN,EXACT_GLOBAL,100.0,Madhya Pradesh,Ujjain,23.0,435.0
+Madhya Pradesh,Umaria,UMARIA,EXACT_GLOBAL,100.0,Madhya Pradesh,Umaria,23.0,431.0
+Madhya Pradesh,Vidisha,VIDISHA,EXACT_GLOBAL,100.0,Madhya Pradesh,Vidisha,23.0,443.0
+Meghalaya,Aizawl West#,AIZAWL WEST,SPECIAL_ENTRY,,,,,
+Mizoram,Champhai,CHAMPHAI,EXACT_GLOBAL,100.0,Mizoram,Champhai,15.0,284.0
+Mizoram,Dimapur,DIMAPUR,EXACT_GLOBAL,100.0,Nagaland,Dimapur,13.0,265.0
+Mizoram,Kohima,KOHIMA,EXACT_GLOBAL,100.0,Nagaland,Kohima,13.0,270.0
+Mizoram,Kolasib,KOLASIB,EXACT_GLOBAL,100.0,Mizoram,Kolasib,15.0,282.0
+Mizoram,Lawngtlai,LAWNGTLAI,EXACT_GLOBAL,100.0,Mizoram,Lawngtlai,15.0,287.0
+Mizoram,Mamit,MAMIT,EXACT_GLOBAL,100.0,Mizoram,Mamit,15.0,281.0
+Mizoram,Saiha,SAIHA,EXACT_GLOBAL,100.0,Mizoram,Saiha,15.0,288.0
+Mizoram,Serchhip,SERCHHIP,EXACT_GLOBAL,100.0,Mizoram,Serchhip,15.0,285.0
+Tamil Nadu,Cuddalore,CUDDALORE,EXACT_GLOBAL,100.0,Tamil Nadu,Cuddalore,33.0,617.0
+Tamil Nadu,Dharapuram#,DHARAPURAM,SPECIAL_ENTRY,,,,,
+West Bengal,Howrah Municipality#,HOWRAH MUNICIPALITY,SPECIAL_ENTRY,,,,,
+West Bengal,North Goa,NORTH GOA,EXACT_GLOBAL,100.0,Goa,North Goa,30.0,585.0
+West Bengal,South Goa,SOUTH GOA,EXACT_GLOBAL,100.0,Goa,South Goa,30.0,586.0
+Nagaland,Boudh,BOUDH,LOW_CONFIDENCE,80.0,,,,
+Nagaland,Cuttack,CUTTACK,EXACT_GLOBAL,100.0,Odisha,Cuttack,21.0,381.0
+Nagaland,Deogarh,DEOGARH,LOW_CONFIDENCE,85.71,,,,
+Nagaland,Dhenkanal,DHENKANAL,EXACT_GLOBAL,100.0,Odisha,Dhenkanal,21.0,383.0
+Nagaland,Gajapati,GAJAPATI,EXACT_GLOBAL,100.0,Odisha,Gajapati,21.0,389.0
+Nagaland,Ganjam,GANJAM,EXACT_GLOBAL,100.0,Odisha,Ganjam,21.0,388.0
+Nagaland,Mon,MON,EXACT_GLOBAL,100.0,Nagaland,Mon,13.0,261.0
+Punjab,Barmer,BARMER,EXACT_GLOBAL,100.0,Rajasthan,Barmer,8.0,115.0
+Punjab,Bharatpur,BHARATPUR,EXACT_GLOBAL,100.0,Rajasthan,Bharatpur,8.0,105.0
+Punjab,Bhilwara,BHILWARA,EXACT_GLOBAL,100.0,Rajasthan,Bhilwara,8.0,122.0
+Punjab,Bikaner,BIKANER,EXACT_GLOBAL,100.0,Rajasthan,Bikaner,8.0,101.0
+Punjab,Bundi,BUNDI,EXACT_GLOBAL,100.0,Rajasthan,Bundi,8.0,121.0
+Tripura,Budaun,BUDAUN,EXACT_GLOBAL,100.0,Uttar Pradesh,Budaun,9.0,149.0
+Tripura,Bulandshahr,BULANDSHAHR,EXACT_GLOBAL,100.0,Uttar Pradesh,Bulandshahr,9.0,142.0
+Tripura,Chandauli,CHANDAULI,EXACT_GLOBAL,100.0,Uttar Pradesh,Chandauli,9.0,196.0
+Tripura,Chitrakoot,CHITRAKOOT,EXACT_GLOBAL,100.0,Uttar Pradesh,Chitrakoot,9.0,171.0
+Tripura,Deoria,DEORIA,EXACT_GLOBAL,100.0,Uttar Pradesh,Deoria,9.0,190.0
+Tripura,Etah,ETAH,EXACT_GLOBAL,100.0,Uttar Pradesh,Etah,9.0,201.0
+Tripura,Tenkasi,TENKASI,LOW_CONFIDENCE,66.67,,,,
+Tripura,Thanjavur,THANJAVUR,EXACT_GLOBAL,100.0,Tamil Nadu,Thanjavur,33.0,620.0
+Tripura,The Nilgiris,THE NILGIRIS,EXACT_GLOBAL,100.0,Tamil Nadu,The Nilgiris,33.0,611.0
+Tripura,Theni,THENI,EXACT_GLOBAL,100.0,Tamil Nadu,Theni,33.0,624.0
+Tripura,Thiruvallur,THIRUVALLUR,EXACT_GLOBAL,100.0,Tamil Nadu,Thiruvallur,33.0,602.0
+Uttar Pradesh,Prayagraj,PRAYAGRAJ,EXACT_GLOBAL,100.0,Uttar Pradesh,Allahabad,9.0,175.0
+Uttar Pradesh,Rae Bareli,RAE BARELI,EXACT_GLOBAL,100.0,Uttar Pradesh,Rae Bareli,9.0,158.0
+Uttar Pradesh,Rampur,RAMPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Rampur,9.0,136.0
+Uttar Pradesh,Saharanpur,SAHARANPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Saharanpur,9.0,132.0
+West Bengal,Arwal,ARWAL,EXACT_GLOBAL,100.0,Bihar,Arwal,10.0,240.0
+West Bengal,Medinipur East,MEDINIPUR EAST,LOW_CONFIDENCE,62.07,,,,
+West Bengal,Sehore,SEHORE,EXACT_GLOBAL,100.0,Madhya Pradesh,Sehore,23.0,445.0
+West Bengal,Seoni,SEONI,EXACT_GLOBAL,100.0,Madhya Pradesh,Seoni,23.0,456.0
+West Bengal,Shahdol,SHAHDOL,EXACT_GLOBAL,100.0,Madhya Pradesh,Shahdol,23.0,460.0
+West Bengal,Shajapur,SHAJAPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Shajapur,23.0,436.0
+West Bengal,Sheopur,SHEOPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Sheopur,23.0,418.0
+West Bengal,Shivpuri,SHIVPURI,EXACT_GLOBAL,100.0,Madhya Pradesh,Shivpuri,23.0,423.0
+West Bengal,Sidhi,SIDHI,EXACT_GLOBAL,100.0,Madhya Pradesh,Sidhi,23.0,462.0
+Meghalaya,East Garo Hills,EAST GARO HILLS,EXACT_GLOBAL,100.0,Meghalaya,East Garo Hills,17.0,294.0
+Meghalaya,West Garo Hills,WEST GARO HILLS,EXACT_GLOBAL,100.0,Meghalaya,West Garo Hills,17.0,293.0
+Meghalaya,West Khasi Hills,WEST KHASI HILLS,EXACT_GLOBAL,100.0,Meghalaya,West Khasi Hills,17.0,296.0
+Nagaland,Kiphire,KIPHIRE,EXACT_GLOBAL,100.0,Nagaland,Kiphire,13.0,269.0
+Nagaland,Longleng,LONGLENG,EXACT_GLOBAL,100.0,Nagaland,Longleng,13.0,268.0
+Nagaland,Peren,PEREN,EXACT_GLOBAL,100.0,Nagaland,Peren,13.0,271.0
+Puducherry,Nabarangpur,NABARANGPUR,FUZZY_GLOBAL,95.65,Odisha,Nabarangapur,21.0,397.0
+Puducherry,Nayagarh,NAYAGARH,EXACT_GLOBAL,100.0,Odisha,Nayagarh,21.0,385.0
+Sikkim,Jhunjhunu,JHUNJHUNU,FUZZY_GLOBAL,94.74,Rajasthan,Jhunjhunun,8.0,103.0
+Sikkim,Jodhpur,JODHPUR,EXACT_GLOBAL,100.0,Rajasthan,Jodhpur,8.0,113.0
+West Bengal,24 Paraganas South,SOUTH TWENTY FOUR PARGANAS,EXACT_GLOBAL,100.0,West Bengal,South Twenty Four Parganas,19.0,343.0
+West Bengal,Kolkata Urban#,KOLKATA URBAN,SPECIAL_ENTRY,,,,,
+West Bengal,Medinipur West,MEDINIPUR WEST,LOW_CONFIDENCE,62.07,,,,
+Lakshadweep,Bhopal,BHOPAL,EXACT_GLOBAL,100.0,Madhya Pradesh,Bhopal,23.0,444.0
+Madhya Pradesh,Chhatarpur,CHHATARPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Chhatarpur,23.0,425.0
+Madhya Pradesh,Chhindwara,CHHINDWARA,EXACT_GLOBAL,100.0,Madhya Pradesh,Chhindwara,23.0,455.0
+Madhya Pradesh,Damoh,DAMOH,EXACT_GLOBAL,100.0,Madhya Pradesh,Damoh,23.0,428.0
+Manipur,Imphal East,IMPHAL EAST,EXACT_GLOBAL,100.0,Manipur,Imphal East,14.0,278.0
+Manipur,Imphal West,IMPHAL WEST,EXACT_GLOBAL,100.0,Manipur,Imphal West,14.0,277.0
+Nagaland,Lunglei,LUNGLEI,EXACT_GLOBAL,100.0,Mizoram,Lunglei,15.0,286.0
+Nagaland,Mamit,MAMIT,EXACT_GLOBAL,100.0,Mizoram,Mamit,15.0,281.0
+Nagaland,Saiha,SAIHA,EXACT_GLOBAL,100.0,Mizoram,Saiha,15.0,288.0
+Nagaland,Serchhip,SERCHHIP,EXACT_GLOBAL,100.0,Mizoram,Serchhip,15.0,285.0
+Punjab,Amritsar,AMRITSAR,EXACT_GLOBAL,100.0,Punjab,Amritsar,3.0,49.0
+Punjab,Bathinda,BATHINDA,EXACT_GLOBAL,100.0,Punjab,Bathinda,3.0,46.0
+Punjab,Faridkot,FARIDKOT,EXACT_GLOBAL,100.0,Punjab,Faridkot,3.0,45.0
+Punjab,Yanam,YANAM,EXACT_GLOBAL,100.0,Puducherry,Yanam,34.0,634.0
+Rajasthan,Pali,PALI,EXACT_GLOBAL,100.0,Rajasthan,Pali,8.0,118.0
+Rajasthan,Rajsamand,RAJSAMAND,EXACT_GLOBAL,100.0,Rajasthan,Rajsamand,8.0,123.0
+Rajasthan,Sawai Madhopur,SAWAI MADHOPUR,EXACT_GLOBAL,100.0,Rajasthan,Sawai Madhopur,8.0,108.0
+Rajasthan,Sikar,SIKAR,EXACT_GLOBAL,100.0,Rajasthan,Sikar,8.0,111.0
+Rajasthan,Sirohi,SIROHI,EXACT_GLOBAL,100.0,Rajasthan,Sirohi,8.0,117.0
+Rajasthan,Tonk,TONK,EXACT_GLOBAL,100.0,Rajasthan,Tonk,8.0,120.0
+West Bengal,Anuppur,ANUPPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Anuppur,23.0,461.0
+West Bengal,Ashoknagar,ASHOKNAGAR,EXACT_GLOBAL,100.0,Madhya Pradesh,Ashoknagar,23.0,459.0
+West Bengal,Burhanpur,BURHANPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Burhanpur,23.0,467.0
+West Bengal,Nuh,NUH,LOW_CONFIDENCE,60.0,,,,
+Maharashtra,Shahdol,SHAHDOL,EXACT_GLOBAL,100.0,Madhya Pradesh,Shahdol,23.0,460.0
+Puducherry,Barnala,BARNALA,EXACT_GLOBAL,100.0,Punjab,Barnala,3.0,54.0
+Punjab,Nagar,NAGAR,FUZZY_GLOBAL,90.91,Rajasthan,Nagaur,8.0,112.0
+Punjab,Tarn taran,TARN TARAN,EXACT_GLOBAL,100.0,Punjab,Tarn Taran,3.0,50.0
+Sikkim,Kallakurichi,KALLAKURICHI,LOW_CONFIDENCE,57.14,,,,
+Sikkim,Kanchipuram,KANCHIPURAM,LOW_CONFIDENCE,86.96,,,,
+Sikkim,Kanniyakumari,KANNIYAKUMARI,EXACT_GLOBAL,100.0,Tamil Nadu,Kanniyakumari,33.0,629.0
+West Bengal,Anjaw,ANJAW,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Anjaw,12.0,260.0
+West Bengal,Bhavnagar MC#,BHAVNAGAR MC,SPECIAL_ENTRY,,,,,
+West Bengal,Jamnagar MC#,JAMNAGAR MC,SPECIAL_ENTRY,,,,,
+West Bengal,Junagadh MC#,JUNAGADH MC,SPECIAL_ENTRY,,,,,
+West Bengal,Kurung Kumey,KURUNG KUMEY,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Kurung Kumey,12.0,256.0
+West Bengal,Lower Dibang Valley,LOWER DIBANG VALLEY,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Lower Dibang Valley,12.0,258.0
+West Bengal,Pvt. Hospital & Others#,PVT HOSPITAL AND OTHERS,SPECIAL_ENTRY,,,,,
+West Bengal,Rajkot MC#,RAJKOT MC,SPECIAL_ENTRY,,,,,
+West Bengal,South Andamans,SOUTH ANDAMANS,FUZZY_GLOBAL,96.3,Andaman & Nicobar Island,South Andaman,35.0,640.0
+West Bengal,Surat MC#,SURAT MC,SPECIAL_ENTRY,,,,,
+West Bengal,Vadodara MC#,VADODARA MC,SPECIAL_ENTRY,,,,,
+Maharashtra,Yavatmal,YAVATMAL,EXACT_GLOBAL,100.0,Maharashtra,Yavatmal,27.0,510.0
+Meghalaya,East Khasi Hills,EAST KHASI HILLS,EXACT_GLOBAL,100.0,Meghalaya,East Khasi Hills,17.0,298.0
+Meghalaya,Ri Bhoi,RI BHOI,FUZZY_GLOBAL,92.31,Meghalaya,Ribhoi,17.0,297.0
+Meghalaya,South Garo Hills,SOUTH GARO HILLS,EXACT_GLOBAL,100.0,Meghalaya,South Garo Hills,17.0,295.0
+Mizoram,Bhandari#,BHANDARI,SPECIAL_ENTRY,,,,,
+Nagaland,Chantgya#,CHANTGYA,SPECIAL_ENTRY,,,,,
+Nagaland,Chazjiba#,CHAZJIBA,SPECIAL_ENTRY,,,,,
+Nagaland,M'lemba#,M'LEMBA,SPECIAL_ENTRY,,,,,
+Nagaland,Pfutsero#,PFUTSERO,SPECIAL_ENTRY,,,,,
+Nagaland,Tizit#,TIZIT,SPECIAL_ENTRY,,,,,
+Rajasthan,Tarn taran,TARN TARAN,EXACT_GLOBAL,100.0,Punjab,Tarn Taran,3.0,50.0
+West Bengal,Baksa,BAKSA,EXACT_GLOBAL,100.0,Assam,Baksa,18.0,324.0
+West Bengal,ChikkaBallaPura,CHIKKABALLAPURA,EXACT_GLOBAL,100.0,Karnataka,Chikkaballapura,29.0,582.0
+West Bengal,Chirang,CHIRANG,EXACT_GLOBAL,100.0,Assam,Chirang,18.0,320.0
+West Bengal,Kamrup Metro,KAMRUP METRO,LOW_CONFIDENCE,77.42,,,,
+West Bengal,Khunti,KHUNTI,EXACT_GLOBAL,100.0,Jharkhand,Khunti,20.0,365.0
+West Bengal,Kishtwar,KISHTWAR,EXACT_GLOBAL,100.0,Jammu & Kashmir,Kishtwar,1.0,18.0
+West Bengal,Ramanagara,RAMANAGARA,EXACT_GLOBAL,100.0,Karnataka,Ramanagara,29.0,584.0
+West Bengal,Ramban,RAMBAN,EXACT_GLOBAL,100.0,Jammu & Kashmir,Ramban,1.0,17.0
+West Bengal,Ramgarh,RAMGARH,EXACT_GLOBAL,100.0,Jharkhand,Ramgarh,20.0,361.0
+West Bengal,Reasi,REASI,EXACT_GLOBAL,100.0,Jammu & Kashmir,Reasi,1.0,20.0
+West Bengal,Samba,SAMBA,EXACT_GLOBAL,100.0,Jammu & Kashmir,Samba,1.0,22.0
+West Bengal,Tapi,TAPI,EXACT_GLOBAL,100.0,Gujarat,Tapi,24.0,493.0
+West Bengal,Udalguri,UDALGURI,EXACT_GLOBAL,100.0,Assam,Udalguri,18.0,326.0
+Manipur,Imphal Urban#,IMPHAL URBAN,SPECIAL_ENTRY,,,,,
+Manipur,Pune,PUNE,EXACT_GLOBAL,100.0,Maharashtra,Pune,27.0,521.0
+Manipur,Pune MC#,PUNE MC,SPECIAL_ENTRY,,,,,
+Manipur,Raigad,RAIGAD,LOW_CONFIDENCE,76.92,,,,
+Manipur,Ratnagiri,RATNAGIRI,EXACT_GLOBAL,100.0,Maharashtra,Ratnagiri,27.0,528.0
+Manipur,Sangli,SANGLI,EXACT_GLOBAL,100.0,Maharashtra,Sangli,27.0,531.0
+Odisha,Zunheboto,ZUNHEBOTO,EXACT_GLOBAL,100.0,Nagaland,Zunheboto,13.0,263.0
+Rajasthan,Nagar,NAGAR,FUZZY_GLOBAL,90.91,Rajasthan,Nagaur,8.0,112.0
+Tamil Nadu,Coimbatore,COIMBATORE,EXACT_GLOBAL,100.0,Tamil Nadu,Coimbatore,33.0,632.0
+Uttar Pradesh,Kasganj,KASGANJ,LOW_CONFIDENCE,75.0,,,,
+West Bengal,Palwal,PALWAL,EXACT_GLOBAL,100.0,Haryana,Palwal,6.0,89.0
+Punjab,Barnala,BARNALA,EXACT_GLOBAL,100.0,Punjab,Barnala,3.0,54.0
+Rajasthan,Pratapgarh,PRATAPGARH,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+Tamil Nadu,Tirunelveli,TIRUNELVELI,EXACT_GLOBAL,100.0,Tamil Nadu,Tirunelveli,33.0,628.0
+Tamil Nadu,Tirupathur,TIRUPATHUR,LOW_CONFIDENCE,77.78,,,,
+Tamil Nadu,Tiruppur,TIRUPPUR,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruppur,33.0,633.0
+Tamil Nadu,Tiruvannamalai,TIRUVANNAMALAI,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruvannamalai,33.0,606.0
+Uttarakhand,Birbhum,BIRBHUM,EXACT_GLOBAL,100.0,West Bengal,Birbhum,19.0,334.0
+Uttarakhand,Coochbehar,COOCH BEHAR,LOW_CONFIDENCE,76.19,,,,
+Uttarakhand,Darjeeling,DARJEELING,LOW_CONFIDENCE,84.21,,,,
+Uttarakhand,Dinajpur Dakshin,DINAJPUR DAKSHIN,LOW_CONFIDENCE,53.33,,,,
+West Bengal,Bijapur,BIJAPUR,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,Narayanpur,NARAYANPUR,EXACT_GLOBAL,100.0,Chhattisgarh,Narayanpur,22.0,415.0
+West Bengal,Yadgir,YADGIR,EXACT_GLOBAL,100.0,Karnataka,Yadgir,29.0,580.0
+Lakshadweep,Anuppur,ANUPPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Anuppur,23.0,461.0
+Lakshadweep,Ashoknagar,ASHOKNAGAR,EXACT_GLOBAL,100.0,Madhya Pradesh,Ashoknagar,23.0,459.0
+Lakshadweep,Balaghat,BALAGHAT,EXACT_GLOBAL,100.0,Madhya Pradesh,Balaghat,23.0,457.0
+Lakshadweep,Barwani,BARWANI,EXACT_GLOBAL,100.0,Madhya Pradesh,Barwani,23.0,441.0
+Lakshadweep,Betul,BETUL,EXACT_GLOBAL,100.0,Madhya Pradesh,Betul,23.0,447.0
+Lakshadweep,Bhind,BHIND,EXACT_GLOBAL,100.0,Madhya Pradesh,Bhind,23.0,420.0
+Lakshadweep,Burhanpur,BURHANPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Burhanpur,23.0,467.0
+Lakshadweep,Chhatarpur,CHHATARPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Chhatarpur,23.0,425.0
+Lakshadweep,Chhindwara,CHHINDWARA,EXACT_GLOBAL,100.0,Madhya Pradesh,Chhindwara,23.0,455.0
+Lakshadweep,Damoh,DAMOH,EXACT_GLOBAL,100.0,Madhya Pradesh,Damoh,23.0,428.0
+Lakshadweep,Datia,DATIA,EXACT_GLOBAL,100.0,Madhya Pradesh,Datia,23.0,422.0
+Lakshadweep,Lakshadweep District,LAKSHADWEEP DISTRICT,LOW_CONFIDENCE,70.97,,,,
+Lakshadweep,Wayanad,WAYANAD,EXACT_GLOBAL,100.0,Kerala,Wayanad,32.0,590.0
+Manipur,Ukhrul,UKHRUL,EXACT_GLOBAL,100.0,Manipur,Ukhrul,14.0,279.0
+Puducherry,Mayurbhanj,MAYURBHANJ,EXACT_GLOBAL,100.0,Odisha,Mayurbhanj,21.0,376.0
+Sikkim,Pratapgarh,PRATAPGARH,AMBIGUOUS_DISTRICT_NAME,100.0,,,,
+West Bengal,24 Paraganas North,NORTH TWENTY FOUR PARGANAS,EXACT_GLOBAL,100.0,West Bengal,North Twenty Four Parganas,19.0,337.0
+West Bengal,Gandhinagar MC#,GANDHINAGAR MC,SPECIAL_ENTRY,,,,,
+West Bengal,Rudra Prayag,RUDRA PRAYAG,FUZZY_GLOBAL,95.65,Uttarakhand,Rudraprayag,5.0,58.0
+West Bengal,Tehri Garhwal,TEHRI GARHWAL,EXACT_GLOBAL,100.0,Uttarakhand,Tehri Garhwal,5.0,59.0
+West Bengal,Udam Singh Nagar,UDAM SINGH NAGAR,FUZZY_GLOBAL,96.97,Uttarakhand,Udham Singh Nagar,5.0,67.0
+West Bengal,Uttar Kashi,UTTAR KASHI,FUZZY_GLOBAL,95.24,Uttarakhand,Uttarkashi,5.0,56.0
+West Bengal,Alirajpur,ALIRAJPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Alirajpur,23.0,465.0
+West Bengal,Balod,BALOD,LOW_CONFIDENCE,61.54,,,,
+West Bengal,Baloda Bazar,BALODA BAZAR,LOW_CONFIDENCE,53.85,,,,
+West Bengal,Balrampur,BALRAMPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Balrampur,9.0,182.0
+West Bengal,Bemetara,BEMETARA,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Gariyaband,GARIYABAND,LOW_CONFIDENCE,73.68,,,,
+West Bengal,Kondagaon,KONDAGAON,LOW_CONFIDENCE,80.0,,,,
+West Bengal,Mungeli,MUNGELI,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Sukma,SUKMA,LOW_CONFIDENCE,61.54,,,,
+West Bengal,Surajpur,SURAJPUR,LOW_CONFIDENCE,77.78,,,,
+Madhya Pradesh,Burhanpur,BURHANPUR,EXACT_GLOBAL,100.0,Madhya Pradesh,Burhanpur,23.0,467.0
+Madhya Pradesh,Singrauli,SINGRAULI,EXACT_GLOBAL,100.0,Madhya Pradesh,Singrauli,23.0,463.0
+Odisha,Nuapada,NUAPADA,EXACT_GLOBAL,100.0,Odisha,Nuapada,21.0,394.0
+Odisha,Puri,PURI,EXACT_GLOBAL,100.0,Odisha,Puri,21.0,387.0
+Odisha,Rayagada,RAYAGADA,EXACT_GLOBAL,100.0,Odisha,Rayagada,21.0,396.0
+Odisha,Sambalpur,SAMBALPUR,EXACT_GLOBAL,100.0,Odisha,Sambalpur,21.0,372.0
+Odisha,Sonepur,SONEPUR,LOW_CONFIDENCE,80.0,,,,
+Sikkim,Ariyalur,ARIYALUR,EXACT_GLOBAL,100.0,Tamil Nadu,Ariyalur,33.0,616.0
+Maharashtra,Singrauli,SINGRAULI,EXACT_GLOBAL,100.0,Madhya Pradesh,Singrauli,23.0,463.0
+Puducherry,Fatehgarh Sahib,FATEHGARH SAHIB,EXACT_GLOBAL,100.0,Punjab,Fatehgarh Sahib,3.0,40.0
+Punjab,Fazilka,FAZILKA,LOW_CONFIDENCE,58.82,,,,
+Punjab,Pathankot,PATHANKOT,LOW_CONFIDENCE,71.43,,,,
+Tamil Nadu,Cheyyar#,CHEYYAR,SPECIAL_ENTRY,,,,,
+Tripura,Amethi,AMETHI,LOW_CONFIDENCE,66.67,,,,
+Tripura,Gomati,GOMATI,LOW_CONFIDENCE,57.14,,,,
+Tripura,Khowai,KHOWAI,LOW_CONFIDENCE,61.54,,,,
+Tripura,Sepahijala,SEPAHIJALA,LOW_CONFIDENCE,70.59,,,,
+Tripura,Unakoti,UNAKOTI,LOW_CONFIDENCE,66.67,,,,
+Uttar Pradesh,Balrampur,BALRAMPUR,EXACT_GLOBAL,100.0,Uttar Pradesh,Balrampur,9.0,182.0
+Uttar Pradesh,Hapur,HAPUR,LOW_CONFIDENCE,76.92,,,,
+Uttarakhand,Sambhal,SAMBHAL,LOW_CONFIDENCE,83.33,,,,
+Uttarakhand,Shamli,SHAMLI,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Arvalli,ARVALLI,LOW_CONFIDENCE,71.43,,,,
+West Bengal,Botad,BOTAD,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Chhotaudepur,CHHOTAUDEPUR,LOW_CONFIDENCE,72.73,,,,
+West Bengal,Devbhumi Dwarka,DEVBHUMI DWARKA,LOW_CONFIDENCE,60.87,,,,
+West Bengal,Gir Somnath,GIR SOMNATH,LOW_CONFIDENCE,55.56,,,,
+West Bengal,Longding,LONGDING,LOW_CONFIDENCE,75.0,,,,
+West Bengal,Mahisagar,MAHISAGAR,LOW_CONFIDENCE,71.43,,,,
+West Bengal,Morbi,MORBI,LOW_CONFIDENCE,61.54,,,,
+West Bengal,OS: (Jharkhand)^,OS: JHARKHAND ^,LOW_CONFIDENCE,50.0,,,,
+Rajasthan,OS: (Gujarat)^,OS: GUJARAT ^,LOW_CONFIDENCE,55.56,,,,
+Telangana,Adilabad,ADILABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Adilabad,28.0,532.0
+Telangana,Hyderabad,HYDERABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Hyderabad,28.0,536.0
+Telangana,Karimnagar,KARIMNAGAR,EXACT_GLOBAL,100.0,Andhra Pradesh,Karimnagar,28.0,534.0
+Telangana,Khammam,KHAMMAM,EXACT_GLOBAL,100.0,Andhra Pradesh,Khammam,28.0,541.0
+Telangana,Mahabubnagar,MAHABUBNAGAR,FUZZY_GLOBAL,95.65,Andhra Pradesh,Mahbubnagar,28.0,538.0
+Telangana,Medak,MEDAK,EXACT_GLOBAL,100.0,Andhra Pradesh,Medak,28.0,535.0
+Telangana,Nalgonda,NALGONDA,EXACT_GLOBAL,100.0,Andhra Pradesh,Nalgonda,28.0,539.0
+Telangana,Nizamabad,NIZAMABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Nizamabad,28.0,533.0
+Telangana,Ranga Reddy,RANGA REDDY,FUZZY_GLOBAL,95.24,Andhra Pradesh,Rangareddy,28.0,537.0
+Telangana,Tirunelveli,TIRUNELVELI,EXACT_GLOBAL,100.0,Tamil Nadu,Tirunelveli,33.0,628.0
+Telangana,Tirupathur,TIRUPATHUR,LOW_CONFIDENCE,77.78,,,,
+Telangana,Tiruppur,TIRUPPUR,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruppur,33.0,633.0
+Telangana,Tiruvannamalai,TIRUVANNAMALAI,EXACT_GLOBAL,100.0,Tamil Nadu,Tiruvannamalai,33.0,606.0
+Telangana,Tuticorin,TUTICORIN,LOW_CONFIDENCE,50.0,,,,
+Telangana,Vellore,VELLORE,EXACT_GLOBAL,100.0,Tamil Nadu,Vellore,33.0,605.0
+Telangana,Villupuram,VILLUPURAM,FUZZY_GLOBAL,90.0,Tamil Nadu,Viluppuram,33.0,607.0
+Telangana,Virudhunagar,VIRUDHUNAGAR,EXACT_GLOBAL,100.0,Tamil Nadu,Virudhunagar,33.0,625.0
+Telangana,Warangal,WARANGAL,EXACT_GLOBAL,100.0,Andhra Pradesh,Warangal,28.0,540.0
+West Bengal,Agar Malwa,AGAR MALWA,LOW_CONFIDENCE,62.5,,,,
+Manipur,Tengnoupal,TENGNOUPAL,LOW_CONFIDENCE,58.82,,,,
+West Bengal,BBMP#,BBMP,SPECIAL_ENTRY,,,,,
+West Bengal,Kra Daadi,KRA DAADI,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Namsai,NAMSAI,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Siang,SIANG,LOW_CONFIDENCE,80.0,,,,
+Maharashtra,Palghar,PALGHAR,LOW_CONFIDENCE,71.43,,,,
+Uttarakhand,Alipurduar,ALIPURDUAR,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Tawang,TAWANG,EXACT_GLOBAL,100.0,Arunanchal Pradesh,Tawang,12.0,245.0
+Tamil Nadu,Adilabad,ADILABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Adilabad,28.0,532.0
+Tamil Nadu,Bhadradri Kothagudem,BHADRADRI KOTHAGUDEM,LOW_CONFIDENCE,51.85,,,,
+Tamil Nadu,Hanumakonda,HANUMAKONDA,LOW_CONFIDENCE,72.73,,,,
+Tamil Nadu,Tuticorin,TUTICORIN,LOW_CONFIDENCE,50.0,,,,
+Tamil Nadu,Vellore,VELLORE,EXACT_GLOBAL,100.0,Tamil Nadu,Vellore,33.0,605.0
+Tamil Nadu,Villupuram,VILLUPURAM,FUZZY_GLOBAL,90.0,Tamil Nadu,Viluppuram,33.0,607.0
+Tamil Nadu,Virudhunagar,VIRUDHUNAGAR,EXACT_GLOBAL,100.0,Tamil Nadu,Virudhunagar,33.0,625.0
+Telangana,Asifabad,ASIFABAD,LOW_CONFIDENCE,75.0,,,,
+Telangana,Bhupalapally,BHUPALAPALLY,LOW_CONFIDENCE,55.56,,,,
+Telangana,Jagitial,JAGITIAL,LOW_CONFIDENCE,66.67,,,,
+Telangana,Jangoan,JANGOAN,LOW_CONFIDENCE,71.43,,,,
+Telangana,Jogulamba Gadwal,JOGULAMBA GADWAL,LOW_CONFIDENCE,58.33,,,,
+Telangana,Kamareddy,KAMAREDDY,LOW_CONFIDENCE,73.68,,,,
+Telangana,Mahabubabad,MAHABUBABAD,LOW_CONFIDENCE,72.73,,,,
+Telangana,Mancherial,MANCHERIAL,LOW_CONFIDENCE,63.64,,,,
+Telangana,Medchal Malkajgiri,MEDCHAL MALKAJGIRI,LOW_CONFIDENCE,64.29,,,,
+Telangana,Nagarkurnool,NAGARKURNOOL,LOW_CONFIDENCE,73.68,,,,
+Telangana,Nirmal,NIRMAL,LOW_CONFIDENCE,61.54,,,,
+Telangana,Peddapalli,PEDDAPALLI,LOW_CONFIDENCE,57.14,,,,
+Telangana,Rajanna Sircilla,RAJANNA SIRCILLA,LOW_CONFIDENCE,56.0,,,,
+Telangana,Sangareddy,SANGAREDDY,FUZZY_GLOBAL,90.0,Andhra Pradesh,Rangareddy,28.0,537.0
+Tripura,Siddipet,SIDDIPET,LOW_CONFIDENCE,61.54,,,,
+Tripura,Suryapet,SURYAPET,LOW_CONFIDENCE,76.92,,,,
+Tripura,Vikarabad,VIKARABAD,LOW_CONFIDENCE,66.67,,,,
+Tripura,Wanaparthy,WANAPARTHY,LOW_CONFIDENCE,60.0,,,,
+Tripura,Warangal,WARANGAL,EXACT_GLOBAL,100.0,Andhra Pradesh,Warangal,28.0,540.0
+Tripura,Yadadri Bhuvanagiri,YADADRI BHUVANAGIRI,LOW_CONFIDENCE,60.0,,,,
+Uttar Pradesh,Sambhal,SAMBHAL,LOW_CONFIDENCE,83.33,,,,
+West Bengal,Lower Siang,LOWER SIANG,LOW_CONFIDENCE,76.19,,,,
+West Bengal,Singrauli,SINGRAULI,EXACT_GLOBAL,100.0,Madhya Pradesh,Singrauli,23.0,463.0
+West Bengal,Tikamgarh,TIKAMGARH,EXACT_GLOBAL,100.0,Madhya Pradesh,Tikamgarh,23.0,424.0
+West Bengal,Ujjain,UJJAIN,EXACT_GLOBAL,100.0,Madhya Pradesh,Ujjain,23.0,435.0
+West Bengal,Umaria,UMARIA,EXACT_GLOBAL,100.0,Madhya Pradesh,Umaria,23.0,431.0
+Puducherry,Koraput,KORAPUT,EXACT_GLOBAL,100.0,Odisha,Koraput,21.0,398.0
+Puducherry,Malkangiri,MALKANGIRI,EXACT_GLOBAL,100.0,Odisha,Malkangiri,21.0,399.0
+Telangana,Bhadradri Kothagudem,BHADRADRI KOTHAGUDEM,LOW_CONFIDENCE,51.85,,,,
+Telangana,Hanumakonda,HANUMAKONDA,LOW_CONFIDENCE,72.73,,,,
+Telangana,Siddipet,SIDDIPET,LOW_CONFIDENCE,61.54,,,,
+West Bengal,Ahmednagar,AHMEDNAGAR,EXACT_GLOBAL,100.0,Maharashtra,Ahmadnagar,27.0,522.0
+West Bengal,Akola,AKOLA,EXACT_GLOBAL,100.0,Maharashtra,Akola,27.0,501.0
+West Bengal,Alipurduar,ALIPURDUAR,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Amravati,AMRAVATI,EXACT_GLOBAL,100.0,Maharashtra,Amravati,27.0,503.0
+West Bengal,Beed,BEED,LOW_CONFIDENCE,57.14,,,,
+West Bengal,Bhandara,BHANDARA,EXACT_GLOBAL,100.0,Maharashtra,Bhandara,27.0,506.0
+West Bengal,Bishnupur HD#,BISHNUPUR HD,SPECIAL_ENTRY,,,,,
+West Bengal,Buldhana,BULDHANA,FUZZY_GLOBAL,93.33,Maharashtra,Buldana,27.0,500.0
+West Bengal,Chandrapur,CHANDRAPUR,EXACT_GLOBAL,100.0,Maharashtra,Chandrapur,27.0,509.0
+West Bengal,Charki Dadri,CHARKI DADRI,LOW_CONFIDENCE,63.16,,,,
+West Bengal,Dhule,DHULE,EXACT_GLOBAL,100.0,Maharashtra,Dhule,27.0,498.0
+West Bengal,Jhargram,JHARGRAM,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Kalimpong,KALIMPONG,LOW_CONFIDENCE,63.16,,,,
+West Bengal,Nandigram HD#,NANDIGRAM HD,SPECIAL_ENTRY,,,,,
+West Bengal,Paschim Bardhaman,PASCHIM BARDHAMAN,LOW_CONFIDENCE,74.29,,,,
+West Bengal,Purba Bardhaman,PURBA BARDHAMAN,LOW_CONFIDENCE,73.33,,,,
+West Bengal,Rampurhat HD#,RAMPURHAT HD,SPECIAL_ENTRY,,,,,
+West Bengal,Vidisha,VIDISHA,EXACT_GLOBAL,100.0,Madhya Pradesh,Vidisha,23.0,443.0
+Meghalaya,East Jaintia Hills,EAST JAINTIA HILLS,LOW_CONFIDENCE,83.87,,,,
+Telangana,Mulugu,MULUGU,LOW_CONFIDENCE,57.14,,,,
+Telangana,Narayanpet,NARAYANPET,LOW_CONFIDENCE,80.0,,,,
+Telangana,Suryapet,SURYAPET,LOW_CONFIDENCE,76.92,,,,
+Telangana,Vikarabad,VIKARABAD,LOW_CONFIDENCE,66.67,,,,
+Telangana,Wanaparthy,WANAPARTHY,LOW_CONFIDENCE,60.0,,,,
+West Bengal,Gadchiroli,GADCHIROLI,EXACT_GLOBAL,100.0,Maharashtra,Gadchiroli,27.0,508.0
+West Bengal,Gondia,GONDIA,FUZZY_GLOBAL,92.31,Maharashtra,Gondiya,27.0,507.0
+West Bengal,Hingoli,HINGOLI,EXACT_GLOBAL,100.0,Maharashtra,Hingoli,27.0,512.0
+West Bengal,Jalgaon,JALGAON,EXACT_GLOBAL,100.0,Maharashtra,Jalgaon,27.0,499.0
+West Bengal,Jalna,JALNA,EXACT_GLOBAL,100.0,Maharashtra,Jalna,27.0,514.0
+West Bengal,Kinnaur,KINNAUR,EXACT_GLOBAL,100.0,Himachal Pradesh,Kinnaur,2.0,34.0
+West Bengal,Kolhapur,KOLHAPUR,EXACT_GLOBAL,100.0,Maharashtra,Kolhapur,27.0,530.0
+West Bengal,Lahul And Spiti,LAHUL AND SPITI,EXACT_GLOBAL,100.0,Himachal Pradesh,Lahul & Spiti,2.0,25.0
+West Bengal,Latur,LATUR,EXACT_GLOBAL,100.0,Maharashtra,Latur,27.0,524.0
+West Bengal,Marwahi,MARWAHI,LOW_CONFIDENCE,71.43,,,,
+Manipur,Kamjong,KAMJONG,LOW_CONFIDENCE,61.54,,,,
+Manipur,Noney,NONEY,LOW_CONFIDENCE,54.55,,,,
+Manipur,Pherzawl,PHERZAWL,LOW_CONFIDENCE,57.14,,,,
+Meghalaya,North Garo Hills,NORTH GARO HILLS,LOW_CONFIDENCE,87.5,,,,
+Meghalaya,South West Garo Hills,SOUTH WEST GARO HILLS,LOW_CONFIDENCE,86.49,,,,
+Meghalaya,South West Khasi Hills,SOUTH WEST KHASI HILLS,LOW_CONFIDENCE,84.21,,,,
+Mizoram,West Khasi Hills,WEST KHASI HILLS,EXACT_GLOBAL,100.0,Meghalaya,West Khasi Hills,17.0,296.0
+Telangana,Yadadri Bhuvanagiri,YADADRI BHUVANAGIRI,LOW_CONFIDENCE,60.0,,,,
+Tripura,Daman,DAMAN,EXACT_GLOBAL,100.0,Daman & Diu,Daman,25.0,495.0
+Tripura,Diu,DIU,EXACT_GLOBAL,100.0,Daman & Diu,Diu,25.0,494.0
+Tripura,Haveli,HAVELI,LOW_CONFIDENCE,83.33,,,,
+West Bengal,Biswanath,BISWANATH,LOW_CONFIDENCE,62.5,,,,
+West Bengal,Charaideo,CHARAIDEO,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Hojai,HOJAI,LOW_CONFIDENCE,60.0,,,,
+West Bengal,Majuli,MAJULI,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Mancachar,MANCACHAR,LOW_CONFIDENCE,80.0,,,,
+West Bengal,West Karbi Anglong,WEST KARBI ANGLONG,LOW_CONFIDENCE,83.87,,,,
+Manipur,Kakching,KAKCHING,LOW_CONFIDENCE,66.67,,,,
+Meghalaya,Tamenglong,TAMENGLONG,EXACT_GLOBAL,100.0,Manipur,Tamenglong,14.0,273.0
+Meghalaya,Tengnoupal,TENGNOUPAL,LOW_CONFIDENCE,58.82,,,,
+Sikkim,Attur#,ATTUR,SPECIAL_ENTRY,,,,,
+Sikkim,Karur,KARUR,EXACT_GLOBAL,100.0,Tamil Nadu,Karur,33.0,613.0
+Tamil Nadu,Ranipet,RANIPET,LOW_CONFIDENCE,71.43,,,,
+Tripura,Nizamabad,NIZAMABAD,EXACT_GLOBAL,100.0,Andhra Pradesh,Nizamabad,28.0,533.0
+Tripura,Peddapalli,PEDDAPALLI,LOW_CONFIDENCE,57.14,,,,
+Tripura,Rajanna Sircilla,RAJANNA SIRCILLA,LOW_CONFIDENCE,56.0,,,,
+Tripura,Ranga Reddy,RANGA REDDY,FUZZY_GLOBAL,95.24,Andhra Pradesh,Rangareddy,28.0,537.0
+Tripura,Sangareddy,SANGAREDDY,FUZZY_GLOBAL,90.0,Andhra Pradesh,Rangareddy,28.0,537.0
+Uttarakhand,Basirhat HD#,BASIRHAT HD,SPECIAL_ENTRY,,,,,
+West Bengal,Alluri Sitharama Raju,ALLURI SITHARAMA RAJU,LOW_CONFIDENCE,50.0,,,,
+West Bengal,Anakapalli,ANAKAPALLI,LOW_CONFIDENCE,58.82,,,,
+West Bengal,Annamayya,ANNAMAYYA,LOW_CONFIDENCE,62.5,,,,
+West Bengal,Bapatla,BAPATLA,LOW_CONFIDENCE,71.43,,,,
+West Bengal,Eluru,ELURU,LOW_CONFIDENCE,71.43,,,,
+West Bengal,Kakinada,KAKINADA,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Konaseema,KONASEEMA,LOW_CONFIDENCE,62.5,,,,
+West Bengal,NTR,NTR,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Nandyal,NANDYAL,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Pakke Kessang,PAKKE KESSANG,LOW_CONFIDENCE,58.33,,,,
+West Bengal,Palnadu,PALNADU,LOW_CONFIDENCE,76.92,,,,
+West Bengal,Parvathipuram Manyam,PARVATHIPURAM MANYAM,LOW_CONFIDENCE,52.94,,,,
+West Bengal,Sri Sathya Sai,SRI SATHYA SAI,LOW_CONFIDENCE,57.14,,,,
+West Bengal,Tirupati,TIRUPATI,LOW_CONFIDENCE,62.5,,,,
+West Bengal,Vijayanagar,VIJAYANAGAR,LOW_CONFIDENCE,73.68,,,,
+Madhya Pradesh,Niwari,NIWARI,LOW_CONFIDENCE,66.67,,,,
+Meghalaya,Hills,HILLS,LOW_CONFIDENCE,60.0,,,,
+Mizoram,South West Khasi Hills,SOUTH WEST KHASI HILLS,LOW_CONFIDENCE,84.21,,,,
+Mizoram,West Garo Hills,WEST GARO HILLS,EXACT_GLOBAL,100.0,Meghalaya,West Garo Hills,17.0,293.0
+Mizoram,West Jaintia Hills,WEST JAINTIA HILLS,LOW_CONFIDENCE,83.87,,,,
+Punjab,Malerkotla,MALERKOTLA,LOW_CONFIDENCE,66.67,,,,
+Tamil Nadu,Mayiladuthurai,MAYILADUTHURAI,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Ambagarh Chouki,AMBAGARH CHOUKI,LOW_CONFIDENCE,54.55,,,,
+West Bengal,Bharatpur,BHARATPUR,EXACT_GLOBAL,100.0,Rajasthan,Bharatpur,8.0,105.0
+West Bengal,Gandai,GANDAI,LOW_CONFIDENCE,72.73,,,,
+West Bengal,Kamle,KAMLE,LOW_CONFIDENCE,60.0,,,,
+West Bengal,Leparada,LEPARADA,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Sakti,SAKTI,LOW_CONFIDENCE,61.54,,,,
+West Bengal,Sarangarh Bilaigarh,SARANGARH BILAIGARH,LOW_CONFIDENCE,57.14,,,,
+West Bengal,Shi Yomi,SHI YOMI,LOW_CONFIDENCE,57.14,,,,
+West Bengal,Anantnag,ANANTNAG,EXACT_GLOBAL,100.0,Jammu & Kashmir,Anantnag,1.0,14.0
+West Bengal,Bajali,BAJALI,LOW_CONFIDENCE,66.67,,,,
+West Bengal,Bandipora,BANDIPORA,LOW_CONFIDENCE,88.89,,,,
+West Bengal,Budgam,BUDGAM,LOW_CONFIDENCE,83.33,,,,
+West Bengal,Ganderbal,GANDERBAL,EXACT_GLOBAL,100.0,Jammu & Kashmir,Ganderbal,1.0,11.0
+West Bengal,Kulgam,KULGAM,EXACT_GLOBAL,100.0,Jammu & Kashmir,Kulgam,1.0,15.0
+West Bengal,Kupwara,KUPWARA,EXACT_GLOBAL,100.0,Jammu & Kashmir,Kupwara,1.0,1.0
+West Bengal,Pulwama,PULWAMA,EXACT_GLOBAL,100.0,Jammu & Kashmir,Pulwama,1.0,12.0
+West Bengal,Shopian,SHOPIAN,LOW_CONFIDENCE,80.0,,,,
+West Bengal,Srinagar,SRINAGAR,EXACT_GLOBAL,100.0,Jammu & Kashmir,Srinagar,1.0,10.0
+West Bengal,Tamulpur,TAMULPUR,LOW_CONFIDENCE,75.0,,,,
+Madhya Pradesh,Mauganj,MAUGANJ,LOW_CONFIDENCE,70.59,,,,
+Mizoram,Hnahthial,HNAHTHIAL,LOW_CONFIDENCE,62.5,,,,
+Mizoram,Khawzawl,KHAWZAWL,LOW_CONFIDENCE,71.43,,,,
+Mizoram,Saitual,SAITUAL,LOW_CONFIDENCE,71.43,,,,
+Mizoram,South West Garo Hills,SOUTH WEST GARO HILLS,LOW_CONFIDENCE,86.49,,,,
+Nagaland,Chumoukedima,CHUMOUKEDIMA,LOW_CONFIDENCE,52.63,,,,
+Nagaland,Niuland,NIULAND,LOW_CONFIDENCE,71.43,,,,
+Nagaland,Noklak,NOKLAK,LOW_CONFIDENCE,54.55,,,,
+Nagaland,Tseminyu,TSEMINYU,LOW_CONFIDENCE,50.0,,,,
+Puducherry,Khordha,KHORDHA,EXACT_GLOBAL,100.0,Odisha,Khordha,21.0,386.0
+Puducherry,Malaria Clinic+FTDs#,MALARIA CLINIC+FTDS,SPECIAL_ENTRY,,,,,
+Sikkim,Kovilpatti#,KOVILPATTI,SPECIAL_ENTRY,,,,,
+Sikkim,Pakyong,PAKYONG,LOW_CONFIDENCE,50.0,,,,
+Sikkim,Soreng,SORENG,LOW_CONFIDENCE,66.67,,,,

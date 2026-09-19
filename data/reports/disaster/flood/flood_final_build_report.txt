@@ -1,0 +1,30 @@
+FLOOD FINAL BUILD REPORT
+========================
+
+Raw flood events: 6,876
+
+Deterministic LGD → Census mappings:
+502
+
+Final event-district rows:
+18,307
+
+Final district-year rows:
+9,878
+
+Unique Census districts:
+502
+
+Year range:
+1967 - 2023
+
+District-year duplicate keys:
+0
+
+STATUS:
+PASSED
+
+LIMITATION:
+Only deterministic LGD → Census mappings were retained.
+Unmapped and ambiguous LGD districts were excluded.
+No district was assigned by fuzzy matching or inference.

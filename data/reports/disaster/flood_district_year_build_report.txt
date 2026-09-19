@@ -1,0 +1,19 @@
+FLOOD DISTRICT-YEAR BUILD REPORT
+============================================================
+
+Raw flood events: 6,876
+Event-district rows: 23,657
+District-year rows: 12,667
+Unique LGD district codes: 684
+Year range: 1967 - 2023
+Events without LGD codes: 308
+
+OUTPUT
+------------------------------------------------------------
+C:\Users\ADITH RAGUNATH\Desktop\Bharat_TravelShield_AI\data\processed\disaster\flood\flood_district_year_1967_2023.csv
+
+IMPORTANT LIMITATION
+------------------------------------------------------------
+Flood inventory uses LGD district codes. These must not be directly equated with Census 2011 district codes.
+District-level canonical joining to the project district master requires a verified LGD-to-Census district crosswalk.
+Events without usable district LGD codes were excluded from district-level aggregation rather than being assigned by inference.

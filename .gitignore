@@ -105,3 +105,11 @@ data/raw/*
 
 data/interim/*
 !data/interim/.gitkeep
+
+# ================================
+# Large Processed Data
+# ================================
+data/processed/weather/weather_daily_2011_2025.csv
+data/processed/weather/weather_daily_2011_2025.parquet
+data/processed/weather/weather_daily_2011_2025.csv
+data/processed/weather/weather_daily_2011_2025.parquet
