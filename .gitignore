@@ -119,3 +119,6 @@ data/processed/weather/weather_daily_2011_2025.parquet
 ml/models/heatwave/*
 !ml/models/heatwave/feedforward_ann_mlp.joblib
 !ml/models/heatwave/heatwave_feature_scaler.joblib
+
+# Generated duplicate of the committed Parquet dataset
+ml/data/heatwave/heatwave_t_to_t1_dataset.csv
