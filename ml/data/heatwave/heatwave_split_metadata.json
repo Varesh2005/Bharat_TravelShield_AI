@@ -1,0 +1,90 @@
+{
+  "dataset_name": "Bharat-TravelShield Heatwave T-to-T+1 Classification Dataset",
+  "task": "Binary Classification (heatwave_days_T+1 > 0)",
+  "source_file": "data/processed/features/travelshield_district_year_features_2011_2024.parquet",
+  "source_file_sha256": "e8a694caa8d20bcc0a18fed03cf372dae5adc33fc474d30ae7e67328fe440960",
+  "total_rows": 8320,
+  "districts_count": 640,
+  "feature_years": [
+    2011,
+    2023
+  ],
+  "target_years": [
+    2012,
+    2024
+  ],
+  "positive_rate_overall_pct": 39.36,
+  "candidate_predictors_count": 14,
+  "candidate_predictors": [
+    "latitude",
+    "longitude",
+    "population_2011",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "min_temperature_c",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "heatwave_days_T",
+    "severe_heatwave_days_T",
+    "has_heatwave_T",
+    "temp_range_c",
+    "rain_intensity"
+  ],
+  "metadata_columns": [
+    "census_district_code",
+    "year",
+    "target_year",
+    "split",
+    "model_selection_split"
+  ],
+  "target_columns": [
+    "target_heatwave_days_T1",
+    "target_has_heatwave_T1"
+  ],
+  "target_construction_method": "Validated 1-to-1 calendar join on (census_district_code, year + 1)",
+  "splits": {
+    "full_evaluation": {
+      "train": {
+        "feature_years": "2011-2020",
+        "target_years": "2012-2021",
+        "rows": 6400,
+        "positive_count": 2492,
+        "positive_rate_pct": 38.94
+      },
+      "test": {
+        "feature_years": "2021-2023",
+        "target_years": "2022-2024",
+        "rows": 1920,
+        "positive_count": 783,
+        "positive_rate_pct": 40.78
+      }
+    },
+    "model_selection_inner": {
+      "inner_train": {
+        "feature_years": "2011-2018",
+        "target_years": "2012-2019",
+        "rows": 5120,
+        "positive_count": 2244,
+        "positive_rate_pct": 43.83,
+        "usage": "Fit models during hyperparameter search & architecture tuning"
+      },
+      "inner_val": {
+        "feature_years": "2019-2020",
+        "target_years": "2020-2021",
+        "rows": 1280,
+        "positive_count": 248,
+        "positive_rate_pct": 19.38,
+        "usage": "Validate model choices & early stopping (contains 2021 low-heatwave year)"
+      },
+      "test": {
+        "feature_years": "2021-2023",
+        "target_years": "2022-2024",
+        "rows": 1920,
+        "positive_count": 783,
+        "positive_rate_pct": 40.78,
+        "usage": "Held-out test set evaluated strictly once after final model selection"
+      }
+    }
+  }
+}

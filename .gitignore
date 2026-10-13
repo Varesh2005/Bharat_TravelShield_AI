@@ -113,3 +113,9 @@ data/processed/weather/weather_daily_2011_2025.csv
 data/processed/weather/weather_daily_2011_2025.parquet
 data/processed/weather/weather_daily_2011_2025.csv
 data/processed/weather/weather_daily_2011_2025.parquet
+
+# Selected heatwave inference artifacts required by the application
+!ml/models/heatwave/
+ml/models/heatwave/*
+!ml/models/heatwave/feedforward_ann_mlp.joblib
+!ml/models/heatwave/heatwave_feature_scaler.joblib
