@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0",
+  "summary_type": "destination_data_summary",
+  "destination": {
+    "census_district_code": 146,
+    "district_name": "Agra",
+    "state_name": "Uttar Pradesh",
+    "latitude": 27.07456089185929,
+    "longitude": 77.89157835465284,
+    "population_2011": 4418797,
+    "boundary_basis": "Census 2011 district",
+    "coordinate_basis": "district representative point (not a weather station)"
+  },
+  "query_period": {
+    "start_date": "2024-10-01",
+    "end_date": "2024-10-31",
+    "requested": true,
+    "years_covered": [
+      2024
+    ],
+    "spans_partial_year": true,
+    "resolution_supported": "annual",
+    "month_specific_data_available": false,
+    "note": "The requested dates select the calendar years they overlap. Every value is an annual (calendar-year) figure and is not restricted to the requested days or months; month-specific values are not available."
+  },
+  "hazards": {
+    "weather": {
+      "resolution": {
+        "spatial": "district representative point",
+        "temporal": "annual"
+      },
+      "spatial_basis": "district_point_model_derived",
+      "source": "NASA POWER daily point data (MERRA-2/POWER), aggregated by year",
+      "units": {
+        "avg_temperature_c": "degC, annual mean of daily 2 m temperature",
+        "max_temperature_c": "degC, highest daily maximum in the year",
+        "min_temperature_c": "degC, lowest daily minimum in the year",
+        "avg_humidity_pct": "%, annual mean 2 m relative humidity",
+        "total_rainfall_mm": "mm, annual corrected precipitation",
+        "rainy_days": "days with precipitation >= 1 mm"
+      },
+      "caveats": [
+        "Gridded, model-derived values at the district representative point, not station observations.",
+        "Annual figures only; monthly or travel-window weather is not provided by this table."
+      ],
+      "status": "available",
+      "status_reason": null,
+      "records": [
+        {
+          "year": 2024,
+          "avg_temperature_c": 25.92,
+          "max_temperature_c": 49.56,
+          "min_temperature_c": 3.47,
+          "avg_humidity_pct": 53.58,
+          "total_rainfall_mm": 1016.9,
+          "rainy_days": 93
+        }
+      ],
+      "summary": {
+        "years_with_records": 1,
+        "mean_of_annual_avg_temperature_c": 25.92,
+        "highest_daily_max_temperature_c": 49.56,
+        "highest_daily_max_year": 2024,
+        "mean_annual_rainfall_mm": 1016.9
+      },
+      "coverage": {
+        "source_year_range": [
+          2011,
+          2025
+        ],
+        "destination_year_range": [
+          2011,
+          2025
+        ],
+        "years_requested": [
+          2024
+        ],
+        "years_with_records_in_period": [
+          2024
+        ],
+        "years_without_records_in_period": []
+      },
+      "last_observed_year": 2025
+    },
+    "heatwave_threshold": {
+      "resolution": {
+        "spatial": "district representative point",
+        "temporal": "annual"
+      },
+      "spatial_basis": "district_point_model_derived",
+      "source": "Derived from NASA POWER daily T2M_MAX",
+      "definition": "heatwave_days: days with modelled daily maximum temperature >= 45 degC; severe_heatwave_days: >= 47 degC.",
+      "units": {
+        "heatwave_days": "days",
+        "severe_heatwave_days": "days",
+        "max_temperature_c": "degC"
+      },
+      "caveats": [
+        "A temperature-threshold indicator from gridded data. It is NOT an official IMD-declared heatwave record (IMD declarations also use departure-from-normal and spatial/temporal rules)."
+      ],
+      "status": "available",
+      "status_reason": null,
+      "records": [
+        {
+          "year": 2024,
+          "heatwave_days": 30,
+          "severe_heatwave_days": 15,
+          "max_temperature_c": 49.56
+        }
+      ],
+      "summary": {
+        "years_with_records": 1,
+        "years_with_threshold_days": 1,
+        "total_threshold_days": 30,
+        "total_severe_threshold_days": 15,
+        "most_threshold_days_in_a_year": 30,
+        "most_threshold_days_year": 2024
+      },
+      "coverage": {
+        "source_year_range": [
+          2011,
+          2025
+        ],
+        "destination_year_range": [
+          2011,
+          2025
+        ],
+        "years_requested": [
+          2024
+        ],
+        "years_with_records_in_period": [
+          2024
+        ],
+        "years_without_records_in_period": []
+      },
+      "last_observed_year": 2025
+    },
+    "malaria": {
+      "resolution": {
+        "spatial": "district",
+        "temporal": "annual"
+      },
+      "spatial_basis": "district_observation",
+      "source": "NCVBDC district-wise malaria tables (extracted from PDF)",
+      "units": {
+        "total_cases": "reported cases",
+        "total_deaths": "reported deaths"
+      },
+      "caveats": [
+        "Raw reported counts. Not rates and not comparable across districts of different population; no incidence is computed.",
+        "Only districts successfully matched to the Census-2011 master are retained; a missing district-year is unknown, not zero.",
+        "A row with data_coverage THROUGH_APRIL_2024 is a partial year."
+      ],
+      "status": "available",
+      "status_reason": null,
+      "records": [
+        {
+          "year": 2024,
+          "total_cases": 1,
+          "total_deaths": 0,
+          "data_coverage": "THROUGH_APRIL_2024"
+        }
+      ],
+      "summary": {
+        "years_with_records": 1,
+        "sum_of_reported_cases": 1,
+        "years_with_nonzero_cases": 1,
+        "includes_partial_year_records": true
+      },
+      "coverage": {
+        "source_year_range": [
+          2000,
+          2024
+        ],
+        "destination_year_range": [
+          2000,
+          2024
+        ],
+        "years_requested": [
+          2024
+        ],
+        "years_with_records_in_period": [
+          2024
+        ],
+        "years_without_records_in_period": []
+      },
+      "last_observed_year": 2024
+    },
+    "dengue": {
+      "resolution": {
+        "spatial": "state",
+        "temporal": "annual"
+      },
+      "spatial_basis": "state_level_context_not_district_specific",
+      "source": "NCVBDC state-wise dengue tables",
+      "units": {
+        "dengue_cases": "reported cases",
+        "dengue_deaths": "reported deaths"
+      },
+      "state_used": {
+        "state_in_source": "Uttar Pradesh",
+        "mapping": "state_name_match"
+      },
+      "data_quality": {
+        "verification_pending_years": [],
+        "note": null
+      },
+      "caveats": [
+        "State-level totals shown as context for the destination's state. They are NOT observations for this district and are shared by every district of the state.",
+        "Raw counts; not rates and not comparable across states of different population.",
+        "Rows marked PROVISIONAL_* cover only part of the year."
+      ],
+      "status": "available",
+      "status_reason": null,
+      "records": [
+        {
+          "year": 2024,
+          "dengue_cases": 15868,
+          "dengue_deaths": 9,
+          "data_coverage": "FULL_YEAR",
+          "source_state_label": "Uttar Pradesh",
+          "reporting_status": "reported",
+          "data_quality": {
+            "status": "as_reported",
+            "usable_as_verified_input": true
+          }
+        }
+      ],
+      "summary": {
+        "years_with_records": 1,
+        "years_not_reported": 0,
+        "sum_of_reported_state_cases": 15868,
+        "includes_provisional_records": false,
+        "includes_verification_pending_records": false
+      },
+      "coverage": {
+        "source_year_range": [
+          2021,
+          2026
+        ],
+        "destination_year_range": [
+          2021,
+          2026
+        ],
+        "years_requested": [
+          2024
+        ],
+        "years_with_records_in_period": [
+          2024
+        ],
+        "years_without_records_in_period": []
+      },
+      "last_observed_year": 2026
+    },
+    "flood": {
+      "resolution": {
+        "spatial": "district",
+        "temporal": "annual"
+      },
+      "spatial_basis": "district_observation",
+      "source": "India Flood Inventory v3, deterministic LGD-to-Census mapping",
+      "units": {
+        "flood_event_count": "recorded flood events in the year"
+      },
+      "absence_semantics": "unknown_not_zero",
+      "caveats": [
+        "The table lists only district-years with at least one recorded event. A year with no row is NOT confirmed to have had no flood.",
+        "Only districts with a deterministic LGD-to-Census mapping are present (502 of 640 in the current build); other districts are unknown, not flood-free."
+      ],
+      "status": "no_records_in_period",
+      "status_reason": "The destination has records in other years but none in the requested period. This is unknown, not zero.",
+      "records": [],
+      "summary": null,
+      "coverage": {
+        "source_year_range": [
+          1967,
+          2023
+        ],
+        "destination_year_range": [
+          1967,
+          2022
+        ],
+        "years_requested": [
+          2024
+        ],
+        "years_with_records_in_period": [],
+        "years_without_records_in_period": null
+      },
+      "last_observed_year": 2022
+    }
+  },
+  "coverage_overview": {
+    "weather": {
+      "status": "available",
+      "last_observed_year": 2025,
+      "spatial_basis": "district_point_model_derived"
+    },
+    "heatwave_threshold": {
+      "status": "available",
+      "last_observed_year": 2025,
+      "spatial_basis": "district_point_model_derived"
+    },
+    "malaria": {
+      "status": "available",
+      "last_observed_year": 2024,
+      "spatial_basis": "district_observation"
+    },
+    "dengue": {
+      "status": "available",
+      "last_observed_year": 2026,
+      "spatial_basis": "state_level_context_not_district_specific"
+    },
+    "flood": {
+      "status": "no_records_in_period",
+      "last_observed_year": 2022,
+      "spatial_basis": "district_observation"
+    }
+  },
+  "precautions": [
+    {
+      "hazard": "heatwave_threshold",
+      "text": "Plan strenuous outdoor activity outside the hottest hours, drink water regularly and know the signs of heat illness. Check current IMD heat advisories before travel.",
+      "supported_by": "Modelled days at or above 45 degC appear in the returned years.",
+      "kind": "generic_guidance_not_official_advice"
+    },
+    {
+      "hazard": "malaria",
+      "text": "Reduce mosquito bites (repellent, covered clothing, nets where advised) and seek medical care promptly for fever. Ask a health professional about travel-health advice.",
+      "supported_by": "Reported malaria cases appear for this district in the returned years.",
+      "kind": "generic_guidance_not_official_advice"
+    },
+    {
+      "hazard": "dengue",
+      "text": "Dengue mosquitoes bite mainly by day: use repellent and covered clothing, avoid standing water, and seek medical care for high fever or severe symptoms.",
+      "supported_by": "Reported dengue cases appear for the destination's state in the returned years.",
+      "kind": "generic_guidance_not_official_advice"
+    }
+  ],
+  "experimental_heatwave_ann": {
+    "experimental": true,
+    "model_version": "heatwave-ann-mlp-v1",
+    "caveats": [
+      "Experimental. Target: at least one NASA POWER-derived day >= 45 degC during the target calendar year (not an IMD-declared heatwave).",
+      "District-level annual classification; not a travel-date or month forecast.",
+      "The raw score is uncalibrated and must not be read as a probability or converted to a risk level."
+    ],
+    "feature_year": 2025,
+    "target_year": 2026,
+    "prediction": {
+      "model": "Feedforward ANN/MLP",
+      "task": "next_calendar_year_heatwave_occurrence",
+      "predicted_class": 1,
+      "predicted_label": "heatwave_occurrence",
+      "raw_positive_score": 0.967574,
+      "classification_threshold": 0.5,
+      "score_interpretation": "Uncalibrated model score. Do not interpret it as a reliable real-world probability.",
+      "target_definition": "At least one day with maximum temperature at or above 45 C during the next calendar year, according to the training target.",
+      "limitations": [
+        "District-level annual prediction, not a month-specific forecast.",
+        "Not a personal health-risk assessment.",
+        "Raw model scores have not been shown to be reliably calibrated."
+      ]
+    },
+    "status": "available",
+    "reason": null
+  },
+  "limitations": [
+    "Aggregation of existing data, not a forecast; no overall risk score or safety verdict is produced.",
+    "All sources are annual or coarser. Month- or day-specific values are not available and are never derived from annual data.",
+    "A missing record means unknown. It is never treated as zero.",
+    "Disease counts are raw reported counts, not rates; do not compare them across places of different population.",
+    "Dengue is state-level context shared by all districts of the state.",
+    "Correlation shown by co-occurring data is not causation."
+  ],
+  "disclaimer": "Decision support only. This is not a diagnosis, an emergency alert, a guarantee of safety or a substitute for official advisories (IMD, NCVBDC/state health departments, state disaster-management authorities)."
+}

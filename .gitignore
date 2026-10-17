@@ -111,14 +111,15 @@ data/interim/*
 # ================================
 data/processed/weather/weather_daily_2011_2025.csv
 data/processed/weather/weather_daily_2011_2025.parquet
-data/processed/weather/weather_daily_2011_2025.csv
-data/processed/weather/weather_daily_2011_2025.parquet
 
 # Selected heatwave inference artifacts required by the application
 !ml/models/heatwave/
 ml/models/heatwave/*
 !ml/models/heatwave/feedforward_ann_mlp.joblib
 !ml/models/heatwave/heatwave_feature_scaler.joblib
+# Baseline models: required by ml/test_heatwave_models.py (small, 4.5 MB total)
+!ml/models/heatwave/logistic_regression.joblib
+!ml/models/heatwave/random_forest.joblib
 
 # Generated duplicate of the committed Parquet dataset
 ml/data/heatwave/heatwave_t_to_t1_dataset.csv

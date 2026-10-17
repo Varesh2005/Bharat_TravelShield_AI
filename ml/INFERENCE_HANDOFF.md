@@ -4,6 +4,11 @@
 
 This handoff covers the first heatwave ANN inference integration.
 
+> **Scope note:** the ANN is an optional, experimental component. The
+> product's core is the data-aggregation layer in
+> `ml/DATA_ANALYSIS_HANDOFF.md`, which builds the 14-feature record
+> itself and works when these model files are absent.
+
 - Model identifier for integration: `heatwave-ann-mlp-v1`
 - Selected model: feed-forward ANN / `MLPClassifier`
 - Candidate selected using validation F1: `ANN_64_32`
