@@ -137,9 +137,21 @@ SPECS: tuple[Spec, ...] = (
     Spec(
         "heatwave_ann_dataset", "ml/data/heatwave/heatwave_t_to_t1_dataset.parquet",
         keys=("census_district_code", "year"), required=False,
-        source="ml/prepare_heatwave_dataset.py (experimental ANN)", units="see feature dictionary",
-        known_gaps=("Experimental ANN training table; optional for the product.",),
+        source="ml/prepare_heatwave_dataset.py (legacy v1 heatwave ANN experiment)", units="see feature dictionary",
+        known_gaps=("Legacy v1 experiment table, superseded by ml/data/hazards/heatwave; kept as evidence.",),
     ),
+    *(Spec(
+        f"model_dataset_{h}", f"ml/data/hazards/{h}/dataset.parquet",
+        keys=("census_district_code", "feature_year"), required=False, state_col="state_name",
+        year_col="feature_year", source="ml/hazard_datasets.py (v2 hazard ANN model dataset)",
+        units="see ml/data/hazards/" + h + "/feature_dictionary.csv",
+        missing_means="Rows with any missing required input are dropped, never imputed; no missing values remain.",
+        known_gaps=(note,),
+    ) for h, note in (
+        ("heatwave", "Annual district rows; target is a NASA POWER threshold indicator, not an IMD declaration."),
+        ("flood", "Presence-only flood labels; 502 of 640 districts; 'no record' is encoded as 0 for this target."),
+        ("malaria", "Relative top-quartile reported-incidence target; districts without FULL_YEAR records are absent."),
+    )),
     Spec(
         "weather_daily", "data/processed/weather/weather_daily_2011_2025.parquet",
         keys=("census_district_code", "date"), required=False, year_col=None,

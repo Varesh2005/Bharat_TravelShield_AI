@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "summary_type": "destination_data_summary",
   "destination": {
     "census_district_code": 146,
@@ -336,33 +336,260 @@
       "kind": "generic_guidance_not_official_advice"
     }
   ],
-  "experimental_heatwave_ann": {
+  "experimental_ann_predictions": {
     "experimental": true,
-    "model_version": "heatwave-ann-mlp-v1",
-    "caveats": [
-      "Experimental. Target: at least one NASA POWER-derived day >= 45 degC during the target calendar year (not an IMD-declared heatwave).",
-      "District-level annual classification; not a travel-date or month forecast.",
-      "The raw score is uncalibrated and must not be read as a probability or converted to a risk level."
-    ],
-    "feature_year": 2025,
-    "target_year": 2026,
-    "prediction": {
-      "model": "Feedforward ANN/MLP",
-      "task": "next_calendar_year_heatwave_occurrence",
-      "predicted_class": 1,
-      "predicted_label": "heatwave_occurrence",
-      "raw_positive_score": 0.967574,
-      "classification_threshold": 0.5,
-      "score_interpretation": "Uncalibrated model score. Do not interpret it as a reliable real-world probability.",
-      "target_definition": "At least one day with maximum temperature at or above 45 C during the next calendar year, according to the training target.",
-      "limitations": [
-        "District-level annual prediction, not a month-specific forecast.",
-        "Not a personal health-risk assessment.",
-        "Raw model scores have not been shown to be reliably calibrated."
-      ]
-    },
-    "status": "available",
-    "reason": null
+    "status": "requested",
+    "note": "Experimental, optional and separate from the data summary above. Each hazard is an independent ANN with its own annual district-level target (next calendar year); none is a travel-date or month forecast, and no combined score is made. A probability is shown only where the validation-year calibration check passed.",
+    "hazards": {
+      "heatwave": {
+        "hazard": "heatwave",
+        "target": "1 if the district has at least one day with modelled maximum temperature >= 45 degC in year T+1, else 0.",
+        "geography": "district (Census 2011), representative point",
+        "horizon": "next calendar year (annual)",
+        "status": "ok",
+        "model_version": "heatwave-ann-mlp-v2",
+        "prediction": {
+          "predicted_class": null,
+          "predicted_label": null,
+          "predicted_class_note": "withheld: the validation-year calibration check was not acceptable, so no class is claimed; use raw_model_score only as a ranking score",
+          "raw_model_score": 0.5703,
+          "calibrated_probability": null,
+          "calibration_note": "Withheld: forward check on validation years: Platt fitted on target years [2020], ECE 0.1726 on 2021 exceeds the limit 0.1, so the score is not reliably calibrated across years. Treat raw_model_score as an uncalibrated ranking score, not a probability.",
+          "decision_threshold": null,
+          "decision_threshold_note": "withheld together with the probability because the validation-year calibration check failed",
+          "risk_band": null,
+          "risk_band_status": "unavailable: no validated thresholds (see ANN_DESIGN_DECISION.md section 8)"
+        },
+        "confidence": {
+          "data_coverage": "complete",
+          "missing_inputs": [],
+          "note": "Risk score, data coverage and model reliability are different things; see model_reliability for held-out performance."
+        },
+        "model_reliability": {
+          "pr_auc": 0.8161,
+          "roc_auc": 0.9114,
+          "f1": 0.4908,
+          "recall": 0.3476,
+          "precision": 0.835,
+          "brier": 0.2075,
+          "ece": 0.2212,
+          "prevalence": 0.3754
+        },
+        "training_window": {
+          "train_target_years": [
+            2013,
+            2019
+          ],
+          "validation_target_years": [
+            2020,
+            2021
+          ],
+          "test_target_years": [
+            2022,
+            2025
+          ],
+          "trained_on": "train years only (validation used for early stopping, grid, calibration, threshold)"
+        },
+        "label_reliability": "Complete and consistent for all 640 districts, but gridded model data thresholded by us: NOT an IMD-declared heatwave.",
+        "limitations": [
+          "Annual district target; not a travel-date or month forecast.",
+          "Label is a temperature-threshold indicator, not an official event.",
+          "2021 is an anomalous year (4.7% positive nationally).",
+          "Annual district-level prediction; not a travel-date or month forecast."
+        ],
+        "feature_year": 2025,
+        "target_year": 2026,
+        "district": {
+          "census_district_code": 146,
+          "state_name": "Uttar Pradesh"
+        },
+        "input_features": {
+          "latitude": 27.07456089185929,
+          "longitude": 77.89157835465284,
+          "log_population": 15.301378271368586,
+          "avg_temperature_c": 25.21,
+          "max_temperature_c": 46.68,
+          "min_temperature_c": 4.34,
+          "temp_range_c": 42.34,
+          "avg_humidity_pct": 55.41,
+          "total_rainfall_mm": 1074.34,
+          "rainy_days": 97.0,
+          "heatwave_days_T": 11.0,
+          "severe_heatwave_days_T": 0.0,
+          "heatwave_days_Tm1": 30.0
+        }
+      },
+      "flood": {
+        "hazard": "flood",
+        "target": "1 if the India Flood Inventory records at least one flood event for the district in year T+1, else 0 (= none recorded).",
+        "geography": "district (Census 2011), 502 districts with a deterministic LGD mapping",
+        "horizon": "next calendar year (annual)",
+        "status": "ok",
+        "model_version": "flood-ann-mlp-v2",
+        "prediction": {
+          "predicted_class": null,
+          "predicted_label": null,
+          "predicted_class_note": "withheld: the validation-year calibration check was not acceptable, so no class is claimed; use raw_model_score only as a ranking score",
+          "raw_model_score": 0.4668,
+          "calibrated_probability": null,
+          "calibration_note": "Withheld: forward check on validation years: Platt fitted on target years [2020], ECE 0.1491 on 2021 exceeds the limit 0.1, so the score is not reliably calibrated across years. Treat raw_model_score as an uncalibrated ranking score, not a probability.",
+          "decision_threshold": null,
+          "decision_threshold_note": "withheld together with the probability because the validation-year calibration check failed",
+          "risk_band": null,
+          "risk_band_status": "unavailable: no validated thresholds (see ANN_DESIGN_DECISION.md section 8)"
+        },
+        "confidence": {
+          "data_coverage": "complete",
+          "missing_inputs": [],
+          "note": "Risk score, data coverage and model reliability are different things; see model_reliability for held-out performance."
+        },
+        "model_reliability": {
+          "pr_auc": 0.6649,
+          "roc_auc": 0.6978,
+          "f1": 0.6476,
+          "recall": 0.8404,
+          "precision": 0.5268,
+          "brier": 0.2175,
+          "ece": 0.0672,
+          "prevalence": 0.4432
+        },
+        "training_window": {
+          "train_target_years": [
+            2012,
+            2019
+          ],
+          "validation_target_years": [
+            2020,
+            2021
+          ],
+          "test_target_years": [
+            2022,
+            2023
+          ],
+          "trained_on": "train years only (validation used for early stopping, grid, calibration, threshold)"
+        },
+        "label_reliability": "PRESENCE-ONLY: the inventory lists events; a year with no record is treated as 'none recorded' for this target, which is not proof that no flood happened. Districts with no recorded event at all are indistinguishable from unmapped ones and are excluded, which may overstate flood-proneness.",
+        "limitations": [
+          "Negatives mean 'no record', not 'confirmed no flood'.",
+          "Only 502 of 640 districts; unmapped districts have no flood prediction.",
+          "Annual district target; no flash-flood or event-timing information.",
+          "Annual district-level prediction; not a travel-date or month forecast."
+        ],
+        "feature_year": 2023,
+        "target_year": 2024,
+        "district": {
+          "census_district_code": 146,
+          "state_name": "Uttar Pradesh"
+        },
+        "input_features": {
+          "latitude": 27.07456089185929,
+          "longitude": 77.89157835465284,
+          "log_population": 15.301378271368586,
+          "avg_humidity_pct": 51.3,
+          "total_rainfall_mm": 687.78,
+          "rainy_days": 91.0,
+          "avg_temperature_c": 25.9,
+          "max_temperature_c": 46.63,
+          "recorded_flood_events_T": 0.0,
+          "recorded_flood_events_Tm1": 2.0,
+          "flood_years_last5": 1.0,
+          "flood_years_last10": 4.0
+        }
+      },
+      "malaria": {
+        "hazard": "malaria",
+        "target": "1 if the district's reported malaria cases per 100,000 (2011 population) in year T+1 are in the top quartile of all reporting districts that year, else 0.",
+        "geography": "district (Census 2011), 517 districts that appear in the NCVBDC tables",
+        "horizon": "next calendar year (annual)",
+        "status": "ok",
+        "model_version": "malaria-ann-mlp-v2",
+        "prediction": {
+          "predicted_class": 0,
+          "predicted_label": "high_reported_incidence_not_predicted",
+          "predicted_class_note": "class derived from the calibrated probability and the validation-chosen threshold",
+          "raw_model_score": 0.01,
+          "calibrated_probability": 0.0217,
+          "calibration_note": "Platt-calibrated on validation years; forward check on validation years: Platt fitted on target years [2020], ECE 0.0556 on 2021 (limit 0.1).",
+          "decision_threshold": 0.17,
+          "decision_threshold_note": "chosen on validation years",
+          "risk_band": null,
+          "risk_band_status": "unavailable: no validated thresholds (see ANN_DESIGN_DECISION.md section 8)"
+        },
+        "confidence": {
+          "data_coverage": "complete",
+          "missing_inputs": [],
+          "note": "Risk score, data coverage and model reliability are different things; see model_reliability for held-out performance."
+        },
+        "model_reliability": {
+          "pr_auc": 0.8965,
+          "roc_auc": 0.9387,
+          "f1": 0.8214,
+          "recall": 0.8182,
+          "precision": 0.8247,
+          "brier": 0.0714,
+          "ece": 0.0344,
+          "prevalence": 0.2515
+        },
+        "training_window": {
+          "train_target_years": [
+            2013,
+            2019
+          ],
+          "validation_target_years": [
+            2020,
+            2021
+          ],
+          "test_target_years": [
+            2022,
+            2023
+          ],
+          "trained_on": "train years only (validation used for early stopping, grid, calibration, threshold)"
+        },
+        "label_reliability": "Reported counts from PDF extraction; relative ranking within a year because national totals fell from 1.07M (2011) to 0.12M (2021). Population is the 2011 census for every year.",
+        "limitations": [
+          "Relative burden among reporting districts, not an absolute risk.",
+          "Not corrected for under-reporting or population change since 2011.",
+          "2024 is a partial year and is never used.",
+          "Annual district-level prediction; not a travel-date or month forecast."
+        ],
+        "feature_year": 2023,
+        "target_year": 2024,
+        "district": {
+          "census_district_code": 146,
+          "state_name": "Uttar Pradesh"
+        },
+        "input_features": {
+          "latitude": 27.07456089185929,
+          "longitude": 77.89157835465284,
+          "log_population": 15.301378271368586,
+          "avg_temperature_c": 25.9,
+          "max_temperature_c": 46.63,
+          "min_temperature_c": 0.84,
+          "temp_range_c": 45.79,
+          "avg_humidity_pct": 51.3,
+          "total_rainfall_mm": 687.78,
+          "rainy_days": 91.0,
+          "log1p_incidence_T": 0.5833718132514885,
+          "log1p_incidence_Tm1": 0.22229241465676025,
+          "incidence_rank_pct_T": 0.531496062992126,
+          "high_burden_T": 0.0
+        }
+      },
+      "dengue": {
+        "hazard": "dengue",
+        "status": "unsupported",
+        "reason": "State-year labels exist only for 2021-2025 (no training year before 2020), so no chronological train/validation/test split is possible, and the labels are state-level.",
+        "recovery_path": "Obtain a longer state-year (ideally monthly) dengue series; keep the West Bengal 2024 'verification_pending' record out of scoring until confirmed.",
+        "prediction": null
+      },
+      "chikungunya": {
+        "hazard": "chikungunya",
+        "status": "unsupported",
+        "reason": "No chikungunya data exists in the repository.",
+        "recovery_path": "Obtain NCVBDC chikungunya tables, then rerun `python -m ml.hazard_datasets --readiness`.",
+        "prediction": null
+      }
+    }
   },
   "limitations": [
     "Aggregation of existing data, not a forecast; no overall risk score or safety verdict is produced.",

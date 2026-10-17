@@ -117,6 +117,11 @@ data/processed/weather/weather_daily_2011_2025.parquet
 ml/models/heatwave/*
 !ml/models/heatwave/feedforward_ann_mlp.joblib
 !ml/models/heatwave/heatwave_feature_scaler.joblib
+# v2 hazard ANN bundles (authoritative models, a few hundred KB each)
+!ml/models/hazards/
+!ml/models/hazards/*/
+!ml/models/hazards/*/ann_bundle.joblib
+!ml/models/hazards/*/model_card.json
 # Baseline models: required by ml/test_heatwave_models.py (small, 4.5 MB total)
 !ml/models/heatwave/logistic_regression.joblib
 !ml/models/heatwave/random_forest.joblib

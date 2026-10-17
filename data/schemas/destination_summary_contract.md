@@ -1,4 +1,7 @@
-# Destination Summary Data Contract (schema_version 1.0)
+# Destination Summary Data Contract (schema_version 1.1)
+
+Version 1.1 renamed `experimental_heatwave_ann` to `experimental_ann_predictions`
+(all hazards, produced only by `ml/hazard_inference.py`); nothing else changed.
 
 Canonical data contract for `ml/destination_analysis.py`. Column-level
 dictionaries for the underlying tables are in
@@ -48,7 +51,9 @@ query_period       {start_date, end_date, requested, years_covered,
 hazards            {weather, heatwave_threshold, malaria, dengue, flood}  (fixed order)
 coverage_overview  {<hazard>: {status, last_observed_year, spatial_basis}}
 precautions        [{hazard, text, supported_by, kind}]
-experimental_heatwave_ann   {experimental, status, model_version, ...}
+experimental_ann_predictions {experimental, status, note, hazards: {heatwave, flood, malaria,
+                    dengue, chikungunya}}  # each = the result of ml/hazard_inference.py
+                    # (see ml/ML_MODEL_CONTRACT.md); optional, off by default; schema 1.1
 limitations        [str]
 disclaimer         str
 ```

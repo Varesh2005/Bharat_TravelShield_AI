@@ -1,0 +1,4 @@
+# Training / evaluation figures (optional): inference requirements + matplotlib.
+# Training itself needs only requirements-inference.txt; figures are skipped if matplotlib is absent.
+-r requirements-inference.txt
+matplotlib==3.10.5

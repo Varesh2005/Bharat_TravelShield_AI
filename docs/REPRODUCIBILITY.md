@@ -9,7 +9,7 @@ were not re-run for this guide.
 
 | Workflow | Requirements | Python | Notes |
 |---|---|---|---|
-| Destination summary, data audit, heatwave ANN/model tests | `ml/requirements-inference.txt` | 3.13 (tested with 3.13.14 recorded; 3.13 used for the verification run) | pandas 2.3.1, numpy 2.3.2, scikit-learn 1.7.2 |
+| Destination summary, data audit, hazard ANN training/inference, all ML tests | `ml/requirements-inference.txt` | 3.13 (the version used for every recorded result) | pandas 2.3.1, numpy 2.3.2, scikit-learn 1.7.2 |
 | Data pipeline (ingestion, cleaning, features) | `requirements-data.txt` | not recorded in the repo | pandas 2.3.3, numpy 2.2.6 |
 
 The two files pin different numpy/pandas versions; use **separate virtual
@@ -17,6 +17,9 @@ environments**. Do not merge them without testing. The pipeline scripts also
 import `pdfplumber` and `geopandas`, which are **not declared in either
 requirements file** (undeclared dependency gap; versions were not pinned here
 because they could not be tested in this environment).
+
+Verified: installing only `ml/requirements-inference.txt` into a brand-new Python 3.13.14 virtual environment succeeds
+(about 60 s) and the whole `ml/verify_ml.ps1` run passes there (matplotlib is not installed there; figures are skipped).
 
 Setup (repository root):
 
@@ -31,10 +34,13 @@ any script (NASA POWER needs none).
 ## 2. Verification commands (all run from the repository root)
 
 ```bash
-python -m unittest ml.test_destination_analysis ml.test_data_audit ml.test_heatwave_inference -v
+python -m unittest ml.test_hazard_datasets ml.test_hazard_training ml.test_hazard_inference ml.test_destination_analysis ml.test_data_audit ml.test_heatwave_inference ml.test_demo_local ml.test_contract_examples -v
 python ml/test_heatwave_dataset.py
 python ml/test_heatwave_models.py
 python -m ml.data_audit --check
+python -m ml.hazard_datasets --check          # v2 model datasets match a fresh build (needs only the processed data)
+python -m ml.hazard_inference --list          # supported / unsupported hazards
+python -m ml.hazard_training --hazard all   # retrain the ANNs (about 2 minutes; rewrites models, research/experiments, ml/EVALUATION_REPORT.md)
 python -m ml.destination_analysis --district-name Agra --state-name "Uttar Pradesh" --start-date 2024-10-01 --end-date 2024-10-31
 ```
 
@@ -46,6 +52,10 @@ python -m ml.destination_analysis --district-name Agra --state-name "Uttar Prade
 * `ml/test_heatwave_models.py` needs all four model files in
   `ml/models/heatwave/`; they are committed.
 * The destination summary and audit run with no model files at all.
+
+`python scripts/test_environment.py` is an unreferenced but useful setup check for the data-pipeline
+environment (imports pandas, numpy, requests, pyarrow, PyYAML, rapidfuzz, openpyxl; not geopandas/pdfplumber).
+Figures for the ANN evaluation need `ml/requirements-research.txt` (adds matplotlib; skipped silently if absent).
 
 ## 3. Raw inputs that are not in the repository
 
@@ -99,8 +109,10 @@ on a teammate's machine and must be obtained from them or re-downloaded.
 6. **Features:** `scripts/features/build_disease_features.py` ->
    `build_master_feature_dataset.py` -> `scripts/validation/validate_master_feature_dataset.py`;
    `create_ml_handoff.py` writes ML handoff files.
-7. **ML (optional):** `ml/prepare_heatwave_dataset.py` -> `ml/train_heatwave_models.py`
-   -> tests above. Retraining rewrites model artifacts and experiment reports.
+7. **ML (optional, current v2):** `python -m ml.hazard_datasets --build` -> `python -m ml.hazard_training --hazard all`
+   (processed data only; deterministic seed 42; rewrites `ml/data/hazards`, `ml/models/hazards`,
+   `research/experiments` and `ml/EVALUATION_REPORT.md`). Legacy v1 heatwave experiment:
+   `ml/prepare_heatwave_dataset.py` -> `ml/train_heatwave_models.py`.
 
 The `scripts/ingestion/inspect_*`, `test_*` and `scripts/geography/inspect_*`
 files are exploratory diagnostics written while developing the extraction; they

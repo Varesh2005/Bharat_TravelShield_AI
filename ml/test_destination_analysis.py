@@ -464,7 +464,7 @@ class OutputContractTests(SyntheticBase):
     def test_no_invented_overall_score_or_verdict(self):
         s = self.summary(district_code=536)
         banned = ("score", "overall", "risk_level", "risk_score", "safe", "verdict", "rating")
-        for path, key, _ in _walk({k: v for k, v in s.items() if k != "experimental_heatwave_ann"}):
+        for path, key, _ in _walk({k: v for k, v in s.items() if k != "experimental_ann_predictions"}):
             self.assertFalse(any(b in key.lower() for b in banned), f"{path}/{key}")
 
     def test_top_level_shape(self):
@@ -472,7 +472,8 @@ class OutputContractTests(SyntheticBase):
         self.assertEqual(
             list(s),
             ["schema_version", "summary_type", "destination", "query_period", "hazards",
-             "coverage_overview", "precautions", "experimental_heatwave_ann", "limitations", "disclaimer"])
+             "coverage_overview", "precautions", "experimental_ann_predictions", "limitations", "disclaimer"])
+        self.assertEqual(s["schema_version"], "1.1")
         for h in s["hazards"].values():
             self.assertTrue({"status", "records", "summary", "coverage", "last_observed_year",
                              "caveats", "source", "resolution", "units"} <= set(h))
@@ -490,67 +491,69 @@ class OutputContractTests(SyntheticBase):
 
 
 class OptionalAnnTests(SyntheticBase):
+    """The hazard ANN block is optional: it must never break the data summary."""
+
+    HAZARDS = ("heatwave", "flood", "malaria", "dengue", "chikungunya")
+
     def test_ann_not_requested_by_default(self):
-        ann = self.summary(district_code=536)["experimental_heatwave_ann"]
-        self.assertEqual(ann["status"], "not_requested")
+        ann = self.summary(district_code=536)["experimental_ann_predictions"]
+        self.assertEqual(ann, {"experimental": True, "status": "not_requested"})
 
     def test_missing_artifacts_do_not_crash_the_summary(self):
-        with mock.patch("ml.heatwave_inference.predict_heatwave", side_effect=FileNotFoundError("/secret/path/model.joblib")):
+        with mock.patch("ml.hazard_inference.predict_for_district", side_effect=FileNotFoundError("/secret/path/model.joblib")):
             s = self.summary(district_code=536, include_experimental_ann=True)
-        self.assertEqual(s["experimental_heatwave_ann"]["status"], "unavailable")
+        for h in self.HAZARDS:
+            self.assertEqual(s["experimental_ann_predictions"]["hazards"][h]["status"], "unavailable")
+            self.assertIsNone(s["experimental_ann_predictions"]["hazards"][h]["prediction"])
         self.assertNotIn("secret", json.dumps(s))
         self.assertEqual(s["hazards"]["weather"]["status"], "available")
 
     def test_missing_ml_dependencies_do_not_crash_the_summary(self):
-        with mock.patch("ml.heatwave_inference.predict_heatwave", side_effect=ImportError("sklearn")):
-            ann = self.summary(district_code=536, include_experimental_ann=True)["experimental_heatwave_ann"]
-        self.assertIn("dependencies", ann["reason"])
+        with mock.patch("ml.hazard_inference.predict_for_district", side_effect=ImportError("sklearn")):
+            ann = self.summary(district_code=536, include_experimental_ann=True)["experimental_ann_predictions"]
+        self.assertIn("dependencies", ann["hazards"]["flood"]["reason"])
 
     def test_unexpected_model_error_is_contained(self):
-        with mock.patch("ml.heatwave_inference.predict_heatwave", side_effect=RuntimeError("boom /x/y")):
-            ann = self.summary(district_code=536, include_experimental_ann=True)["experimental_heatwave_ann"]
-        self.assertEqual(ann["status"], "unavailable")
+        with mock.patch("ml.hazard_inference.predict_for_district", side_effect=RuntimeError("boom /x/y")):
+            ann = self.summary(district_code=536, include_experimental_ann=True)["experimental_ann_predictions"]
+        self.assertEqual(ann["hazards"]["malaria"]["status"], "unavailable")
         self.assertNotIn("/x/y", json.dumps(ann))
 
-    def test_feature_record_is_valid_and_years_are_labelled(self):
-        from ml.heatwave_inference import validate_features
+    def test_arguments_are_passed_through_to_the_single_ml_interface(self):
+        calls = []
 
-        seen = {}
+        def fake(hazard, code, year, explain=True, data_dir=None, **kw):
+            calls.append((hazard, code, year, explain, Path(data_dir) == self.tmp))
+            return {"hazard": hazard, "status": "ok", "prediction": {"predicted_class": 0}}
 
-        def fake_predict(features):
-            seen.update(validate_features(features))      # real validator
-            return {"predicted_class": 0, "raw_positive_score": 0.1}
-
-        with mock.patch("ml.heatwave_inference.predict_heatwave", side_effect=fake_predict):
-            ann = self.summary(district_code=536, include_experimental_ann=True, ann_feature_year=2021)["experimental_heatwave_ann"]
-        self.assertEqual((ann["status"], ann["feature_year"], ann["target_year"]), ("available", 2021, 2022))
-        self.assertEqual(seen["heatwave_days_T"], 5.0)
-        self.assertEqual(seen["has_heatwave_T"], 1.0)
+        with mock.patch("ml.hazard_inference.predict_for_district", side_effect=fake):
+            ann = self.summary(district_code=536, include_experimental_ann=True, ann_feature_year=2021)["experimental_ann_predictions"]
+        self.assertEqual([c[0] for c in calls], list(self.HAZARDS))
+        self.assertTrue(all(c[1:] == (536, 2021, False, True) for c in calls))
         self.assertTrue(ann["experimental"])
-        self.assertIn("uncalibrated", " ".join(ann["caveats"]))
+        self.assertIn("none is a travel-date or month forecast", ann["note"])
+        self.assertNotIn("score", json.dumps({k: v for k, v in ann.items() if k != "hazards"}).lower().replace("no combined score", ""))
 
-    def test_default_feature_year_is_latest_complete_year(self):
-        with mock.patch("ml.heatwave_inference.predict_heatwave", return_value={}):
-            ann = self.summary(district_code=536, include_experimental_ann=True)["experimental_heatwave_ann"]
-        self.assertEqual((ann["feature_year"], ann["target_year"]), (2022, 2023))
+    def test_real_interface_on_synthetic_data_is_contained_and_json_safe(self):
+        # Uses the committed models if present; otherwise every hazard is 'unavailable'.
+        s = self.summary(district_code=536, include_experimental_ann=True)
+        ann = s["experimental_ann_predictions"]["hazards"]
+        json.dumps(s, allow_nan=False)
+        self.assertEqual(set(ann), set(self.HAZARDS))
+        for h in ("dengue", "chikungunya"):
+            self.assertEqual(ann[h]["status"], "unsupported")
+            self.assertIsNone(ann[h]["prediction"])
+        for h in ("heatwave", "flood", "malaria"):
+            self.assertIn(ann[h]["status"], {"ok", "unavailable", "invalid_input"})
+        self.assertEqual(s["hazards"]["weather"]["status"], "available")
 
     def test_invalid_feature_year_is_reported_not_raised(self):
         for year in (1999, "2021", True):
             with self.subTest(year=year):
-                ann = self.summary(district_code=536, include_experimental_ann=True, ann_feature_year=year)["experimental_heatwave_ann"]
-                self.assertEqual(ann["status"], "unavailable")
-                self.assertIsNone(ann["prediction"])
-
-    def test_invalid_features_are_rejected_by_the_inference_validator(self):
-        # An implausible record (humidity > 100) must surface as 'unavailable'.
-        path = self.source_path("weather")
-        df = pd.read_csv(path)
-        df.loc[(df.census_district_code == 536) & (df.year == 2021), "avg_humidity_pct"] = 140.0
-        df.to_csv(path, index=False)
-        da.clear_store_cache()
-        ann = self.summary(district_code=536, include_experimental_ann=True, ann_feature_year=2021)["experimental_heatwave_ann"]
-        self.assertEqual(ann["status"], "unavailable")
-        self.assertIn("validation", ann["reason"])
+                ann = self.summary(district_code=536, include_experimental_ann=True, ann_feature_year=year)["experimental_ann_predictions"]["hazards"]
+                for h in ("heatwave", "flood", "malaria"):
+                    self.assertNotEqual(ann[h]["status"], "ok")
+                    self.assertIsNone(ann[h]["prediction"])
 
 
 @unittest.skipUnless(
@@ -568,25 +571,21 @@ class RealDataTests(unittest.TestCase):
         self.assertEqual(s["hazards"]["dengue"]["spatial_basis"], "state_level_context_not_district_specific")
         self.assertEqual(s["hazards"]["weather"]["records"][0]["year"], 2022)
 
-    def test_real_ann_feature_record_matches_training_dataset(self):
-        dataset = ROOT / "ml" / "data" / "heatwave" / "heatwave_t_to_t1_dataset.parquet"
-        if not dataset.is_file():
-            self.skipTest("ANN training dataset not present")
+    def test_real_ann_block_uses_the_training_feature_record(self):
+        dataset = ROOT / "ml" / "data" / "hazards" / "heatwave" / "dataset.parquet"
+        models = ROOT / "ml" / "models" / "hazards" / "heatwave" / "ann_bundle.joblib"
+        if not (dataset.is_file() and models.is_file()):
+            self.skipTest("hazard dataset / model not present")
+        from ml.hazard_datasets import SPECS
+
         train = pd.read_parquet(dataset)
-        row = train[(train.census_district_code == 1) & (train.year == 2011)].iloc[0]
-        captured = {}
-
-        def capture(features):
-            captured.update(features)
-            return {}
-
-        with mock.patch("ml.heatwave_inference.predict_heatwave", side_effect=capture):
-            build_destination_summary(district_code=1, include_experimental_ann=True, ann_feature_year=2011)
-        from ml.heatwave_inference import APPROVED_PREDICTORS
-
-        self.assertEqual(set(captured), set(APPROVED_PREDICTORS))
-        for name in APPROVED_PREDICTORS:
-            self.assertAlmostEqual(captured[name], float(row[name]), places=3, msg=name)
+        row = train[(train.census_district_code == 1) & (train.feature_year == 2012)].iloc[0]
+        ann = build_destination_summary(district_code=1, include_experimental_ann=True,
+                                        ann_feature_year=2012)["experimental_ann_predictions"]["hazards"]["heatwave"]
+        self.assertEqual(ann["status"], "ok")
+        self.assertEqual((ann["feature_year"], ann["target_year"]), (2012, 2013))
+        for name in SPECS["heatwave"].features:
+            self.assertAlmostEqual(ann["input_features"][name], float(row[name]), places=6, msg=name)
 
 
 if __name__ == "__main__":

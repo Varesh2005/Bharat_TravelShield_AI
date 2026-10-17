@@ -11,7 +11,7 @@ Design rules (see ml/DATA_ANALYSIS_HANDOFF.md):
   * A missing observation is reported as unknown (JSON null / absent), never
     as zero. Zero is reported only when the source records a zero.
   * Dengue is state-level context, not a district observation.
-  * The heatwave ANN is optional and experimental; failures there never
+  * The hazard ANNs (ml/hazard_inference.py) are optional and experimental; failures there never
     affect the rest of the summary.
 """
 
@@ -31,8 +31,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_DIR = ROOT / "data"
 
-SCHEMA_VERSION = "1.0"
-ANN_MODEL_VERSION = "heatwave-ann-mlp-v1"
+SCHEMA_VERSION = "1.1"   # 1.1: experimental_heatwave_ann -> experimental_ann_predictions (all hazards)
 
 DISCLAIMER = (
     "Decision support only. This is not a diagnosis, an emergency alert, a "
@@ -922,89 +921,43 @@ def _precautions(hazards: Mapping[str, Mapping[str, Any]]) -> list[dict[str, str
 
 
 # --------------------------------------------------------------------------
-# Optional experimental heatwave ANN
+# Optional experimental hazard ANNs (single ML interface: ml/hazard_inference.py)
 # --------------------------------------------------------------------------
 
-_ANN_CAVEATS = [
-    "Experimental. Target: at least one NASA POWER-derived day >= 45 degC "
-    "during the target calendar year (not an IMD-declared heatwave).",
-    "District-level annual classification; not a travel-date or month forecast.",
-    "The raw score is uncalibrated and must not be read as a probability or "
-    "converted to a risk level.",
-]
+_ANN_NOTE = (
+    "Experimental, optional and separate from the data summary above. Each hazard is "
+    "an independent ANN with its own annual district-level target (next calendar "
+    "year); none is a travel-date or month forecast, and no combined score is made. "
+    "A probability is shown only where the validation-year calibration check passed."
+)
+_ANN_HAZARDS = ("heatwave", "flood", "malaria", "dengue", "chikungunya")
 
 
 def _ann_block(store: DataStore, dest: dict, feature_year: int | None) -> dict[str, Any]:
-    base = {
-        "experimental": True,
-        "model_version": ANN_MODEL_VERSION,
-        "caveats": list(_ANN_CAVEATS),
-        "feature_year": None,
-        "target_year": None,
-        "prediction": None,
-    }
-    weather, heat = store.table("weather"), store.table("heatwave")
-    if weather is None or heat is None:
-        return {**base, "status": "unavailable",
-                "reason": "Weather or heatwave source data is unavailable."}
-
-    code = dest["census_district_code"]
-    w = weather[weather["census_district_code"] == code]
-    h = heat[heat["census_district_code"] == code]
-    common = sorted(set(w["year"]) & set(h["year"]))
-    if feature_year is None:
-        if not common:
-            return {**base, "status": "unavailable",
-                    "reason": "No year has both weather and heatwave records."}
-        feature_year = int(common[-1])
-    elif isinstance(feature_year, bool) or not isinstance(feature_year, int):
-        return {**base, "status": "unavailable",
-                "reason": "ann_feature_year must be a whole number."}
-    elif feature_year not in common:
-        return {**base, "status": "unavailable", "feature_year": feature_year,
-                "target_year": feature_year + 1,
-                "reason": "No complete feature record exists for that year."}
-
-    base.update(feature_year=feature_year, target_year=feature_year + 1)
-    wr = w[w["year"] == feature_year].iloc[0]
-    hr = h[h["year"] == feature_year].iloc[0]
+    """Ask the unified ML interface for every hazard; failures stay local."""
+    out: dict[str, Any] = {}
     try:
-        total_rain = float(wr["total_rainfall_mm"])
-        rainy = float(wr["rainy_days"])
-        features = {
-            "latitude": float(dest["latitude"]),
-            "longitude": float(dest["longitude"]),
-            "population_2011": float(dest["population_2011"]),
-            "avg_temperature_c": float(wr["avg_temperature_c"]),
-            "max_temperature_c": float(wr["max_temperature_c"]),
-            "min_temperature_c": float(wr["min_temperature_c"]),
-            "avg_humidity_pct": float(wr["avg_humidity_pct"]),
-            "total_rainfall_mm": total_rain,
-            "rainy_days": rainy,
-            "heatwave_days_T": float(hr["heatwave_days"]),
-            "severe_heatwave_days_T": float(hr["severe_heatwave_days"]),
-            "has_heatwave_T": float(hr["heatwave_days"] > 0),
-            "temp_range_c": round(float(wr["max_temperature_c"]) - float(wr["min_temperature_c"]), 2),
-            "rain_intensity": round(total_rain / (rainy + 1), 4),
-        }
-        from ml.heatwave_inference import predict_heatwave  # optional dependency
-
-        prediction = predict_heatwave(features)
-    except FileNotFoundError:
-        return {**base, "status": "unavailable",
-                "reason": "ANN model artifacts are not installed."}
+        from ml import hazard_inference as hi  # optional dependency (scikit-learn, joblib)
     except ImportError:
-        return {**base, "status": "unavailable",
-                "reason": "Optional ML dependencies are not installed."}
-    except (ValueError, TypeError) as exc:
-        return {**base, "status": "unavailable",
-                "reason": f"Feature record failed validation: {exc}"}
-    except Exception:
-        return {**base, "status": "unavailable",
-                "reason": "The experimental model could not be run."}
-
-    return {**base, "status": "available", "reason": None,
-            "prediction": prediction}
+        reason = "Optional ML dependencies are not installed."
+        return {"experimental": True, "status": "unavailable", "reason": reason, "note": _ANN_NOTE,
+                "hazards": {h: {"hazard": h, "status": "unavailable", "reason": reason, "prediction": None}
+                            for h in _ANN_HAZARDS}}
+    for hazard in _ANN_HAZARDS:
+        try:
+            out[hazard] = hi.predict_for_district(
+                hazard, dest["census_district_code"], feature_year, explain=False,
+                data_dir=store.data_dir)
+        except ImportError:
+            out[hazard] = {"hazard": hazard, "status": "unavailable", "prediction": None,
+                           "reason": "Optional ML dependencies are not installed."}
+        except FileNotFoundError:
+            out[hazard] = {"hazard": hazard, "status": "unavailable", "prediction": None,
+                           "reason": "ANN model artifacts are not installed."}
+        except Exception:
+            out[hazard] = {"hazard": hazard, "status": "unavailable", "prediction": None,
+                           "reason": "The experimental model could not be run."}
+    return {"experimental": True, "status": "requested", "note": _ANN_NOTE, "hazards": out}
 
 
 # --------------------------------------------------------------------------
@@ -1057,8 +1010,7 @@ def build_destination_summary(
     if include_experimental_ann:
         ann = _ann_block(store, dest, ann_feature_year)
     else:
-        ann = {"experimental": True, "status": "not_requested",
-               "model_version": ANN_MODEL_VERSION}
+        ann = {"experimental": True, "status": "not_requested"}
 
     return {
         "schema_version": SCHEMA_VERSION,
@@ -1075,7 +1027,7 @@ def build_destination_summary(
             for name, h in hazards.items()
         },
         "precautions": _precautions(hazards),
-        "experimental_heatwave_ann": ann,
+        "experimental_ann_predictions": ann,
         "limitations": list(_LIMITATIONS),
         "disclaimer": DISCLAIMER,
     }
@@ -1104,7 +1056,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--start-date", help="YYYY-MM-DD")
     p.add_argument("--end-date", help="YYYY-MM-DD")
     p.add_argument("--with-ann", action="store_true",
-                   help="Also run the experimental heatwave ANN (optional).")
+                   help="Also add the experimental hazard ANN outputs (optional).")
     p.add_argument("--ann-feature-year", type=int)
     p.add_argument("--data-dir")
     p.add_argument("--output", help="Write JSON here instead of stdout.")

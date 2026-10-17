@@ -1,6 +1,7 @@
 # Data-Analysis Layer Handoff
 
-Audience: backend/frontend integrators. Field-level contract:
+Audience: backend/frontend integrators. For the **ANN models** use `ml/ML_MODEL_CONTRACT.md` (the other contract
+for this module); this file covers the **data summary** only. Field-level contract:
 `data/schemas/destination_summary_contract.md`. Real example:
 `docs/samples/destination_summary_agra_2024-10.json`. Data quality:
 `ml/DATA_QUALITY_REPORT.md`. Work status: `ml/IMPLEMENTATION_STATUS.md`.
@@ -13,8 +14,8 @@ that returns, for a destination district, what is actually recorded, at the
 resolution the source supports, with provenance, coverage and limitations.
 
 It does **not** forecast, score or rank risk. There is no overall risk
-number, no weighting and no "safe/unsafe" label. The heatwave ANN is an
-optional experiment (section 6) and is off by default.
+number, no weighting and no "safe/unsafe" label. The hazard ANNs are an
+optional experiment (section 6) and are off by default.
 
 ## 2. Architecture and data flow
 
@@ -25,7 +26,7 @@ data/processed/disaster/heatwave/...csv +--> ml/destination_analysis.py --> JSON
 data/processed/disease/malaria/...csv --+      DataStore (load once, validate, cache)
 data/processed/disease/dengue/...csv ---+      resolve_destination -> parse_period
 data/processed/disaster/flood/...csv ---+      one builder per hazard -> precautions
-                                               (optional) ml/heatwave_inference.py
+                                               (optional) ml/hazard_inference.py
 
 ml/data_audit.py  --> ml/DATA_QUALITY_REPORT.md   (independent, repeatable audit)
 ```
@@ -113,41 +114,29 @@ the module's own `ROOT`-relative paths (it does not depend on the CWD).
 | District reference file missing | `data_unavailable` |
 | Destination absent from a source | `no_records_for_destination` (unknown, not zero) |
 
-## 6. Optional experimental heatwave ANN
+## 6. Optional experimental hazard ANNs
 
-Off by default (`include_experimental_ann=True` to request). The summary is
-identical in every other field whether or not the model works; any model
-problem (missing joblib files, missing scikit-learn, invalid features)
-returns `experimental_heatwave_ann.status = "unavailable"` with a short,
-path-free `reason`.
+Off by default (`include_experimental_ann=True` / `--with-ann` to request). The data summary is
+unchanged by the models: every ANN problem (missing artifacts, missing scikit-learn, no complete
+input record, unsupported hazard) only affects that hazard's entry under
+`experimental_ann_predictions.hazards`, with a short, path-free `reason`.
 
-* **Target:** whether the district has at least one day in calendar year
-  T+1 with NASA POWER modelled Tmax >= 45 degC. Not an IMD-declared heatwave,
-  not a month/travel-date forecast, not individual health risk.
-* **Features (14), from year T:** latitude, longitude, population_2011,
-  annual temperature/humidity/rainfall summaries, rainy days, heatwave days,
-  severe heatwave days, has-heatwave flag, temperature range, rain intensity
-  (see `ml/INFERENCE_HANDOFF.md`). The summary builds them from the annual
-  tables and `ml.heatwave_inference.validate_features` checks them. A test
-  confirms they match the training dataset row for district 1, year 2011.
-* **Default feature year** is the latest year with weather and heatwave data
-  for the district (currently 2025, so the target year is 2026 and beyond the
-  data); override with `ann_feature_year`.
-* **Split/evaluation (from `ml/experiments/heatwave_experiment_report.txt`):**
-  chronological. Selection on target years 2020-2021 (validation F1); final
-  fit on 2012-2021; held-out test target years 2022-2024. Test F1 0.7456 for
-  the ANN vs 0.5510 for previous-year persistence, 0.6220 logistic regression,
-  0.7224 random forest. The test set was inspected during audit, so these
-  are diagnostic, not a clean blind result.
-* **Calibration:** ECE 0.1119, MCE 0.3746; mid-range raw scores
-  underestimate observed rates. Treat `raw_positive_score` as an
-  uncalibrated ranking score: do not show it as a percentage or probability,
-  and do not map it to high/medium/low.
+The block calls the single ML interface `ml/hazard_inference.py` for heatwave, flood, malaria, dengue
+and chikungunya (dengue and chikungunya return `unsupported` with the evidence and a recovery path).
+Targets, features, split, baselines, calibration, explanation and limits are documented in
+`ml/ANN_DESIGN_DECISION.md`, `ml/ML_MODEL_CONTRACT.md` and `ml/EVALUATION_REPORT.md`; do not restate
+them here. In short: annual district-level, next-calendar-year targets; heatwave is a NASA POWER
+threshold indicator (not an IMD declaration); raw scores are uncalibrated unless the contract says a
+calibrated probability is present (currently only malaria; heatwave and flood are withheld); no risk bands; not a travel-date forecast.
+`ann_feature_year` selects the last observed year T (default: the latest complete year per hazard).
+
+The earlier heatwave v1 module (`ml/heatwave_inference.py`, `ml/INFERENCE_HANDOFF.md`) is legacy
+evidence, no longer called by the summary.
 
 ## 7. Dependencies
 
-The data layer needs only `pandas` (declared in both requirement files).
-The ANN additionally needs `ml/requirements-inference.txt`
+The destination summary needs only `pandas` (declared in both requirement files); the data audit also reads
+parquet files (`pyarrow`). The ANN block additionally needs the packages in `ml/requirements-inference.txt`
 (scikit-learn, joblib, scipy). Do not install `requirements-data.txt` and
 `ml/requirements-inference.txt` into one environment blindly: their numpy and
 pandas pins differ (see `ml/INFERENCE_HANDOFF.md` section 9). All tests in
@@ -192,9 +181,8 @@ python -m pip install -r ml/requirements-inference.txt
 python -m ml.data_audit                                  # writes ml/DATA_QUALITY_REPORT.md
 python -m ml.data_audit --check                          # audit only; exit 1 on structural errors
 python -m ml.destination_analysis --district-name Agra --state-name "Uttar Pradesh" --start-date 2024-10-01 --end-date 2024-10-31 --with-ann --output docs/samples/destination_summary_agra_2024-10.json
-python -m unittest ml.test_destination_analysis ml.test_data_audit ml.test_heatwave_inference -v
-python ml/test_heatwave_dataset.py
-python ml/test_heatwave_models.py
+python -m unittest ml.test_destination_analysis ml.test_data_audit -v     # this layer's tests
+powershell -ExecutionPolicy Bypass -File ml/verify_ml.ps1                   # everything, incl. the ANN suites
 ```
 
 Rebuilding processed features (inputs already in `data/processed/`):

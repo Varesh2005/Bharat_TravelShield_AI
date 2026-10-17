@@ -1,0 +1,13 @@
+hazard,feature,group,description,available_at_prediction_time
+flood,latitude,geography,district representative point latitude (deg),yes (end of year T)
+flood,longitude,geography,district representative point longitude (deg),yes (end of year T)
+flood,log_population,geography,log(1 + Census 2011 population),yes (end of year T)
+flood,avg_humidity_pct,weather_T,annual NASA POWER weather summary for year T,yes (end of year T)
+flood,total_rainfall_mm,weather_T,annual NASA POWER weather summary for year T,yes (end of year T)
+flood,rainy_days,weather_T,annual NASA POWER weather summary for year T,yes (end of year T)
+flood,avg_temperature_c,weather_T,annual NASA POWER weather summary for year T,yes (end of year T)
+flood,max_temperature_c,weather_T,annual NASA POWER weather summary for year T,yes (end of year T)
+flood,recorded_flood_events_T,hazard_history,inventory flood events in T (0 = none recorded),yes (end of year T)
+flood,recorded_flood_events_Tm1,hazard_history,inventory flood events in T-1 (0 = none recorded),yes (end of year T)
+flood,flood_years_last5,hazard_history,years in T-4..T with a recorded flood,yes (end of year T)
+flood,flood_years_last10,hazard_history,years in T-9..T with a recorded flood,yes (end of year T)

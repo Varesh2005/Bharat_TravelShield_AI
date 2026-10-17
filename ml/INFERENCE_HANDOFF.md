@@ -4,10 +4,11 @@
 
 This handoff covers the first heatwave ANN inference integration.
 
-> **Scope note:** the ANN is an optional, experimental component. The
-> product's core is the data-aggregation layer in
-> `ml/DATA_ANALYSIS_HANDOFF.md`, which builds the 14-feature record
-> itself and works when these model files are absent.
+> **LEGACY (v1) - superseded.** This is the first heatwave-only ANN experiment (heatwave-ann-mlp-v1).
+> The authoritative ML interface is now `ml/hazard_inference.py` (see `ml/ML_MODEL_CONTRACT.md`,
+> `ml/ANN_DESIGN_DECISION.md`). v1 used a different split, no calibration and a test set that was
+> inspected during audit. It is kept as evidence and regression-tested, and the destination summary no
+> longer calls it. It is optional and experimental, not the product's centre.
 
 - Model identifier for integration: `heatwave-ann-mlp-v1`
 - Selected model: feed-forward ANN / `MLPClassifier`

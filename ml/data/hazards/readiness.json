@@ -1,0 +1,159 @@
+{
+  "criteria": {
+    "min_examples_per_class_per_split": 20,
+    "min_rows": {
+      "test": 100,
+      "train": 300,
+      "val": 100
+    },
+    "split": "chronological by target year (train <= 2019, val 2020-2021, test >= 2022)"
+  },
+  "hazards": {
+    "chikungunya": {
+      "recovery_path": "Obtain NCVBDC chikungunya state/district tables, then repeat this readiness check.",
+      "status": "unsupported",
+      "unmet_criteria": [
+        "no chikungunya data exists anywhere in the repository"
+      ]
+    },
+    "dengue": {
+      "evidence": {
+        "full_year_labels": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "geography": "state only; district labels would be copies of state values",
+        "state_series": 36,
+        "transitions_per_split": {
+          "test": 143,
+          "train": 0,
+          "val": 0
+        }
+      },
+      "recovery_path": "Obtain a longer state-year (ideally monthly) dengue series, e.g. earlier NCVBDC years, so that training years before 2020 exist; keep the West Bengal 2024 'verification_pending' record out of scoring until confirmed.",
+      "status": "unsupported",
+      "unmet_criteria": [
+        "train: 0 labelled state-year transitions < required 300",
+        "val: 0 labelled state-year transitions < required 100"
+      ]
+    },
+    "flood": {
+      "caveat": "presence-only labels (see label_reliability)",
+      "label_reliability": "PRESENCE-ONLY: the inventory lists events; a year with no record is treated as 'none recorded' for this target, which is not proof that no flood happened. Districts with no recorded event at all are indistinguishable from unmapped ones and are excluded, which may overstate flood-proneness.",
+      "rows": 6024,
+      "splits": {
+        "test": {
+          "districts": 502,
+          "positives": 445,
+          "prevalence": 0.4432,
+          "rows": 1004,
+          "target_years": [
+            2022,
+            2023
+          ]
+        },
+        "train": {
+          "districts": 502,
+          "positives": 1462,
+          "prevalence": 0.364,
+          "rows": 4016,
+          "target_years": [
+            2012,
+            2019
+          ]
+        },
+        "val": {
+          "districts": 502,
+          "positives": 404,
+          "prevalence": 0.4024,
+          "rows": 1004,
+          "target_years": [
+            2020,
+            2021
+          ]
+        }
+      },
+      "status": "supported_with_caveats",
+      "unmet_criteria": []
+    },
+    "heatwave": {
+      "label_reliability": "Complete and consistent for all 640 districts, but gridded model data thresholded by us: NOT an IMD-declared heatwave.",
+      "rows": 8320,
+      "splits": {
+        "test": {
+          "districts": 640,
+          "positives": 961,
+          "prevalence": 0.3754,
+          "rows": 2560,
+          "target_years": [
+            2022,
+            2025
+          ]
+        },
+        "train": {
+          "districts": 640,
+          "positives": 1952,
+          "prevalence": 0.4357,
+          "rows": 4480,
+          "target_years": [
+            2013,
+            2019
+          ]
+        },
+        "val": {
+          "districts": 640,
+          "positives": 248,
+          "prevalence": 0.1938,
+          "rows": 1280,
+          "target_years": [
+            2020,
+            2021
+          ]
+        }
+      },
+      "status": "supported",
+      "unmet_criteria": []
+    },
+    "malaria": {
+      "label_reliability": "Reported counts from PDF extraction; relative ranking within a year because national totals fell from 1.07M (2011) to 0.12M (2021). Population is the 2011 census for every year.",
+      "rows": 5529,
+      "splits": {
+        "test": {
+          "districts": 504,
+          "positives": 253,
+          "prevalence": 0.2515,
+          "rows": 1006,
+          "target_years": [
+            2022,
+            2023
+          ]
+        },
+        "train": {
+          "districts": 509,
+          "positives": 880,
+          "prevalence": 0.25,
+          "rows": 3520,
+          "target_years": [
+            2013,
+            2019
+          ]
+        },
+        "val": {
+          "districts": 502,
+          "positives": 253,
+          "prevalence": 0.2522,
+          "rows": 1003,
+          "target_years": [
+            2020,
+            2021
+          ]
+        }
+      },
+      "status": "supported",
+      "unmet_criteria": []
+    }
+  }
+}

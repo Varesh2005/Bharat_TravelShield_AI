@@ -1,0 +1,218 @@
+{
+  "model_version": "flood-ann-mlp-v2",
+  "hazard": "flood",
+  "title": "Recorded flood occurrence",
+  "task": "binary classification, next calendar year, per district",
+  "target": "target_flood_next_year",
+  "target_definition": "1 if the India Flood Inventory records at least one flood event for the district in year T+1, else 0 (= none recorded).",
+  "geography": "district (Census 2011), 502 districts with a deterministic LGD mapping",
+  "horizon": "next calendar year (annual)",
+  "label_source": "India Flood Inventory v3 via deterministic LGD-to-Census mapping",
+  "label_reliability": "PRESENCE-ONLY: the inventory lists events; a year with no record is treated as 'none recorded' for this target, which is not proof that no flood happened. Districts with no recorded event at all are indistinguishable from unmapped ones and are excluded, which may overstate flood-proneness.",
+  "limitations": [
+    "Negatives mean 'no record', not 'confirmed no flood'.",
+    "Only 502 of 640 districts; unmapped districts have no flood prediction.",
+    "Annual district target; no flash-flood or event-timing information."
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "log_population",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "recorded_flood_events_T",
+    "recorded_flood_events_Tm1",
+    "flood_years_last5",
+    "flood_years_last10"
+  ],
+  "feature_groups": {
+    "geography": [
+      "latitude",
+      "longitude",
+      "log_population"
+    ],
+    "weather_T": [
+      "avg_humidity_pct",
+      "total_rainfall_mm",
+      "rainy_days",
+      "avg_temperature_c",
+      "max_temperature_c"
+    ],
+    "hazard_history": [
+      "recorded_flood_events_T",
+      "recorded_flood_events_Tm1",
+      "flood_years_last5",
+      "flood_years_last10"
+    ]
+  },
+  "architecture": {
+    "input": 12,
+    "hidden": [
+      128,
+      64
+    ],
+    "hidden_activation": "relu",
+    "output": "1 unit, logistic sigmoid",
+    "loss": "binary cross-entropy (log-loss)",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "l2_alpha": 0.001,
+    "max_epochs": 200,
+    "early_stopping_patience": 15,
+    "class_imbalance": "none",
+    "seed": 42,
+    "epochs_run": 17,
+    "best_epoch": 2
+  },
+  "training_window": {
+    "train_target_years": [
+      2012,
+      2019
+    ],
+    "validation_target_years": [
+      2020,
+      2021
+    ],
+    "test_target_years": [
+      2022,
+      2023
+    ],
+    "trained_on": "train years only (validation used for early stopping, grid, calibration, threshold)"
+  },
+  "dataset_source_sha256": {
+    "flood": "51ac70b279a2d1859cad3092627a527653637e46743cf309e1c949dd2945305d",
+    "master": "d9223ae4d553e6ecfd51ec5450677c8dde37c80c9d9ed7c88c0c75862761d8fa",
+    "weather": "8ebe5c83e7fc2cd8c7150c7d2e20cf563fa3f715ff861e79091a57f95874983a"
+  },
+  "calibration": {
+    "method": "Platt scaling fitted on validation",
+    "a": 0.918430705422541,
+    "b": -0.11552435433485529,
+    "fitted": true,
+    "validation_forward_check": {
+      "uses_test_years": false,
+      "max_allowed_ece": 0.1,
+      "display_probability": false,
+      "fit_target_years": [
+        2020
+      ],
+      "eval_target_year": 2021,
+      "ece": 0.1491,
+      "n_fit": 502,
+      "n_eval": 502,
+      "eval_prevalence": 0.3327,
+      "fit_prevalence": 0.4721
+    },
+    "display_probability": false,
+    "display_rule": "probability is shown only if the forward check on validation years has ECE <= 0.1; test years take no part in this decision",
+    "test_ece_calibrated": 0.0672,
+    "test_ece_raw_score": 0.0756,
+    "test_ece_note": "reported for information only; not used for any decision"
+  },
+  "decision_threshold": 0.27,
+  "decision_threshold_note": "chosen on validation to maximise F1 of the calibrated probability",
+  "test_metrics": {
+    "pr_auc": 0.6649,
+    "roc_auc": 0.6978,
+    "precision": 0.5268,
+    "recall": 0.8404,
+    "f1": 0.6476,
+    "macro_f1": 0.5852,
+    "brier": 0.2175,
+    "log_loss": 0.6288,
+    "ece": 0.0672,
+    "prevalence": 0.4432,
+    "n": 1004
+  },
+  "global_feature_importance": {
+    "method": "permutation on validation set (drop in PR-AUC); approximate, not causal",
+    "values": [
+      {
+        "feature": "flood_years_last10",
+        "pr_auc_drop_mean": 0.0534,
+        "pr_auc_drop_std": 0.01
+      },
+      {
+        "feature": "recorded_flood_events_T",
+        "pr_auc_drop_mean": 0.0243,
+        "pr_auc_drop_std": 0.0038
+      },
+      {
+        "feature": "flood_years_last5",
+        "pr_auc_drop_mean": 0.023,
+        "pr_auc_drop_std": 0.0072
+      },
+      {
+        "feature": "max_temperature_c",
+        "pr_auc_drop_mean": 0.0108,
+        "pr_auc_drop_std": 0.0037
+      },
+      {
+        "feature": "log_population",
+        "pr_auc_drop_mean": 0.0098,
+        "pr_auc_drop_std": 0.0032
+      },
+      {
+        "feature": "recorded_flood_events_Tm1",
+        "pr_auc_drop_mean": 0.0073,
+        "pr_auc_drop_std": 0.0053
+      },
+      {
+        "feature": "avg_temperature_c",
+        "pr_auc_drop_mean": 0.003,
+        "pr_auc_drop_std": 0.0014
+      },
+      {
+        "feature": "total_rainfall_mm",
+        "pr_auc_drop_mean": 0.0017,
+        "pr_auc_drop_std": 0.0062
+      },
+      {
+        "feature": "latitude",
+        "pr_auc_drop_mean": 0.0008,
+        "pr_auc_drop_std": 0.0018
+      },
+      {
+        "feature": "avg_humidity_pct",
+        "pr_auc_drop_mean": -0.0011,
+        "pr_auc_drop_std": 0.0019
+      },
+      {
+        "feature": "rainy_days",
+        "pr_auc_drop_mean": -0.0011,
+        "pr_auc_drop_std": 0.0015
+      },
+      {
+        "feature": "longitude",
+        "pr_auc_drop_mean": -0.003,
+        "pr_auc_drop_std": 0.0043
+      }
+    ]
+  },
+  "training_medians": {
+    "latitude": 24.729651476156704,
+    "longitude": 79.38803873292036,
+    "log_population": 14.245192039370796,
+    "avg_humidity_pct": 59.44,
+    "total_rainfall_mm": 1076.8000000000002,
+    "rainy_days": 115.0,
+    "avg_temperature_c": 25.43,
+    "max_temperature_c": 44.22,
+    "recorded_flood_events_T": 0.0,
+    "recorded_flood_events_Tm1": 0.0,
+    "flood_years_last5": 1.0,
+    "flood_years_last10": 3.0
+  },
+  "risk_bands": null,
+  "risk_band_status": "unavailable: no validated thresholds (see ANN_DESIGN_DECISION.md section 8)",
+  "environment": {
+    "python": "3.13.14",
+    "scikit_learn": "1.7.2",
+    "numpy": "2.3.2",
+    "pandas": "2.3.1"
+  }
+}
