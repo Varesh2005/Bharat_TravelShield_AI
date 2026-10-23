@@ -1,0 +1,112 @@
+{
+  "exclusions": {
+    "districts_excluded_because_first_event_is_after_training_cutoff": 0,
+    "rows_missing_required_input_dropped": 0,
+    "unmapped_or_never_flooded_districts_excluded": 138
+  },
+  "feature_groups": {
+    "geography": [
+      "latitude",
+      "longitude",
+      "log_population"
+    ],
+    "hazard_history": [
+      "recorded_flood_events_T",
+      "recorded_flood_events_Tm1",
+      "flood_years_last5",
+      "flood_years_last10"
+    ],
+    "weather_T": [
+      "avg_humidity_pct",
+      "total_rainfall_mm",
+      "rainy_days",
+      "avg_temperature_c",
+      "max_temperature_c"
+    ]
+  },
+  "feature_year_range": [
+    2011,
+    2022
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "log_population",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "recorded_flood_events_T",
+    "recorded_flood_events_Tm1",
+    "flood_years_last5",
+    "flood_years_last10"
+  ],
+  "geography": "district (Census 2011), 502 districts with a deterministic LGD mapping",
+  "hazard": "flood",
+  "horizon": "next calendar year (annual)",
+  "label_reliability": "PRESENCE-ONLY: the inventory lists events; a year with no record is treated as 'none recorded' for this target, which is not proof that no flood happened. Districts with no recorded event at all are indistinguishable from unmapped ones and are excluded, which may overstate flood-proneness.",
+  "label_source": "India Flood Inventory v3 via deterministic LGD-to-Census mapping",
+  "limitations": [
+    "Negatives mean 'no record', not 'confirmed no flood'.",
+    "Only 502 of 640 districts; unmapped districts have no flood prediction.",
+    "Annual district target; no flash-flood or event-timing information."
+  ],
+  "missing_value_policy": "rows with any missing required input are dropped; nothing is imputed",
+  "persistence_feature": "flood_recorded_T",
+  "rows": 6024,
+  "source_files": {
+    "flood": {
+      "path": "data/processed/disaster/flood/flood_district_year_1967_2023.csv",
+      "sha256": "51ac70b279a2d1859cad3092627a527653637e46743cf309e1c949dd2945305d"
+    },
+    "master": {
+      "path": "data/reference/district_master.csv",
+      "sha256": "d9223ae4d553e6ecfd51ec5450677c8dde37c80c9d9ed7c88c0c75862761d8fa"
+    },
+    "weather": {
+      "path": "data/processed/weather/weather_district_year_2011_2025.csv",
+      "sha256": "8ebe5c83e7fc2cd8c7150c7d2e20cf563fa3f715ff861e79091a57f95874983a"
+    }
+  },
+  "split_rule": {
+    "test": "target_year >= 2022",
+    "train": "target_year <= 2019",
+    "val": "target_year in [2020, 2021]"
+  },
+  "splits": {
+    "test": {
+      "districts": 502,
+      "positives": 445,
+      "prevalence": 0.4432,
+      "rows": 1004,
+      "target_years": [
+        2022,
+        2023
+      ]
+    },
+    "train": {
+      "districts": 502,
+      "positives": 1462,
+      "prevalence": 0.364,
+      "rows": 4016,
+      "target_years": [
+        2012,
+        2019
+      ]
+    },
+    "val": {
+      "districts": 502,
+      "positives": 404,
+      "prevalence": 0.4024,
+      "rows": 1004,
+      "target_years": [
+        2020,
+        2021
+      ]
+    }
+  },
+  "target": "target_flood_next_year",
+  "target_definition": "1 if the India Flood Inventory records at least one flood event for the district in year T+1, else 0 (= none recorded).",
+  "title": "Recorded flood occurrence"
+}

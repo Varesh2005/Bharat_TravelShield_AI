@@ -1,0 +1,226 @@
+{
+  "model_version": "heatwave-ann-mlp-v2",
+  "hazard": "heatwave",
+  "title": "Heatwave-threshold occurrence",
+  "task": "binary classification, next calendar year, per district",
+  "target": "target_heat_next_year",
+  "target_definition": "1 if the district has at least one day with modelled maximum temperature >= 45 degC in year T+1, else 0.",
+  "geography": "district (Census 2011), representative point",
+  "horizon": "next calendar year (annual)",
+  "label_source": "NASA POWER daily T2M_MAX thresholded at 45 degC (district year table)",
+  "label_reliability": "Complete and consistent for all 640 districts, but gridded model data thresholded by us: NOT an IMD-declared heatwave.",
+  "limitations": [
+    "Annual district target; not a travel-date or month forecast.",
+    "Label is a temperature-threshold indicator, not an official event.",
+    "2021 is an anomalous year (4.7% positive nationally)."
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "log_population",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "min_temperature_c",
+    "temp_range_c",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "heatwave_days_T",
+    "severe_heatwave_days_T",
+    "heatwave_days_Tm1"
+  ],
+  "feature_groups": {
+    "geography": [
+      "latitude",
+      "longitude",
+      "log_population"
+    ],
+    "weather_T": [
+      "avg_temperature_c",
+      "max_temperature_c",
+      "min_temperature_c",
+      "temp_range_c",
+      "avg_humidity_pct",
+      "total_rainfall_mm",
+      "rainy_days"
+    ],
+    "hazard_history": [
+      "heatwave_days_T",
+      "severe_heatwave_days_T",
+      "heatwave_days_Tm1"
+    ]
+  },
+  "architecture": {
+    "input": 13,
+    "hidden": [
+      32,
+      16
+    ],
+    "hidden_activation": "relu",
+    "output": "1 unit, logistic sigmoid",
+    "loss": "binary cross-entropy (log-loss)",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "l2_alpha": 0.001,
+    "max_epochs": 200,
+    "early_stopping_patience": 15,
+    "class_imbalance": "none",
+    "seed": 42,
+    "epochs_run": 16,
+    "best_epoch": 1
+  },
+  "training_window": {
+    "train_target_years": [
+      2013,
+      2019
+    ],
+    "validation_target_years": [
+      2020,
+      2021
+    ],
+    "test_target_years": [
+      2022,
+      2025
+    ],
+    "trained_on": "train years only (validation used for early stopping, grid, calibration, threshold)"
+  },
+  "dataset_source_sha256": {
+    "heatwave": "7d0bffed5ba22e4d68a93ad1fb843bb7b0c240415125ea3ff6187ecee285dd60",
+    "master": "d9223ae4d553e6ecfd51ec5450677c8dde37c80c9d9ed7c88c0c75862761d8fa",
+    "weather": "8ebe5c83e7fc2cd8c7150c7d2e20cf563fa3f715ff861e79091a57f95874983a"
+  },
+  "calibration": {
+    "method": "Platt scaling fitted on validation",
+    "a": 2.7107722661994353,
+    "b": -1.2427311547298785,
+    "fitted": true,
+    "validation_forward_check": {
+      "uses_test_years": false,
+      "max_allowed_ece": 0.1,
+      "display_probability": false,
+      "fit_target_years": [
+        2020
+      ],
+      "eval_target_year": 2021,
+      "ece": 0.1726,
+      "n_fit": 640,
+      "n_eval": 640,
+      "eval_prevalence": 0.0469,
+      "fit_prevalence": 0.3406
+    },
+    "display_probability": false,
+    "display_rule": "probability is shown only if the forward check on validation years has ECE <= 0.1; test years take no part in this decision",
+    "test_ece_calibrated": 0.2212,
+    "test_ece_raw_score": 0.1209,
+    "test_ece_note": "reported for information only; not used for any decision"
+  },
+  "decision_threshold": 0.35,
+  "decision_threshold_note": "chosen on validation to maximise F1 of the calibrated probability",
+  "test_metrics": {
+    "pr_auc": 0.8161,
+    "roc_auc": 0.9114,
+    "precision": 0.835,
+    "recall": 0.3476,
+    "f1": 0.4908,
+    "macro_f1": 0.6532,
+    "brier": 0.2075,
+    "log_loss": 0.6263,
+    "ece": 0.2212,
+    "prevalence": 0.3754,
+    "n": 2560
+  },
+  "global_feature_importance": {
+    "method": "permutation on validation set (drop in PR-AUC); approximate, not causal",
+    "values": [
+      {
+        "feature": "severe_heatwave_days_T",
+        "pr_auc_drop_mean": 0.08,
+        "pr_auc_drop_std": 0.0139
+      },
+      {
+        "feature": "heatwave_days_T",
+        "pr_auc_drop_mean": 0.0741,
+        "pr_auc_drop_std": 0.0087
+      },
+      {
+        "feature": "max_temperature_c",
+        "pr_auc_drop_mean": 0.018,
+        "pr_auc_drop_std": 0.005
+      },
+      {
+        "feature": "temp_range_c",
+        "pr_auc_drop_mean": 0.0178,
+        "pr_auc_drop_std": 0.0078
+      },
+      {
+        "feature": "rainy_days",
+        "pr_auc_drop_mean": 0.0145,
+        "pr_auc_drop_std": 0.0051
+      },
+      {
+        "feature": "latitude",
+        "pr_auc_drop_mean": 0.0134,
+        "pr_auc_drop_std": 0.0025
+      },
+      {
+        "feature": "min_temperature_c",
+        "pr_auc_drop_mean": 0.01,
+        "pr_auc_drop_std": 0.0042
+      },
+      {
+        "feature": "longitude",
+        "pr_auc_drop_mean": 0.0066,
+        "pr_auc_drop_std": 0.0039
+      },
+      {
+        "feature": "avg_humidity_pct",
+        "pr_auc_drop_mean": 0.006,
+        "pr_auc_drop_std": 0.0046
+      },
+      {
+        "feature": "avg_temperature_c",
+        "pr_auc_drop_mean": 0.004,
+        "pr_auc_drop_std": 0.0028
+      },
+      {
+        "feature": "total_rainfall_mm",
+        "pr_auc_drop_mean": 0.0022,
+        "pr_auc_drop_std": 0.006
+      },
+      {
+        "feature": "log_population",
+        "pr_auc_drop_mean": 0.0017,
+        "pr_auc_drop_std": 0.0019
+      },
+      {
+        "feature": "heatwave_days_Tm1",
+        "pr_auc_drop_mean": -0.001,
+        "pr_auc_drop_std": 0.0026
+      }
+    ]
+  },
+  "training_medians": {
+    "latitude": 24.63325261807575,
+    "longitude": 79.08572872420359,
+    "log_population": 14.258499467451509,
+    "avg_temperature_c": 25.53,
+    "max_temperature_c": 44.23,
+    "min_temperature_c": 5.175,
+    "temp_range_c": 38.74,
+    "avg_humidity_pct": 59.2,
+    "total_rainfall_mm": 1058.76,
+    "rainy_days": 115.0,
+    "heatwave_days_T": 0.0,
+    "severe_heatwave_days_T": 0.0,
+    "heatwave_days_Tm1": 0.0
+  },
+  "risk_bands": null,
+  "risk_band_status": "unavailable: no validated thresholds (see ANN_DESIGN_DECISION.md section 8)",
+  "environment": {
+    "python": "3.13.14",
+    "scikit_learn": "1.7.2",
+    "numpy": "2.3.2",
+    "pandas": "2.3.1"
+  }
+}

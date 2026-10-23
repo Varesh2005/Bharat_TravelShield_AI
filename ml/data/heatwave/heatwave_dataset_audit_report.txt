@@ -1,0 +1,90 @@
+======================================================================
+BHARAT-TRAVELSHIELD AI — HEATWAVE ML DATASET AUDIT REPORT
+======================================================================
+
+1. DATASET OVERVIEW & REPRODUCIBILITY
+----------------------------------------------------------------------
+Input source file        : travelshield_district_year_features_2011_2024.parquet
+Source file SHA-256      : e8a694caa8d20bcc0a18fed03cf372dae5adc33fc474d30ae7e67328fe440960
+Output parquet file      : heatwave_t_to_t1_dataset.parquet
+Output CSV file          : heatwave_t_to_t1_dataset.csv
+Total observation rows   : 8,320
+Unique districts         : 640
+Observations per district: 13
+Feature years (T)        : 2011 to 2023 (13 years)
+Target years (T+1)       : 2012 to 2024 (13 years)
+Target construction      : Validated 1-to-1 calendar join on (census_district_code, year + 1)
+Boundary handling        : Year 2024 filtered (no 2025 target in master dataset)
+
+2. TARGET DISTRIBUTION
+----------------------------------------------------------------------
+Overall positive rows    : 3,275 / 8,320 (39.36%)
+Overall negative rows    : 5,045 / 8,320 (60.64%)
+
+Year-by-Year Target Breakdown (Feature Year T -> Target Year T+1):
+  Feature T=2011 -> Target T+1=2012 | Pos: 292/640 ( 45.6%) | Total HW Days:  4121
+  Feature T=2012 -> Target T+1=2013 | Pos: 257/640 ( 40.2%) | Total HW Days:  2342
+  Feature T=2013 -> Target T+1=2014 | Pos: 298/640 ( 46.6%) | Total HW Days:  3092
+  Feature T=2014 -> Target T+1=2015 | Pos: 275/640 ( 43.0%) | Total HW Days:  2342
+  Feature T=2015 -> Target T+1=2016 | Pos: 309/640 ( 48.3%) | Total HW Days:  2465
+  Feature T=2016 -> Target T+1=2017 | Pos: 259/640 ( 40.5%) | Total HW Days:  2468
+  Feature T=2017 -> Target T+1=2018 | Pos: 242/640 ( 37.8%) | Total HW Days:  2057
+  Feature T=2018 -> Target T+1=2019 | Pos: 312/640 ( 48.8%) | Total HW Days:  4186
+  Feature T=2019 -> Target T+1=2020 | Pos: 218/640 ( 34.1%) | Total HW Days:  1028
+  Feature T=2020 -> Target T+1=2021 | Pos:  30/640 (  4.7%) | Total HW Days:    80
+  Feature T=2021 -> Target T+1=2022 | Pos: 252/640 ( 39.4%) | Total HW Days:  3071
+  Feature T=2022 -> Target T+1=2023 | Pos: 180/640 ( 28.1%) | Total HW Days:   604
+  Feature T=2023 -> Target T+1=2024 | Pos: 351/640 ( 54.8%) | Total HW Days:  4649
+
+3. CHRONOLOGICAL SPLIT BOUNDARIES
+----------------------------------------------------------------------
+A. Full Evaluation Split (for final model refitting & testing):
+  - Train Set : Feature Years 2011–2020 -> Target Years 2012–2021
+                Rows: 6,400 (76.9%) | Positives: 2,492 (38.94%)
+  - Test Set  : Feature Years 2021–2023 -> Target Years 2022–2024
+                Rows: 1,920 (23.1%) | Positives: 783 (40.78%)
+  - Overlap   : ZERO. Max train target year (2021) < Min test target year (2022).
+
+B. Model Selection Inner Split (for architecture tuning & early stopping):
+  - Inner Train : Feature Years 2011–2018 -> Target Years 2012–2019
+                  Rows: 5,120 (61.5%) | Positives: 2,244 (43.83%)
+  - Inner Val   : Feature Years 2019–2020 -> Target Years 2020–2021
+                  Rows: 1,280 (15.4%) | Positives: 248 (19.38%)
+  - Test (Held) : Feature Years 2021–2023 -> Target Years 2022–2024
+                  Rows: 1,920 (23.1%) | Positives: 783 (40.78%)
+
+4. FEATURE SCHEMA & MISSING VALUES
+----------------------------------------------------------------------
+Approved candidate predictors: 14
+   1. latitude                 | Type: float64 | Nulls: 0 | Range: [7.0004019853314965, 34.595078754805726]
+   2. longitude                | Type: float64 | Nulls: 0 | Range: [69.80496866771101, 96.84616525564076]
+   3. population_2011          | Type: int64   | Nulls: 0 | Range: [8004, 11060148]
+   4. avg_temperature_c        | Type: float64 | Nulls: 0 | Range: [-8.21, 29.08]
+   5. max_temperature_c        | Type: float64 | Nulls: 0 | Range: [11.39, 49.84]
+   6. min_temperature_c        | Type: float64 | Nulls: 0 | Range: [-40.05, 26.44]
+   7. avg_humidity_pct         | Type: float64 | Nulls: 0 | Range: [30.57, 86.44]
+   8. total_rainfall_mm        | Type: float64 | Nulls: 0 | Range: [105.73, 5994.3]
+   9. rainy_days               | Type: int64   | Nulls: 0 | Range: [16, 327]
+  10. heatwave_days_T          | Type: int64   | Nulls: 0 | Range: [0, 35]
+  11. severe_heatwave_days_T   | Type: int64   | Nulls: 0 | Range: [0, 11]
+  12. has_heatwave_T           | Type: int64   | Nulls: 0 | Range: [0, 1]
+  13. temp_range_c             | Type: float64 | Nulls: 0 | Range: [3.93, 57.68]
+  14. rain_intensity           | Type: float64 | Nulls: 0 | Range: [3.2039, 29.8224]
+
+5. EXCLUSION AUDIT & LEAKAGE PREVENTION
+----------------------------------------------------------------------
+  [PASS] Target construction        : Explicit join on (census_district_code, year + 1)
+  [PASS] Missing year guard         : Non-consecutive years produce NaN and are dropped
+  [PASS] heatwave_max_temperature_c : EXCLUDED (100% duplicate of max_temperature_c)
+  [PASS] district_name, state_name  : EXCLUDED (high-cardinality text)
+  [PASS] census_district_code       : KEPT IN METADATA ONLY (not in candidate predictors)
+  [PASS] year, target_year          : KEPT IN METADATA ONLY (not in candidate predictors)
+  [PASS] Disease columns            : EXCLUDED (malaria_cases, malaria_present, dengue_cases, dengue_deaths)
+  [PASS] Disaster columns           : EXCLUDED (flood_event_count)
+  [PASS] Year T+1 future columns    : EXCLUDED from predictors (used only as target labels)
+  [PASS] Source immutability        : VERIFIED (SHA-256 before == SHA-256 after)
+
+6. AUDIT STATUS
+----------------------------------------------------------------------
+STATUS: PASSED (All validation assertions satisfied)
+======================================================================

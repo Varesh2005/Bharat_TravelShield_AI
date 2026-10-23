@@ -1,0 +1,2 @@
+state_name_in_source,year,reported_dengue_cases,status,reason
+West Bengal*,2024,441,verification_pending,"The source label carries an asterisk whose meaning is unconfirmed, and whether the 2024 figure is complete is unconfirmed. The reported value is kept unchanged; no correction is made and the value is not judged wrong. Not verified input for any scoring until the data owner confirms it."

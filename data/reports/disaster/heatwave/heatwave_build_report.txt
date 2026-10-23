@@ -1,0 +1,46 @@
+HEATWAVE DATASET BUILD REPORT
+==============================
+
+Input:
+C:\Users\ADITH RAGUNATH\Desktop\Bharat_TravelShield_AI\data\processed\weather\weather_daily_2011_2025.parquet
+
+Weather rows loaded:
+3,506,560
+
+Final district-year rows:
+9,600
+
+Unique districts:
+640
+
+Year range:
+2011 - 2025
+
+Total heatwave-threshold days:
+34,781
+
+Total severe-heatwave-threshold days:
+5,465
+
+Maximum observed T2M_MAX:
+49.84 C
+
+Definition:
+IMD actual-temperature threshold
+
+Heatwave threshold:
+T2M_MAX >= 45 C
+
+Severe threshold:
+T2M_MAX >= 47 C
+
+IMPORTANT LIMITATION:
+This dataset is a threshold-based heat-extreme indicator
+derived from NASA POWER daily maximum temperature.
+It is NOT an official IMD-declared heatwave-event dataset.
+
+IMD official declaration also uses departure-from-normal
+criteria and spatial/temporal declaration rules.
+
+STATUS:
+PASSED

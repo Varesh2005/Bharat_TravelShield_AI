@@ -1,0 +1,749 @@
+{
+  "experiment_name": "Next-Year District Heatwave Occurrence Classification",
+  "dataset_path": "C:\\Users\\VARESH\\Downloads\\Python\\ann_mini_project\\Bharat_TravelShield_AI\\ml\\data\\heatwave\\heatwave_t_to_t1_dataset.parquet",
+  "source_parquet_sha256": "e8a694caa8d20bcc0a18fed03cf372dae5adc33fc474d30ae7e67328fe440960",
+  "random_seed": 42,
+  "candidate_predictors": [
+    "latitude",
+    "longitude",
+    "population_2011",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "min_temperature_c",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "heatwave_days_T",
+    "severe_heatwave_days_T",
+    "has_heatwave_T",
+    "temp_range_c",
+    "rain_intensity"
+  ],
+  "selection_protocol": {
+    "primary_selection_metric": "f1",
+    "classification_threshold": 0.5,
+    "validation_split": "inner_val (Feature Yrs 2019-2020 -> Target Yrs 2020-2021)",
+    "selection_rule": "Select candidate family member with highest inner_val F1 score at threshold 0.5"
+  },
+  "selected_candidates": {
+    "Logistic_Regression": {
+      "selected_candidate": "LR_C01",
+      "hyperparameters": {
+        "C": 0.1,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "inner_val_f1": 0.6242
+    },
+    "Random_Forest": {
+      "selected_candidate": "RF_Depth12",
+      "hyperparameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 100,
+        "n_jobs": null,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "inner_val_f1": 0.6179
+    },
+    "Feedforward_ANN_MLP": {
+      "selected_candidate": "ANN_64_32",
+      "hyperparameters": {
+        "activation": "relu",
+        "alpha": 0.01,
+        "batch_size": "auto",
+        "beta_1": 0.9,
+        "beta_2": 0.999,
+        "early_stopping": true,
+        "epsilon": 1e-08,
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "learning_rate": "constant",
+        "learning_rate_init": 0.001,
+        "max_fun": 15000,
+        "max_iter": 300,
+        "momentum": 0.9,
+        "n_iter_no_change": 15,
+        "nesterovs_momentum": true,
+        "power_t": 0.5,
+        "random_state": 42,
+        "shuffle": true,
+        "solver": "adam",
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": false,
+        "warm_start": false
+      },
+      "inner_val_f1": 0.6359
+    }
+  },
+  "splits": {
+    "inner_train_rows": 5120,
+    "inner_val_rows": 1280,
+    "full_train_rows": 6400,
+    "held_out_test_rows": 1920
+  },
+  "model_selection_inner_val": {
+    "Persistence_Baseline": {
+      "accuracy": 0.7688,
+      "precision": 0.4547,
+      "recall": 0.9718,
+      "f1": 0.6195,
+      "confusion_matrix": [
+        [
+          743,
+          289
+        ],
+        [
+          7,
+          241
+        ]
+      ],
+      "roc_auc": 0.8459,
+      "pr_auc": "N/A (deterministic binary rule; no continuous probability output)",
+      "brier_score": 0.2313
+    },
+    "LR_Default": {
+      "accuracy": 0.7594,
+      "precision": 0.4444,
+      "recall": 0.9677,
+      "f1": 0.6091,
+      "confusion_matrix": [
+        [
+          732,
+          300
+        ],
+        [
+          8,
+          240
+        ]
+      ],
+      "roc_auc": 0.9604,
+      "pr_auc": 0.8851,
+      "brier_score": 0.1687
+    },
+    "LR_Balanced": {
+      "accuracy": 0.7383,
+      "precision": 0.4238,
+      "recall": 0.9758,
+      "f1": 0.591,
+      "confusion_matrix": [
+        [
+          703,
+          329
+        ],
+        [
+          6,
+          242
+        ]
+      ],
+      "roc_auc": 0.9604,
+      "pr_auc": 0.8858,
+      "brier_score": 0.1846
+    },
+    "LR_C01": {
+      "accuracy": 0.7742,
+      "precision": 0.4607,
+      "recall": 0.9677,
+      "f1": 0.6242,
+      "confusion_matrix": [
+        [
+          751,
+          281
+        ],
+        [
+          8,
+          240
+        ]
+      ],
+      "roc_auc": 0.9605,
+      "pr_auc": 0.8938,
+      "brier_score": 0.1617
+    },
+    "RF_Depth8": {
+      "accuracy": 0.7656,
+      "precision": 0.4513,
+      "recall": 0.9718,
+      "f1": 0.6164,
+      "confusion_matrix": [
+        [
+          739,
+          293
+        ],
+        [
+          7,
+          241
+        ]
+      ],
+      "roc_auc": 0.9319,
+      "pr_auc": 0.7474,
+      "brier_score": 0.1724
+    },
+    "RF_Depth12": {
+      "accuracy": 0.7672,
+      "precision": 0.453,
+      "recall": 0.9718,
+      "f1": 0.6179,
+      "confusion_matrix": [
+        [
+          741,
+          291
+        ],
+        [
+          7,
+          241
+        ]
+      ],
+      "roc_auc": 0.926,
+      "pr_auc": 0.7315,
+      "brier_score": 0.1762
+    },
+    "RF_Balanced": {
+      "accuracy": 0.757,
+      "precision": 0.4424,
+      "recall": 0.9758,
+      "f1": 0.6088,
+      "confusion_matrix": [
+        [
+          727,
+          305
+        ],
+        [
+          6,
+          242
+        ]
+      ],
+      "roc_auc": 0.9243,
+      "pr_auc": 0.7197,
+      "brier_score": 0.1849
+    },
+    "ANN_64_32": {
+      "accuracy": 0.7844,
+      "precision": 0.4725,
+      "recall": 0.9718,
+      "f1": 0.6359,
+      "confusion_matrix": [
+        [
+          763,
+          269
+        ],
+        [
+          7,
+          241
+        ]
+      ],
+      "roc_auc": 0.9547,
+      "pr_auc": 0.8452,
+      "brier_score": 0.1556,
+      "epochs_trained": 30
+    },
+    "ANN_128_64": {
+      "accuracy": 0.7523,
+      "precision": 0.4385,
+      "recall": 0.9919,
+      "f1": 0.6082,
+      "confusion_matrix": [
+        [
+          717,
+          315
+        ],
+        [
+          2,
+          246
+        ]
+      ],
+      "roc_auc": 0.959,
+      "pr_auc": 0.8598,
+      "brier_score": 0.2061,
+      "epochs_trained": 57
+    },
+    "ANN_32_16": {
+      "accuracy": 0.7828,
+      "precision": 0.4705,
+      "recall": 0.9637,
+      "f1": 0.6323,
+      "confusion_matrix": [
+        [
+          763,
+          269
+        ],
+        [
+          9,
+          239
+        ]
+      ],
+      "roc_auc": 0.9577,
+      "pr_auc": 0.8383,
+      "brier_score": 0.1584,
+      "epochs_trained": 69
+    },
+    "ANN_64_32_Tanh": {
+      "accuracy": 0.7695,
+      "precision": 0.4562,
+      "recall": 0.9879,
+      "f1": 0.6242,
+      "confusion_matrix": [
+        [
+          740,
+          292
+        ],
+        [
+          3,
+          245
+        ]
+      ],
+      "roc_auc": 0.9541,
+      "pr_auc": 0.8056,
+      "brier_score": 0.174,
+      "epochs_trained": 48
+    }
+  },
+  "full_train_performance": {
+    "Previous_Year_Persistence": {
+      "accuracy": 0.8475,
+      "precision": 0.7845,
+      "recall": 0.8387,
+      "f1": 0.8107,
+      "confusion_matrix": [
+        [
+          3334,
+          574
+        ],
+        [
+          402,
+          2090
+        ]
+      ],
+      "roc_auc": 0.8459,
+      "pr_auc": "N/A (deterministic binary rule; no continuous probability output)",
+      "brier_score": 0.1525
+    },
+    "Logistic_Regression": {
+      "accuracy": 0.8825,
+      "precision": 0.8461,
+      "recall": 0.8535,
+      "f1": 0.8498,
+      "confusion_matrix": [
+        [
+          3521,
+          387
+        ],
+        [
+          365,
+          2127
+        ]
+      ],
+      "roc_auc": 0.9538,
+      "pr_auc": 0.9232,
+      "brier_score": 0.084
+    },
+    "Random_Forest": {
+      "accuracy": 0.9928,
+      "precision": 0.983,
+      "recall": 0.9988,
+      "f1": 0.9908,
+      "confusion_matrix": [
+        [
+          3865,
+          43
+        ],
+        [
+          3,
+          2489
+        ]
+      ],
+      "roc_auc": 0.9999,
+      "pr_auc": 0.9998,
+      "brier_score": 0.0174
+    },
+    "Feedforward_ANN_MLP": {
+      "accuracy": 0.9416,
+      "precision": 0.9287,
+      "recall": 0.9205,
+      "f1": 0.9246,
+      "confusion_matrix": [
+        [
+          3732,
+          176
+        ],
+        [
+          198,
+          2294
+        ]
+      ],
+      "roc_auc": 0.9865,
+      "pr_auc": 0.9798,
+      "brier_score": 0.0449
+    }
+  },
+  "held_out_test_performance": {
+    "Previous_Year_Persistence": {
+      "accuracy": 0.7089,
+      "precision": 0.7424,
+      "recall": 0.4381,
+      "f1": 0.551,
+      "confusion_matrix": [
+        [
+          1018,
+          119
+        ],
+        [
+          440,
+          343
+        ]
+      ],
+      "roc_auc": 0.6667,
+      "pr_auc": "N/A (deterministic binary rule; no continuous probability output)",
+      "brier_score": 0.2911
+    },
+    "Logistic_Regression": {
+      "accuracy": 0.75,
+      "precision": 0.8111,
+      "recall": 0.5045,
+      "f1": 0.622,
+      "confusion_matrix": [
+        [
+          1045,
+          92
+        ],
+        [
+          388,
+          395
+        ]
+      ],
+      "roc_auc": 0.9063,
+      "pr_auc": 0.816,
+      "brier_score": 0.162
+    },
+    "Random_Forest": {
+      "accuracy": 0.7943,
+      "precision": 0.8031,
+      "recall": 0.6564,
+      "f1": 0.7224,
+      "confusion_matrix": [
+        [
+          1011,
+          126
+        ],
+        [
+          269,
+          514
+        ]
+      ],
+      "roc_auc": 0.9071,
+      "pr_auc": 0.8165,
+      "brier_score": 0.1393
+    },
+    "Feedforward_ANN_MLP": {
+      "accuracy": 0.8109,
+      "precision": 0.8261,
+      "recall": 0.6794,
+      "f1": 0.7456,
+      "confusion_matrix": [
+        [
+          1025,
+          112
+        ],
+        [
+          251,
+          532
+        ]
+      ],
+      "roc_auc": 0.9253,
+      "pr_auc": 0.8759,
+      "brier_score": 0.1387
+    }
+  },
+  "post_audit_held_out_test_performance": {
+    "Previous_Year_Persistence": {
+      "accuracy": 0.7089,
+      "precision": 0.7424,
+      "recall": 0.4381,
+      "f1": 0.551,
+      "confusion_matrix": [
+        [
+          1018,
+          119
+        ],
+        [
+          440,
+          343
+        ]
+      ],
+      "roc_auc": 0.6667,
+      "pr_auc": "N/A (deterministic binary rule; no continuous probability output)",
+      "brier_score": 0.2911
+    },
+    "Logistic_Regression": {
+      "accuracy": 0.75,
+      "precision": 0.8111,
+      "recall": 0.5045,
+      "f1": 0.622,
+      "confusion_matrix": [
+        [
+          1045,
+          92
+        ],
+        [
+          388,
+          395
+        ]
+      ],
+      "roc_auc": 0.9063,
+      "pr_auc": 0.816,
+      "brier_score": 0.162
+    },
+    "Random_Forest": {
+      "accuracy": 0.7943,
+      "precision": 0.8031,
+      "recall": 0.6564,
+      "f1": 0.7224,
+      "confusion_matrix": [
+        [
+          1011,
+          126
+        ],
+        [
+          269,
+          514
+        ]
+      ],
+      "roc_auc": 0.9071,
+      "pr_auc": 0.8165,
+      "brier_score": 0.1393
+    },
+    "Feedforward_ANN_MLP": {
+      "accuracy": 0.8109,
+      "precision": 0.8261,
+      "recall": 0.6794,
+      "f1": 0.7456,
+      "confusion_matrix": [
+        [
+          1025,
+          112
+        ],
+        [
+          251,
+          532
+        ]
+      ],
+      "roc_auc": 0.9253,
+      "pr_auc": 0.8759,
+      "brier_score": 0.1387
+    }
+  },
+  "primary_model_ann_spec": {
+    "model_type": "Feedforward Multi-Layer Perceptron (ANN/MLP)",
+    "input_feature_count": 14,
+    "input_features": [
+      "latitude",
+      "longitude",
+      "population_2011",
+      "avg_temperature_c",
+      "max_temperature_c",
+      "min_temperature_c",
+      "avg_humidity_pct",
+      "total_rainfall_mm",
+      "rainy_days",
+      "heatwave_days_T",
+      "severe_heatwave_days_T",
+      "has_heatwave_T",
+      "temp_range_c",
+      "rain_intensity"
+    ],
+    "hidden_layers": [
+      64,
+      32
+    ],
+    "layer_sizes": [
+      14,
+      64,
+      32,
+      1
+    ],
+    "coefs_shapes": [
+      [
+        14,
+        64
+      ],
+      [
+        64,
+        32
+      ],
+      [
+        32,
+        1
+      ]
+    ],
+    "intercepts_shapes": [
+      [
+        64
+      ],
+      [
+        32
+      ],
+      [
+        1
+      ]
+    ],
+    "n_outputs": 1,
+    "activation_function": "ReLU (Rectified Linear Unit)",
+    "output_activation": "Logistic Sigmoid (scalar probability output; out_activation_='logistic'; not two-unit softmax)",
+    "loss_function": "Binary Cross-Entropy (Log-Loss)",
+    "optimizer": "Adam (Adaptive Moment Estimation)",
+    "learning_rate_init": 0.001,
+    "regularization": "L2 weight decay (alpha = 0.01)",
+    "early_stopping": true,
+    "early_stopping_patience": 15,
+    "validation_fraction": 0.1,
+    "epochs_trained": 108,
+    "best_internal_validation_score": 0.934375,
+    "internal_stopping_metric": "Classification Accuracy on random stratified 10% holdout (score metric; not cost/loss; not chronological F1)",
+    "inner_val_external_f1": 0.6359,
+    "early_stopping_split_critique": "MLPClassifier internal early stopping creates a random stratified 10% sample (validation_fraction=0.1) across all input rows. For repeated-district panel data, this random split induces temporal autocorrelation between training and internal validation subsets (the same districts exist in both subsets across different years). Architectural model selection was therefore independently governed by external chronological inner_val (2020-2021) F1.",
+    "classification_threshold": 0.5
+  },
+  "calibration_audit": {
+    "ann_brier_score": 0.1387,
+    "ann_ece": 0.1119,
+    "ann_mce": 0.3746,
+    "bin_details": [
+      {
+        "bin_range": [
+          0.0,
+          0.1
+        ],
+        "sample_count": 1028,
+        "mean_predicted_prob": 0.0075,
+        "observed_positive_rate": 0.0973,
+        "calibration_gap": 0.0898
+      },
+      {
+        "bin_range": [
+          0.1,
+          0.2
+        ],
+        "sample_count": 90,
+        "mean_predicted_prob": 0.1476,
+        "observed_positive_rate": 0.5222,
+        "calibration_gap": 0.3746
+      },
+      {
+        "bin_range": [
+          0.2,
+          0.3
+        ],
+        "sample_count": 58,
+        "mean_predicted_prob": 0.2558,
+        "observed_positive_rate": 0.6034,
+        "calibration_gap": 0.3476
+      },
+      {
+        "bin_range": [
+          0.3,
+          0.4
+        ],
+        "sample_count": 49,
+        "mean_predicted_prob": 0.3435,
+        "observed_positive_rate": 0.6531,
+        "calibration_gap": 0.3096
+      },
+      {
+        "bin_range": [
+          0.4,
+          0.5
+        ],
+        "sample_count": 51,
+        "mean_predicted_prob": 0.4512,
+        "observed_positive_rate": 0.7255,
+        "calibration_gap": 0.2743
+      },
+      {
+        "bin_range": [
+          0.5,
+          0.6
+        ],
+        "sample_count": 60,
+        "mean_predicted_prob": 0.5477,
+        "observed_positive_rate": 0.6833,
+        "calibration_gap": 0.1356
+      },
+      {
+        "bin_range": [
+          0.6,
+          0.7
+        ],
+        "sample_count": 64,
+        "mean_predicted_prob": 0.6485,
+        "observed_positive_rate": 0.7031,
+        "calibration_gap": 0.0546
+      },
+      {
+        "bin_range": [
+          0.7,
+          0.8
+        ],
+        "sample_count": 84,
+        "mean_predicted_prob": 0.7547,
+        "observed_positive_rate": 0.6905,
+        "calibration_gap": 0.0642
+      },
+      {
+        "bin_range": [
+          0.8,
+          0.9
+        ],
+        "sample_count": 98,
+        "mean_predicted_prob": 0.856,
+        "observed_positive_rate": 0.8265,
+        "calibration_gap": 0.0294
+      },
+      {
+        "bin_range": [
+          0.9,
+          1.0
+        ],
+        "sample_count": 338,
+        "mean_predicted_prob": 0.966,
+        "observed_positive_rate": 0.9083,
+        "calibration_gap": 0.0577
+      }
+    ],
+    "calibration_limitation_statement": "Brier score measures both discrimination (resolution) and calibration (reliability). A low Brier score (0.1387) does not demonstrate reliable probability calibration. The ANN exhibits an Expected Calibration Error (ECE) of 0.1119 (11.19%) and Maximum Calibration Error (MCE) of 0.3746 (37.46%), with substantial underconfidence in the [0.10, 0.50] probability range. Predicted probabilities must not be treated as calibrated frequentist event rates without post-hoc calibration."
+  },
+  "persistence_baseline_methodology": {
+    "rule": "Predict target_has_heatwave_T1 == has_heatwave_T",
+    "prediction_type": "Deterministic discrete binary {0, 1}",
+    "brier_score_interpretation": "Equals binary misclassification error rate (1 - Accuracy); not directly comparable to continuous probability Brier scores without qualification.",
+    "roc_auc_interpretation": "For binary predictions, roc_auc_score simplifies to Balanced Accuracy: (Sensitivity + Specificity) / 2.",
+    "pr_auc_interpretation": "Denoted N/A because hard binary predictions lack continuous probability ranking thresholds."
+  }
+}

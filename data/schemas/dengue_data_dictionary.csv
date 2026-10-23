@@ -1,0 +1,12 @@
+file,column_name,data_type,unit,description
+data/processed/disease/dengue/dengue_state_year_2021_2026.csv,year,int64,year,Calendar year of the NCVBDC state-wise report.
+data/processed/disease/dengue/dengue_state_year_2021_2026.csv,state_name,string,,"State/UT label exactly as in the source (e.g. 'West Bengal*' keeps its asterisk; 'Telangana' is a separate series). Not a Census 2011 name."
+data/processed/disease/dengue/dengue_state_year_2021_2026.csv,dengue_cases,int64_nullable,reported cases,"State-level reported dengue cases. Blank or dash means not_reported (unknown), never zero. Not a district observation."
+data/processed/disease/dengue/dengue_state_year_2021_2026.csv,dengue_deaths,int64_nullable,reported deaths,"State-level reported dengue deaths. Blank or dash means not_reported, never zero."
+data/processed/disease/dengue/dengue_state_year_2021_2026.csv,data_coverage,string,,FULL_YEAR or PROVISIONAL_THROUGH_2026_02_28 (partial year).
+data/processed/disease/dengue/dengue_state_year_2021_2026.csv,source,string,,Source attribution (NCVBDC / MoHFW).
+data/reference/dengue_data_quality_flags.csv,state_name_in_source,string,,State label exactly as in the dengue source file; matched after normalisation.
+data/reference/dengue_data_quality_flags.csv,year,int64,year,Year of the annotated source record.
+data/reference/dengue_data_quality_flags.csv,reported_dengue_cases,int64,reported cases,"Value the annotation was written against; the audit errors if the source value differs, so a changed source cannot silently keep an old flag."
+data/reference/dengue_data_quality_flags.csv,status,string,,"Data-quality status. 'verification_pending' = value kept unchanged but not verified input for scoring."
+data/reference/dengue_data_quality_flags.csv,reason,string,,Why the record is flagged. Annotation only; source records are never edited.

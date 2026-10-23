@@ -1,0 +1,234 @@
+{
+  "model_version": "malaria-ann-mlp-v2",
+  "hazard": "malaria",
+  "title": "High reported malaria incidence",
+  "task": "binary classification, next calendar year, per district",
+  "target": "target_malaria_high_next_year",
+  "target_definition": "1 if the district's reported malaria cases per 100,000 (2011 population) in year T+1 are in the top quartile of all reporting districts that year, else 0.",
+  "geography": "district (Census 2011), 517 districts that appear in the NCVBDC tables",
+  "horizon": "next calendar year (annual)",
+  "label_source": "NCVBDC district-wise malaria tables (PDF extraction), FULL_YEAR rows only",
+  "label_reliability": "Reported counts from PDF extraction; relative ranking within a year because national totals fell from 1.07M (2011) to 0.12M (2021). Population is the 2011 census for every year.",
+  "limitations": [
+    "Relative burden among reporting districts, not an absolute risk.",
+    "Not corrected for under-reporting or population change since 2011.",
+    "2024 is a partial year and is never used."
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "log_population",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "min_temperature_c",
+    "temp_range_c",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "log1p_incidence_T",
+    "log1p_incidence_Tm1",
+    "incidence_rank_pct_T",
+    "high_burden_T"
+  ],
+  "feature_groups": {
+    "geography": [
+      "latitude",
+      "longitude",
+      "log_population"
+    ],
+    "weather_T": [
+      "avg_temperature_c",
+      "max_temperature_c",
+      "min_temperature_c",
+      "temp_range_c",
+      "avg_humidity_pct",
+      "total_rainfall_mm",
+      "rainy_days"
+    ],
+    "hazard_history": [
+      "log1p_incidence_T",
+      "log1p_incidence_Tm1",
+      "incidence_rank_pct_T",
+      "high_burden_T"
+    ]
+  },
+  "architecture": {
+    "input": 14,
+    "hidden": [
+      64,
+      32
+    ],
+    "hidden_activation": "relu",
+    "output": "1 unit, logistic sigmoid",
+    "loss": "binary cross-entropy (log-loss)",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "l2_alpha": 0.01,
+    "max_epochs": 200,
+    "early_stopping_patience": 15,
+    "class_imbalance": "none",
+    "seed": 42,
+    "epochs_run": 17,
+    "best_epoch": 2
+  },
+  "training_window": {
+    "train_target_years": [
+      2013,
+      2019
+    ],
+    "validation_target_years": [
+      2020,
+      2021
+    ],
+    "test_target_years": [
+      2022,
+      2023
+    ],
+    "trained_on": "train years only (validation used for early stopping, grid, calibration, threshold)"
+  },
+  "dataset_source_sha256": {
+    "malaria": "e584245696bb0f0937103fce5a2ba74de60476400edcab1b0769e634d07f8a0e",
+    "master": "d9223ae4d553e6ecfd51ec5450677c8dde37c80c9d9ed7c88c0c75862761d8fa",
+    "weather": "8ebe5c83e7fc2cd8c7150c7d2e20cf563fa3f715ff861e79091a57f95874983a"
+  },
+  "calibration": {
+    "method": "Platt scaling fitted on validation",
+    "a": 0.9833071905927253,
+    "b": 0.7080061747305187,
+    "fitted": true,
+    "validation_forward_check": {
+      "uses_test_years": false,
+      "max_allowed_ece": 0.1,
+      "display_probability": true,
+      "fit_target_years": [
+        2020
+      ],
+      "eval_target_year": 2021,
+      "ece": 0.0556,
+      "n_fit": 502,
+      "n_eval": 501,
+      "eval_prevalence": 0.2515,
+      "fit_prevalence": 0.253
+    },
+    "display_probability": true,
+    "display_rule": "probability is shown only if the forward check on validation years has ECE <= 0.1; test years take no part in this decision",
+    "test_ece_calibrated": 0.0344,
+    "test_ece_raw_score": 0.0695,
+    "test_ece_note": "reported for information only; not used for any decision"
+  },
+  "decision_threshold": 0.17,
+  "decision_threshold_note": "chosen on validation to maximise F1 of the calibrated probability",
+  "test_metrics": {
+    "pr_auc": 0.8965,
+    "roc_auc": 0.9387,
+    "precision": 0.8247,
+    "recall": 0.8182,
+    "f1": 0.8214,
+    "macro_f1": 0.8809,
+    "brier": 0.0714,
+    "log_loss": 0.2526,
+    "ece": 0.0344,
+    "prevalence": 0.2515,
+    "n": 1006
+  },
+  "global_feature_importance": {
+    "method": "permutation on validation set (drop in PR-AUC); approximate, not causal",
+    "values": [
+      {
+        "feature": "high_burden_T",
+        "pr_auc_drop_mean": 0.173,
+        "pr_auc_drop_std": 0.014
+      },
+      {
+        "feature": "log1p_incidence_T",
+        "pr_auc_drop_mean": 0.0423,
+        "pr_auc_drop_std": 0.0069
+      },
+      {
+        "feature": "log1p_incidence_Tm1",
+        "pr_auc_drop_mean": 0.0319,
+        "pr_auc_drop_std": 0.0082
+      },
+      {
+        "feature": "incidence_rank_pct_T",
+        "pr_auc_drop_mean": 0.0299,
+        "pr_auc_drop_std": 0.0041
+      },
+      {
+        "feature": "total_rainfall_mm",
+        "pr_auc_drop_mean": 0.0124,
+        "pr_auc_drop_std": 0.0063
+      },
+      {
+        "feature": "temp_range_c",
+        "pr_auc_drop_mean": 0.0087,
+        "pr_auc_drop_std": 0.0035
+      },
+      {
+        "feature": "latitude",
+        "pr_auc_drop_mean": 0.0048,
+        "pr_auc_drop_std": 0.0021
+      },
+      {
+        "feature": "avg_humidity_pct",
+        "pr_auc_drop_mean": 0.0043,
+        "pr_auc_drop_std": 0.003
+      },
+      {
+        "feature": "min_temperature_c",
+        "pr_auc_drop_mean": 0.0027,
+        "pr_auc_drop_std": 0.0024
+      },
+      {
+        "feature": "max_temperature_c",
+        "pr_auc_drop_mean": 0.0025,
+        "pr_auc_drop_std": 0.0019
+      },
+      {
+        "feature": "log_population",
+        "pr_auc_drop_mean": 0.0016,
+        "pr_auc_drop_std": 0.0017
+      },
+      {
+        "feature": "longitude",
+        "pr_auc_drop_mean": 0.0005,
+        "pr_auc_drop_std": 0.0018
+      },
+      {
+        "feature": "avg_temperature_c",
+        "pr_auc_drop_mean": -0.0001,
+        "pr_auc_drop_std": 0.0017
+      },
+      {
+        "feature": "rainy_days",
+        "pr_auc_drop_mean": -0.0001,
+        "pr_auc_drop_std": 0.0023
+      }
+    ]
+  },
+  "training_medians": {
+    "latitude": 24.556428749852678,
+    "longitude": 79.3898407449781,
+    "log_population": 14.26999627987679,
+    "avg_temperature_c": 25.55,
+    "max_temperature_c": 44.42,
+    "min_temperature_c": 5.3,
+    "temp_range_c": 38.54,
+    "avg_humidity_pct": 59.085,
+    "total_rainfall_mm": 1060.1799999999998,
+    "rainy_days": 114.0,
+    "log1p_incidence_T": 2.605554717304656,
+    "log1p_incidence_Tm1": 2.8933696658329895,
+    "incidence_rank_pct_T": 0.5004930966469427,
+    "high_burden_T": 0.0
+  },
+  "risk_bands": null,
+  "risk_band_status": "unavailable: no validated thresholds (see ANN_DESIGN_DECISION.md section 8)",
+  "environment": {
+    "python": "3.13.14",
+    "scikit_learn": "1.7.2",
+    "numpy": "2.3.2",
+    "pandas": "2.3.1"
+  }
+}

@@ -1,0 +1,24 @@
+TRAVELSHIELD MASTER FEATURE DATASET
+==================================================
+
+Rows: 8,960
+Districts: 640
+Years: 2011 - 2024
+
+FEATURE COVERAGE
+--------------------------------------------------
+avg_temperature_c: 8,960/8,960
+total_rainfall_mm: 8,960/8,960
+malaria_cases: 7,085/8,960
+dengue_cases: 2,472/8,960
+flood_event_count: 2,434/8,960
+heatwave_days: 8,960/8,960
+
+IMPORTANT DATA RULES
+--------------------------------------------------
+Missing disease/disaster observations were NOT converted to zero.
+Dengue is a state-level feature replicated to districts through state_name.
+Flood contains only deterministic LGD-to-Census mappings.
+Heatwave is a NASA POWER T2M_MAX threshold-based indicator using IMD temperature thresholds.
+
+STATUS: PASSED

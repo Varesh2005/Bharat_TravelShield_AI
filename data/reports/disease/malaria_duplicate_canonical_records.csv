@@ -1,0 +1,311 @@
+year,census_state_code,census_district_code,canonical_state,canonical_district,total_cases,total_deaths,source_state,source_district,mapping_method,source_state_conflict,is_partial_year
+2002,23,419,Madhya Pradesh,Morena,361,0,Madhya Pradesh,Morena,EXACT,False,False
+2002,23,419,Madhya Pradesh,Morena,459,0,West Bengal,Morena,EXACT,True,False
+2002,23,421,Madhya Pradesh,Gwalior,612,0,Madhya Pradesh,Gwalior,EXACT,False,False
+2002,23,421,Madhya Pradesh,Gwalior,718,0,West Bengal,Gwalior,EXACT,True,False
+2002,23,422,Madhya Pradesh,Datia,89,0,Madhya Pradesh,Datia,EXACT,False,False
+2002,23,422,Madhya Pradesh,Datia,146,0,West Bengal,Datia,EXACT,True,False
+2002,23,433,Madhya Pradesh,Mandsaur,480,0,Madhya Pradesh,Mandsaur,EXACT,False,False
+2002,23,433,Madhya Pradesh,Mandsaur,643,0,West Bengal,Mandsaur,EXACT,True,False
+2002,23,437,Madhya Pradesh,Dewas,552,0,Madhya Pradesh,Dewas,EXACT,False,False
+2002,23,437,Madhya Pradesh,Dewas,928,0,West Bengal,Dewas,EXACT,True,False
+2002,23,438,Madhya Pradesh,Dhar,515,1,Madhya Pradesh,Dhar,EXACT,False,False
+2002,23,438,Madhya Pradesh,Dhar,2107,0,West Bengal,Dhar,EXACT,True,False
+2002,23,439,Madhya Pradesh,Indore,520,0,Madhya Pradesh,Indore,EXACT,False,False
+2002,23,439,Madhya Pradesh,Indore,651,0,West Bengal,Indore,EXACT,True,False
+2002,23,448,Madhya Pradesh,Harda,298,0,Madhya Pradesh,Harda,EXACT,False,False
+2002,23,448,Madhya Pradesh,Harda,148,0,West Bengal,Harda,EXACT,True,False
+2002,23,450,Madhya Pradesh,Katni,416,0,Madhya Pradesh,Katni,EXACT,False,False
+2002,23,450,Madhya Pradesh,Katni,387,0,West Bengal,Katni,EXACT,True,False
+2002,23,451,Madhya Pradesh,Jabalpur,1104,3,Madhya Pradesh,Jabalpur,EXACT,False,False
+2002,23,451,Madhya Pradesh,Jabalpur,628,2,West Bengal,Jabalpur,EXACT,True,False
+2002,23,453,Madhya Pradesh,Dindori,12717,2,Madhya Pradesh,Dindori,EXACT,False,False
+2002,23,453,Madhya Pradesh,Dindori,7080,0,West Bengal,Dindori,EXACT,True,False
+2002,23,454,Madhya Pradesh,Mandla,18626,4,Madhya Pradesh,Mandla,EXACT,False,False
+2002,23,454,Madhya Pradesh,Mandla,7877,0,West Bengal,Mandla,EXACT,True,False
+2002,23,458,Madhya Pradesh,Guna,3204,0,Madhya Pradesh,Guna,EXACT,False,False
+2002,23,458,Madhya Pradesh,Guna,5409,0,West Bengal,Guna,EXACT,True,False
+2002,23,464,Madhya Pradesh,Jhabua,2538,0,Madhya Pradesh,Jhabua,EXACT,False,False
+2002,23,464,Madhya Pradesh,Jhabua,11344,0,West Bengal,Jhabua,EXACT,True,False
+2003,23,418,Madhya Pradesh,Sheopur,2521,7,Maharashtra,Sheopur,EXACT,True,False
+2003,23,418,Madhya Pradesh,Sheopur,1091,0,West Bengal,Sheopur,EXACT,True,False
+2003,23,423,Madhya Pradesh,Shivpuri,4262,0,Maharashtra,Shivpuri,EXACT,True,False
+2003,23,423,Madhya Pradesh,Shivpuri,5071,0,West Bengal,Shivpuri,EXACT,True,False
+2003,23,426,Madhya Pradesh,Panna,1419,0,Madhya Pradesh,Panna,EXACT,False,False
+2003,23,426,Madhya Pradesh,Panna,1387,0,West Bengal,Panna,EXACT,True,False
+2003,23,427,Madhya Pradesh,Sagar,4008,3,Madhya Pradesh,Sagar,EXACT,False,False
+2003,23,427,Madhya Pradesh,Sagar,3899,2,West Bengal,Sagar,EXACT,True,False
+2003,23,429,Madhya Pradesh,Satna,2645,0,Madhya Pradesh,Satna,EXACT,False,False
+2003,23,429,Madhya Pradesh,Satna,3361,0,West Bengal,Satna,EXACT,True,False
+2003,23,430,Madhya Pradesh,Rewa,1214,6,Madhya Pradesh,Rewa,EXACT,False,False
+2003,23,430,Madhya Pradesh,Rewa,2070,6,West Bengal,Rewa,EXACT,True,False
+2003,23,432,Madhya Pradesh,Neemuch,353,0,Madhya Pradesh,Neemuch,EXACT,False,False
+2003,23,432,Madhya Pradesh,Neemuch,396,0,West Bengal,Neemuch,EXACT,True,False
+2003,23,434,Madhya Pradesh,Ratlam,3031,0,Madhya Pradesh,Ratlam,EXACT,False,False
+2003,23,434,Madhya Pradesh,Ratlam,3942,0,West Bengal,Ratlam,EXACT,True,False
+2003,23,436,Madhya Pradesh,Shajapur,768,0,Maharashtra,Shajapur,EXACT,True,False
+2003,23,436,Madhya Pradesh,Shajapur,812,0,West Bengal,Shajapur,EXACT,True,False
+2003,23,442,Madhya Pradesh,Rajgarh,3092,0,Madhya Pradesh,Rajgarh,EXACT,False,False
+2003,23,442,Madhya Pradesh,Rajgarh,3981,0,West Bengal,Rajgarh,EXACT,True,False
+2003,23,445,Madhya Pradesh,Sehore,1899,0,Madhya Pradesh,Sehore,EXACT,False,False
+2003,23,445,Madhya Pradesh,Sehore,1827,0,West Bengal,Sehore,EXACT,True,False
+2003,23,446,Madhya Pradesh,Raisen,1883,0,Madhya Pradesh,Raisen,EXACT,False,False
+2003,23,446,Madhya Pradesh,Raisen,1686,0,West Bengal,Raisen,EXACT,True,False
+2003,23,456,Madhya Pradesh,Seoni,3730,0,Madhya Pradesh,Seoni,EXACT,False,False
+2003,23,456,Madhya Pradesh,Seoni,2601,0,West Bengal,Seoni,EXACT,True,False
+2003,23,460,Madhya Pradesh,Shahdol,3340,0,Madhya Pradesh,Shahdol,EXACT,False,False
+2003,23,460,Madhya Pradesh,Shahdol,4038,0,West Bengal,Shahdol,EXACT,True,False
+2003,23,462,Madhya Pradesh,Sidhi,3504,1,Maharashtra,Sidhi,EXACT,True,False
+2003,23,462,Madhya Pradesh,Sidhi,3004,8,West Bengal,Sidhi,EXACT,True,False
+2005,23,419,Madhya Pradesh,Morena,721,0,Madhya Pradesh,Morena,EXACT,False,False
+2005,23,419,Madhya Pradesh,Morena,828,0,West Bengal,Morena,EXACT,True,False
+2005,23,421,Madhya Pradesh,Gwalior,2285,0,Madhya Pradesh,Gwalior,EXACT,False,False
+2005,23,421,Madhya Pradesh,Gwalior,1604,0,West Bengal,Gwalior,EXACT,True,False
+2005,23,422,Madhya Pradesh,Datia,189,0,Madhya Pradesh,Datia,EXACT,False,False
+2005,23,422,Madhya Pradesh,Datia,388,0,West Bengal,Datia,EXACT,True,False
+2005,23,425,Madhya Pradesh,Chhatarpur,1889,0,Madhya Pradesh,Chhatarpur,EXACT,False,False
+2005,23,425,Madhya Pradesh,Chhatarpur,1394,0,West Bengal,Chhatarpur,EXACT,True,False
+2005,23,428,Madhya Pradesh,Damoh,1126,0,Madhya Pradesh,Damoh,EXACT,False,False
+2005,23,428,Madhya Pradesh,Damoh,1244,2,West Bengal,Damoh,EXACT,True,False
+2005,23,433,Madhya Pradesh,Mandsaur,317,0,Madhya Pradesh,Mandsaur,EXACT,False,False
+2005,23,433,Madhya Pradesh,Mandsaur,812,0,West Bengal,Mandsaur,EXACT,True,False
+2005,23,437,Madhya Pradesh,Dewas,682,0,Madhya Pradesh,Dewas,EXACT,False,False
+2005,23,437,Madhya Pradesh,Dewas,968,0,West Bengal,Dewas,EXACT,True,False
+2005,23,438,Madhya Pradesh,Dhar,3809,1,Madhya Pradesh,Dhar,EXACT,False,False
+2005,23,438,Madhya Pradesh,Dhar,2300,0,West Bengal,Dhar,EXACT,True,False
+2005,23,439,Madhya Pradesh,Indore,431,0,Madhya Pradesh,Indore,EXACT,False,False
+2005,23,439,Madhya Pradesh,Indore,279,0,West Bengal,Indore,EXACT,True,False
+2005,23,444,Madhya Pradesh,Bhopal,3883,1,Lakshadweep,Bhopal,EXACT,True,False
+2005,23,444,Madhya Pradesh,Bhopal,5010,1,West Bengal,Bhopal,EXACT,True,False
+2005,23,448,Madhya Pradesh,Harda,115,0,Madhya Pradesh,Harda,EXACT,False,False
+2005,23,448,Madhya Pradesh,Harda,451,1,West Bengal,Harda,EXACT,True,False
+2005,23,450,Madhya Pradesh,Katni,342,0,Madhya Pradesh,Katni,EXACT,False,False
+2005,23,450,Madhya Pradesh,Katni,329,0,West Bengal,Katni,EXACT,True,False
+2005,23,451,Madhya Pradesh,Jabalpur,1718,1,Madhya Pradesh,Jabalpur,EXACT,False,False
+2005,23,451,Madhya Pradesh,Jabalpur,2181,0,West Bengal,Jabalpur,EXACT,True,False
+2005,23,453,Madhya Pradesh,Dindori,4453,0,Madhya Pradesh,Dindori,EXACT,False,False
+2005,23,453,Madhya Pradesh,Dindori,2971,0,West Bengal,Dindori,EXACT,True,False
+2005,23,454,Madhya Pradesh,Mandla,3539,0,Madhya Pradesh,Mandla,EXACT,False,False
+2005,23,454,Madhya Pradesh,Mandla,2564,2,West Bengal,Mandla,EXACT,True,False
+2005,23,455,Madhya Pradesh,Chhindwara,1004,0,Madhya Pradesh,Chhindwara,EXACT,False,False
+2005,23,455,Madhya Pradesh,Chhindwara,2102,0,West Bengal,Chhindwara,EXACT,True,False
+2005,23,458,Madhya Pradesh,Guna,7109,0,Madhya Pradesh,Guna,EXACT,False,False
+2005,23,458,Madhya Pradesh,Guna,4308,0,West Bengal,Guna,EXACT,True,False
+2005,23,464,Madhya Pradesh,Jhabua,12133,0,Madhya Pradesh,Jhabua,EXACT,False,False
+2005,23,464,Madhya Pradesh,Jhabua,3334,1,West Bengal,Jhabua,EXACT,True,False
+2006,23,426,Madhya Pradesh,Panna,1508,0,Madhya Pradesh,Panna,EXACT,False,False
+2006,23,426,Madhya Pradesh,Panna,1766,0,West Bengal,Panna,EXACT,True,False
+2006,23,430,Madhya Pradesh,Rewa,2011,0,Madhya Pradesh,Rewa,EXACT,False,False
+2006,23,430,Madhya Pradesh,Rewa,1748,1,West Bengal,Rewa,EXACT,True,False
+2006,23,432,Madhya Pradesh,Neemuch,315,0,Madhya Pradesh,Neemuch,EXACT,False,False
+2006,23,432,Madhya Pradesh,Neemuch,286,0,West Bengal,Neemuch,EXACT,True,False
+2006,23,434,Madhya Pradesh,Ratlam,2098,0,Madhya Pradesh,Ratlam,EXACT,False,False
+2006,23,434,Madhya Pradesh,Ratlam,1538,0,West Bengal,Ratlam,EXACT,True,False
+2006,23,442,Madhya Pradesh,Rajgarh,2351,0,Madhya Pradesh,Rajgarh,EXACT,False,False
+2006,23,442,Madhya Pradesh,Rajgarh,2305,0,West Bengal,Rajgarh,EXACT,True,False
+2006,23,446,Madhya Pradesh,Raisen,1896,4,Madhya Pradesh,Raisen,EXACT,False,False
+2006,23,446,Madhya Pradesh,Raisen,1271,1,West Bengal,Raisen,EXACT,True,False
+2010,23,419,Madhya Pradesh,Morena,2293,4,Madhya Pradesh,Morena,EXACT,False,False
+2010,23,419,Madhya Pradesh,Morena,2619,0,West Bengal,Morena,EXACT,True,False
+2010,23,420,Madhya Pradesh,Bhind,2210,0,Lakshadweep,Bhind,EXACT,True,False
+2010,23,420,Madhya Pradesh,Bhind,3142,0,West Bengal,Bhind,EXACT,True,False
+2010,23,421,Madhya Pradesh,Gwalior,2508,6,Madhya Pradesh,Gwalior,EXACT,False,False
+2010,23,421,Madhya Pradesh,Gwalior,2226,0,West Bengal,Gwalior,EXACT,True,False
+2010,23,422,Madhya Pradesh,Datia,932,3,Lakshadweep,Datia,EXACT,True,False
+2010,23,422,Madhya Pradesh,Datia,1104,0,West Bengal,Datia,EXACT,True,False
+2010,23,425,Madhya Pradesh,Chhatarpur,729,1,Lakshadweep,Chhatarpur,EXACT,True,False
+2010,23,425,Madhya Pradesh,Chhatarpur,830,0,West Bengal,Chhatarpur,EXACT,True,False
+2010,23,426,Madhya Pradesh,Panna,1675,0,Madhya Pradesh,Panna,EXACT,False,False
+2010,23,426,Madhya Pradesh,Panna,1821,1,West Bengal,Panna,EXACT,True,False
+2010,23,428,Madhya Pradesh,Damoh,1123,0,Lakshadweep,Damoh,EXACT,True,False
+2010,23,428,Madhya Pradesh,Damoh,1007,1,West Bengal,Damoh,EXACT,True,False
+2010,23,432,Madhya Pradesh,Neemuch,203,0,Madhya Pradesh,Neemuch,EXACT,False,False
+2010,23,432,Madhya Pradesh,Neemuch,304,1,West Bengal,Neemuch,EXACT,True,False
+2010,23,433,Madhya Pradesh,Mandsaur,358,0,Madhya Pradesh,Mandsaur,EXACT,False,False
+2010,23,433,Madhya Pradesh,Mandsaur,1041,2,West Bengal,Mandsaur,EXACT,True,False
+2010,23,437,Madhya Pradesh,Dewas,287,0,Madhya Pradesh,Dewas,EXACT,False,False
+2010,23,437,Madhya Pradesh,Dewas,270,0,West Bengal,Dewas,EXACT,True,False
+2010,23,438,Madhya Pradesh,Dhar,5946,1,Madhya Pradesh,Dhar,EXACT,False,False
+2010,23,438,Madhya Pradesh,Dhar,4532,3,West Bengal,Dhar,EXACT,True,False
+2010,23,439,Madhya Pradesh,Indore,158,0,Madhya Pradesh,Indore,EXACT,False,False
+2010,23,439,Madhya Pradesh,Indore,157,0,West Bengal,Indore,EXACT,True,False
+2010,23,441,Madhya Pradesh,Barwani,799,1,Lakshadweep,Barwani,EXACT,True,False
+2010,23,441,Madhya Pradesh,Barwani,807,4,West Bengal,Barwani,EXACT,True,False
+2010,23,444,Madhya Pradesh,Bhopal,2785,1,Lakshadweep,Bhopal,EXACT,True,False
+2010,23,444,Madhya Pradesh,Bhopal,2048,2,West Bengal,Bhopal,EXACT,True,False
+2010,23,446,Madhya Pradesh,Raisen,1528,0,Madhya Pradesh,Raisen,EXACT,False,False
+2010,23,446,Madhya Pradesh,Raisen,1560,0,West Bengal,Raisen,EXACT,True,False
+2010,23,447,Madhya Pradesh,Betul,1470,0,Lakshadweep,Betul,EXACT,True,False
+2010,23,447,Madhya Pradesh,Betul,1220,0,West Bengal,Betul,EXACT,True,False
+2010,23,448,Madhya Pradesh,Harda,205,1,Madhya Pradesh,Harda,EXACT,False,False
+2010,23,448,Madhya Pradesh,Harda,161,0,West Bengal,Harda,EXACT,True,False
+2010,23,450,Madhya Pradesh,Katni,270,0,Madhya Pradesh,Katni,EXACT,False,False
+2010,23,450,Madhya Pradesh,Katni,242,0,West Bengal,Katni,EXACT,True,False
+2010,23,451,Madhya Pradesh,Jabalpur,1858,2,Madhya Pradesh,Jabalpur,EXACT,False,False
+2010,23,451,Madhya Pradesh,Jabalpur,1127,7,West Bengal,Jabalpur,EXACT,True,False
+2010,23,453,Madhya Pradesh,Dindori,4201,3,Madhya Pradesh,Dindori,EXACT,False,False
+2010,23,453,Madhya Pradesh,Dindori,1463,1,West Bengal,Dindori,EXACT,True,False
+2010,23,454,Madhya Pradesh,Mandla,2656,0,Madhya Pradesh,Mandla,EXACT,False,False
+2010,23,454,Madhya Pradesh,Mandla,1994,0,West Bengal,Mandla,EXACT,True,False
+2010,23,455,Madhya Pradesh,Chhindwara,5041,2,Lakshadweep,Chhindwara,EXACT,True,False
+2010,23,455,Madhya Pradesh,Chhindwara,3334,4,West Bengal,Chhindwara,EXACT,True,False
+2010,23,457,Madhya Pradesh,Balaghat,1620,0,Lakshadweep,Balaghat,EXACT,True,False
+2010,23,457,Madhya Pradesh,Balaghat,1979,6,West Bengal,Balaghat,EXACT,True,False
+2010,23,458,Madhya Pradesh,Guna,2346,0,Madhya Pradesh,Guna,EXACT,False,False
+2010,23,458,Madhya Pradesh,Guna,2427,0,West Bengal,Guna,EXACT,True,False
+2010,23,459,Madhya Pradesh,Ashoknagar,1480,0,Lakshadweep,Ashoknagar,EXACT,True,False
+2010,23,459,Madhya Pradesh,Ashoknagar,1602,0,West Bengal,Ashoknagar,EXACT,True,False
+2010,23,461,Madhya Pradesh,Anuppur,1495,0,Lakshadweep,Anuppur,EXACT,True,False
+2010,23,461,Madhya Pradesh,Anuppur,1211,0,West Bengal,Anuppur,EXACT,True,False
+2010,23,464,Madhya Pradesh,Jhabua,6910,0,Madhya Pradesh,Jhabua,EXACT,False,False
+2010,23,464,Madhya Pradesh,Jhabua,6513,0,West Bengal,Jhabua,EXACT,True,False
+2010,23,467,Madhya Pradesh,Burhanpur,456,0,Lakshadweep,Burhanpur,EXACT,True,False
+2010,23,467,Madhya Pradesh,Burhanpur,557,0,West Bengal,Burhanpur,EXACT,True,False
+2010,32,590,Kerala,Wayanad,44,0,Lakshadweep,Wayanad,EXACT,True,False
+2010,32,590,Kerala,Wayanad,43,0,West Bengal,Wayanad,EXACT,True,False
+2011,9,182,Uttar Pradesh,Balrampur,11,0,Tripura,Balrampur,EXACT,True,False
+2011,9,182,Uttar Pradesh,Balrampur,4365,0,West Bengal,Balrampur,EXACT,True,False
+2012,9,182,Uttar Pradesh,Balrampur,6,0,Tripura,Balrampur,EXACT,True,False
+2012,9,182,Uttar Pradesh,Balrampur,3959,0,West Bengal,Balrampur,EXACT,True,False
+2012,23,421,Madhya Pradesh,Gwalior,2122,6,Madhya Pradesh,Gwalior,EXACT,False,False
+2012,23,421,Madhya Pradesh,Gwalior,1868,8,West Bengal,Gwalior,EXACT,True,False
+2012,23,422,Madhya Pradesh,Datia,722,0,Madhya Pradesh,Datia,EXACT,False,False
+2012,23,422,Madhya Pradesh,Datia,1338,0,West Bengal,Datia,EXACT,True,False
+2012,23,425,Madhya Pradesh,Chhatarpur,505,1,Madhya Pradesh,Chhatarpur,EXACT,False,False
+2012,23,425,Madhya Pradesh,Chhatarpur,1102,1,West Bengal,Chhatarpur,EXACT,True,False
+2012,23,428,Madhya Pradesh,Damoh,731,1,Madhya Pradesh,Damoh,EXACT,False,False
+2012,23,428,Madhya Pradesh,Damoh,677,0,West Bengal,Damoh,EXACT,True,False
+2012,23,433,Madhya Pradesh,Mandsaur,896,0,Madhya Pradesh,Mandsaur,EXACT,False,False
+2012,23,433,Madhya Pradesh,Mandsaur,313,0,West Bengal,Mandsaur,EXACT,True,False
+2012,23,437,Madhya Pradesh,Dewas,222,0,Madhya Pradesh,Dewas,EXACT,False,False
+2012,23,437,Madhya Pradesh,Dewas,213,0,West Bengal,Dewas,EXACT,True,False
+2012,23,438,Madhya Pradesh,Dhar,2196,1,Madhya Pradesh,Dhar,EXACT,False,False
+2012,23,438,Madhya Pradesh,Dhar,2984,1,West Bengal,Dhar,EXACT,True,False
+2012,23,439,Madhya Pradesh,Indore,159,0,Madhya Pradesh,Indore,EXACT,False,False
+2012,23,439,Madhya Pradesh,Indore,96,0,West Bengal,Indore,EXACT,True,False
+2012,23,448,Madhya Pradesh,Harda,223,0,Madhya Pradesh,Harda,EXACT,False,False
+2012,23,448,Madhya Pradesh,Harda,126,1,West Bengal,Harda,EXACT,True,False
+2012,23,450,Madhya Pradesh,Katni,310,1,Madhya Pradesh,Katni,EXACT,False,False
+2012,23,450,Madhya Pradesh,Katni,797,0,West Bengal,Katni,EXACT,True,False
+2012,23,451,Madhya Pradesh,Jabalpur,508,2,Madhya Pradesh,Jabalpur,EXACT,False,False
+2012,23,451,Madhya Pradesh,Jabalpur,478,0,West Bengal,Jabalpur,EXACT,True,False
+2012,23,453,Madhya Pradesh,Dindori,829,2,Madhya Pradesh,Dindori,EXACT,False,False
+2012,23,453,Madhya Pradesh,Dindori,1253,1,West Bengal,Dindori,EXACT,True,False
+2012,23,454,Madhya Pradesh,Mandla,1044,0,Madhya Pradesh,Mandla,EXACT,False,False
+2012,23,454,Madhya Pradesh,Mandla,1034,0,West Bengal,Mandla,EXACT,True,False
+2012,23,455,Madhya Pradesh,Chhindwara,3446,0,Madhya Pradesh,Chhindwara,EXACT,False,False
+2012,23,455,Madhya Pradesh,Chhindwara,2299,0,West Bengal,Chhindwara,EXACT,True,False
+2012,23,458,Madhya Pradesh,Guna,1648,0,Madhya Pradesh,Guna,EXACT,False,False
+2012,23,458,Madhya Pradesh,Guna,1146,0,West Bengal,Guna,EXACT,True,False
+2012,23,464,Madhya Pradesh,Jhabua,3715,0,Madhya Pradesh,Jhabua,EXACT,False,False
+2012,23,464,Madhya Pradesh,Jhabua,5013,0,West Bengal,Jhabua,EXACT,True,False
+2012,23,467,Madhya Pradesh,Burhanpur,745,0,Madhya Pradesh,Burhanpur,EXACT,False,False
+2012,23,467,Madhya Pradesh,Burhanpur,518,0,West Bengal,Burhanpur,EXACT,True,False
+2013,9,182,Uttar Pradesh,Balrampur,13,0,Uttar Pradesh,Balrampur,EXACT,False,False
+2013,9,182,Uttar Pradesh,Balrampur,6160,0,West Bengal,Balrampur,EXACT,True,False
+2013,23,419,Madhya Pradesh,Morena,2656,2,Madhya Pradesh,Morena,EXACT,False,False
+2013,23,419,Madhya Pradesh,Morena,2156,0,West Bengal,Morena,EXACT,True,False
+2013,23,426,Madhya Pradesh,Panna,1628,0,Madhya Pradesh,Panna,EXACT,False,False
+2013,23,426,Madhya Pradesh,Panna,1332,0,West Bengal,Panna,EXACT,True,False
+2013,23,427,Madhya Pradesh,Sagar,1159,1,Madhya Pradesh,Sagar,EXACT,False,False
+2013,23,427,Madhya Pradesh,Sagar,1260,0,West Bengal,Sagar,EXACT,True,False
+2013,23,430,Madhya Pradesh,Rewa,791,0,Madhya Pradesh,Rewa,EXACT,False,False
+2013,23,430,Madhya Pradesh,Rewa,979,0,West Bengal,Rewa,EXACT,True,False
+2013,23,432,Madhya Pradesh,Neemuch,198,0,Madhya Pradesh,Neemuch,EXACT,False,False
+2013,23,432,Madhya Pradesh,Neemuch,103,0,West Bengal,Neemuch,EXACT,True,False
+2013,23,434,Madhya Pradesh,Ratlam,1935,0,Madhya Pradesh,Ratlam,EXACT,False,False
+2013,23,434,Madhya Pradesh,Ratlam,2553,0,West Bengal,Ratlam,EXACT,True,False
+2013,23,442,Madhya Pradesh,Rajgarh,719,0,Madhya Pradesh,Rajgarh,EXACT,False,False
+2013,23,442,Madhya Pradesh,Rajgarh,553,0,West Bengal,Rajgarh,EXACT,True,False
+2013,23,446,Madhya Pradesh,Raisen,793,1,Madhya Pradesh,Raisen,EXACT,False,False
+2013,23,446,Madhya Pradesh,Raisen,870,0,West Bengal,Raisen,EXACT,True,False
+2014,9,182,Uttar Pradesh,Balrampur,15,0,Uttar Pradesh,Balrampur,EXACT,False,False
+2014,9,182,Uttar Pradesh,Balrampur,8460,0,West Bengal,Balrampur,EXACT,True,False
+2014,23,429,Madhya Pradesh,Satna,1221,0,Madhya Pradesh,Satna,EXACT,False,False
+2014,23,429,Madhya Pradesh,Satna,1660,0,West Bengal,Satna,EXACT,True,False
+2015,9,182,Uttar Pradesh,Balrampur,6,0,Uttar Pradesh,Balrampur,EXACT,False,False
+2015,9,182,Uttar Pradesh,Balrampur,8829,0,West Bengal,Balrampur,EXACT,True,False
+2016,9,182,Uttar Pradesh,Balrampur,5,0,Uttar Pradesh,Balrampur,EXACT,False,False
+2016,9,182,Uttar Pradesh,Balrampur,11012,0,West Bengal,Balrampur,EXACT,True,False
+2017,9,182,Uttar Pradesh,Balrampur,12,0,Tripura,Balrampur,EXACT,True,False
+2017,9,182,Uttar Pradesh,Balrampur,3810,0,West Bengal,Balrampur,EXACT,True,False
+2017,23,418,Madhya Pradesh,Sheopur,4912,0,Maharashtra,Sheopur,EXACT,True,False
+2017,23,418,Madhya Pradesh,Sheopur,3473,0,West Bengal,Sheopur,EXACT,True,False
+2017,23,423,Madhya Pradesh,Shivpuri,1648,0,Maharashtra,Shivpuri,EXACT,True,False
+2017,23,423,Madhya Pradesh,Shivpuri,655,0,West Bengal,Shivpuri,EXACT,True,False
+2017,23,424,Madhya Pradesh,Tikamgarh,727,0,Maharashtra,Tikamgarh,EXACT,True,False
+2017,23,424,Madhya Pradesh,Tikamgarh,535,0,West Bengal,Tikamgarh,EXACT,True,False
+2017,23,426,Madhya Pradesh,Panna,868,0,Madhya Pradesh,Panna,EXACT,False,False
+2017,23,426,Madhya Pradesh,Panna,242,0,West Bengal,Panna,EXACT,True,False
+2017,23,427,Madhya Pradesh,Sagar,462,0,Madhya Pradesh,Sagar,EXACT,False,False
+2017,23,427,Madhya Pradesh,Sagar,222,0,West Bengal,Sagar,EXACT,True,False
+2017,23,429,Madhya Pradesh,Satna,1539,0,Madhya Pradesh,Satna,EXACT,False,False
+2017,23,429,Madhya Pradesh,Satna,1030,0,West Bengal,Satna,EXACT,True,False
+2017,23,430,Madhya Pradesh,Rewa,1312,0,Madhya Pradesh,Rewa,EXACT,False,False
+2017,23,430,Madhya Pradesh,Rewa,836,0,West Bengal,Rewa,EXACT,True,False
+2017,23,431,Madhya Pradesh,Umaria,540,0,Maharashtra,Umaria,EXACT,True,False
+2017,23,431,Madhya Pradesh,Umaria,302,0,West Bengal,Umaria,EXACT,True,False
+2017,23,432,Madhya Pradesh,Neemuch,87,0,Madhya Pradesh,Neemuch,EXACT,False,False
+2017,23,432,Madhya Pradesh,Neemuch,442,0,West Bengal,Neemuch,EXACT,True,False
+2017,23,434,Madhya Pradesh,Ratlam,1047,0,Madhya Pradesh,Ratlam,EXACT,False,False
+2017,23,434,Madhya Pradesh,Ratlam,660,0,West Bengal,Ratlam,EXACT,True,False
+2017,23,435,Madhya Pradesh,Ujjain,231,0,Maharashtra,Ujjain,EXACT,True,False
+2017,23,435,Madhya Pradesh,Ujjain,62,0,West Bengal,Ujjain,EXACT,True,False
+2017,23,436,Madhya Pradesh,Shajapur,106,0,Maharashtra,Shajapur,EXACT,True,False
+2017,23,436,Madhya Pradesh,Shajapur,46,0,West Bengal,Shajapur,EXACT,True,False
+2017,23,442,Madhya Pradesh,Rajgarh,734,0,Madhya Pradesh,Rajgarh,EXACT,False,False
+2017,23,442,Madhya Pradesh,Rajgarh,326,0,West Bengal,Rajgarh,EXACT,True,False
+2017,23,445,Madhya Pradesh,Sehore,383,0,Madhya Pradesh,Sehore,EXACT,False,False
+2017,23,445,Madhya Pradesh,Sehore,104,0,West Bengal,Sehore,EXACT,True,False
+2017,23,446,Madhya Pradesh,Raisen,723,0,Madhya Pradesh,Raisen,EXACT,False,False
+2017,23,446,Madhya Pradesh,Raisen,229,0,West Bengal,Raisen,EXACT,True,False
+2017,23,456,Madhya Pradesh,Seoni,384,0,Madhya Pradesh,Seoni,EXACT,False,False
+2017,23,456,Madhya Pradesh,Seoni,483,0,West Bengal,Seoni,EXACT,True,False
+2017,23,460,Madhya Pradesh,Shahdol,381,0,Madhya Pradesh,Shahdol,EXACT,False,False
+2017,23,460,Madhya Pradesh,Shahdol,303,0,West Bengal,Shahdol,EXACT,True,False
+2017,23,462,Madhya Pradesh,Sidhi,1862,0,Maharashtra,Sidhi,EXACT,True,False
+2017,23,462,Madhya Pradesh,Sidhi,1100,0,West Bengal,Sidhi,EXACT,True,False
+2017,23,463,Madhya Pradesh,Singrauli,2428,3,Maharashtra,Singrauli,EXACT,True,False
+2017,23,463,Madhya Pradesh,Singrauli,1252,0,West Bengal,Singrauli,EXACT,True,False
+2018,9,182,Uttar Pradesh,Balrampur,8,0,Tripura,Balrampur,EXACT,True,False
+2018,9,182,Uttar Pradesh,Balrampur,2534,0,West Bengal,Balrampur,EXACT,True,False
+2018,23,443,Madhya Pradesh,Vidisha,269,0,Maharashtra,Vidisha,EXACT,True,False
+2018,23,443,Madhya Pradesh,Vidisha,168,0,West Bengal,Vidisha,EXACT,True,False
+2018,27,498,Maharashtra,Dhule,18,0,Maharashtra,Dhule,EXACT,False,False
+2018,27,498,Maharashtra,Dhule,8,0,West Bengal,Dhule,EXACT,True,False
+2018,27,501,Maharashtra,Akola,36,0,Maharashtra,Akola,EXACT,False,False
+2018,27,501,Maharashtra,Akola,11,0,West Bengal,Akola,EXACT,True,False
+2018,27,503,Maharashtra,Amravati,52,0,Maharashtra,Amravati,EXACT,False,False
+2018,27,503,Maharashtra,Amravati,31,0,West Bengal,Amravati,EXACT,True,False
+2018,27,506,Maharashtra,Bhandara,14,1,Maharashtra,Bhandara,EXACT,False,False
+2018,27,506,Maharashtra,Bhandara,7,0,West Bengal,Bhandara,EXACT,True,False
+2018,27,509,Maharashtra,Chandrapur,90,0,Maharashtra,Chandrapur,EXACT,False,False
+2018,27,509,Maharashtra,Chandrapur,52,1,West Bengal,Chandrapur,EXACT,True,False
+2019,9,182,Uttar Pradesh,Balrampur,4,0,Tripura,Balrampur,EXACT,True,False
+2019,9,182,Uttar Pradesh,Balrampur,444,0,West Bengal,Balrampur,EXACT,True,False
+2019,27,499,Maharashtra,Jalgaon,4,0,Maharashtra,Jalgaon,EXACT,False,False
+2019,27,499,Maharashtra,Jalgaon,3,0,West Bengal,Jalgaon,EXACT,True,False
+2019,27,507,Maharashtra,Gondiya,224,3,Maharashtra,Gondia,VARIANT,False,False
+2019,27,507,Maharashtra,Gondiya,347,2,West Bengal,Gondia,VARIANT,True,False
+2019,27,508,Maharashtra,Gadchiroli,2428,1,Maharashtra,Gadchiroli,EXACT,False,False
+2019,27,508,Maharashtra,Gadchiroli,8750,5,West Bengal,Gadchiroli,EXACT,True,False
+2019,27,512,Maharashtra,Hingoli,1,0,Maharashtra,Hingoli,EXACT,False,False
+2019,27,512,Maharashtra,Hingoli,0,0,West Bengal,Hingoli,EXACT,True,False
+2019,27,514,Maharashtra,Jalna,3,0,Maharashtra,Jalna,EXACT,False,False
+2019,27,514,Maharashtra,Jalna,1,0,West Bengal,Jalna,EXACT,True,False
+2019,27,524,Maharashtra,Latur,3,0,Maharashtra,Latur,EXACT,False,False
+2019,27,524,Maharashtra,Latur,7,0,West Bengal,Latur,EXACT,True,False
+2019,27,530,Maharashtra,Kolhapur,27,0,Maharashtra,Kolhapur,EXACT,False,False
+2019,27,530,Maharashtra,Kolhapur,15,0,West Bengal,Kolhapur,EXACT,True,False
+2020,9,182,Uttar Pradesh,Balrampur,2,0,Tripura,Balrampur,EXACT,True,False
+2020,9,182,Uttar Pradesh,Balrampur,165,0,West Bengal,Balrampur,EXACT,True,False
+2021,9,182,Uttar Pradesh,Balrampur,1,0,Tripura,Balrampur,EXACT,True,False
+2021,9,182,Uttar Pradesh,Balrampur,73,0,West Bengal,Balrampur,EXACT,True,False
+2022,8,105,Rajasthan,Bharatpur,9,0,Punjab,Bharatpur,EXACT,True,False
+2022,8,105,Rajasthan,Bharatpur,102,0,West Bengal,Bharatpur,EXACT,True,False
+2022,9,182,Uttar Pradesh,Balrampur,0,0,Tripura,Balrampur,EXACT,True,False
+2022,9,182,Uttar Pradesh,Balrampur,31,0,West Bengal,Balrampur,EXACT,True,False
+2023,8,105,Rajasthan,Bharatpur,2,0,Punjab,Bharatpur,EXACT,True,False
+2023,8,105,Rajasthan,Bharatpur,21,0,West Bengal,Bharatpur,EXACT,True,False
+2023,9,182,Uttar Pradesh,Balrampur,4,0,Tripura,Balrampur,EXACT,True,False
+2023,9,182,Uttar Pradesh,Balrampur,0,0,West Bengal,Balrampur,EXACT,True,False

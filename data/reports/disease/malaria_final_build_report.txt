@@ -1,0 +1,58 @@
+======================================================================
+FINAL MALARIA DATASET REPORT
+======================================================================
+
+Source extracted rows        : 16,709
+Exact deterministic rows     : 12,453
+Duplicate rows removed       : 84
+Final rows                   : 12,369
+Unique districts             : 517
+Years                        : 2000-2024
+
+Rows by year:
+year
+2000    454
+2001    461
+2002    468
+2003    470
+2004    478
+2005    479
+2006    479
+2007    491
+2008    498
+2009    502
+2010    504
+2011    501
+2012    504
+2013    508
+2014    507
+2015    506
+2016    504
+2017    505
+2018    505
+2019    504
+2020    508
+2021    504
+2022    508
+2023    508
+2024    513
+
+Rows by coverage:
+data_coverage
+FULL_YEAR             11856
+THROUGH_APRIL_2024      513
+
+Columns:
+year
+census_state_code
+census_district_code
+state_name
+district_name
+latitude
+longitude
+population_2011
+households_2011
+total_cases
+total_deaths
+data_coverage
+source_page

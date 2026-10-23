@@ -1,0 +1,22 @@
+column,role,data_type,description
+census_district_code,metadata,int64,Canonical Census 2011 district code. Excluded from predictor matrix.
+year,metadata,int64,Feature year T (information available through end of calendar year T).
+target_year,metadata,int64,Target year T+1 (calendar year of heatwave outcome).
+split,metadata,string,Chronological evaluation split: 'train' (feature years 2011-2020) or 'test' (feature years 2021-2023).
+model_selection_split,metadata,string,"Inner chronological split: 'inner_train' (2011-2018), 'inner_val' (2019-2020), or 'test' (2021-2023)."
+latitude,predictor,float64,Representative point latitude (degrees) of district geometry.
+longitude,predictor,float64,Representative point longitude (degrees) of district geometry.
+population_2011,predictor,int64,District population from Census 2011.
+avg_temperature_c,predictor,float64,Annual mean daily 2m air temperature in year T (°C).
+max_temperature_c,predictor,float64,Maximum daily T2M_MAX observed during year T (°C).
+min_temperature_c,predictor,float64,Minimum daily T2M_MIN observed during year T (°C).
+avg_humidity_pct,predictor,float64,Annual mean relative humidity at 2m in year T (%).
+total_rainfall_mm,predictor,float64,Annual accumulated precipitation in year T (mm).
+rainy_days,predictor,int64,Number of days with precipitation >= 1mm in year T.
+heatwave_days_T,predictor,int64,Days where daily T2M_MAX >= 45°C during year T.
+severe_heatwave_days_T,predictor,int64,Days where daily T2M_MAX >= 47°C during year T.
+has_heatwave_T,predictor,int64,"Binary persistence: 1 if heatwave_days_T > 0, else 0."
+temp_range_c,predictor,float64,Annual diurnal/extreme thermal range (max_temperature_c - min_temperature_c) (°C).
+rain_intensity,predictor,float64,Average rainfall per rainy day: total_rainfall_mm / (rainy_days + 1).
+target_heatwave_days_T1,target_continuous,int64,Continuous count of days with T2M_MAX >= 45°C in exact target year T+1.
+target_has_heatwave_T1,target_binary,int64,Primary binary classification target: 1 if target_heatwave_days_T1 > 0 else 0.

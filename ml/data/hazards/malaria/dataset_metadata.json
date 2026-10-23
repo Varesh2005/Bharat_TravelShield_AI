@@ -1,0 +1,115 @@
+{
+  "exclusions": {
+    "note": "district-years without a FULL_YEAR record are unknown and absent",
+    "rows_missing_required_input_dropped": 34
+  },
+  "feature_groups": {
+    "geography": [
+      "latitude",
+      "longitude",
+      "log_population"
+    ],
+    "hazard_history": [
+      "log1p_incidence_T",
+      "log1p_incidence_Tm1",
+      "incidence_rank_pct_T",
+      "high_burden_T"
+    ],
+    "weather_T": [
+      "avg_temperature_c",
+      "max_temperature_c",
+      "min_temperature_c",
+      "temp_range_c",
+      "avg_humidity_pct",
+      "total_rainfall_mm",
+      "rainy_days"
+    ]
+  },
+  "feature_year_range": [
+    2012,
+    2022
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "log_population",
+    "avg_temperature_c",
+    "max_temperature_c",
+    "min_temperature_c",
+    "temp_range_c",
+    "avg_humidity_pct",
+    "total_rainfall_mm",
+    "rainy_days",
+    "log1p_incidence_T",
+    "log1p_incidence_Tm1",
+    "incidence_rank_pct_T",
+    "high_burden_T"
+  ],
+  "geography": "district (Census 2011), 517 districts that appear in the NCVBDC tables",
+  "hazard": "malaria",
+  "horizon": "next calendar year (annual)",
+  "label_reliability": "Reported counts from PDF extraction; relative ranking within a year because national totals fell from 1.07M (2011) to 0.12M (2021). Population is the 2011 census for every year.",
+  "label_source": "NCVBDC district-wise malaria tables (PDF extraction), FULL_YEAR rows only",
+  "limitations": [
+    "Relative burden among reporting districts, not an absolute risk.",
+    "Not corrected for under-reporting or population change since 2011.",
+    "2024 is a partial year and is never used."
+  ],
+  "missing_value_policy": "rows with any missing required input are dropped; nothing is imputed",
+  "persistence_feature": "high_burden_T",
+  "rows": 5529,
+  "source_files": {
+    "malaria": {
+      "path": "data/processed/disease/malaria/malaria_district_year_2000_2024.csv",
+      "sha256": "e584245696bb0f0937103fce5a2ba74de60476400edcab1b0769e634d07f8a0e"
+    },
+    "master": {
+      "path": "data/reference/district_master.csv",
+      "sha256": "d9223ae4d553e6ecfd51ec5450677c8dde37c80c9d9ed7c88c0c75862761d8fa"
+    },
+    "weather": {
+      "path": "data/processed/weather/weather_district_year_2011_2025.csv",
+      "sha256": "8ebe5c83e7fc2cd8c7150c7d2e20cf563fa3f715ff861e79091a57f95874983a"
+    }
+  },
+  "split_rule": {
+    "test": "target_year >= 2022",
+    "train": "target_year <= 2019",
+    "val": "target_year in [2020, 2021]"
+  },
+  "splits": {
+    "test": {
+      "districts": 504,
+      "positives": 253,
+      "prevalence": 0.2515,
+      "rows": 1006,
+      "target_years": [
+        2022,
+        2023
+      ]
+    },
+    "train": {
+      "districts": 509,
+      "positives": 880,
+      "prevalence": 0.25,
+      "rows": 3520,
+      "target_years": [
+        2013,
+        2019
+      ]
+    },
+    "val": {
+      "districts": 502,
+      "positives": 253,
+      "prevalence": 0.2522,
+      "rows": 1003,
+      "target_years": [
+        2020,
+        2021
+      ]
+    }
+  },
+  "target": "target_malaria_high_next_year",
+  "target_definition": "1 if the district's reported malaria cases per 100,000 (2011 population) in year T+1 are in the top quartile of all reporting districts that year, else 0.",
+  "title": "High reported malaria incidence"
+}

@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bharat_travelshield_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - DEBUG=False
+      - FIREBASE_CREDENTIALS_PATH=/app/firebase_credentials.json
+    volumes:
+      - ./firebase_credentials.json:/app/firebase_credentials.json:ro
+      - ./ml/models/weights:/app/ml/models/weights:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

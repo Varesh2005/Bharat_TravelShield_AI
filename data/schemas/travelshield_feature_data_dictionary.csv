@@ -1,0 +1,22 @@
+column,data_type,description,source,unit
+census_district_code,int64,Canonical Census 2011 district identifier.,Census of India 2011 / district master,code
+district_name,string,Canonical Census 2011 district name.,District master,
+state_name,string,Canonical state name.,District master,
+latitude,float64,Representative point latitude of district geometry.,2011 district boundary,degrees
+longitude,float64,Representative point longitude of district geometry.,2011 district boundary,degrees
+population_2011,int64,District population from Census 2011.,Census of India 2011,persons
+year,int64,Calendar year.,Derived,year
+avg_temperature_c,float64,Annual mean daily 2-metre air temperature.,NASA POWER,°C
+max_temperature_c,float64,Maximum daily T2M_MAX observed during the year.,NASA POWER,°C
+min_temperature_c,float64,Minimum daily T2M_MIN observed during the year.,NASA POWER,°C
+avg_humidity_pct,float64,Annual mean relative humidity at 2 metres.,NASA POWER,%
+total_rainfall_mm,float64,Annual accumulated corrected precipitation.,NASA POWER,mm
+rainy_days,int64,Number of days with precipitation >= 1 mm.,NASA POWER; derived,days
+malaria_cases,float64_nullable,Reported district-level malaria cases. Missing means no usable retained source observation.,NCVBDC,cases
+malaria_present,Int64_nullable,1 when retained malaria cases are greater than zero; 0 when retained observation reports zero; missing when no malaria observation exists.,NCVBDC; derived,binary
+dengue_cases,float64_nullable,State-level dengue cases associated with the district's state. Missing where source coverage is unavailable.,NCVBDC,cases
+dengue_deaths,float64_nullable,State-level dengue deaths associated with the district's state.,NCVBDC,deaths
+flood_event_count,Int64_nullable,Deterministically mapped flood event count for district-year. Missing means no usable deterministic LGD-to-Census mapping was retained.,India Flood Inventory v3; derived,events
+heatwave_days,int64,Days where NASA POWER T2M_MAX met the threshold-based heatwave criterion.,NASA POWER; IMD threshold methodology; derived,days
+severe_heatwave_days,int64,Days where NASA POWER T2M_MAX met the severe heatwave threshold.,NASA POWER; IMD threshold methodology; derived,days
+heatwave_max_temperature_c,float64,Maximum T2M_MAX used in the heatwave feature calculation.,NASA POWER; derived,°C

@@ -1,0 +1,12 @@
+column_name,data_type,unit,description,source
+census_district_code,integer,N/A,Census 2011 district identifier used to link weather records to the district master,NASA POWER coordinates linked through Census 2011 district master
+district_name,string,N/A,District name from the Census 2011 district master,Census of India 2011
+state_name,string,N/A,State name from the Census 2011 district master,Census of India 2011
+latitude,float,degrees,Representative latitude of the district used for NASA POWER point extraction,Census 2011 district shapefile
+longitude,float,degrees,Representative longitude of the district used for NASA POWER point extraction,Census 2011 district shapefile
+date,date,YYYY-MM-DD,Daily observation date,NASA POWER Daily API
+T2M,float,°C,Temperature at 2 meters,NASA POWER
+T2M_MAX,float,°C,Maximum temperature at 2 meters,NASA POWER
+T2M_MIN,float,°C,Minimum temperature at 2 meters,NASA POWER
+RH2M,float,%,Relative humidity at 2 meters,NASA POWER
+PRECTOTCORR,float,mm/day,Corrected daily precipitation,NASA POWER
