@@ -1,10 +1,11 @@
-# Bharat-TravelShield AI — Backend API Integration Guide
+# Bharat-TravelShield AI — Complete Backend API Integration Guide
 
 **Owner / Author:** Rajdeep (Role: Backend / API)  
 **Target Audience:** Rosemariya (Frontend / UI), Pranav (Integration & DB), Varesh (ML / ANN)  
 **API Version:** `1.0.0`  
 **OpenAPI Specification:** [docs/BACKEND_API_SPEC.json](file:///docs/BACKEND_API_SPEC.json)  
-**Interactive Docs:** `http://localhost:8000/docs` (Swagger UI) / `http://localhost:8000/redoc`  
+**Interactive Swagger UI:** `http://localhost:8000/docs`  
+**Interactive ReDoc UI:** `http://localhost:8000/redoc`  
 
 ---
 
@@ -23,64 +24,64 @@ pytest tests/test_api_endpoints.py -v
 
 ---
 
-## 2. API Endpoints Overview
+## 2. API Endpoints Directory (All 17 Routes)
 
-| Method | Endpoint | Description | Frontend Use Case |
-| :--- | :--- | :--- | :--- |
-| `GET` | `/health` / `/api/v1/health` | System health & DB connection status | Ping / Status badge in UI |
-| `GET` | `/` | System overview, team metadata, disclaimer | Footer / About modal |
-| `GET` | `/api/v1/destinations/search?q={query}` | Autocomplete search across all 640 districts | Hero destination search bar |
-| `GET` | `/api/v1/destinations/{location_id}` | Detailed coordinates, elevation, tourist spots | Destination info panel |
-| `GET` | `/api/v1/destinations/district/{code}/summary` | Comprehensive historical observations & precautions | Destination Report Page |
-| `GET` | `/api/v1/hazards` | Status and calibration availability for all hazards | Hazard selection filter |
-| `POST`| `/api/v1/predict/district` | Single hazard ANN prediction for a district | Granular hazard risk card |
-| `POST`| `/api/v1/predict/custom` | ANN inference with caller-supplied feature record | What-If Simulator |
-| `POST`| `/api/v1/predict/multi-hazard` | **Unified deck of hazard cards** + Firestore audit log | **Main Travel Risk Dashboard** |
-| `GET` | `/api/v1/history/weather/{loc_id}` | Ground-truth historical weather observations | Climate trend charts |
-| `GET` | `/api/v1/history/disease/{loc_id}` | Historical disease surveillance reports | Epidemiological charts |
-| `GET` | `/api/v1/predictions/recent` | Audit log of recent travel predictions | Recent Searches widget |
+### A. System & Status
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/` | System overview, team roster, supported hazards |
+| `GET` | `/health` / `/api/v1/health` | Live readiness & database health status |
+| `GET` | `/api/v1/data/status` | Underlying weather, disaster & health data file audit |
+| `GET` | `/api/v1/model/version` | Active neural network versions and calibration status |
+
+### B. Destinations & Search
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/api/v1/destinations/search?q={query}` | Autocomplete search across 640 districts with Indian city aliases |
+| `GET` | `/api/v1/destinations` | List registered districts (paginated) |
+| `GET` | `/api/v1/destinations/{id}` | Destination coordinates, elevation, tourist spots |
+| `GET` | `/api/v1/destinations/district/{code}/summary` | Full historical climate, disease surveillance & precautions |
+| `GET` | `/api/v1/locations?query={q}` | Integration contract alias for destination search |
+| `GET` | `/api/v1/locations/{id}/history?year={y}` | Integration contract alias for annual historical summary |
+
+### C. Predictions & Intelligence
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `POST` | `/api/v1/predict/multi-hazard` | **Unified deck of hazard cards** + Firestore audit log |
+| `POST` | `/api/v1/predict` | Flexible contract alias accepting `{district_code}` or `{location_id, travel_date}` |
+| `POST` | `/api/v1/predict/district` | Single hazard ANN inference (Heatwave, Flood, Malaria) |
+| `POST` | `/api/v1/predict/custom` | Model inference on custom caller-supplied feature records |
+| `GET` | `/api/v1/hazards` | List hazard support status (validated vs unsupported) |
+
+### D. Counterfactual Simulator, Maps & Research
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `POST` | `/api/v1/risk/scenario` | **What-If Simulator:** counterfactual predictions with environmental deltas |
+| `GET` | `/api/v1/risk/explain/{prediction_id}` | Factor attributions for a saved prediction |
+| `GET` | `/api/v1/map/layers/{hazard_type}` | Lightweight district coordinates and markers for MapLibre GL |
+| `GET` | `/api/v1/research/leaderboard` | Research Lab: ANN vs Baseline metrics (PR-AUC, ROC-AUC, Brier, ECE) |
+
+### E. Historical Ground Truth & Auditing
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/api/v1/history/weather/{loc_id}` | Ground-truth historical weather observations (NASA POWER / IMD) |
+| `GET` | `/api/v1/history/disease/{loc_id}` | Historical disease surveillance reports (NCVBDC) |
+| `GET` | `/api/v1/predictions/recent` | Audit trail of recent traveler predictions |
+| `GET` | `/api/v1/predictions/{id}` | Retrieve specific prediction audit record by ID |
 
 ---
 
-## 3. Key Endpoint Contracts & Payloads
+## 3. Key Request & Response Examples
 
-### 3.1 Destination Autocomplete Search
-- **Route:** `GET /api/v1/destinations/search?q=Bengaluru&limit=5`
-- **Response `(200 OK)`:**
-```json
-{
-  "query": "Bengaluru",
-  "count": 1,
-  "results": [
-    {
-      "id": "karnataka_bangalore",
-      "census_district_code": 572,
-      "district_name": "Bangalore",
-      "state_name": "Karnataka",
-      "latitude": 12.9716,
-      "longitude": 77.5946,
-      "elevation_m": 920.0,
-      "climate_zone": "Tropical Savanna",
-      "population_density": 4.38,
-      "popular_tourist_spots": ["Lalbagh", "Cubbon Park", "Bangalore Palace"]
-    }
-  ]
-}
-```
-*Note: Supports common Indian city aliases (e.g. Bengaluru -> Bangalore, Bombay -> Mumbai, Calcutta -> Kolkata, Kashi -> Varanasi).*
-
----
-
-### 3.2 Unified Multi-Hazard Travel Intelligence (For Rosemariya's UI)
-- **Route:** `POST /api/v1/predict/multi-hazard`
-- **Request:**
+### 3.1 Unified Multi-Hazard Travel Intelligence (Primary Dashboard)
+- **POST** `/api/v1/predict/multi-hazard`
 ```json
 {
   "district_code": 146,
   "user_id": "traveler_99"
 }
 ```
-- **Response `(200 OK)`:**
+- **Response (200 OK):**
 ```json
 {
   "prediction_id": "pred_a1b2c3d4e5f6",
@@ -109,7 +110,7 @@ pytest tests/test_api_endpoints.py -v
       "model_version": "heatwave-ann-mlp-v2",
       "probability": null,
       "raw_score_for_ranking_only": 0.385,
-      "note": "Calibration validation check failed (ECE 0.173 > 0.10); calibrated probability withheld per scientific standards.",
+      "note": "Calibration validation check failed (ECE 0.173 > 0.10); calibrated probability withheld.",
       "top_factors": [
         {"feature": "max_temperature_c", "value": 44.5, "effect_on_score": 0.12}
       ]
@@ -120,14 +121,12 @@ pytest tests/test_api_endpoints.py -v
       "model_version": "flood-ann-mlp-v2",
       "probability": null,
       "raw_score_for_ranking_only": 0.124,
-      "note": "Calibration validation check failed (ECE 0.149 > 0.10); calibrated probability withheld.",
-      "top_factors": []
+      "note": "Calibration validation check failed (ECE 0.149 > 0.10); calibrated probability withheld."
     },
     "dengue": {
       "hazard": "dengue",
       "status": "unsupported",
-      "reason": "Dengue data is available only at state level (2021-2025). Independent district ANN training is scientifically unsupported.",
-      "recovery_path": "Use historical destination summary (/api/v1/destinations/district/{code}/summary) for state-level surveillance records."
+      "reason": "Dengue surveillance is available only at state level (2021-2025). Independent district ANN training is scientifically unsupported."
     }
   },
   "disclaimer": "Decision support only. Predictions are experimental artificial neural network estimates.",
@@ -137,13 +136,46 @@ pytest tests/test_api_endpoints.py -v
 
 ---
 
-## 4. Frontend Integration Best Practices (For Rosemariya)
+### 3.2 What-If Scenario Simulator
+- **POST** `/api/v1/risk/scenario`
+```json
+{
+  "hazard": "heatwave",
+  "district_code": 146,
+  "deltas": {
+    "max_temperature_c": 3.0
+  }
+}
+```
+- **Response (200 OK):**
+```json
+{
+  "status": "ok",
+  "hazard": "heatwave",
+  "district_code": 146,
+  "applied_deltas": {
+    "max_temperature_c": 3.0
+  },
+  "baseline": {
+    "raw_score": 0.385
+  },
+  "scenario": {
+    "raw_score": 0.542
+  },
+  "score_delta": 0.157,
+  "risk_impact": "increased",
+  "disclaimer": "Simulated counterfactual outcome. Model response is non-linear and indicative."
+}
+```
 
-1. **Probability Display Rule:**
-   - Always check if `probability !== null`.
-   - If `probability` is a number (e.g. Malaria), display it as a percentage: `(probability * 100).toFixed(1) + "%"`.
-   - If `probability === null` (Heatwave, Flood), display `raw_score_for_ranking_only` as a relative score and show the `note` indicating calibration is withheld.
-2. **Never Show Unsupported Hazards as Zero Risk:**
-   - For `dengue`, check `status === "unsupported"`. Display the state-level surveillance note rather than claiming 0% risk.
-3. **Audit Tracking:**
-   - Every prediction generates a `prediction_id` that is persisted to Firebase Firestore. Use this ID to display shareable link URLs (e.g. `/report/[prediction_id]`).
+---
+
+## 4. Frontend Integration Guidelines for Rosemariya
+
+1. **Probability Handling:**
+   - Display `probability` as percentage when not null (`(prob * 100).toFixed(1) + "%"`).
+   - When `probability` is `null` (Heatwave/Flood), display `raw_score_for_ranking_only` and render the tooltip containing `note`.
+2. **Honest Science & Ethics:**
+   - For `dengue`, check `status === "unsupported"`. Display the state-level surveillance advisory rather than claiming 0% risk.
+3. **Security Headers:**
+   - Standard security headers (`X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Strict-Transport-Security`) are automatically enforced on every response.

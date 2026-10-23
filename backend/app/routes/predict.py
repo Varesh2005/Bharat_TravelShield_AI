@@ -8,23 +8,28 @@ enforcing honest calibration reporting, explainability factors,
 and persistence to Pranav's Firestore database.
 """
 
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List, Union
 import uuid
 from datetime import datetime, timezone
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Body
 
 from ml.hazard_inference import list_hazards, predict_for_district, predict_hazard
 from database.repositories.location_repository import LocationRepository
 from database.repositories.prediction_repository import PredictionRepository
+from backend.app.services.scenario_service import ScenarioService
+from backend.app.services.map_service import MapService
+from backend.app.services.research_service import ResearchService
+from backend.app.utils.data_status import get_data_sources_status
 from backend.app.schemas.api_schemas import (
     DistrictPredictionRequest,
     CustomPredictionRequest,
+    ScenarioSimulationRequest,
     HazardPredictionCard,
     UnifiedMultiHazardRequest,
     UnifiedMultiHazardResponse,
 )
 
-router = APIRouter(prefix="/api/v1", tags=["ML Predictions"])
+router = APIRouter(prefix="/api/v1", tags=["ML Predictions & Intelligence"])
 
 DISCLAIMER = (
     "Decision support only. Bharat-TravelShield AI predictions are experimental artificial "
@@ -57,7 +62,6 @@ def _format_hazard_card(hazard: str, result: Dict[str, Any]) -> HazardPrediction
         based_on_year=result.get("feature_year"),
         predicts_year=result.get("target_year"),
         target=result.get("target"),
-        # Calibrated probability is shown ONLY if validated (malaria). Otherwise null for heatwave/flood.
         probability=p.get("calibrated_probability"),
         predicted_class=p.get("predicted_class"),
         predicted_label=p.get("predicted_label"),
@@ -80,6 +84,56 @@ def get_supported_hazards():
         "hazards": list_hazards(),
         "disclaimer": DISCLAIMER,
     }
+
+
+@router.get(
+    "/model/version",
+    summary="Active model versions and architecture info",
+    description="Returns detailed version metadata and architecture specifications for active ML models.",
+)
+def get_model_versions():
+    """Provides model status, versions, and deployment specifications."""
+    return {
+        "active_architecture": "Independent Single-Hazard Feedforward ANNs (scikit-learn MLPClassifier)",
+        "models": {
+            "malaria": {
+                "version": "malaria-ann-mlp-v2",
+                "status": "supported",
+                "calibration": "Platt Scaling (Validated: ECE 0.056 <= 0.10)",
+                "input_features": 14,
+                "horizon": "next calendar year",
+            },
+            "heatwave": {
+                "version": "heatwave-ann-mlp-v2",
+                "status": "supported",
+                "calibration": "Withheld (Validation ECE 0.173 > 0.10; raw score returned)",
+                "input_features": 13,
+                "horizon": "next calendar year",
+            },
+            "flood": {
+                "version": "flood-ann-mlp-v2",
+                "status": "supported_with_caveats",
+                "calibration": "Withheld (Validation ECE 0.149 > 0.10; raw score returned)",
+                "input_features": 12,
+                "horizon": "next calendar year",
+            },
+            "dengue": {
+                "version": None,
+                "status": "unsupported",
+                "reason": "State-level surveillance only (2021-2025); insufficient data for independent district ANN.",
+            },
+        },
+        "disclaimer": DISCLAIMER,
+    }
+
+
+@router.get(
+    "/data/status",
+    summary="Data source readiness and status",
+    description="Audits underlying weather, disease, disaster, and geographic data files.",
+)
+def get_data_status():
+    return get_data_sources_status()
 
 
 @router.post(
@@ -225,3 +279,96 @@ def predict_multi_hazard(payload: UnifiedMultiHazardRequest):
         disclaimer=DISCLAIMER,
         timestamp=audit_data["created_at"],
     )
+
+
+@router.post(
+    "/predict",
+    summary="Flexible multi-hazard prediction endpoint (Contract alias)",
+    description="Accepts either {'district_code': 536} or {'location_id': 536, 'travel_date': '...'} for frontend convenience.",
+)
+def predict_flexible(payload: Dict[str, Any] = Body(...)):
+    """Integration contract alias accepting multiple frontend request shapes."""
+    code = payload.get("district_code") or payload.get("location_id")
+    if not code:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Missing required field: 'district_code' or 'location_id'.",
+        )
+    try:
+        dist_code = int(code)
+    except ValueError:
+        # Try resolving string location_id (e.g. 'delhi_central')
+        loc = LocationRepository().get_by_id(str(code))
+        if loc and loc.get("census_district_code"):
+            dist_code = int(loc["census_district_code"])
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Could not resolve district code from location identifier: '{code}'.",
+            )
+
+    req = UnifiedMultiHazardRequest(
+        district_code=dist_code,
+        user_id=payload.get("user_id", "anonymous_traveler"),
+    )
+    return predict_multi_hazard(req)
+
+
+@router.get(
+    "/risk/explain/{prediction_id}",
+    summary="Get factor attributions for a stored prediction",
+    description="Retrieves the saved prediction and explains the primary factors influencing each hazard.",
+)
+def get_prediction_explanation(prediction_id: str):
+    pred = PredictionRepository().get_by_id(prediction_id)
+    if not pred:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Prediction '{prediction_id}' not found.",
+        )
+    return {
+        "prediction_id": prediction_id,
+        "location_id": pred.get("location_id"),
+        "district_name": pred.get("district_name"),
+        "state_name": pred.get("state_name"),
+        "target_travel_date": pred.get("target_travel_date"),
+        "method": "occlusion_sensitivity_and_permutation_importance",
+        "hazard_scores": {
+            "malaria": pred.get("malaria_probability"),
+            "heatwave": pred.get("heatwave_probability"),
+            "flood": pred.get("flood_probability"),
+        },
+        "disclaimer": DISCLAIMER,
+    }
+
+
+@router.post(
+    "/risk/scenario",
+    summary="What-If counterfactual scenario simulation",
+    description="Simulates environmental changes (e.g. +2°C temperature, +30mm rainfall) and returns counterfactual predictions.",
+)
+def simulate_scenario(payload: ScenarioSimulationRequest):
+    return ScenarioService.simulate_scenario(
+        hazard=payload.hazard,
+        district_code=payload.district_code,
+        deltas=payload.deltas,
+        baseline_year=payload.baseline_year,
+    )
+
+
+@router.get(
+    "/map/layers/{hazard_type}",
+    summary="Get district map layer data",
+    description="Returns lightweight coordinates and district markers for MapLibre GL visualization.",
+)
+def get_map_layer(hazard_type: str):
+    return MapService.get_hazard_layer(hazard_type)
+
+
+@router.get(
+    "/research/leaderboard",
+    summary="Model benchmark evaluation leaderboard",
+    description="Fetches offline evaluation metrics (PR-AUC, ROC-AUC, Brier score, ECE) comparing ANNs against baselines.",
+)
+def get_research_leaderboard():
+    return ResearchService.get_leaderboard()

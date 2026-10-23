@@ -86,6 +86,13 @@ class CustomPredictionRequest(BaseModel):
     explain: bool = Field(True, description="Whether to include factor explanation")
 
 
+class ScenarioSimulationRequest(BaseModel):
+    hazard: str = Field(..., description="Hazard type: 'heatwave', 'flood', or 'malaria'", example="heatwave")
+    district_code: int = Field(..., description="Census 2011 district code", example=146)
+    deltas: Dict[str, float] = Field(..., description="Feature delta overrides (e.g. {'max_temperature_c': 3.0})")
+    baseline_year: Optional[int] = Field(None, description="Optional baseline feature year")
+
+
 class TopFactor(BaseModel):
     feature: str
     value: Any

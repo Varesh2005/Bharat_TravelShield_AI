@@ -224,3 +224,109 @@ def test_get_recent_predictions_audit():
     data = res.json()
     assert "predictions" in data
     assert isinstance(data["predictions"], list)
+
+
+# ------------------------------------------------------------------------------
+# 5. Advanced Intelligence, Scenario, Map & Research Tests
+# ------------------------------------------------------------------------------
+
+def test_security_headers_present():
+    """Verify security headers are attached by middleware."""
+    res = client.get("/api/v1/health")
+    assert res.status_code == 200
+    assert res.headers.get("X-Content-Type-Options") == "nosniff"
+    assert res.headers.get("X-Frame-Options") == "DENY"
+    assert "X-XSS-Protection" in res.headers
+
+
+def test_model_version_endpoint():
+    """Verify active model versions endpoint."""
+    res = client.get("/api/v1/model/version")
+    assert res.status_code == 200
+    data = res.json()
+    assert "models" in data
+    assert "malaria" in data["models"]
+    assert data["models"]["malaria"]["version"] == "malaria-ann-mlp-v2"
+
+
+def test_data_status_endpoint():
+    """Verify data sources audit status."""
+    res = client.get("/api/v1/data/status")
+    assert res.status_code == 200
+    data = res.json()
+    assert "overall_status" in data
+    assert data["sources_count"] > 0
+    assert len(data["sources"]) > 0
+
+
+def test_locations_alias_query():
+    """Verify GET /api/v1/locations?query=... alias contract."""
+    res = client.get("/api/v1/locations?query=Jaipur")
+    assert res.status_code == 200
+    data = res.json()
+    assert isinstance(data, list)
+    assert len(data) > 0
+    assert "Jaipur" in data[0]["district_name"]
+
+
+def test_predict_flexible_contract_alias():
+    """Verify POST /api/v1/predict contract alias."""
+    payload = {"district_code": 146}
+    res = client.post("/api/v1/predict", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert "prediction_id" in data
+    assert data["district_code"] == 146
+    assert "hazards" in data
+
+
+def test_whatif_scenario_simulation():
+    """Verify What-If scenario simulation returns delta comparisons."""
+    payload = {
+        "hazard": "heatwave",
+        "district_code": 146,
+        "deltas": {"max_temperature_c": 3.0},
+    }
+    res = client.post("/api/v1/risk/scenario", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "ok"
+    assert "baseline" in data
+    assert "scenario" in data
+    assert "applied_deltas" in data
+    assert data["applied_deltas"]["max_temperature_c"] == 3.0
+
+
+def test_risk_explain_endpoint():
+    """Verify risk explanation retrieval for generated prediction."""
+    # First generate a prediction
+    pred_res = client.post("/api/v1/predict/multi-hazard", json={"district_code": 146})
+    pred_id = pred_res.json()["prediction_id"]
+
+    # Retrieve explanation
+    exp_res = client.get(f"/api/v1/risk/explain/{pred_id}")
+    assert exp_res.status_code == 200
+    exp_data = exp_res.json()
+    assert exp_data["prediction_id"] == pred_id
+    assert "hazard_scores" in exp_data
+
+
+def test_map_layer_endpoint():
+    """Verify lightweight spatial map layer for MapLibre GL."""
+    res = client.get("/api/v1/map/layers/malaria")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["hazard"] == "malaria"
+    assert data["count"] > 0
+    assert len(data["districts"]) > 0
+
+
+def test_research_leaderboard_endpoint():
+    """Verify research benchmark leaderboard for Research Lab."""
+    res = client.get("/api/v1/research/leaderboard")
+    assert res.status_code == 200
+    data = res.json()
+    assert "hazards" in data
+    assert "heatwave" in data["hazards"]
+    assert "malaria" in data["hazards"]
+

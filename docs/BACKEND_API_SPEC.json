@@ -268,10 +268,169 @@
         }
       }
     },
+    "/api/v1/locations": {
+      "get": {
+        "tags": [
+          "Locations (Contract Alias)"
+        ],
+        "summary": "Search or list locations (Contract Alias)",
+        "description": "Supports `GET /api/v1/locations?query=...` as defined in docs/INTEGRATION_CONTRACTS.md.",
+        "operationId": "get_locations_alias_api_v1_locations_get",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Search query string",
+              "title": "Query"
+            },
+            "description": "Search query string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 10,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/locations/{location_id}": {
+      "get": {
+        "tags": [
+          "Locations (Contract Alias)"
+        ],
+        "summary": "Get location by ID (Contract Alias)",
+        "operationId": "get_location_alias_api_v1_locations__location_id__get",
+        "parameters": [
+          {
+            "name": "location_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Location Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/locations/{location_id}/history": {
+      "get": {
+        "tags": [
+          "Locations (Contract Alias)"
+        ],
+        "summary": "Get annual historical surveillance (Contract Alias)",
+        "description": "Supports `GET /api/v1/locations/{id}/history?year=...` as defined in docs/INTEGRATION_CONTRACTS.md.",
+        "operationId": "get_location_history_alias_api_v1_locations__location_id__history_get",
+        "parameters": [
+          {
+            "name": "location_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Location Id"
+            }
+          },
+          {
+            "name": "year",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/hazards": {
       "get": {
         "tags": [
-          "ML Predictions"
+          "ML Predictions & Intelligence"
         ],
         "summary": "List supported hazard models",
         "description": "Returns the status, model version, and target definition for all project hazards (Heatwave, Flood, Malaria, Dengue, Chikungunya).",
@@ -288,10 +447,50 @@
         }
       }
     },
+    "/api/v1/model/version": {
+      "get": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "Active model versions and architecture info",
+        "description": "Returns detailed version metadata and architecture specifications for active ML models.",
+        "operationId": "get_model_versions_api_v1_model_version_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data/status": {
+      "get": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "Data source readiness and status",
+        "description": "Audits underlying weather, disease, disaster, and geographic data files.",
+        "operationId": "get_data_status_api_v1_data_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/predict/district": {
       "post": {
         "tags": [
-          "ML Predictions"
+          "ML Predictions & Intelligence"
         ],
         "summary": "Predict single hazard for a district",
         "description": "Runs ANN inference for a specific hazard and district code (Census 2011).",
@@ -333,7 +532,7 @@
     "/api/v1/predict/custom": {
       "post": {
         "tags": [
-          "ML Predictions"
+          "ML Predictions & Intelligence"
         ],
         "summary": "Predict hazard from custom feature record",
         "description": "Invokes ANN model with caller-supplied numerical features adhering to the hazard feature dictionary.",
@@ -375,7 +574,7 @@
     "/api/v1/predict/multi-hazard": {
       "post": {
         "tags": [
-          "ML Predictions"
+          "ML Predictions & Intelligence"
         ],
         "summary": "Unified multi-hazard risk assessment",
         "description": "Evaluates all supported hazards (Heatwave, Flood, Malaria, plus Dengue status) and persists an audit record in Firestore.",
@@ -408,6 +607,190 @@
                 "schema": {
                   "$ref": "#/components/schemas/HTTPValidationError"
                 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/predict": {
+      "post": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "Flexible multi-hazard prediction endpoint (Contract alias)",
+        "description": "Accepts either {'district_code': 536} or {'location_id': 536, 'travel_date': '...'} for frontend convenience.",
+        "operationId": "predict_flexible_api_v1_predict_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Payload"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/risk/explain/{prediction_id}": {
+      "get": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "Get factor attributions for a stored prediction",
+        "description": "Retrieves the saved prediction and explains the primary factors influencing each hazard.",
+        "operationId": "get_prediction_explanation_api_v1_risk_explain__prediction_id__get",
+        "parameters": [
+          {
+            "name": "prediction_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Prediction Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/risk/scenario": {
+      "post": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "What-If counterfactual scenario simulation",
+        "description": "Simulates environmental changes (e.g. +2\u00b0C temperature, +30mm rainfall) and returns counterfactual predictions.",
+        "operationId": "simulate_scenario_api_v1_risk_scenario_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScenarioSimulationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/map/layers/{hazard_type}": {
+      "get": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "Get district map layer data",
+        "description": "Returns lightweight coordinates and district markers for MapLibre GL visualization.",
+        "operationId": "get_map_layer_api_v1_map_layers__hazard_type__get",
+        "parameters": [
+          {
+            "name": "hazard_type",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Hazard Type"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/leaderboard": {
+      "get": {
+        "tags": [
+          "ML Predictions & Intelligence"
+        ],
+        "summary": "Model benchmark evaluation leaderboard",
+        "description": "Fetches offline evaluation metrics (PR-AUC, ROC-AUC, Brier score, ECE) comparing ANNs against baselines.",
+        "operationId": "get_research_leaderboard_api_v1_research_leaderboard_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
               }
             }
           }
@@ -1172,6 +1555,49 @@
           "results"
         ],
         "title": "LocationSearchResponse"
+      },
+      "ScenarioSimulationRequest": {
+        "properties": {
+          "hazard": {
+            "type": "string",
+            "title": "Hazard",
+            "description": "Hazard type: 'heatwave', 'flood', or 'malaria'",
+            "example": "heatwave"
+          },
+          "district_code": {
+            "type": "integer",
+            "title": "District Code",
+            "description": "Census 2011 district code",
+            "example": 146
+          },
+          "deltas": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Deltas",
+            "description": "Feature delta overrides (e.g. {'max_temperature_c': 3.0})"
+          },
+          "baseline_year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Baseline Year",
+            "description": "Optional baseline feature year"
+          }
+        },
+        "type": "object",
+        "required": [
+          "hazard",
+          "district_code",
+          "deltas"
+        ],
+        "title": "ScenarioSimulationRequest"
       },
       "SystemInfoResponse": {
         "properties": {

@@ -19,6 +19,7 @@ from ml.hazard_inference import list_hazards
 from backend.app.core.config import settings
 from backend.app.routes import destinations, predict, history
 from backend.app.schemas.api_schemas import HealthResponse, SystemInfoResponse
+from backend.app.utils.security import SecurityHeadersMiddleware
 
 
 @asynccontextmanager
@@ -73,6 +74,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Standard Security Headers
+app.add_middleware(SecurityHeadersMiddleware)
+
 # Global Controlled Error Sanitizer
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
@@ -92,6 +96,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 # Register Sub-Routers
 app.include_router(destinations.router)
+app.include_router(destinations.locations_router)
 app.include_router(predict.router)
 app.include_router(history.router)
 

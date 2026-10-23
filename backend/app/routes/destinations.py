@@ -186,3 +186,51 @@ def get_destination_summary(
             raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=err)
 
     return summary
+
+
+# ------------------------------------------------------------------------------
+# Integration Contract Alias Router: /api/v1/locations
+# ------------------------------------------------------------------------------
+locations_router = APIRouter(prefix="/api/v1/locations", tags=["Locations (Contract Alias)"])
+
+
+@locations_router.get(
+    "",
+    summary="Search or list locations (Contract Alias)",
+    description="Supports `GET /api/v1/locations?query=...` as defined in docs/INTEGRATION_CONTRACTS.md.",
+)
+def get_locations_alias(
+    query: Optional[str] = Query(None, description="Search query string"),
+    limit: int = Query(10, ge=1, le=100),
+):
+    if query:
+        res = search_destinations(q=query, limit=limit)
+        return res.results
+    return list_destinations(limit=limit)
+
+
+@locations_router.get(
+    "/{location_id}",
+    summary="Get location by ID (Contract Alias)",
+)
+def get_location_alias(location_id: str):
+    return get_destination_by_id(location_id)
+
+
+@locations_router.get(
+    "/{location_id}/history",
+    summary="Get annual historical surveillance (Contract Alias)",
+    description="Supports `GET /api/v1/locations/{id}/history?year=...` as defined in docs/INTEGRATION_CONTRACTS.md.",
+)
+def get_location_history_alias(location_id: str, year: Optional[int] = Query(None)):
+    loc = LocationRepository().get_by_id(location_id)
+    if not loc or not loc.get("census_district_code"):
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Location '{location_id}' not found.",
+        )
+    code = int(loc["census_district_code"])
+    start = f"{year}-01-01" if year else None
+    end = f"{year}-12-31" if year else None
+    return safe_destination_summary(district_code=code, start_date=start, end_date=end)
+
